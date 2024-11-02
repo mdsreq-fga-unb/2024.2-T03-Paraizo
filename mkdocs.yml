@@ -22,7 +22,6 @@ theme:
     - navigation.top
     - toc.integrate
     - search.suggest
-
     - search.highlight
 
   palette:
