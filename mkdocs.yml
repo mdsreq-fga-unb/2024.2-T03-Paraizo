@@ -1,1 +1,80 @@
-site_name: My Docs
+site_name: Paraizo
+repo_url: https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo
+repo_name: 2024.2-T03-Paraizo
+theme:
+  name: material
+  custom_dir: assets
+  language: pt
+  favicon: paraizo/favicon.ico
+  logo: paraizo/paraizo.png
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para o modo escuro
+
+    # Paleta para o tema claro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para o modo claro
+
+extra_css:
+  - stylesheets/extra.css
+extra:
+  version:
+    provider: mike
+extra_javascript:
+  - javascripts/removeCredits.js
+watch:
+  - assets/includes
+  - assets/stylesheets/extra.css
+  - assets/home.html
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.snippets:
+      auto_append:
+        - assets/includes/abbreviations.md
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
