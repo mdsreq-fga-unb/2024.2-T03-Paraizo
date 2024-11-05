@@ -78,3 +78,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Visão Produto: visao-produto/index.md
+  - Visão Projeto: visao-projeto/index.md
