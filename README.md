@@ -38,7 +38,7 @@ venv/Scripts/activate
 ## Instalando pacotes
 
 ```shell
-pip install -r Requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Iniciando localmente
