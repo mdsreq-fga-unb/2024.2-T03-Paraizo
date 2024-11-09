@@ -78,5 +78,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Visão Produto: visao-produto/index.md
-  - Visão Projeto: visao-projeto/index.md
+  - Visão Produto e Projeto:
+      - Visão do Produto: visao-produto-projeto/visao-produto/index.md
+      - Visão do Projeto: visao-produto-projeto/visao-projeto/index.md
+      - Processo de desenvolvimento de software: visao-produto-projeto/processo-desenvolvimento-software/index.md
+  - Sprints: sprints/index.md
+  - Lições Aprendidas: licoes-aprendidas/index.md
