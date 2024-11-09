@@ -1,10 +1,10 @@
 # Visão Geral do Produto
 
-## Histórico de Revisão
+??? abstract "Histórico de Revisão"
 
-| **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
-| :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
-|  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
+    | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
+    | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
+    |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
 
 ### Iteração entre equipe e cliente
 
@@ -31,11 +31,11 @@
 
 ### Matriz de Comunicação
 
-| **Ferramenta**      | **Objetivo**                                                                                                     | **Frequência**                               |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **Microsoft Teams** | Reuniões semanais entre a equipe de desenvolvimento para planejamento, alinhamentos e feedbacks.                 | Semanal                                      |
-| **Google Meet**     | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
-| **WhatsApp**        | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
+| **Ferramenta**                                 | **Objetivo**                                                                                                     | **Frequência**                               |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| **:material-microsoft-teams: Microsoft Teams** | Reuniões semanais entre a equipe de desenvolvimento para planejamento, alinhamentos e feedbacks.                 | Semanal                                      |
+| **:simple-googlemeet: Google Meet**            | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
+| **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
 
 #### Métodos e Frequência de Reuniões:
 

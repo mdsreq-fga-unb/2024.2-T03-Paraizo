@@ -57,24 +57,27 @@ markdown_extensions:
   - md_in_html
   - def_list
   - tables
+  - pymdownx.superfences
+  - pymdownx.details
   - toc:
       permalink: true
       title: On this page
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.superfences
-  - pymdownx.superfences
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tabbed:
       alternate_style: true
-
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       use_pygments: false
   - pymdownx.snippets:
       auto_append:
         - assets/includes/abbreviations.md
-  - pymdownx.superfences
 
 nav:
   - Home: index.md
