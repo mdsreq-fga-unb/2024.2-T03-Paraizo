@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://www.instagram.com/espacojanaynaparaizo/"><img src="https://github.com/user-attachments/assets/88e27eb2-4aa9-48e3-ad92-bcea18cba111"><a>
+<a href="https://www.instagram.com/espacojanaynaparaizo/"><img style="width: 25%" src="https://github.com/user-attachments/assets/88e27eb2-4aa9-48e3-ad92-bcea18cba111"><a>
 </p>
 
 ## 📚 Índice
