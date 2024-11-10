@@ -37,7 +37,7 @@ $ virtualenv venv
 $ source venv/Scripts/activate
 ```
 
-## **Instalando pacotes**
+### **Instalando pacotes**
 
 <!--termynal: {title: bash, prompt_literal_start: [$]}-->
 
@@ -45,7 +45,7 @@ $ source venv/Scripts/activate
 $ pip install -r requirements.txt
 ```
 
-## **Iniciando localmente**
+### **Iniciando localmente**
 
 <!--termynal: {title: bash, prompt_literal_start: [$]}-->
 
