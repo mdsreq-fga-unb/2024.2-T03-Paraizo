@@ -85,10 +85,10 @@ Analisando o mercado podemos constatar que é uma área carente de soluções qu
 
 A criação do software PARAIZO contribuiria para a melhor gestão operacional da clínica, uma vez que ele busca criar um ambiente que centralize as atividades de visualização, cadastro, edição e exclusão de agendamentos dos clientes, migrar o registro do histórico de atendimentos para o digital, proporcionando mais longevidade a esses dados quando comparado com a forma atual de armazenamento (registro em papel), visualização e edição dos registros de cada paciente que frequenta a clínica, criando um ambiente que proporciona melhor análise desses dados, além de prover uma forma dos próprios clientes visualizarem suas evoluções ao longo do tempo. Nesse sentido, conclui-se o produto impactaria a clínica das seguintes formas:
 
-- Redução no tempo destinado a atividades de visualização e edição de dados de clientes específicos, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
-- Redução no tempo destinado a atividades relacionadas à organização e armazenamento dos arquivos nos espaços físicos da clínica;
-- Redução de custos, uma vez que o orçamento destinado aos materiais e alocação dos arquivos físicos não será mais necessário;
-- Proporcionar a visualização do histórico de evolução dos pacientes proporcionará uma taxa maior de fidelização de clientes ao estabelecimento;
-- Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
+- [x] Redução no tempo destinado a atividades de visualização e edição de dados de clientes específicos, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
+- [x] Redução no tempo destinado a atividades relacionadas à organização e armazenamento dos arquivos nos espaços físicos da clínica;
+- [x] Redução de custos, uma vez que o orçamento destinado aos materiais e alocação dos arquivos físicos não será mais necessário;
+- [x] Proporcionar a visualização do histórico de evolução dos pacientes proporcionará uma taxa maior de fidelização de clientes ao estabelecimento;
+- [x] Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
 
 Em suma, a criação do software simplificaria o agendamento de atendimentos, além de otimizar a gestão financeira e de pessoas. Isso resultaria em uma administração mais eficiente e ágil do negócio, proporcionando maior controle e facilidade nas operações.
