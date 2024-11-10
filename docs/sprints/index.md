@@ -5,6 +5,7 @@
     | **Data** | **Versão** | **Descrição** | **Autor** |
     | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------------------------------: |
     | 08/11 | 1.0 | Criação das seção de Processo de desenvolvimento de software | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
+    | 10/11 | 1.1 | Adicionando informação da primeira reunião | Erick Miranda Santos |
 
 ---
 
@@ -126,6 +127,11 @@
         !!! danger "Atenção"
 
             Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento e a comunicação do projeto:
+
+            |  #  | **Decisões**                                                               |
+            | --- | ---------------------------------------------------------------------------|
+            | 1   | Escopo inicial do projeto                                                  |
+
 
 
 
