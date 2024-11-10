@@ -47,3 +47,17 @@
 | Envolvimento dos usuários | 1         | 3         | 1         | 0             | 0       | 4                     |
 | Tipo de Projeto e Risco   | 2         | 5         | 2         | 2             | 5       | 3                     |
 | **Total**                 | :x: 7     | :x: 11    | :x: 9     | :x: 8         | :x: 6   | :white_check_mark: 14 |
+
+### RAD
+
+<p align="center">
+
+<img src="https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb"/>
+
+</p>
+
+!!! note "Sobre"
+
+    - É considera uma abordagem ágil, centrada no usuário e design do produto
+    - Fortemente baseado no feedback do usuário
+    - Os requisitos do produto são tratados como variáveis
