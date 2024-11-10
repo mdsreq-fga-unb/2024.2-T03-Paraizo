@@ -6,6 +6,8 @@
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
+---
+
 ## **Cenário atual do cliente e do négocio**
 
 ### **Introdução ao neógocio e contexto**
@@ -30,9 +32,13 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 
 <p style="text-indent: 50px;text-align: justify;"> A PARAIZO atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
 
-### **Solução proposta**
+<iframe width="100%" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
-#### **Objetivos do Produto**
+---
+
+## **Solução proposta**
+
+### **Objetivos do Produto**
 
 <p style="text-indent: 50px;text-align: justify;">O principal objetivo do produto "Paraizo" é facilitar a gestão administrativa da clínica, tornando os processos mais eficientes e automatizados, resultando em um serviço de melhor qualidade para fidelizar pacientes como resultado de uma boa qualidade na prestação de serviço e consequentemente resultando na expansão do negócio. Já sobre os objetivos técnicos temos que o produto precisa se comunicar com o Google Agenda para marcar as sessões diretamente sem intervenção do administrador, apresentar contas específicas para os funcionários do empreendimento para visualizarem sua agenda de compromissos e informações de seus pacientes, além de contas para os próprios pacientes visualizarem seus agendamentos e evolução ao longo do tempo.</p>
 
@@ -71,10 +77,6 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 !!! note "Vale ressaltar"
 
     <p style="text-indent: 50px;text-align: justify;">O "Paraizo" se destaca por sua simplicidade de uso, sendo uma solução feita de maneira personalizada para as necessidades da empresa, como o registro da evolução dos pacientes baseado nos aspectos técnicos deste segmento (fisioterapia), contas de funcionários adaptadas para gerenciamento do trabalho diário baseado nas demandas atuais do empreendimento, contas para os próprios pacientes visualizarem suas evoluções e agendamentos.</p>
-
-### **Diagrama de Ishikawa**
-
-<iframe width="100%" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 ### **Análise de Viabilidade**
 

@@ -6,6 +6,8 @@
     | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de Processo de desenvolvimento de software | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
+---
+
 ## **Metodologia**
 
 | Requisitos                                                  | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |

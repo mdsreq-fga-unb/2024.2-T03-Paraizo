@@ -6,6 +6,8 @@
     | :------: | :--------: | :---------------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de lições aprendidas | Maykon Júnio dos Santos Soares |
 
+---
+
 === "Unidade 1"
 
     ### **Unidade 1**

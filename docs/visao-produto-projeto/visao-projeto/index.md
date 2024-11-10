@@ -6,6 +6,8 @@
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
+---
+
 ## **Iteração entre equipe e cliente**
 
 | Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                  |
@@ -15,6 +17,8 @@
 | Desenvolvedor Backend  | Implementa a lógica de negócios, integração com banco de dados e APIs.                                | Erick Miranda                  | Maykon Júnio dos Santos Soares, Marllon Fausto |
 | Analista de QA         | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade.       | Pedro Miguel Martins           | Erick Miranda                                  |
 | Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel Martins                           |
+
+---
 
 ## **Planejamento das Fases e/ou Iterações do Projeto**
 
@@ -28,6 +32,8 @@
 | 4      | Desenvolvimento - Entrega de MVP1                                                                              | 08/01/2025  | 21/01/2025 | 14                 |
 | 5      | Desenvolvimento - Entrega de MVP2                                                                              | 22/01/2025  | 04/02/2025 | 14                 |
 | 6      | Desenvolvimento - Entrega de MVP2                                                                              | 05/02/2025  | 13/02/2025 | 9                  |
+
+---
 
 ## **Matriz de Comunicação**
 
@@ -49,6 +55,8 @@
 | --------------------------------------- | ----------------------------------------------------- | ------------------- |
 | **Revisões de Sprint**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
 | **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
+
+---
 
 ## **Gerenciamento de Riscos**
 

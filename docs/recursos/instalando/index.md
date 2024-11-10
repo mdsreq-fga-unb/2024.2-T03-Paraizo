@@ -6,6 +6,8 @@
     | :------: | :--------: | :-------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de Documentação | Maykon Júnio dos Santos Soares |
 
+---
+
 ## **Prepando ambiente virtural**
 
 ### Requisitos

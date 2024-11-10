@@ -6,6 +6,8 @@
     | :------: | :--------: | :-------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de Entregas | Maykon Júnio dos Santos Soares |
 
+---
+
 ## **Vídeos de Apresentação**
 
 === "Unidade 1"
