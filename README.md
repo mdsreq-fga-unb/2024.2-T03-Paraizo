@@ -1,16 +1,18 @@
 # 🎷 Paraizo - 2024/02
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=PROCESSING&color=GREEN&style=for-the-badge"/>
+       <img src="http://img.shields.io/static/v1?label=STATUS&message=PROCESSING&color=GREEN&style=for-the-badge"/>
 </p>
 
 <p align="center">
 <a href="https://www.instagram.com/espacojanaynaparaizo/"><img style="width: 25%" src="https://github.com/user-attachments/assets/88e27eb2-4aa9-48e3-ad92-bcea18cba111"><a>
 </p>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge)
-![GitHub views](https://komarev.com/ghpvc/?username=req-fga-unb&repo=2024.2-T03-Paraizo&color=blueviolet&style=for-the-badge&label=Views)
+<p align="center">
+       <img src="https://img.shields.io/github/repo-size/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge"/>
+       <img src="https://img.shields.io/github/issues/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge"/>
+       <img src="https://komarev.com/ghpvc/?username=req-fga-unb&repo=2024.2-T03-Paraizo&color=blueviolet&style=for-the-badge&label=Views"/>
+</p>
 
 ## 📚 Índice
 
