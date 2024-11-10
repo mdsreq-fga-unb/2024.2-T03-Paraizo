@@ -45,6 +45,7 @@ $ cd 2023.1-FamilyMusicSystem
 
 <p style="text-indent: 50px;text-align: justify;">Estudantes da disciplina Métodos de Desenvolvimento de Software, Engenharia de Software, UnB. Saiba um pouco mais sobre nosso time...</p>
 
+<div align="center">
 <div style="-webkit-display: flex;
        display: flex;
        -webkit-align-items: center;
@@ -88,4 +89,5 @@ $ cd 2023.1-FamilyMusicSystem
 </tr>
 </tbody>
 </table>
+</div>
 </div>
