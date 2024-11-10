@@ -55,6 +55,7 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 | **:material-calendar: Google Calendar API**    | API para integração de agendas                            | Integração com Google Calendar |
 | **:simple-github: GitHub**                     | Repositório para versionamento e colaboração              | Controle de Versão             |
 | **:simple-jest: Jest**                         | Framework de testes para JavaScript                       | Testes                         |
+| **:simple-pytest: PyTest**                     | Framework de testes para Python                           | Testes                         |
 | **:material-microsoft-teams: Microsoft Teams** | Plataforma para comunicação e reuniões internas           | Comunicação                    |
 | **:simple-googlemeet: Google Meet**            | Plataforma para reuniões com o cliente                    | Comunicação                    |
 | **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona para suporte rápido                | Comunicação                    |
