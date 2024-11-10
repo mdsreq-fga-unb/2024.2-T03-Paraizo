@@ -28,7 +28,7 @@ A PARAIZO é uma clínica de fisioterapia no Gama, Distrito Federal, fundada pel
 
 ```bash
 $ git clone https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo
-$ cd 2023.1-FamilyMusicSystem
+$ cd 2024.2-T03-Paraizo
 ```
 
 ## <h2><span style="color: #F3910A;">😎</span> Membros da Equipe </h2>
