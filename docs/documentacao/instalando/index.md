@@ -2,7 +2,7 @@
 
     | **Data** | **Versão** |        **Descrição**        |           **Autor**            |
     | :------: | :--------: | :-------------------------: | :----------------------------: |
-    |  08/11   |    1.0     | Criação das seção de Documentação | Maykon Júnio dos Santos Soares |
+    |  08/11   |    1.0     | Criação do tópico de Documentação | Maykon Júnio dos Santos Soares |
 
 ## Prepando ambiente virtural
 

@@ -4,7 +4,7 @@
 
     | **Data** | **Versão** |            **Descrição**            |           **Autor**            |
     | :------: | :--------: | :---------------------------------: | :----------------------------: |
-    |  08/11   |    1.0     | Criação do tópico lições aprendidas | Maykon Júnio dos Santos Soares |
+    |  08/11   |    1.0     | Criação do tópico de lições aprendidas | Maykon Júnio dos Santos Soares |
 
 === "Unidade 1"
 

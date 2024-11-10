@@ -2,7 +2,7 @@
 
     | **Data** | **Versão** |        **Descrição**        |           **Autor**            |
     | :------: | :--------: | :-------------------------: | :----------------------------: |
-    |  08/11   |    1.0     | Criação das seção de Entregas | Maykon Júnio dos Santos Soares |
+    |  08/11   |    1.0     | Criação do tópico de Entregas | Maykon Júnio dos Santos Soares |
 
 ## Vídeos de Apresentação
 

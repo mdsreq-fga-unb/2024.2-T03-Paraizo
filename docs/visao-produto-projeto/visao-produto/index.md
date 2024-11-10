@@ -4,9 +4,7 @@
 
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
-    |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
-    |  09/11   |    2.0     | adição de pontos sobre a solução proposta | Pedro Miguel M. de O. dos Santos |
-    |  09/11   |    2.1     | adição de impactos da solução | Pedro Miguel M. de O. dos Santos |
+    |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
 ## Cenário atual do cliente e do négocio
 

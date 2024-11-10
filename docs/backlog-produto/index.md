@@ -2,4 +2,4 @@
 
     | **Data** | **Versão** |        **Descrição**        |           **Autor**            |
     | :------: | :--------: | :-------------------------: | :----------------------------: |
-    |  08/11   |    1.0     | Criação das seção de Backlog do Produto | Maykon Júnio dos Santos Soares |
+    |  08/11   |    1.0     | Criação do tópico de Backlog do Produto | Maykon Júnio dos Santos Soares |
