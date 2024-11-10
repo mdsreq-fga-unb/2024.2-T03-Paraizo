@@ -35,7 +35,11 @@ $ cd 2023.1-FamilyMusicSystem
 
 <br/>
 <p align="center">
-<a href="https://github.com/luanasoares0901"><img src="https://user-images.githubusercontent.com/89596623/232325390-1e27cef3-f27c-49dd-9b05-f61952f2c506.png"/></a> <a href="https://github.com/guinuto"><img src="https://user-images.githubusercontent.com/89596623/232325368-feb63fbe-fe9f-4e8a-aa7f-1666a4a7e407.png"/></a> <a href="https://github.com/luanduartee"><img src="https://user-images.githubusercontent.com/89596623/232325387-e9d71652-536c-46ea-99ef-26182b0af2d0.png"/></a> <a href="https://github.com/davirany"><img src="https://user-images.githubusercontent.com/89596623/232325365-f51e4b38-d22e-4f74-ab3f-a39b55a71721.png"/></a> <a href="https://github.com/maykonjuso"><img src="https://user-images.githubusercontent.com/89596623/232325392-79161aa9-10dd-4be2-9623-e7cd645b6455.png"/></a>
+<a href="https://github.com/Erick-ems"><img src="https://github.com/Erick-ems.png" width="100" /></a> 
+<a href="https://github.com/m4rllon"><img src="https://github.com/m4rllon.png" width="100" /></a> 
+<a href="https://github.com/henryqma"><img src="https://github.com/henryqma.png" width="100" /></a> 
+<a href="https://github.com/pedromadbr"><img src="https://github.com/pedromadbr.png" width="100" /></a> 
+<a href="https://github.com/maykonjuso"><img src="https://github.com/maykonjuso.png" width="100" /></a>
 </p>
 <br/>
 
