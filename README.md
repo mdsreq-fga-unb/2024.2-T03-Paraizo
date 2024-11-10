@@ -1,4 +1,4 @@
-# 🎷 Paraizo - 2024/02
+# ⚕️ Paraizo - 2024/02
 
 <p align="center">
        <img src="http://img.shields.io/static/v1?label=STATUS&message=PROCESSING&color=GREEN&style=for-the-badge"/>
