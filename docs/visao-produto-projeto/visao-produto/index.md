@@ -4,7 +4,7 @@
 
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
-    |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
+    |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos <br> Henrique Martins Alencar |
 
 ---
 
@@ -98,3 +98,41 @@ A criação do software PARAIZO contribuiria para a melhor gestão operacional d
     - Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
 
 Em suma, a criação do software simplificaria o agendamento de atendimentos, além de otimizar a gestão financeira e de pessoas. Isso resultaria em uma administração mais eficiente e ágil do negócio, proporcionando maior controle e facilidade nas operações.
+
+## **Estratégias de Engenharia de Software**
+
+### **Estratégia Priorizada**
+
+* **Abordagem:** Ágil
+
+* **Ciclo de vida:** Ágil
+
+* **Processo:** RAD
+
+### **Quadro Comparativo**
+
+<p style="text-indent: 50px; text-align: justify;"> 
+O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.
+</p>
+
+| Características | RAD | Scrum | 
+| ---------- | ----------- | -------------- | 
+| Abordagem Geral  | Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas | Framework ágil baseado em sprints curtos e entregas incrementais |
+| Foco em Arquitetura | Menor foco inicial em arquitetura; ênfase em protótipos | Maior atenção à arquitetura para manter flexibilidade |
+| Estrutura de Processos | Estrutura flexível, com iterações rápidas e prototipagem | Estrutura bem definida com sprints, backlog e eventos específicos |
+| Flexibilidade de Requisitos | Alta; requisitos podem ser alterados durante o desenvolvimento | Moderada; alterações podem ser aceitas, mas devem passar pelo backlog e priorização |
+| Colaboração com Clientes | Intensa; cliente envolvido em feedback frequente e revisão de protótipos | Essencial; cliente revisa e prioriza o backlog e participa de revisões de sprint |
+| Complexidade do Processo | Baixa a moderada; processos adaptáveis e menos formais | Moderada a alta; requer disciplina para seguir eventos e artefatos do Scrum |
+| Qualidade Técnica | Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade | Alta; qualidade técnica é essencial, com revisões e melhorias contínuas |
+| Práticas de Desenvolvimento | Prototipagem rápida, foco em entrega de funcionalidades principais | Desenvolvimento incremental, com práticas ágeis como revisão de código e testes |
+| Adaptação ao Projeto | Ideal para projetos com escopo indefinido ou mudanças constantes | Adequado para projetos complexos e de longo prazo com escopo claro, mas adaptável |
+| Documentação | Documentação mínima, foco em protótipos e entregas rápidas | Documentação moderada, geralmente vinculada ao backlog e requisitos do sprint |
+| Controle de Qualidade | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final | Controle rigoroso; envolve revisões contínuas e testes integrados nos sprints |
+| Escalabilidade  | Limitada, mais indicada para projetos pequenos e médios | Alta, adequado para grandes equipes e projetos complexos |
+| Suporte a Equipes de Desenvolvimento | Moderado; mais dependente do feedback do cliente e protótipos rápidos | Alto; suporta equipes organizadas com papéis claros como Product Owner e Scrum Master |
+
+### **Justificativa**
+
+<p style="text-indent: 50px; text-align: justify;">
+O processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
+</p>
