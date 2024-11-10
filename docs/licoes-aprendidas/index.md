@@ -14,13 +14,13 @@
 
     ---
 
-    #### **🌱 Introdução ao Desenvolvimento de Projetos**
+    #### **Introdução ao Desenvolvimento de Projetos**
 
     Na sala de aula, começamos nossa jornada de aprendizado com o **desenvolvimento de habilidades práticas** voltadas para projetos. Este foi apenas o **início**, mas crucial para entendermos as metodologias que guiarão nosso trabalho.
 
     ---
 
-    #### **⚙️ Metodologias de Desenvolvimento**
+    #### **Metodologias de Desenvolvimento**
 
     Exploramos as **principais metodologias de desenvolvimento de software**, compreendendo suas diferenças e como escolher entre elas com base no **triângulo de ferro**:
 
@@ -31,7 +31,7 @@
 
     ---
 
-    #### **🛠️ Ferramentas Ágeis no Mercado**
+    #### **Ferramentas Ágeis no Mercado**
 
     Nos aprofundamos em duas das metodologias ágeis mais populares e suas práticas específicas:
 
@@ -42,7 +42,7 @@
 
     ---
 
-    #### **💡 Novas Ferramentas e Tecnologias**
+    #### **Novas Ferramentas e Tecnologias**
 
     Além das metodologias, a equipe teve a oportunidade de **explorar novas ferramentas** que facilitarão o desenvolvimento do projeto:
 
