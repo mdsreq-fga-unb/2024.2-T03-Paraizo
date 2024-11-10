@@ -1,13 +1,3 @@
-.md-header {
-  background-color: #0270d7;
-}
-
-/* Customização das tabelas */
-.md-typeset table:not([class]) th {
-  background-color: #0270d7;
-  color: white;
-}
-
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #31353d;
   --md-primary-fg-color--light: rgb(0, 0, 0);
