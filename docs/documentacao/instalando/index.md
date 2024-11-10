@@ -4,7 +4,7 @@
     | :------: | :--------: | :-------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação das seção de Documentação | Maykon Júnio dos Santos Soares |
 
-## Instalando o ambiente
+## Prepando ambiente virtural
 
 ### Requisitos
 
