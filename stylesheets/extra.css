@@ -1,34 +1,12 @@
-/* [data-md-color-scheme="default"] {
-    --md-primary-fg-color: #31353D;
-    --md-primary-fg-color--light: #31353D;
-    --md-primary-fg-color--dark: #31353D;
-    --md-default-bg-color: #f7f7f7;
-  }
-  
-  [data-md-color-scheme="slate"] {
-    --md-primary-fg-color: #31353D;
-    --md-primary-fg-color--light: #31353D;
-    --md-primary-fg-color--dark: #31353D;
-    --md-default-bg-color: #202121;
-  }
+.md-header {
+  background-color: #0270d7;
+}
 
-  [data-md-color-accent=indigo] {
-    --md-accent-fg-color: rgb(73, 71, 157);;
-  }
-  
-  /* .md-content {
-    --md-typeset-a-color: #31353D;
-  }
-
-  .md-typeset h1, h2, h3, h4, h5, h6 {
-    color: #31353D;
-  }
-
-  .myfooter {
-    background-color: #f9f9f9;
-    padding: 10px;
-    text-align: center;
-} */
+/* Customização das tabelas */
+.md-typeset table:not([class]) th {
+  background-color: #0270d7;
+  color: white;
+}
 
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #31353d;
@@ -64,4 +42,7 @@
 
 .md-footer-meta .md-typeset {
   visibility: hidden;
+}
+.md-nav__item .md-nav__link--active {
+  color: #0270d7 !important ;
 }
