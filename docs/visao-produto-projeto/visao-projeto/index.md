@@ -37,7 +37,7 @@
 | **:simple-googlemeet: Google Meet**            | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
 | **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
 
-#### **Métodos e Frequência de Reuniões:**
+#### **Métodos e Frequência de Reuniões**
 
 | **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
 | ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |

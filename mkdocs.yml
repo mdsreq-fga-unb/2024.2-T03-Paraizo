@@ -143,5 +143,5 @@ nav:
   - Sprints: sprints/index.md
   - Entregas: entregas/index.md
   - Lições Aprendidas: licoes-aprendidas/index.md
-  - Documentação:
-      - Instalando: documentacao/instalando/index.md
+  - Recursos:
+      - Instalando: recursos/instalando/index.md
