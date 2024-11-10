@@ -18,7 +18,7 @@
 
 ## 😉 Introdução
 
-A PARAIZO é uma clínica de fisioterapia no Gama, Distrito Federal, fundada pela fisioterapeuta Janayna Paraizo. A clínica oferece serviços como Kinesio Taping, Acupuntura, Dry Needling, Ventosaterapia, RPG, entre outros, com foco no tratamento integrado de todo o corpo para melhorar a qualidade de vida dos pacientes. Operando atualmente de terça a quinta, a PARAIZO planeja expandir seu atendimento.
+O principal objetivo do produto "Paraizo" é facilitar a gestão administrativa da clínica, tornando os processos mais eficientes e automatizados, resultando em um serviço de melhor qualidade para fidelizar pacientes como resultado de uma boa qualidade na prestação de serviço e consequentemente resultando na expansão do negócio. Já sobre os objetivos técnicos temos que o produto precisa se comunicar com o Google Agenda para marcar as sessões diretamente sem intervenção do administrador, apresentar contas específicas para os funcionários do empreendimento para visualizarem sua agenda de compromissos e informações de seus pacientes, além de contas para os próprios pacientes visualizarem seus agendamentos e evolução ao longo do tempo.
 
 ### 🤝 Documentação
 
