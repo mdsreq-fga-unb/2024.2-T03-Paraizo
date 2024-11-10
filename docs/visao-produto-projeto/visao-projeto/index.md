@@ -2,7 +2,7 @@
 
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
-    |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
+    |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
 ## Iteração entre equipe e cliente
 
@@ -19,9 +19,9 @@
 | Sprint | Produto (Entrega)                                                                                              | Data Início | Data Fim   | Quantidade de Dias |
 | ------ | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ------------------ |
 | 0      | Definição do produto<br>Definição do Problema<br>Início do GitPages<br>Lista Inicial dos requisitos do produto | 22/10/2024  | 10/11/2024 | 19                 |
-| 1      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD                                             | 11/11/2024  | 24/11/2024 | 14                 |
-| 2      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD                                             | 25/11/2024  | 08/12/2024 | 14                 |
-| 3      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD                                             | 09/12/2024  | 18/12/2024 | 10                 |
+| 1      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD <br> Desenvolvimento                        | 11/11/2024  | 24/11/2024 | 14                 |
+| 2      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD <br> Desenvolvimento                        | 25/11/2024  | 08/12/2024 | 14                 |
+| 3      | Definição do Backlog do Produto<br> Definição de MVP<br> DoR e DoD <br> Desenvolvimento                        | 09/12/2024  | 18/12/2024 | 10                 |
 | Pausa  | Recesso de Fim de Ano                                                                                          | 19/12/2024  | 07/01/2025 | 20                 |
 | 4      | Desenvolvimento - Entrega de MVP1                                                                              | 08/01/2025  | 21/01/2025 | 14                 |
 | 5      | Desenvolvimento - Entrega de MVP2                                                                              | 22/01/2025  | 04/02/2025 | 14                 |
