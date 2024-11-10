@@ -86,7 +86,8 @@ Analisando o mercado podemos constatar que é uma área carente de soluções qu
 
 ### **Impacto da Solução**
 
-A criação do software PARAIZO contribuiria para a melhor gestão operacional da clínica, uma vez que ele busca criar um ambiente que centralize as atividades de visualização, cadastro, edição e exclusão de agendamentos dos clientes, migrar o registro do histórico de atendimentos para o digital, proporcionando mais longevidade a esses dados quando comparado com a forma atual de armazenamento (registro em papel), visualização e edição dos registros de cada paciente que frequenta a clínica, criando um ambiente que proporciona melhor análise desses dados, além de prover uma forma dos próprios clientes visualizarem suas evoluções ao longo do tempo. Nesse sentido, conclui-se o produto impactaria a clínica das seguintes formas:
+<p style="text-indent: 50px; text-align: justify;">
+A criação do software PARAIZO contribuiria para a melhor gestão operacional da clínica, uma vez que ele busca criar um ambiente que centralize as atividades de visualização, cadastro, edição e exclusão de agendamentos dos clientes, migrar o registro do histórico de atendimentos para o digital, proporcionando mais longevidade a esses dados quando comparado com a forma atual de armazenamento (registro em papel), visualização e edição dos registros de cada paciente que frequenta a clínica, criando um ambiente que proporciona melhor análise desses dados, além de prover uma forma dos próprios clientes visualizarem suas evoluções ao longo do tempo. Nesse sentido, conclui-se o produto impactaria a clínica das seguintes formas: </p>
 
 !!! success "Benefícios"
 
