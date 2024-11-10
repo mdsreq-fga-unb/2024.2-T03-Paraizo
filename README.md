@@ -8,6 +8,10 @@
 <a href="https://www.instagram.com/espacojanaynaparaizo/"><img style="width: 25%" src="https://github.com/user-attachments/assets/88e27eb2-4aa9-48e3-ad92-bcea18cba111"><a>
 </p>
 
+![GitHub repo size](https://img.shields.io/github/repo-size/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/mdsreq-fga-unb/2024.2-T03-Paraizo?style=for-the-badge)
+![GitHub views](https://komarev.com/ghpvc/?username=req-fga-unb&repo=2024.2-T03-Paraizo&color=blueviolet&style=for-the-badge&label=Views)
+
 ## 📚 Índice
 
 - [Introdução](#Introdução)
