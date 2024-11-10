@@ -10,13 +10,17 @@
 
 === "Sprint 0"
 
-    ## **🚀 Sprint 0**
-
-    > **Período**: 22/10/2023 - 11/11/2023
+    ### **🚀 Sprint 0**
 
     ---
 
-    ### **🔑 Principais Decisões**
+    #### **📅 Periódo**
+
+    > **data**: 22/10/2023 - 11/11/2023
+
+    ---
+
+    #### **🔑 Principais Decisões**
 
     !!! tip "Primeiros passos"
 
@@ -31,7 +35,7 @@
 
     ---
 
-    ### **🎯 Entregas Realizadas**
+    #### **🎯 Entregas Realizadas**
 
     !!! success "Boas decisões"
         As entregas desta sprint garantiram o início sólido do projeto, com definições importantes e progresso substancial nas primeiras atividades.
@@ -47,7 +51,7 @@
 
     ---
 
-    ### **🧐 Sprint Retrospective**
+    #### **🧐 Sprint Retrospective**
 
     !!! info "Ponto de reflexão"
         A retrospectiva foi realizada para refletir sobre os pontos fortes e áreas de melhoria da sprint, promovendo aprendizado contínuo.
@@ -57,7 +61,7 @@
 
     ---
 
-    ### **🏆 Conquistas da Sprint**
+    #### **🏆 Conquistas da Sprint**
 
     !!! success "Vale comemorar"
 
@@ -67,13 +71,13 @@
 
     ---
 
-    ### **📌 Próximos Passos**
+    #### **📌 Próximos Passos**
 
     > Foco na execução da próxima sprint com a continuidade das entregas e integração das tecnologias escolhidas.
 
     ---
 
-    ### **🤝 Reuniões**
+    #### **🤝 Reuniões**
 
     === "1° Reunião"
 

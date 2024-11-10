@@ -12,9 +12,53 @@
 
     ### **Unidade 1**
 
-    <p style="text-indent: 50px;text-align: justify;">
-    Dentro da sala de aula, tivemos a oportunidade de aprender e desenvolver habilidades práticas de projetos, sendo apenas o inicio. Pudemos compreender quais as principais diferenças entre as metodologias orientadas a plano e as metodologias ágeis, e como podemos preferir uma a outra através do triângulo de ferro. Nos adentramos ainda em como funcionam as principais metodologias ágeis presentes no mercado para requisitos, análise e desenvolvimento de software de alto padrão, como o Scrum e o eXtreme Programming. Ambas as ferramentas, possuem uma gama de procedimentos que auxiliam a equipe no desenvolvimento de um excelente projeto. Ademais, a equipe teve a oportunidade de adquirir conhecimentos em ferramentas nunca antes utilizadas pelo time, como o github pages, uma plataforma de hospedagem gratuita desenvolvida pelo GitHub. Com isso, a equipe estará desenvolvendo a documentação do projeto, para que, dentro do tempo destinado, haja um processo de desenvolvimento satisfatório e organizado, além de ser de fácil compreensão para todos os membros do grupo caso haja dúvida sobre algum determinado processo.
-    </p>
+    ---
+
+    #### **🌱 Introdução ao Desenvolvimento de Projetos**
+
+    Na sala de aula, começamos nossa jornada de aprendizado com o **desenvolvimento de habilidades práticas** voltadas para projetos. Este foi apenas o **início**, mas crucial para entendermos as metodologias que guiarão nosso trabalho.
+
+    ---
+
+    #### **⚙️ Metodologias de Desenvolvimento**
+
+    Exploramos as **principais metodologias de desenvolvimento de software**, compreendendo suas diferenças e como escolher entre elas com base no **triângulo de ferro**:
+
+    - **Metodologias orientadas a plano**: Estruturadas e detalhadas, com foco no planejamento rigoroso.
+    - **Metodologias ágeis**: Flexíveis e adaptáveis, favorecendo a colaboração e a entrega contínua de valor.
+
+    Dessa forma, conseguimos **avaliar as vantagens e limitações** de cada abordagem e definir qual delas é mais apropriada para diferentes tipos de projeto.
+
+    ---
+
+    #### **🛠️ Ferramentas Ágeis no Mercado**
+
+    Nos aprofundamos em duas das metodologias ágeis mais populares e suas práticas específicas:
+
+    - **Scrum**: Uma abordagem iterativa que organiza o trabalho em ciclos curtos, chamados de "sprints", para melhorar a produtividade e a entrega.
+    - **eXtreme Programming (XP)**: Focado em garantir a qualidade do código através de práticas como testes automatizados e programação em par.
+
+    Essas ferramentas, ricas em processos e práticas, fornecem uma base sólida para o desenvolvimento de **software de alto padrão**.
+
+    ---
+
+    #### **💡 Novas Ferramentas e Tecnologias**
+
+    Além das metodologias, a equipe teve a oportunidade de **explorar novas ferramentas** que facilitarão o desenvolvimento do projeto:
+
+    - **GitHub Pages**: Plataforma gratuita de hospedagem que a equipe utilizará para **documentar o projeto** de forma clara e acessível, garantindo que todos os membros estejam alinhados quanto aos processos e etapas.
+
+    ---
+
+    #### **🔄 Objetivo da Documentação**
+
+    A documentação será o **guia** para todo o processo de desenvolvimento. Através dela, garantimos que:
+
+    - O projeto será desenvolvido de forma **satisfatória e organizada**.
+    - Qualquer dúvida poderá ser resolvida de maneira rápida, com fácil acesso às informações.
+    - A comunicação entre os membros será fluída, com todos cientes do que está sendo feito e de como cada etapa contribui para o sucesso do projeto.
+
+    ---
 
 === "Unidade 2"
 
