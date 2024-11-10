@@ -1,4 +1,4 @@
-# **Documentação**
+# **Recursos**
 
 ??? abstract "Histórico de Revisão"
 
