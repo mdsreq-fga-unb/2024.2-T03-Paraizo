@@ -52,7 +52,9 @@
 
 ## **Gerenciamento de Riscos**
 
-Devido às incertezas e receios que surgem durante um projeto, é importante ceder atenção ao gerenciamento de riscos como forma de prevenir possíveis situações que possam abalar o cenário do time.
+!!! Warning "Atenção"
+
+    Devido às incertezas e receios que surgem durante um projeto, é importante ceder atenção ao gerenciamento de riscos como forma de prevenir possíveis situações que possam abalar o cenário do time.
 
 | **Descrição**                     | **Causa**                                                                                                                                         | **Mitigação**                                                                                                                                                                 |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

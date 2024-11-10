@@ -36,9 +36,9 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 
 <p style="text-indent: 50px;text-align: justify;">O principal objetivo do produto "Paraizo" é facilitar a gestão administrativa da clínica, tornando os processos mais eficientes e automatizados, resultando em um serviço de melhor qualidade para fidelizar pacientes como resultado de uma boa qualidade na prestação de serviço e consequentemente resultando na expansão do negócio. Já sobre os objetivos técnicos temos que o produto precisa se comunicar com o Google Agenda para marcar as sessões diretamente sem intervenção do administrador, apresentar contas específicas para os funcionários do empreendimento para visualizarem sua agenda de compromissos e informações de seus pacientes, além de contas para os próprios pacientes visualizarem seus agendamentos e evolução ao longo do tempo.</p>
 
-#### **Características da Solução**
+!!! info "Características da Solução"
 
-<p style="text-indent: 50px;text-align: justify;">A solução deve incluir funcionalidades como agendamento automático de consultas, gerenciamento financeiro, cadastro de pacientes, cadastro de serviços e cadastro de funcionários.</p>
+    <p style="text-indent: 50px;text-align: justify;">A solução deve incluir funcionalidades como agendamento automático de consultas, gerenciamento financeiro, cadastro de pacientes, cadastro de serviços e cadastro de funcionários.</p>
 
 ### **Tecnologias a Serem Utilizadas**
 
@@ -68,7 +68,7 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 - **CETFISIO**: Também se limita apenas ao contato e agendamento via WhatsApp, além de não apresentar detalhes sobre o próprio estabelecimento e seus serviços, como, por exemplo, informações sobre o quadro de funcionários, histórico de atendimento da clínica, tipos de serviços prestados e a quem eles são indicados e horários de funcionamento;
 - **Rede D’OR São Luiz: Novamente**, este sistema também não oferece formas dos pacientes visualizarem suas próprias informações e o sistema de contato e agendamento apresenta as mesmas características dos anteriores.
 
-!!! note
+!!! note "Vale ressaltar"
 
     <p style="text-indent: 50px;text-align: justify;">O "Paraizo" se destaca por sua simplicidade de uso, sendo uma solução feita de maneira personalizada para as necessidades da empresa, como o registro da evolução dos pacientes baseado nos aspectos técnicos deste segmento (fisioterapia), contas de funcionários adaptadas para gerenciamento do trabalho diário baseado nas demandas atuais do empreendimento, contas para os próprios pacientes visualizarem suas evoluções e agendamentos.</p>
 
@@ -86,10 +86,12 @@ Analisando o mercado podemos constatar que é uma área carente de soluções qu
 
 A criação do software PARAIZO contribuiria para a melhor gestão operacional da clínica, uma vez que ele busca criar um ambiente que centralize as atividades de visualização, cadastro, edição e exclusão de agendamentos dos clientes, migrar o registro do histórico de atendimentos para o digital, proporcionando mais longevidade a esses dados quando comparado com a forma atual de armazenamento (registro em papel), visualização e edição dos registros de cada paciente que frequenta a clínica, criando um ambiente que proporciona melhor análise desses dados, além de prover uma forma dos próprios clientes visualizarem suas evoluções ao longo do tempo. Nesse sentido, conclui-se o produto impactaria a clínica das seguintes formas:
 
-- [x] Redução no tempo destinado a atividades de visualização e edição de dados de clientes específicos, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
-- [x] Redução no tempo destinado a atividades relacionadas à organização e armazenamento dos arquivos nos espaços físicos da clínica;
-- [x] Redução de custos, uma vez que o orçamento destinado aos materiais e alocação dos arquivos físicos não será mais necessário;
-- [x] Proporcionar a visualização do histórico de evolução dos pacientes proporcionará uma taxa maior de fidelização de clientes ao estabelecimento;
-- [x] Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
+!!! success "Benefícios"
+
+    - Redução no tempo destinado a atividades de visualização e edição de dados de clientes específicos, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
+    - Redução no tempo destinado a atividades relacionadas à organização e armazenamento dos arquivos nos espaços físicos da clínica;
+    - Redução de custos, uma vez que o orçamento destinado aos materiais e alocação dos arquivos físicos não será mais necessário;
+    - Proporcionar a visualização do histórico de evolução dos pacientes proporcionará uma taxa maior de fidelização de clientes ao estabelecimento;
+    - Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
 
 Em suma, a criação do software simplificaria o agendamento de atendimentos, além de otimizar a gestão financeira e de pessoas. Isso resultaria em uma administração mais eficiente e ágil do negócio, proporcionando maior controle e facilidade nas operações.

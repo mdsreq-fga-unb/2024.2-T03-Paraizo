@@ -8,70 +8,130 @@
 
 === "Sprint 0"
 
-    ## **Sprint 0**
+    ## **🚀 Sprint 0**
 
-    ### **Resumo**
+    > **Período**: 22/10/2023 - 11/11/2023
 
-    | **Data**               | 22/10/2023 - 11/11/2023                                                                                                                                                                                                                           |
-    | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | **Decisões do grupo**    | - Primeira reunião do grupo <br> - Foi decidido as tecnologias que seriam utilizadas <br> - Foram decididos os papéis de cada integrante <br> - Decisão de utilizar o Miro para organização                                 |
-    | **Entregas**             | - Definição do produto <br> - Definição do problema <br> - Início do GitPages <br> - Conclusão da ideia do produto <br> - Produção da Visão de Produto e Projeto <br> - Produção do Processo de Desenvolvimento de Software |
-    | **Sprint Retrospective** | Os tópicos propostos foram conversados e as entregas todas realizadas                                                                                                                                                       |
+    ---
 
-    ### **Reuniões**
+    ### **🔑 Principais Decisões**
 
-    === "Kick off - Steakholders"
+    !!! tip "Primeiros passos"
 
-        Detalhes da Reunião:
+        Durante esta sprint, o grupo tomou decisões cruciais para o início do projeto, estabelecendo as bases para o desenvolvimento e organização.
 
-        Gravação da Reunião:
+    | **Decisão**                                         | **Descrição**                                                                                             |
+    |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Primeira Reunião**                                | Realizada para alinhar objetivos e expectativas do time.                                                  |
+    | **Tecnologias Definidas**                          | Escolha das tecnologias a serem utilizadas no projeto, levando em conta os requisitos e a escalabilidade.  |
+    | **Distribuição de Papéis**                          | Definição de responsabilidades para cada membro do time, promovendo eficiência no desenvolvimento.         |
+    | **Uso do Miro**                                     | Decisão de utilizar o Miro como ferramenta para organização visual das tarefas e brainstorming colaborativo. |
 
-    === "Planning"
+    ---
 
-=== "Sprint 1"
+    ### **🎯 Entregas Realizadas**
 
-    ## **Sprint 1**
+    !!! success "Boas decisões"
+        As entregas desta sprint garantiram o início sólido do projeto, com definições importantes e progresso substancial nas primeiras atividades.
 
-    ### **Resumo**
+    | **Entrega**                                         | **Descrição**                                                                                             |
+    |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Definição do Produto**                            | Estabelecimento do conceito e do objetivo principal do produto.                                           |
+    | **Definição do Problema**                           | Identificação e definição clara do problema a ser solucionado pelo produto.                               |
+    | **Início do GitPages**                              | Criação do repositório GitPages para o gerenciamento do projeto e versionamento do conteúdo.              |
+    | **Conclusão da Ideia do Produto**                   | A ideia do produto foi discutida e fechada, com um consenso sobre a proposta final.                       |
+    | **Visão de Produto e Projeto**                      | Documentação da visão do produto e definição do escopo do projeto, com objetivos e metas claros.          |
+    | **Processo de Desenvolvimento de Software**         | Definição do processo e metodologia de desenvolvimento a ser seguido durante o projeto.                    |
 
-    ### **Reuniões**
+    ---
 
-=== "Sprint 2"
+    ### **🧐 Sprint Retrospective**
 
-    ## **Sprint 2**
+    !!! info "Ponto de reflexão"
+        A retrospectiva foi realizada para refletir sobre os pontos fortes e áreas de melhoria da sprint, promovendo aprendizado contínuo.
 
-    ### **Resumo**
+    - **Tópicos discutidos**: Durante a retrospectiva, foram abordados os desafios encontrados e os processos que funcionaram bem.
+    - **Conclusão**: Todas as entregas foram realizadas dentro do prazo, e o time expressou satisfação com o andamento do projeto, com sugestões de melhorias para a próxima sprint.
 
-    ### **Reuniões**
+    ---
 
-=== "Sprint 3"
+    ### **🏆 Conquistas da Sprint**
 
-    ## **Sprint 3**
+    !!! success "Vale comemorar"
 
-    ### **Resumo**
+        - **Entregas dentro do prazo**.
+        - **Ajustes realizados conforme feedback**.
+        - **Equipe alinhada e motivada para as próximas fases**.
 
-    ### **Reuniões**
+    ---
 
-=== "Sprint 4"
+    ### **📌 Próximos Passos**
 
-    ## **Sprint 4**
+    > Foco na execução da próxima sprint com a continuidade das entregas e integração das tecnologias escolhidas.
 
-    ### **Resumo**
+    ---
 
-    ### **Reuniões**
+    ### **🤝 Reuniões**
 
-=== "Sprint 5"
+    === "1° Reunião"
 
-    ## **Sprint 5**
+        **Conversa Inicial com Cliente**
 
-    ### **Resumo**
 
-    ### **Reuniões**
+        !!! info "Detalhes do Encontro"
 
-=== "Sprint 6"
+            - **Data**: 02/11/2024
 
-    ## **Sprint 6**
+            - **Horário**: 08:00
 
-    ### **Resumo**
+            - **Modalidade**: Videoconferência (Teams)
 
-    ### **Reuniões**
+            - **Participantes**: Equipe e Cliente
+
+        ---
+
+        **Propósito**
+
+        Esta reunião inicial teve como objetivo alinhar expectativas e definir as bases de colaboração para o projeto **Paraizo**. Foram discutidas as principais entregas, o escopo e o papel de cada Integrante, além dos próximos passos para o desenvolvimento do MVP.
+
+        ??? Tip "Gravação da Reunião"
+
+            <iframe src="https://drive.google.com/file/d/1Q5gbT6vvaXLLEpAR4xASCX9UY0Eg4GG_/preview"
+                            allow="autoplay"
+                            style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                                overflow: hidden;">
+            </iframe>
+
+        ---
+
+        **Principais Tópicos**
+
+        |  #  | **Tópico**                                                               |
+        | --- | ------------------------------------------------------------------------ |
+        | 1   | Apresentação dos membros da equipe                                       |
+        | 2   | Contextualização da disciplina e entendimento do propósito do projeto    |
+        | 3   | Definição e esclarecimento sobre o escopo do MVP 1                       |
+        | 3   | Definição e esclarecimento sobre o escopo do MVP 2                       |
+
+        ---
+
+        **Decisões Críticas**
+
+        !!! danger "Atenção"
+
+            Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento e a comunicação do projeto:
+
+
+
+        ---
+
+        **Observações Adicionais**
+
+        !!! warning "Atenção"
+
+            **Nota**: Nem todos os membros participaram da reunião.
+
+    === "2° Reunião"
+
+
+    === "3° Reunião"
