@@ -1,10 +1,12 @@
+# **Entregas**
+
 ??? abstract "Histórico de Revisão"
 
     | **Data** | **Versão** |        **Descrição**        |           **Autor**            |
     | :------: | :--------: | :-------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de Entregas | Maykon Júnio dos Santos Soares |
 
-## Vídeos de Apresentação
+## **Vídeos de Apresentação**
 
 === "Unidade 1"
 

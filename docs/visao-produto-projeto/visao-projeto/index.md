@@ -1,10 +1,12 @@
+# **Visão do Projeto**
+
 ??? abstract "Histórico de Revisão"
 
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
 
-## Iteração entre equipe e cliente
+## **Iteração entre equipe e cliente**
 
 | Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                  |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- |
@@ -14,7 +16,7 @@
 | Analista de QA         | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade.       | Pedro Miguel Martins           | Erick Miranda                                  |
 | Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel Martins                           |
 
-## Planejamento das Fases e/ou Iterações do Projeto
+## **Planejamento das Fases e/ou Iterações do Projeto**
 
 | Sprint | Produto (Entrega)                                                                                              | Data Início | Data Fim   | Quantidade de Dias |
 | ------ | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ------------------ |
@@ -27,7 +29,7 @@
 | 5      | Desenvolvimento - Entrega de MVP2                                                                              | 22/01/2025  | 04/02/2025 | 14                 |
 | 6      | Desenvolvimento - Entrega de MVP2                                                                              | 05/02/2025  | 13/02/2025 | 9                  |
 
-## Matriz de Comunicação
+## **Matriz de Comunicação**
 
 | **Ferramenta**                                 | **Objetivo**                                                                                                     | **Frequência**                               |
 | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -35,20 +37,20 @@
 | **:simple-googlemeet: Google Meet**            | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
 | **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
 
-#### Métodos e Frequência de Reuniões:
+#### **Métodos e Frequência de Reuniões:**
 
 | **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
 | ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |
 | **Reunião de planejamento e revisão de Sprint** | Planejamento e revisão do progresso das sprints, alinhamento da equipe. | Semanal        |
 
-#### Frequência de Interações com o Cliente:
+#### **Frequência de Interações com o Cliente**
 
 | **Interação**                           | **Objetivo**                                          | **Frequência**      |
 | --------------------------------------- | ----------------------------------------------------- | ------------------- |
 | **Revisões de Sprint**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
 | **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
 
-## Gerenciamento de Riscos
+## **Gerenciamento de Riscos**
 
 Devido às incertezas e receios que surgem durante um projeto, é importante ceder atenção ao gerenciamento de riscos como forma de prevenir possíveis situações que possam abalar o cenário do time.
 
