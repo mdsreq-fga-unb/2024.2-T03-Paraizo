@@ -50,16 +50,6 @@
 
     ---
 
-    #### **🔄 Objetivo da Documentação**
-
-    A documentação será o **guia** para todo o processo de desenvolvimento. Através dela, garantimos que:
-
-    - O projeto será desenvolvido de forma **satisfatória e organizada**.
-    - Qualquer dúvida poderá ser resolvida de maneira rápida, com fácil acesso às informações.
-    - A comunicação entre os membros será fluída, com todos cientes do que está sendo feito e de como cada etapa contribui para o sucesso do projeto.
-
-    ---
-
 === "Unidade 2"
 
     ### **Unidade 2**
