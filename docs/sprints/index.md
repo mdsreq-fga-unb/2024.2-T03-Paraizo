@@ -117,8 +117,10 @@
         | --- | ------------------------------------------------------------------------ |
         | 1   | Apresentação dos membros da equipe                                       |
         | 2   | Contextualização da disciplina e entendimento do propósito do projeto    |
-        | 3   | Definição e esclarecimento sobre o escopo do MVP 1                       |
-        | 3   | Definição e esclarecimento sobre o escopo do MVP 2                       |
+        | 3   | Definição de ferramenta de comunicação da equipe    |
+        | 4   | Definição de ferramenta organizacional da equipe    |
+        | 5   | Definição e esclarecimento sobre o escopo do MVP 1                       |
+        | 6   | Definição e esclarecimento sobre o escopo do MVP 2                       |
 
         ---
 
@@ -128,10 +130,10 @@
 
             Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento e a comunicação do projeto:
 
-            |  #  | **Decisões**                                                               |
-            | --- | ---------------------------------------------------------------------------|
-            | 1   | Escopo inicial do projeto                                                  |
-
+            - Escopo inicial do projeto
+            - Definido que reuniões com cliente serão a cada 2 semanas sabádo 08 horas
+            - Definido ferramenta para Reuniões sendo o Temas
+            - Definido ferramenta organizacional sendo o Figma
 
 
 
@@ -141,9 +143,128 @@
 
         !!! warning "Atenção"
 
-            **Nota**: Nem todos os membros participaram da reunião.
+            **Nota**: Nem todos os membros da equipe puderam estar presentes.
 
     === "2° Reunião"
 
+        **Planejamento de Entrega da Unidade**
+
+        !!! info "Detalhes do Encontro"
+
+            - **Data**: 05/11/2024
+
+            - **Horário**: 20:00
+
+            - **Modalidade**: Videoconferência (Teams)
+
+            - **Participantes**: Equipe
+
+        ---
+
+        **Propósito**
+
+        Essa reunião teve como premissa a divisão de atividades presentes na entrega da Unidade 1, bem como a definição de prazos. Dessa maneira a reunião buscou revisar tudo que já tinha sido até o momento, tópicos 1, 2 e 3. E também estabelecer os prazos para a construção dos tópicos 4 e 5.
+
+        ??? Tip "Gravação da Reunião"
+
+            <iframe src="https://drive.google.com/file/d/1ANgseu9PuYpAiV6JJk2LWOtl1kjf_sMI/preview"
+                            allow="autoplay"
+                            style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                                overflow: hidden;">
+            </iframe>
+
+        ---
+
+        **Principais Tópicos**
+
+        |  #  | **Tópico**                                                               |
+        | --- | ------------------------------------------------------------------------ |
+        | 1   | Revisão de documentação anterior                                       |
+        | 2   | Transferência de documentação do google docs para o gitpages    |
+        | 3   | Definição de Tecnologias a serem utilizadas    |
+        | 4   | Definição de papeis dentro da equipe    |
+        | 5   | Definição de prazos para entregas dos tópicos 4 e 5                       |
+        | 6   | Bate papo inicial sobre escolha de processo processo de desenvolvimento                       |
+
+        ---
+
+        **Decisões Críticas**
+
+        !!! danger "Atenção"
+
+            Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento do projeto:
+
+            - Definido o dia 10/11/2024 como dia limite para inclusão dos tópicos 4 e 5
+            - Definido as tecnologias para desevolvimento e comunicação bem como suas versões
+            - Definido os papeis dentro da equipe
+
+
+
+        ---
+
+        **Observações Adicionais**
+
+        !!! warning "Atenção"
+
+            **Nota**: Nem todos os membros da equipe puderam estar presentes.
+
 
     === "3° Reunião"
+
+        **Atualização sobre entrega da Unidade**
+
+        !!! info "Detalhes do Encontro"
+
+            - **Data**: 10/11/2024
+
+            - **Horário**: 14:00
+
+            - **Modalidade**: Videoconferência (Teams)
+
+            - **Participantes**: Equipe
+
+        ---
+
+        **Propósito**
+
+        A reunião em questão teve o objetivo de listar todos os tópicos desenvolvidos até o momento e checar seus prazos para conclusão. Além disso foi definido o tipo de processo de desenvolvimento de software e a metodologia.
+
+        ??? Tip "Gravação da Reunião"
+
+            <iframe src="https://drive.google.com/file/d/1JcR-VWKoZ_iOZRJ-cSMqi0ekv9nbObK3/preview"
+                            allow="autoplay"
+                            style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                                overflow: hidden;">
+            </iframe>
+
+        ---
+
+        **Principais Tópicos**
+
+        |  #  | **Tópico**                                                               |
+        | --- | ------------------------------------------------------------------------ |
+        | 1   | Revisão de documentação já criada                                       |
+        | 2   | Finalização da transferência de documentação do google docs para o gitpages    |
+        | 3   | Definição de Abordagem, Ciclo de Vida e Processo de Desenvolvimento    |
+        | 4   | Definição do dia para a gravação do vídeo de entrega da unidade    |
+
+        ---
+
+        **Decisões Críticas**
+
+        !!! danger "Atenção"
+
+            Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento projeto:
+
+            - Definição da abordagem sendo agil, o ciclo de vida sendo RAD e o processo de Desenvolvimento sendo dual
+            - Definido o dia 11/11 como dia limite para a gravação do vídeo de entrega unidade e a finalização de todas as alterações para a entrega da Unidade 1
+
+
+
+        ---
+
+        **Observações Adicionais**
+
+        !!! warning "Atenção"
+
+            **Nota**: Sem notas adicionais.
