@@ -9,7 +9,7 @@
 
 ---
 
-## **Cenário atual do cliente e do négocio**
+## **Cenário atual do cliente e do negócio**
 
 ### **Introdução ao neógocio e contexto**
 
@@ -57,7 +57,7 @@ Diagrama de Ishikawa - Espaço Janayna Paraizo.
 Segue o conjunto preliminar das características deste produto:
 
 - O sistema deverá ter a Centralização dos dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores;
-- O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados;
+- O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de consultas e facilitando a avaliação dos tratamentos realizados;
 - O sistema deverá ter uma Landing page para divulgação de informações da clínica, como serviços, quadro de funcionários, avaliações e resultados;
 - O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes, fazendo com que pacientes possam marcar consultas sem a intervenção direta de funcionários;
 - Integração com o Google Agenda para a clínica, resultando em uma visualização mais ampla de horários disponíveis; e
