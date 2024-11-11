@@ -40,11 +40,11 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 
 ### **Objetivos do Produto**
 
-<p style="text-indent: 50px;text-align: justify;">O principal objetivo do produto "Paraizo" é facilitar a gestão administrativa da clínica, tornando os processos mais eficientes e automatizados, resultando em um serviço de melhor qualidade para fidelizar pacientes como resultado de uma boa qualidade na prestação de serviço e consequentemente resultando na expansão do negócio. Já sobre os objetivos técnicos temos que o produto precisa se comunicar com o Google Agenda para marcar as sessões diretamente sem intervenção do administrador, apresentar contas específicas para os funcionários do empreendimento para visualizarem sua agenda de compromissos e informações de seus pacientes, além de contas para os próprios pacientes visualizarem seus agendamentos e evolução ao longo do tempo.</p>
+O objetivo do produto Paraizo é aprimorar a gestão administrativa e financeira da Clínica Janaina Paraizo, substituindo os processos manuais de registro que não atendem mais às necessidades da organização. O sistema deve centralizar as informações dos pacientes, criando perfis individuais para cada um, permitindo o acompanhamento e análise do histórico e evolução de cada caso.
 
-!!! info "Características da Solução"
+Outro objetivo é fornecer um dashboard que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados. O produto também deve possuir uma landing page para divulgar informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração.
 
-    <p style="text-indent: 50px;text-align: justify;">A solução deve incluir funcionalidades como agendamento automático de consultas, gerenciamento financeiro, cadastro de pacientes, cadastro de serviços e cadastro de funcionários.</p>
+O sistema tem como objetivo agilizar a entrega de relatórios aos clientes, disponibilizando os dados de forma imediata. Além disso, deve possibilitar a visualização e o agendamento de consultas, com integração ao Google Agenda da clínica, facilitando a gestão dos horários. O principal objetivo é integrar e automatizar esses processos, melhorando a interação com outras plataformas e melhorando a captação de clientes resultando na expasão da empresa.
 
 ### **Tecnologias a Serem Utilizadas**
 
