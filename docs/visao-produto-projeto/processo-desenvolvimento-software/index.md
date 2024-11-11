@@ -53,22 +53,6 @@
 | Tipo de Projeto e Risco   | 2         | 5         | 2         | 2             | 5       | 3                     |
 | **Total**                 | :x: 7     | :x: 11    | :x: 9     | :x: 8         | :x: 6   | :white_check_mark: 14 |
 
-### **RAD**
-
-<p style="text-indent: 50px;text-align: justify;">
-O Processo RAD (Rapid Application Development) é uma metodologia de desenvolvimento de software que prioriza a rapidez, flexibilidade e colaboração constante com o cliente. Através de ciclos curtos e iterativos, o RAD utiliza protótipos rápidos para validar requisitos e fazer ajustes em tempo real, permitindo que o produto evolua conforme o feedback dos usuários. A ênfase está na entrega incremental de funcionalidades e no uso de ferramentas de desenvolvimento que aceleram a criação de interfaces e funcionalidades, sem a necessidade de muita codificação manual. Embora seja ideal para projetos de pequeno a médio porte, o RAD pode enfrentar desafios em escalabilidade e manutenção devido à ênfase na prototipagem em vez da documentação formal. </p>
-
-![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
-/// caption
-Representação gráfica ciclo de vida RAD.
-///
-
-!!! note "Sobre"
-
-    - É considera uma abordagem ágil, centrada no usuário e design do produto
-    - Fortemente baseado no feedback do usuário
-    - Os requisitos do produto são tratados como variáveis
-
 ---
 
 ## **Etapas do RAD**

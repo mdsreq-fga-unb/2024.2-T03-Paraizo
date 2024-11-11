@@ -92,7 +92,7 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 ### **Análise de Viabilidade**
 
 <p style="text-indent: 50px; text-align: justify;">
-Analisando o mercado podemos constatar que é uma área carente de soluções que buscam atender as demandas do cliente, tendo soluções voltadas para o gerenciamento no geral sem atender às necessidades específicas do cliente. Já ao decompor os pormenores do produto, entende-se que há viabilidade técnica tendo em vista que as soluções que serão desenvolvidas são de fácil construção e podem ser facilmente remodeladas para se moldarem aos gostos do cliente.
+Analisando o mercado podemos constatar que é uma área carente de soluções que buscam atender as demandas do cliente, como uma solução que venha trazer os dados dos pacientes de maneira simples e de fácil acesso. Já ao decompor os pormenores do produto, entende-se que há viabilidade técnica por conta tendo em vista que as soluções que serão desenvolvidas são de fácil construção e podem ser facilmente remodeladas para se moldarem aos gostos do cliente.
 </p>
 
 ### **Impacto da Solução**
@@ -149,3 +149,14 @@ O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversa
 <p style="text-indent: 50px; text-align: justify;">
 O processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
 </p>
+
+![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
+/// caption
+Representação gráfica ciclo de vida RAD.
+///
+
+!!! note "Características"
+
+    - É considera uma abordagem ágil, centrada no usuário e design do produto
+    - Fortemente baseado no feedback do usuário
+    - Os requisitos do produto são tratados como variáveis
