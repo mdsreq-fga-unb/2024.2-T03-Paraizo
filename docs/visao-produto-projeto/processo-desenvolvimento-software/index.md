@@ -55,11 +55,12 @@
 
 ### **RAD**
 
-<p align="center">
+O **Processo RAD (Rapid Application Development)** é uma metodologia de desenvolvimento de software que prioriza a rapidez, flexibilidade e colaboração constante com o cliente. Através de ciclos curtos e iterativos, o RAD utiliza protótipos rápidos para validar requisitos e fazer ajustes em tempo real, permitindo que o produto evolua conforme o feedback dos usuários. A ênfase está na entrega incremental de funcionalidades e no uso de ferramentas de desenvolvimento que aceleram a criação de interfaces e funcionalidades, sem a necessidade de muita codificação manual. Embora seja ideal para projetos de pequeno a médio porte, o RAD pode enfrentar desafios em escalabilidade e manutenção devido à ênfase na prototipagem em vez da documentação formal.
 
-<img src="https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb"/>
-
-</p>
+![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
+/// caption
+Representação gráfica ciclo de vida RAD.
+///
 
 !!! note "Sobre"
 
@@ -102,6 +103,9 @@ Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvol
 Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.
 
 ![alt text](../../assets/image.png)
+/// caption
+Representação gráfica de processo dual-track Agile.
+///
 
 #### Dual-track Agile (adaptado)
 

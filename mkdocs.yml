@@ -132,6 +132,9 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
   - mdx_include
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 nav:
   - Home: index.md

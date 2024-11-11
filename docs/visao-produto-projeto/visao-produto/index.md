@@ -32,7 +32,10 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 
 <p style="text-indent: 50px;text-align: justify;"> A PARAIZO atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
 
-<iframe width="100%" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<iframe width="900" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+/// caption
+Diagrama de Ishikawa.
+///
 
 ---
 
@@ -103,11 +106,11 @@ Em suma, a criação do software simplificaria o agendamento de atendimentos, al
 
 ### **Estratégia Priorizada**
 
-* **Abordagem:** Ágil
+- **Abordagem:** Ágil
 
-* **Ciclo de vida:** Ágil
+- **Ciclo de vida:** Ágil
 
-* **Processo:** RAD
+- **Processo:** RAD
 
 ### **Quadro Comparativo**
 
@@ -115,21 +118,21 @@ Em suma, a criação do software simplificaria o agendamento de atendimentos, al
 O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.
 </p>
 
-| Características | RAD | Scrum | 
-| ---------- | ----------- | -------------- | 
-| Abordagem Geral  | Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas | Framework ágil baseado em sprints curtos e entregas incrementais |
-| Foco em Arquitetura | Menor foco inicial em arquitetura; ênfase em protótipos | Maior atenção à arquitetura para manter flexibilidade |
-| Estrutura de Processos | Estrutura flexível, com iterações rápidas e prototipagem | Estrutura bem definida com sprints, backlog e eventos específicos |
-| Flexibilidade de Requisitos | Alta; requisitos podem ser alterados durante o desenvolvimento | Moderada; alterações podem ser aceitas, mas devem passar pelo backlog e priorização |
-| Colaboração com Clientes | Intensa; cliente envolvido em feedback frequente e revisão de protótipos | Essencial; cliente revisa e prioriza o backlog e participa de revisões de sprint |
-| Complexidade do Processo | Baixa a moderada; processos adaptáveis e menos formais | Moderada a alta; requer disciplina para seguir eventos e artefatos do Scrum |
-| Qualidade Técnica | Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade | Alta; qualidade técnica é essencial, com revisões e melhorias contínuas |
-| Práticas de Desenvolvimento | Prototipagem rápida, foco em entrega de funcionalidades principais | Desenvolvimento incremental, com práticas ágeis como revisão de código e testes |
-| Adaptação ao Projeto | Ideal para projetos com escopo indefinido ou mudanças constantes | Adequado para projetos complexos e de longo prazo com escopo claro, mas adaptável |
-| Documentação | Documentação mínima, foco em protótipos e entregas rápidas | Documentação moderada, geralmente vinculada ao backlog e requisitos do sprint |
-| Controle de Qualidade | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final | Controle rigoroso; envolve revisões contínuas e testes integrados nos sprints |
-| Escalabilidade  | Limitada, mais indicada para projetos pequenos e médios | Alta, adequado para grandes equipes e projetos complexos |
-| Suporte a Equipes de Desenvolvimento | Moderado; mais dependente do feedback do cliente e protótipos rápidos | Alto; suporta equipes organizadas com papéis claros como Product Owner e Scrum Master |
+| Características                      | RAD                                                                            | Scrum                                                                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| Abordagem Geral                      | Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas     | Framework ágil baseado em sprints curtos e entregas incrementais                      |
+| Foco em Arquitetura                  | Menor foco inicial em arquitetura; ênfase em protótipos                        | Maior atenção à arquitetura para manter flexibilidade                                 |
+| Estrutura de Processos               | Estrutura flexível, com iterações rápidas e prototipagem                       | Estrutura bem definida com sprints, backlog e eventos específicos                     |
+| Flexibilidade de Requisitos          | Alta; requisitos podem ser alterados durante o desenvolvimento                 | Moderada; alterações podem ser aceitas, mas devem passar pelo backlog e priorização   |
+| Colaboração com Clientes             | Intensa; cliente envolvido em feedback frequente e revisão de protótipos       | Essencial; cliente revisa e prioriza o backlog e participa de revisões de sprint      |
+| Complexidade do Processo             | Baixa a moderada; processos adaptáveis e menos formais                         | Moderada a alta; requer disciplina para seguir eventos e artefatos do Scrum           |
+| Qualidade Técnica                    | Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade | Alta; qualidade técnica é essencial, com revisões e melhorias contínuas               |
+| Práticas de Desenvolvimento          | Prototipagem rápida, foco em entrega de funcionalidades principais             | Desenvolvimento incremental, com práticas ágeis como revisão de código e testes       |
+| Adaptação ao Projeto                 | Ideal para projetos com escopo indefinido ou mudanças constantes               | Adequado para projetos complexos e de longo prazo com escopo claro, mas adaptável     |
+| Documentação                         | Documentação mínima, foco em protótipos e entregas rápidas                     | Documentação moderada, geralmente vinculada ao backlog e requisitos do sprint         |
+| Controle de Qualidade                | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final | Controle rigoroso; envolve revisões contínuas e testes integrados nos sprints         |
+| Escalabilidade                       | Limitada, mais indicada para projetos pequenos e médios                        | Alta, adequado para grandes equipes e projetos complexos                              |
+| Suporte a Equipes de Desenvolvimento | Moderado; mais dependente do feedback do cliente e protótipos rápidos          | Alto; suporta equipes organizadas com papéis claros como Product Owner e Scrum Master |
 
 ### **Justificativa**
 
