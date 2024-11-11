@@ -49,7 +49,7 @@ Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornece
 
 O produto também contará com uma landing page, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda da clínica, facilitando a gestão dos horários por parte da equipe da clínica.
 
-Características da solução:
+### **Características da solução**
 
 - O sistema deverá ter a Centralização dos dados dos pacientes, criando perfis personalizados com todas as informações cadastrais e de atendimento dos pacientes.
 - O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados.
