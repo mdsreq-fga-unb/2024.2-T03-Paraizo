@@ -11,7 +11,7 @@
 
 ## **Cenário atual do cliente e do negócio**
 
-### **Introdução ao neógocio e contexto**
+### **Introdução ao negócio e contexto**
 
 <p style="text-indent: 50px;text-align: justify;">
 O <b>Espaço Janayna Paraizo</b> é uma clínica de fisioterapia no Gama, Distrito Federal, fundada em meados de 2020 pela fisioterapeuta Janayna Paraizo. A clínica oferece serviços como Kinesio Taping, Acupuntura, Dry Needling, Ventosaterapia, RPG, entre outros, com foco no tratamento integrado de todo o corpo para melhorar a qualidade de vida dos pacientes. Operando atualmente de terça a quinta, o <b>Espaço Janayna Paraizo</b> planeja expandir seu atendimento.</p>
