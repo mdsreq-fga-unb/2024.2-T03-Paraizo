@@ -69,6 +69,8 @@ Representação gráfica ciclo de vida RAD.
     - Fortemente baseado no feedback do usuário
     - Os requisitos do produto são tratados como variáveis
 
+---
+
 ## **Etapas do RAD**
 
 ### **Etapa 1 - Planejamento dos requisitos**

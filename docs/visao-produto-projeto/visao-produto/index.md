@@ -110,6 +110,8 @@ A criação do software PARAIZO contribuiria para a melhor gestão operacional d
 
 Em suma, a criação do software simplificaria o agendamento de atendimentos, além de otimizar a gestão financeira e de pessoas. Isso resultaria em uma administração mais eficiente e ágil do negócio, proporcionando maior controle e facilidade nas operações.
 
+---
+
 ## **Estratégias de Engenharia de Software**
 
 ### **Estratégia Priorizada**
