@@ -69,9 +69,9 @@ Representação gráfica ciclo de vida RAD.
     - Fortemente baseado no feedback do usuário
     - Os requisitos do produto são tratados como variáveis
 
-## Etapas do RAD
+## **Etapas do RAD**
 
-### Etapa 1 - Planejamento dos requisitos
+### **Etapa 1 - Planejamento dos requisitos**
 
 <p style="text-indent: 50px;text-align: justify;">Na etapa de planejamento dos requisitos, fazemos uma análise completa do cenário e elicitamos os requisitos, nesse projeto nós seguimos o material do Professor George Marsicano(2023)[4], por isso nós seguimos os pontos, Descoberta e elicitação de requisitos, Análise e consenso de requisitos, Declaração de requisitos, Verificação e Validação e por último a Organização e atualização.</p>
 
@@ -83,7 +83,7 @@ Representação gráfica ciclo de vida RAD.
 | Verificação e Validação               | Feedback                        | Google Meet | User Stories validados                |
 | Organização e Atualização             | MoSCoW e Kanban                 | Trello      | Definição de prioridades(MVP1 e MVP2) |
 
-### Etapa 2 - User Design
+### **Etapa 2 - User Design**
 
 <p style="text-indent: 50px;text-align: justify;">Na etapa de User Design, é feito a prototipação da aplicação, no caso é feito o protótipo equivalente aos User Stories relacionados ao MVP1 na terceira unidade e ao MVP2 na quarta unidade.</p>
 
@@ -91,7 +91,7 @@ Representação gráfica ciclo de vida RAD.
 | ------------ | --------------- | ---------- | ---------------------------- |
 | Prototipação | Mock-up digital | Figma      | Protótipo de alta fidelidade |
 
-### Etapa 3 - Desenvolvimento
+### **Etapa 3 - Desenvolvimento**
 
 <p style="text-indent: 50px;text-align: justify;">Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer ao mesmo tempo que a etapa de User Design, com isso, o desenvolvimento ocorrerá ao mesmo tempo com a prototipação.</p>
 
@@ -99,7 +99,7 @@ Representação gráfica ciclo de vida RAD.
 | --------------- | --------------------------- | --------------- | -------- |
 | Desenvolvimento | Dual-track Agile (adaptado) | VS Code, Github | Produto  |
 
-#### Dual-track Agile
+#### **Dual-track Agile**
 
 <p style="text-indent: 50px;text-align: justify;">Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.</p>
 
@@ -108,13 +108,14 @@ Representação gráfica ciclo de vida RAD.
 Representação gráfica de processo dual-track Agile.
 ///
 
-#### Dual-track Agile (adaptado)
+!!! Tip "Dual-track Agile (adaptado)"
 
-<p style="text-indent: 50px;text-align: justify;">Dual-Track Agile (adapatado) é um abordagem que vai dividir o processo de desenvolvimento de software em duas trilhas paralela:</P>
-<p style="text-indent: 50px;text-align: justify;">Desenvolvimento e Testes. Fazendo uma entrega contínua que visa otimizar desenvolvimento e validação, com uma implementação</P>
-eficiente.
+    <p style="text-indent: 50px;text-align: justify;">Dual-Track Agile (adapatado) é um abordagem que vai dividir o processo de desenvolvimento de software em duas trilhas paralela:</P>
 
-### Etapa 4 - Testes
+
+    <p style="text-indent: 50px;text-align: justify;">Desenvolvimento e Testes. Fazendo uma entrega contínua que visa otimizar desenvolvimento e validação, com uma implementação eficiente.</P>
+
+### **Etapa 4 - Testes**
 
 <p style="text-indent: 50px;text-align: justify;">Na etapa de testagem será feito os testes de todas as funcionalidades da aplicação</p>
 
