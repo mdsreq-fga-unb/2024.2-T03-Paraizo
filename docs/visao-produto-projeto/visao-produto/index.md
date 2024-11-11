@@ -14,19 +14,21 @@
 ### **Introdução ao neógocio e contexto**
 
 <p style="text-indent: 50px;text-align: justify;">
-A PARAIZO é uma clínica de fisioterapia no Gama, Distrito Federal, fundada pela fisioterapeuta Janayna Paraizo. A clínica oferece serviços como Kinesio Taping, Acupuntura, Dry Needling, Ventosaterapia, RPG, entre outros, com foco no tratamento integrado de todo o corpo para melhorar a qualidade de vida dos pacientes. Operando atualmente de terça a quinta, a PARAIZO planeja expandir seu atendimento.</p>
+O <b>Espaço Janayna Paraizo</b> é uma clínica de fisioterapia no Gama, Distrito Federal, fundada em meados de 2020 pela fisioterapeuta Janayna Paraizo. A clínica oferece serviços como Kinesio Taping, Acupuntura, Dry Needling, Ventosaterapia, RPG, entre outros, com foco no tratamento integrado de todo o corpo para melhorar a qualidade de vida dos pacientes. Operando atualmente de terça a quinta, o <b>Espaço Janayna Paraizo</b> planeja expandir seu atendimento.</p>
 <p style="text-indent: 50px;text-align: justify;">
-No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e armazenar os dados dos pacientes (atualmente geridos manualmente em papéis ou dispositivos de uma única funcionária) e agendar sessões, o que dificulta o crescimento do atendimento e sobrecarrega a equipe. Esses problemas resultam em baixa eficiência e limitação na capacidade de expansão e promoção do estabelecimento.</p>
+No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e armazenar os dados dos pacientes (atualmente geridos manualmente em documentos manuscritos ou dispositivos de uma única funcionária) e agendar sessões, o que dificulta o crescimento do atendimento e sobrecarrega a equipe. Esses problemas resultam em baixa eficiência e limitação na capacidade de expansão e promoção do estabelecimento.</p>
 
 ### **Identificação da Oportunidade ou Problema**
 
-<p style="text-indent: 50px;text-align: justify;"> As oportunidades para a clínica PARAIZO giram em torno de aumentar sua visibilidade e eficiência operacional. A criação de um website seria essencial para atrair novos clientes, permitindo que as pessoas conheçam melhor os serviços oferecidos, o perfil dos profissionais, os diferenciais da clínica e os resultados obtidos com os tratamentos. Isso traria uma presença digital estratégica, facilitando a divulgação da clínica. </p>
+<p style="text-indent: 50px;text-align: justify;"> As oportunidades para a clínica <b>Espaço Janayna Paraizo</b> giram em torno de aumentar sua visibilidade e eficiência operacional. A criação de um website seria essencial para atrair potenciais clientes, permitindo que as pessoas conheçam melhor os serviços oferecidos, o perfil dos profissionais, os diferenciais da clínica e os resultados obtidos com os tratamentos. Isso traria uma presença digital estratégica, facilitando a divulgação da clínica. </p>
 <p style="text-indent: 50px;text-align: justify;"> Além disso, a implantação de uma aplicação web centralizada reduziria significativamente o tempo gasto no registro, busca e visualização das informações dos pacientes. Com isso, todos os funcionários teriam acesso fácil e organizado aos dados dos pacientes, o que descentralizaria as tarefas e aliviaria a carga de trabalho de uma única pessoa. </p>
 <p style="text-indent: 50px;text-align: justify;"> Outra oportunidade importante é a implementação de uma agenda integrada à aplicação web, permitindo o registro de horários livres e ocupados para sessões. Isso daria tanto aos funcionários quanto aos clientes uma visão clara dos horários disponíveis, permitindo que os clientes agendem suas sessões de forma autônoma, sem a necessidade de intervenção direta da equipe, otimizando o fluxo de trabalho e oferecendo mais conveniência aos pacientes. </p>
 
+<p style="text-indent: 50px;text-align: justify;"> Para melhor compreensão do problema identificado, foi elaborado um diagrama de Ishikawa, que apresenta as principais causas e fatores relacionados ao problema. </p>
+
 <iframe width="1920" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 /// caption
-Diagrama de Ishikawa.
+Diagrama de Ishikawa - Espaço Janayna Paraizo.
 ///
 
 ### **Desafios do Projeto**
@@ -36,7 +38,7 @@ Diagrama de Ishikawa.
 
 ### **Segmentação de Clientes**
 
-<p style="text-indent: 50px;text-align: justify;"> A PARAIZO atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
+<p style="text-indent: 50px;text-align: justify;"> O <b>Espaço Janayna Paraizo</b> atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
 
 ---
 
@@ -44,13 +46,11 @@ Diagrama de Ishikawa.
 
 ### **Objetivos do Produto**
 
-O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos (informações referêntes a seus disturbios e problemas físicos), histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta do tempo significativo que esse processo exige atualemente e pela centralização deste trabalho em uma só funcionária.
+<p style="text-indent: 50px;text-align: justify;"> O objetivo do produto <b>Paraizo</b> é aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos (informações referêntes a seus disturbios e problemas físicos), histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta do tempo significativo que esse processo exige atualemente e pela centralização deste trabalho em uma só funcionária. </p>
 
-Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de login, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos.
+<p style="text-indent: 50px;text-align: justify;"> Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de <i>login</i>, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos. Vale ressaltar que para isso o sistema deverá ser uma solução <i>web</i> com a capacidade de ser reproduzida em diferentes tamanhos de tela.</p>
 
-O produto também contará com uma landing page, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.
-
-Todas as soluções descritas acima serão implementadas em uma plataforma web responsiva.
+<p style="text-indent: 50px;text-align: justify;"> O produto também contará com uma <i>landing page</i>, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.  </p>
 
 ### **Características da solução**
 
@@ -59,8 +59,9 @@ Segue o conjunto preliminar das características deste produto:
 - O sistema deverá ter a Centralização dos dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores;
 - O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados;
 - O sistema deverá ter uma Landing page para divulgação de informações da clínica, como serviços, quadro de funcionários, avaliações e resultados;
-- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes;
-- Integração com o Google Agenda para a clínica, facilitando a visualização de horários em dispositivos mobile's.
+- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes, fazendo com que pacientes possam marcar consultas sem a intervenção direta de funcionários;
+- Integração com o Google Agenda para a clínica, resultando em uma visualização mais ampla de horários disponíveis; e
+- O sistema deverá ser implementado em uma plataforma web, podendo ser utilizada em diferentes dispositivos.
 
 ### **Pesquisa de Mercado e Análise Competitiva**
 
@@ -72,7 +73,7 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 
 !!! note "Vale ressaltar"
 
-    <p style="text-indent: 50px;text-align: justify;">O "Paraizo" se destaca, principalmente, pela forma com que ele diminui a carga de trabalho dos funcionários da clínica, uma vez que o sistema de agendamento e o login para visualização das infomações do paciente descentraliza a responsabilidade dessas atividades, permitindo que, sem a necessidade de contato com algum representante da clínica, uma consulta seja marcada ou que algum documento desejado pelo paciente seja obtido.</p>
+    <p style="text-indent: 50px;text-align: justify;">O produto <b>Paraizo</b> se destaca, principalmente, pela forma com que ele diminui a carga de trabalho dos funcionários da clínica, uma vez que o sistema de agendamento e o login para visualização das infomações do paciente descentraliza a responsabilidade dessas atividades, permitindo que, sem a necessidade de contato com algum representante da clínica, uma consulta seja marcada ou que algum documento desejado pelo paciente seja obtido.</p>
 
 ### **Análise de Viabilidade**
 
@@ -103,7 +104,6 @@ A respeito da competência técnica da equipe, apesar de parte da equipe não ap
 | **:material-microsoft-teams: Microsoft Teams** | Plataforma para comunicação e reuniões internas           | Comunicação                    |
 | **:simple-googlemeet: Google Meet**            | Plataforma para reuniões com o cliente                    | Comunicação                    |
 | **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona para suporte rápido                | Comunicação                    |
-
 
 ### **Impacto da Solução**
 
@@ -160,7 +160,6 @@ O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversa
 Com o intuito de escolher a melhor abordágem de desenvolvimento de software para o desenvolvimento desse projeto, será utilizado o método GUPTA, que estabelece critérios importantes para essa definição. A seguir, serão apresentados as análises feitas pela equipe com relação às Características dos Requisitos, Status da Equipe de Desenvolvimento, Envolvimento do Usuário e Tipo de Projeto e Risco Associado.
 </p>
 
-
 | Requisitos                                                  | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
 | ----------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
 | Os requisitos são fáceis de entender e definir?             | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :x: Sim                |
@@ -203,15 +202,14 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Tipo de Projeto e Risco   | 2         | 5         | 2         | 2             | 5       | 3                     |
 | **Total**                 | :x: 7     | :x: 11    | :x: 9     | :x: 8         | :x: 6   | :white_check_mark: 14 |
 
-
 <p style="text-indent: 50px; text-align: justify;">
 Baseado na análise comparativa entre os processos RAD e Scrum, junto com a análise através do método GUPTA, o processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
 </p>
 
 ![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
-
+/// caption
 Representação gráfica ciclo de vida RAD.
-
+///
 
 !!! note "Características"
 
