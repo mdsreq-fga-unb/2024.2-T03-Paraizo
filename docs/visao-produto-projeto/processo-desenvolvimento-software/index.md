@@ -100,7 +100,8 @@ Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvol
 #### Dual-track Agile
 
 Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.
-![alt text](image.png)
+
+![alt text](../../assets/image.png)
 
 #### Dual-track Agile (adaptado)
 
