@@ -23,6 +23,11 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 <p style="text-indent: 50px;text-align: justify;"> Além disso, a implantação de uma aplicação web centralizada reduziria significativamente o tempo gasto no registro, busca e visualização das informações dos pacientes. Com isso, todos os funcionários teriam acesso fácil e organizado aos dados dos pacientes, o que descentralizaria as tarefas e aliviaria a carga de trabalho de uma única pessoa. </p>
 <p style="text-indent: 50px;text-align: justify;"> Outra oportunidade importante é a implementação de uma agenda integrada à aplicação web, permitindo o registro de horários livres e ocupados para sessões. Isso daria tanto aos funcionários quanto aos clientes uma visão clara dos horários disponíveis, permitindo que os clientes agendem suas sessões de forma autônoma, sem a necessidade de intervenção direta da equipe, otimizando o fluxo de trabalho e oferecendo mais conveniência aos pacientes. </p>
 
+<iframe width="1920" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+/// caption
+Diagrama de Ishikawa.
+///
+
 ### **Desafios do Projeto**
 
 <p style="text-indent: 50px;text-align: justify;"> Os principais desafios do projeto incluem o desenvolvimento de uma solução web capaz de registrar todas as informações essenciais sobre os pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, além das classificações e tipos de disfunções de movimento tratadas na fisioterapia. </p>
@@ -31,11 +36,6 @@ No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e
 ### **Segmentação de Clientes**
 
 <p style="text-indent: 50px;text-align: justify;"> A PARAIZO atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
-
-<iframe width="900" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
-/// caption
-Diagrama de Ishikawa.
-///
 
 ---
 
