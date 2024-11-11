@@ -43,7 +43,7 @@ Diagrama de Ishikawa.
 
 ### **Objetivos do Produto**
 
-O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta da quantidade significativa de pacientes.
+O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta da quantidade significativa de pacientes.
 
 Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de login, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos.
 
@@ -51,11 +51,11 @@ O produto também contará com uma landing page, que divulgará informações or
 
 ### **Características da solução**
 
-- O sistema deverá ter a Centralização dos dados dos pacientes, criando perfis personalizados com todas as informações cadastrais e de atendimento dos pacientes.
-- O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados.
-- O sistema deverá ter uma Landing page para divulgação de informações organizacionais, como serviços, quadro de funcionários, avaliações e resultados, promovendo transparência e credibilidade.
-- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes.
-- Integração com o Google Agenda da clínica para facilitar a visualização de horários em dispositivos mobiles.
+- O sistema deverá ter a Centralização dos dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores;
+- O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados;
+- O sistema deverá ter uma Landing page para divulgação de informações organizacionais, como serviços, quadro de funcionários, avaliações e resultados, promovendo transparência e credibilidade;
+- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes; e
+- Integração com o Google Agenda da clínica para facilitar a visualização de horários em dispositivos mobile's.
 
 ### **Tecnologias a Serem Utilizadas**
 
