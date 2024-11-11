@@ -50,7 +50,7 @@ Diagrama de Ishikawa - Espaço Janayna Paraizo.
 
 <p style="text-indent: 50px;text-align: justify;"> Já ao olhar para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de <i>login</i>, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos. Vale ressaltar que para isso o sistema deverá ser uma solução <i>web</i> com a capacidade de ser reproduzida em diferentes tamanhos de tela.</p>
 
-<p style="text-indent: 50px;text-align: justify;"> O produto também contará com uma <i>landing page</i>, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.  </p>
+<p style="text-indent: 50px;text-align: justify;"> O produto também contará com uma <i>landing page</i>, que divulgará informações da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior credibilidade a clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.  </p>
 
 ### **Características da solução**
 
@@ -81,7 +81,7 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 A respeito da viabilidade técnica do projeto, a equipe de desenvolvimento é dividida com relação à familiaridade com as tecnologias a serem utilizadas (segue abaixo a tabela com as tecnologias utilizadas), permitindo que aqueles com mais experiência e familiaridade auxiliem os demais quando julgarem necessário, tornando o projeto viável tecnicamente.
 </p>
 <p style="text-indent: 50px; text-align: justify;">
-O produto deverá ser desenvolvi em um período de 6 meses, dividido em sprints quinzenais. Cada sprint deverá ser entregue partes do produto como um todo, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
+O produto deverá ser desenvolvido em um período de 6 meses, dividido em sprints quinzenais. Cada sprint deverá ser entregue partes do produto como um todo, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
 </p>
 <p style="text-indent: 50px; text-align: justify;">
 A respeito da competência técnica da equipe, apesar de parte da equipe não apresentar muita familiaridade e experiência com as tecnologias usadas, todos possuem conhecimento com o desenvolvimento de grandes aplicações com as mesmas características deste produto, como a integração com o google agendas, sistema de autenticação e validação de contas de usuário e banco de dados.
