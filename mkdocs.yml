@@ -1,5 +1,6 @@
 site_name: Paraizo
 repo_url: https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo
+site_description: Site voltado para a documentação do Software Paraizo
 repo_name: 2024.2-T03-Paraizo
 theme:
   name: material
@@ -8,8 +9,6 @@ theme:
   favicon: paraizo/favicon.ico
   logo: paraizo/paraizo.png
   features:
-    - content.action.edit
-    - content.action.view
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
@@ -18,11 +17,14 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.instant.progress
     - navigation.path
     - navigation.top
     - toc.integrate
     - search.suggest
     - search.highlight
+    - toc.follow
+    - search.share
 
   palette:
     - media: "(prefers-color-scheme: light)"
