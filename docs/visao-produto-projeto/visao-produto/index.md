@@ -43,11 +43,19 @@ Diagrama de Ishikawa.
 
 ### **Objetivos do Produto**
 
-O objetivo do produto Paraizo é aprimorar a gestão administrativa e financeira da Clínica Janaina Paraizo, substituindo os processos manuais de registro que não atendem mais às necessidades da organização. O sistema deve centralizar as informações dos pacientes, criando perfis individuais para cada um, permitindo o acompanhamento e análise do histórico e evolução de cada caso.
+O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta da quantidade significativa de pacientes.
 
-Outro objetivo é fornecer um dashboard que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados. O produto também deve possuir uma landing page para divulgar informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração.
+Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de login, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos.
 
-O sistema tem como objetivo agilizar a entrega de relatórios aos clientes, disponibilizando os dados de forma imediata. Além disso, deve possibilitar a visualização e o agendamento de consultas, com integração ao Google Agenda da clínica, facilitando a gestão dos horários. O principal objetivo é integrar e automatizar esses processos, melhorando a interação com outras plataformas e melhorando a captação de clientes resultando na expasão da empresa.
+O produto também contará com uma landing page, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda da clínica, facilitando a gestão dos horários por parte da equipe da clínica.
+
+Características da solução:
+
+- O sistema deverá ter a Centralização dos dados dos pacientes, criando perfis personalizados com todas as informações cadastrais e de atendimento dos pacientes.
+- O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados.
+- O sistema deverá ter uma Landing page para divulgação de informações organizacionais, como serviços, quadro de funcionários, avaliações e resultados, promovendo transparência e credibilidade.
+- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes.
+- Integração com o Google Agenda da clínica para facilitar a visualização de horários em dispositivos mobiles.
 
 ### **Tecnologias a Serem Utilizadas**
 
