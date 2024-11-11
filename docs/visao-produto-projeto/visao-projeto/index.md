@@ -1,5 +1,6 @@
 # **Visão do Projeto**
 
+
 ??? abstract "Histórico de Revisão"
 
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
@@ -8,7 +9,9 @@
 
 ---
 
-## **Iteração entre equipe e cliente**
+## **Interação entre equipe e cliente**
+
+### **Composição da Equipe**
 
 | Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                  |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- |
@@ -19,6 +22,34 @@
 | Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel Martins                           |
 
 ---
+
+### **Matriz de Comunicação**
+
+| **Ferramenta**                                 | **Objetivo**                                                                                                     | **Frequência**                               |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| **:material-microsoft-teams: Microsoft Teams** | Reuniões semanais entre a equipe de desenvolvimento para planejamento, alinhamentos e feedbacks.                 | Semanal                                      |
+| **:simple-googlemeet: Google Meet**            | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
+| **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
+
+---
+
+### **Métodos e Frequência de Reuniões**
+
+| **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
+| ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |
+| **Reunião de planejamento e revisão de Sprint** | Planejamento e revisão do progresso das sprints, alinhamento da equipe. | Semanal        |
+
+---
+
+### **Frequência de Interações com o Cliente**
+
+| **Interação**                           | **Objetivo**                                          | **Frequência**      |
+| --------------------------------------- | ----------------------------------------------------- | ------------------- |
+| **Revisões de Sprint**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
+| **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
+
+---
+
 
 ## **Planejamento das Fases e/ou Iterações do Projeto**
 
@@ -32,29 +63,6 @@
 | 4      | Desenvolvimento - Entrega de MVP1                                                                              | 08/01/2025  | 21/01/2025 | 14                 |
 | 5      | Desenvolvimento - Entrega de MVP2                                                                              | 22/01/2025  | 04/02/2025 | 14                 |
 | 6      | Desenvolvimento - Entrega de MVP2                                                                              | 05/02/2025  | 13/02/2025 | 9                  |
-
----
-
-## **Matriz de Comunicação**
-
-| **Ferramenta**                                 | **Objetivo**                                                                                                     | **Frequência**                               |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **:material-microsoft-teams: Microsoft Teams** | Reuniões semanais entre a equipe de desenvolvimento para planejamento, alinhamentos e feedbacks.                 | Semanal                                      |
-| **:simple-googlemeet: Google Meet**            | Reuniões entre a equipe de desenvolvimento e o cliente para relatar andamento, validar entregas e tirar dúvidas. | Conforme necessário (reuniões com o cliente) |
-| **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona entre equipe e cliente para sanar dúvidas ou realizar comunicações rápidas.               | Conforme necessário (interações informais)   |
-
-#### **Métodos e Frequência de Reuniões**
-
-| **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
-| ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |
-| **Reunião de planejamento e revisão de Sprint** | Planejamento e revisão do progresso das sprints, alinhamento da equipe. | Semanal        |
-
-#### **Frequência de Interações com o Cliente**
-
-| **Interação**                           | **Objetivo**                                          | **Frequência**      |
-| --------------------------------------- | ----------------------------------------------------- | ------------------- |
-| **Revisões de Sprint**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
-| **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
 
 ---
 

@@ -134,7 +134,8 @@ markdown_extensions:
   - mdx_include
   - attr_list
   - md_in_html
-  - pymdownx.blocks.caption
+  - pymdownx.superfences
+  - pymdownx.caret
 
 nav:
   - Home: index.md

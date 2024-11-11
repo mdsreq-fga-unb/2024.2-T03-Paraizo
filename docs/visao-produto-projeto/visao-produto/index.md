@@ -5,6 +5,7 @@
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de visão geral do produto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos <br> Henrique Martins Alencar |
+    |  10/11   |    1.1     | Especificação do processo de desenvolvimento | Erick Miranda Santos e Henrique Martins Alencar |
 
 ---
 
@@ -43,23 +44,49 @@ Diagrama de Ishikawa.
 
 ### **Objetivos do Produto**
 
-O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta da quantidade significativa de pacientes.
+O objetivo do produto Paraizo é aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos (informações referêntes a seus disturbios e problemas físicos), histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta do tempo significativo que esse processo exige atualemente e pela centralização deste trabalho em uma só funcionária.
 
 Já olhando para as necessidades dos pacientes da clinica, o objetivo é fornecer um local de compartilhamento, acessado por meio de login, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos.
 
-O produto também contará com uma landing page, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda da clínica, facilitando a gestão dos horários por parte da equipe da clínica.
+O produto também contará com uma landing page, que divulgará informações organizacionais da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior transparência na administração e aumentando a credibilidade da clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes. Além disso, o sistema possibilitará o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.
+
+Todas as soluções descritas acima serão implementadas em uma plataforma web responsiva.
 
 ### **Características da solução**
 
+Segue o conjunto preliminar das características deste produto:
+
 - O sistema deverá ter a Centralização dos dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores;
 - O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de cosultas e facilitando a avaliação dos tratamentos realizados;
-- O sistema deverá ter uma Landing page para divulgação de informações organizacionais, como serviços, quadro de funcionários, avaliações e resultados, promovendo transparência e credibilidade;
-- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes; e
-- Integração com o Google Agenda da clínica para facilitar a visualização de horários em dispositivos mobile's.
+- O sistema deverá ter uma Landing page para divulgação de informações da clínica, como serviços, quadro de funcionários, avaliações e resultados;
+- O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes;
+- Integração com o Google Agenda para a clínica, facilitando a visualização de horários em dispositivos mobile's.
 
-### **Tecnologias a Serem Utilizadas**
+### **Pesquisa de Mercado e Análise Competitiva**
 
-<p style="text-indent: 50px;text-align: justify;">A solução será baseada em tecnologias modernas de gerenciamento de dados e automação, tendo como objetivo ser uma aplicação com solução de fácil escalabilidade, tendo mesmo assim uma boa popularidade para que seja possível realizar a expansão da mesma.</p>
+Existem outras soluções no mercado que visam melhorar a gestão clínica, como, por exemplo:
+
+- **Plena Vittae**: O sistema de agendamento é realizado apenas através do contato com o profissional via WhatsApp. Não possui sistema de login para visualização das informações dos pacientes;
+- **CETFISIO**: Também se limita apenas ao contato e agendamento via WhatsApp, além de não apresentar detalhes sobre o próprio estabelecimento e seus serviços, como, por exemplo, informações sobre o quadro de funcionários, histórico de atendimento da clínica, tipos de serviços prestados e a quem eles são indicados e horários de funcionamento;
+- **Rede D’OR São Luiz:** Novamente, este sistema também não oferece formas dos pacientes visualizarem suas próprias informações e o sistema de contato e agendamento apresenta as mesmas características dos anteriores.
+
+!!! note "Vale ressaltar"
+
+    <p style="text-indent: 50px;text-align: justify;">O "Paraizo" se destaca, principalmente, pela forma com que ele diminui a carga de trabalho dos funcionários da clínica, uma vez que o sistema de agendamento e o login para visualização das infomações do paciente descentraliza a responsabilidade dessas atividades, permitindo que, sem a necessidade de contato com algum representante da clínica, uma consulta seja marcada ou que algum documento desejado pelo paciente seja obtido.</p>
+
+### **Análise de Viabilidade**
+
+<p style="text-indent: 50px; text-align: justify;">
+A respeito da viabilidade técnica do projeto, a equipe de desenvolvimento é dividida com relação à familiaridade com as tecnologias a serem utilizadas (segue abaixo a tabela com as tecnologias utilizadas), permitindo que aqueles com mais experiência e familiaridade auxiliem os demais quando julgarem necessário, tornando o projeto viável tecnicamente.
+</p>
+<p style="text-indent: 50px; text-align: justify;">
+O produto deverá ser desenvolvi em um período de 6 meses, dividido em sprints quinzenais. Cada sprint deverá ser entregue partes do produto como um todo, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
+</p>
+<p style="text-indent: 50px; text-align: justify;">
+A respeito da competência técnica da equipe, apesar de parte da equipe não apresentar muita familiaridade e experiência com as tecnologias usadas, todos possuem conhecimento com o desenvolvimento de grandes aplicações com as mesmas características deste produto, como a integração com o google agendas, sistema de autenticação e validação de contas de usuário e banco de dados.
+</p>
+
+### **Tecnologias utilizadas**
 
 | Tecnologia                                     | Descrição                                                 | Área de Aplicação              |
 | ---------------------------------------------- | --------------------------------------------------------- | ------------------------------ |
@@ -77,38 +104,19 @@ O produto também contará com uma landing page, que divulgará informações or
 | **:simple-googlemeet: Google Meet**            | Plataforma para reuniões com o cliente                    | Comunicação                    |
 | **:simple-whatsapp: WhatsApp**                 | Comunicação assíncrona para suporte rápido                | Comunicação                    |
 
-### **Pesquisa de Mercado e Análise Competitiva**
-
-Existem outras soluções no mercado que visam melhorar a gestão clínica, como, por exemplo:
-
-- **Plena Vittae**: O sistema de agendamento é realizado apenas através do contato com o profissional via WhatsApp. Não possui sistema de login para visualização das informações dos pacientes;
-- **CETFISIO**: Também se limita apenas ao contato e agendamento via WhatsApp, além de não apresentar detalhes sobre o próprio estabelecimento e seus serviços, como, por exemplo, informações sobre o quadro de funcionários, histórico de atendimento da clínica, tipos de serviços prestados e a quem eles são indicados e horários de funcionamento;
-- **Rede D’OR São Luiz: Novamente**, este sistema também não oferece formas dos pacientes visualizarem suas próprias informações e o sistema de contato e agendamento apresenta as mesmas características dos anteriores.
-
-!!! note "Vale ressaltar"
-
-    <p style="text-indent: 50px;text-align: justify;">O "Paraizo" se destaca por sua simplicidade de uso, sendo uma solução feita de maneira personalizada para as necessidades da empresa, como o registro da evolução dos pacientes baseado nos aspectos técnicos deste segmento (fisioterapia), contas de funcionários adaptadas para gerenciamento do trabalho diário baseado nas demandas atuais do empreendimento, contas para os próprios pacientes visualizarem suas evoluções e agendamentos.</p>
-
-### **Análise de Viabilidade**
-
-<p style="text-indent: 50px; text-align: justify;">
-Analisando o mercado podemos constatar que é uma área carente de soluções que buscam atender as demandas do cliente, como uma solução que venha trazer os dados dos pacientes de maneira simples e de fácil acesso. Já ao decompor os pormenores do produto, entende-se que há viabilidade técnica por conta tendo em vista que as soluções que serão desenvolvidas são de fácil construção e podem ser facilmente remodeladas para se moldarem aos gostos do cliente.
-</p>
 
 ### **Impacto da Solução**
 
 <p style="text-indent: 50px; text-align: justify;">
-A criação do software PARAIZO contribuiria para a melhor gestão operacional da clínica, uma vez que ele busca criar um ambiente que centralize as atividades de visualização, cadastro, edição e exclusão de agendamentos dos clientes, migrar o registro do histórico de atendimentos para o digital, proporcionando mais longevidade a esses dados quando comparado com a forma atual de armazenamento (registro em papel), visualização e edição dos registros de cada paciente que frequenta a clínica, criando um ambiente que proporciona melhor análise desses dados, além de prover uma forma dos próprios clientes visualizarem suas evoluções ao longo do tempo. Nesse sentido, conclui-se o produto impactaria a clínica das seguintes formas: </p>
+Com a criação do software PARAIZO, espera-se um impacto significativo no que se refere ao tempo destinado nas atividades referentes às documentações e manejamento de dados, além de possibilitar uma melhora no processo de divulgação dos serviços da clínica. Nesse sentido, conclui-se o produto afetaria a clínica das seguintes formas: </p>
 
 !!! success "Benefícios"
 
-    - Redução no tempo destinado a atividades de visualização e edição de dados de clientes específicos, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
-    - Redução no tempo destinado a atividades relacionadas à organização e armazenamento dos arquivos nos espaços físicos da clínica;
-    - Redução de custos, uma vez que o orçamento destinado aos materiais e alocação dos arquivos físicos não será mais necessário;
-    - Proporcionar a visualização do histórico de evolução dos pacientes proporcionará uma taxa maior de fidelização de clientes ao estabelecimento;
-    - Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, o trabalho de divulgação e marketing do estabelecimento potencialmente trará um aumento na quantidade de serviços prestados.
-
-Em suma, a criação do software simplificaria o agendamento de atendimentos, além de otimizar a gestão financeira e de pessoas. Isso resultaria em uma administração mais eficiente e ágil do negócio, proporcionando maior controle e facilidade nas operações.
+    - Redução no tempo destinado às atividades de visualização e edição de dados de clientes, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;
+    - Redução no tempo destinado às atividades relacionadas à organização e procura dos arquivos nos espaços físicos da clínica;
+    - Permitirá que outros funcionários preencham os dados ou confeccionem documentos exigidos, diminuindo a sobrecarga de trabalho que se concentra em uma única funcionária;
+    - Proporcionar a visualização do histórico de evolução dos pacientes poderá acarretar em uma taxa maior de fidelização de clientes ao estabelecimento;
+    - Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, ajudará os responsáveis com o trabalho de divulgação e marketing do estabelecimento.
 
 ---
 
@@ -146,14 +154,64 @@ O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversa
 
 ### **Justificativa**
 
+#### **GUPTA**
+
 <p style="text-indent: 50px; text-align: justify;">
-O processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
+Com o intuito de escolher a melhor abordágem de desenvolvimento de software para o desenvolvimento desse projeto, será utilizado o método GUPTA, que estabelece critérios importantes para essa definição. A seguir, serão apresentados as análises feitas pela equipe com relação às Características dos Requisitos, Status da Equipe de Desenvolvimento, Envolvimento do Usuário e Tipo de Projeto e Risco Associado.
+</p>
+
+
+| Requisitos                                                  | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
+| ----------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+| Os requisitos são fáceis de entender e definir?             | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :x: Sim                |
+| Mudamos os requisitos com bastante frequência?              | :white_check_mark: Não | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :x: Sim                | :white_check_mark: Não |
+| Podemos definir os requisitos no início do ciclo?           | :white_check_mark: Sim | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não                | :white_check_mark: Sim |
+| Os requisitos indicam um sistema complexo a ser construído? | :white_check_mark: Não | :x: Sim                | :x: Sim                | :x: Sim                | :x: Sim                | :white_check_mark: Não |
+| **Total**                                                   | 3                      | 1                      | 3                      | 3                      | 1                      | 3                      |
+
+| Equipe de Desenvolvimento                              | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral | RAD                    |
+| ------------------------------------------------------ | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ------- | ---------------------- |
+| Pouca experiência em projetos similares                | :white_check_mark: Não | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :x: Sim | :white_check_mark: Não |
+| Pouco conhecimento de domínio (novidade na tecnologia) | :x: Sim                | :white_check_mark: Não | :x: Sim                | :x: Sim                | :x: Sim | :white_check_mark: Não |
+| Pouca experiência com as ferramentas a serem usadas    | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :x: Sim | :white_check_mark: Não |
+| Disponibilidade de treinamento, se necessário          | :x: Não                | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não | :white_check_mark: Sim |
+| **Total**                                              | 1                      | 2                      | 3                      | 3                      | 0       | 4                      |
+
+| Envolvimento dos usuários                                              | Waterfall              | Protótipo              | Iterativo              | Evolucionário | Espiral | RAD                    |
+| ---------------------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ------------- | ------- | ---------------------- |
+| Envolvimento dos usuários em todas as fases                            | :x: Não                | :white_check_mark: Sim | :x: Não                | :x: Não       | :x: Não | :white_check_mark: Sim |
+| Participação limitada do usuário                                       | :x: Sim                | :white_check_mark: Não | :x: Sim                | :x: Sim       | :x: Sim | :white_check_mark: Não |
+| Usuário sem experiência anterior de participação em projetos similares | :white_check_mark: Não | :x: Sim                | :x: Sim                | :x: Sim       | :x: Sim | :white_check_mark: Não |
+| Usuários são especialistas no domínio do problema                      | :x: Não                | :white_check_mark: Sim | :white_check_mark: Não | :x: Não       | :x: Não | :white_check_mark: Sim |
+| **Total**                                                              | 1                      | 3                      | 1                      | 0             | 0       | 4                      |
+
+| Tipo de Projeto e Risco                                    | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
+| ---------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
+| O projeto é uma melhoria de um sistema existente           | :white_check_mark: Não | :white_check_mark: Não | :x: Sim                | :x: Sim                | :white_check_mark: Não | :x: Sim                |
+| O financiamento é estável para o projeto                   | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não                | :x: Não                | :x: Não                | :white_check_mark: Sim |
+| Altos requisitos de confiabilidade                         | :x: Não                | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não                |
+| Cronograma apertado do projeto                             | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :white_check_mark: Sim | :white_check_mark: Sim | :white_check_mark: Sim |
+| Uso de componentes reutilizáveis                           | :x: Não                | :white_check_mark: Sim | :x: Não                | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim |
+| Os recursos (tempo, dinheiro, pessoas, etc.) são escassos? | :x: Não                | :white_check_mark: Sim | :x: Não                | :x: Não                | :white_check_mark: Sim | :x: Não                |
+| **Total**                                                  | 2                      | 5                      | 2                      | 2                      | 5                      | 3                      |
+
+| Conclusão                 | Waterfall | Protótipo | Iterativo | Evolucionário | Espiral | RAD                   |
+| ------------------------- | --------- | --------- | --------- | ------------- | ------- | --------------------- |
+| Requisitos                | 3         | 1         | 3         | 3             | 1       | 3                     |
+| Equipe de Desenvolvimento | 1         | 2         | 3         | 3             | 0       | 4                     |
+| Envolvimento dos usuários | 1         | 3         | 1         | 0             | 0       | 4                     |
+| Tipo de Projeto e Risco   | 2         | 5         | 2         | 2             | 5       | 3                     |
+| **Total**                 | :x: 7     | :x: 11    | :x: 9     | :x: 8         | :x: 6   | :white_check_mark: 14 |
+
+
+<p style="text-indent: 50px; text-align: justify;">
+Baseado na análise comparativa entre os processos RAD e Scrum, junto com a análise através do método GUPTA, o processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
 </p>
 
 ![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
-/// caption
+
 Representação gráfica ciclo de vida RAD.
-///
+
 
 !!! note "Características"
 
