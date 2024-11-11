@@ -55,7 +55,8 @@
 
 ### **RAD**
 
-O **Processo RAD (Rapid Application Development)** é uma metodologia de desenvolvimento de software que prioriza a rapidez, flexibilidade e colaboração constante com o cliente. Através de ciclos curtos e iterativos, o RAD utiliza protótipos rápidos para validar requisitos e fazer ajustes em tempo real, permitindo que o produto evolua conforme o feedback dos usuários. A ênfase está na entrega incremental de funcionalidades e no uso de ferramentas de desenvolvimento que aceleram a criação de interfaces e funcionalidades, sem a necessidade de muita codificação manual. Embora seja ideal para projetos de pequeno a médio porte, o RAD pode enfrentar desafios em escalabilidade e manutenção devido à ênfase na prototipagem em vez da documentação formal.
+<p style="text-indent: 50px;text-align: justify;">
+O Processo RAD (Rapid Application Development) é uma metodologia de desenvolvimento de software que prioriza a rapidez, flexibilidade e colaboração constante com o cliente. Através de ciclos curtos e iterativos, o RAD utiliza protótipos rápidos para validar requisitos e fazer ajustes em tempo real, permitindo que o produto evolua conforme o feedback dos usuários. A ênfase está na entrega incremental de funcionalidades e no uso de ferramentas de desenvolvimento que aceleram a criação de interfaces e funcionalidades, sem a necessidade de muita codificação manual. Embora seja ideal para projetos de pequeno a médio porte, o RAD pode enfrentar desafios em escalabilidade e manutenção devido à ênfase na prototipagem em vez da documentação formal. </p>
 
 ![alt text](https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb)
 /// caption
@@ -72,7 +73,7 @@ Representação gráfica ciclo de vida RAD.
 
 ### Etapa 1 - Planejamento dos requisitos
 
-Na etapa de planejamento dos requisitos, fazemos uma análise completa do cenário e elicitamos os requisitos, nesse projeto nós seguimos o material do Professor George Marsicano(2023)[4], por isso nós seguimos os pontos, Descoberta e elicitação de requisitos, Análise e consenso de requisitos, Declaração de requisitos, Verificação e Validação e por último a Organização e atualização.
+<p style="text-indent: 50px;text-align: justify;">Na etapa de planejamento dos requisitos, fazemos uma análise completa do cenário e elicitamos os requisitos, nesse projeto nós seguimos o material do Professor George Marsicano(2023)[4], por isso nós seguimos os pontos, Descoberta e elicitação de requisitos, Análise e consenso de requisitos, Declaração de requisitos, Verificação e Validação e por último a Organização e atualização.</p>
 
 | Atividade                             | Método                          | Ferramenta  | Entrega                               |
 | ------------------------------------- | ------------------------------- | ----------- | ------------------------------------- |
@@ -84,7 +85,7 @@ Na etapa de planejamento dos requisitos, fazemos uma análise completa do cenár
 
 ### Etapa 2 - User Design
 
-Na etapa de User Design, é feito a prototipação da aplicação, no caso é feito o protótipo equivalente aos User Stories relacionados ao MVP1 na terceira unidade e ao MVP2 na quarta unidade.
+<p style="text-indent: 50px;text-align: justify;">Na etapa de User Design, é feito a prototipação da aplicação, no caso é feito o protótipo equivalente aos User Stories relacionados ao MVP1 na terceira unidade e ao MVP2 na quarta unidade.</p>
 
 | Etapa        | Método          | Ferramenta | Entregas                     |
 | ------------ | --------------- | ---------- | ---------------------------- |
@@ -92,7 +93,7 @@ Na etapa de User Design, é feito a prototipação da aplicação, no caso é fe
 
 ### Etapa 3 - Desenvolvimento
 
-Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer ao mesmo tempo que a etapa de User Design, com isso, o desenvolvimento ocorrerá ao mesmo tempo com a prototipação.
+<p style="text-indent: 50px;text-align: justify;">Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer ao mesmo tempo que a etapa de User Design, com isso, o desenvolvimento ocorrerá ao mesmo tempo com a prototipação.</p>
 
 | Etapa           | Método                      | Ferramenta      | Entregas |
 | --------------- | --------------------------- | --------------- | -------- |
@@ -100,7 +101,7 @@ Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvol
 
 #### Dual-track Agile
 
-Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.
+<p style="text-indent: 50px;text-align: justify;">Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.</p>
 
 ![alt text](../../assets/image.png)
 /// caption
@@ -109,13 +110,13 @@ Representação gráfica de processo dual-track Agile.
 
 #### Dual-track Agile (adaptado)
 
-Dual-Track Agile (adapatado) é um abordagem que vai dividir o processo de desenvolvimento de software em duas trilhas paralela:
-Desenvolvimento e Testes. Fazendo uma entrega contínua que visa otimizar desenvolvimento e validação, com uma implementação
+<p style="text-indent: 50px;text-align: justify;">Dual-Track Agile (adapatado) é um abordagem que vai dividir o processo de desenvolvimento de software em duas trilhas paralela:</P>
+<p style="text-indent: 50px;text-align: justify;">Desenvolvimento e Testes. Fazendo uma entrega contínua que visa otimizar desenvolvimento e validação, com uma implementação</P>
 eficiente.
 
 ### Etapa 4 - Testes
 
-Na etapa de testagem será feito os testes de todas as funcionalidades da aplicação
+<p style="text-indent: 50px;text-align: justify;">Na etapa de testagem será feito os testes de todas as funcionalidades da aplicação</p>
 
 | Etapa    | Método                              | Ferramenta            | Entregas        |
 | -------- | ----------------------------------- | --------------------- | --------------- |
