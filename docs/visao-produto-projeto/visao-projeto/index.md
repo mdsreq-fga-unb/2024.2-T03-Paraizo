@@ -36,7 +36,7 @@
 
 | **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
 | ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |
-| **Reunião de planejamento e revisão de Sprint** | Planejamento e revisão do progresso das sprints, alinhamento da equipe. | Semanal        |
+| **Reunião de planejamento e revisão de Iteração** | Planejamento e revisão do progresso das Iterações, alinhamento da equipe. | Semanal        |
 
 ---
 
@@ -44,14 +44,14 @@
 
 | **Interação**                           | **Objetivo**                                          | **Frequência**      |
 | --------------------------------------- | ----------------------------------------------------- | ------------------- |
-| **Revisões de Sprint**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
+| **Revisões de Iteração**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
 | **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
 
 ---
 
 ## **Planejamento das Fases e/ou Iterações do Projeto**
 
-| Sprint | Produto (Entrega)                                                                                              | Data Início | Data Fim   | Quantidade de Dias |
+| Iteração | Produto (Entrega)                                                                                              | Data Início | Data Fim   | Quantidade de Dias |
 | ------ | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ------------------ |
 | 0      | Definição do produto<br>Definição do Problema<br>Início do GitPages<br>Lista Inicial dos requisitos do produto | 22/10/2024  | 10/11/2024 | 19                 |
 | 1      | Definição do Backlog do Produto<br> Definição de MVP<br> Definição de DoR e DoD                                | 11/11/2024  | 24/11/2024 | 14                 |
