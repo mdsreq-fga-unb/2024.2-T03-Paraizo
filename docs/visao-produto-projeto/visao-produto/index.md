@@ -78,13 +78,7 @@ Existem outras soluções no mercado que visam melhorar a gestão clínica, como
 ### **Análise de Viabilidade**
 
 <p style="text-indent: 50px; text-align: justify;">
-A respeito da viabilidade técnica do projeto, a equipe de desenvolvimento é dividida com relação à familiaridade com as tecnologias a serem utilizadas (segue abaixo a tabela com as tecnologias utilizadas), permitindo que aqueles com mais experiência e familiaridade auxiliem os demais quando julgarem necessário, tornando o projeto viável tecnicamente.
-</p>
-<p style="text-indent: 50px; text-align: justify;">
-O produto deverá ser desenvolvido em um período de 6 meses, dividido em sprints quinzenais. Cada sprint deverá ser entregue partes do produto como um todo, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
-</p>
-<p style="text-indent: 50px; text-align: justify;">
-A respeito da competência técnica da equipe, apesar de parte da equipe não apresentar muita familiaridade e experiência com as tecnologias usadas, todos possuem conhecimento com o desenvolvimento de grandes aplicações com as mesmas características deste produto, como a integração com o google agendas, sistema de autenticação e validação de contas de usuário e banco de dados.
+A respeito da viabilidade técnica do projeto, a equipe de desenvolvimento é dividida com relação à familiaridade com as tecnologias a serem utilizadas (segue abaixo a tabela com as tecnologias utilizadas), permitindo que aqueles com mais experiência e familiaridade auxiliem os demais quando julgarem necessário. Além disso, apesar de parte da equipe não apresentar muita familiaridade e experiência com as tecnologias usadas, todos possuem conhecimento com o desenvolvimento que envolvem funcionalidades que também serão desenvolvidas neste projeto (como a integração com o google agendas, sistema de autenticação e validação de contas de usuário e banco de dados), tornando o projeto viável tecnicamente. Com reção ao tempo de desenvolvimento, o projeto será realizado durante 6 meses, organizado em itenrações que, ao final, serão entregues partes do projeto, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
 </p>
 
 ### **Tecnologias utilizadas**
@@ -160,6 +154,11 @@ O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversa
 Com o intuito de escolher a melhor abordágem de desenvolvimento de software para o desenvolvimento desse projeto, será utilizado o método GUPTA, que estabelece critérios importantes para essa definição. A seguir, serão apresentados as análises feitas pela equipe com relação às Características dos Requisitos, Status da Equipe de Desenvolvimento, Envolvimento do Usuário e Tipo de Projeto e Risco Associado.
 </p>
 
+
+!!! note "Vale ressaltar"
+
+    <p style="text-indent: 50px;text-align: justify;">As perguntas com respostas marcadas com ":white_check_mark:" referen-se a resposta que a equipe julgou mais adequada para o projeto. Por exemplo, em "Os requisitos são fáceis de entender e definir?", a respostas mais adequada é "Não".</p>
+
 | Requisitos                                                  | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
 | ----------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
 | Os requisitos são fáceis de entender e definir?             | :x: Sim                | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :white_check_mark: Não | :x: Sim                |
@@ -167,6 +166,12 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Podemos definir os requisitos no início do ciclo?           | :white_check_mark: Sim | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não                | :white_check_mark: Sim |
 | Os requisitos indicam um sistema complexo a ser construído? | :white_check_mark: Não | :x: Sim                | :x: Sim                | :x: Sim                | :x: Sim                | :white_check_mark: Não |
 | **Total**                                                   | 3                      | 1                      | 3                      | 3                      | 1                      | 3                      |
+
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que os requisitos não são todos bem definidos, mas que ainda podem ser totalmente definidos no início do projeto. Isso decorre, sumariamente, em relação aos requisitos relacionado às informações técnicas que devem estar presentes nas fichas dos pacientes.
+</p>
+
+---
 
 | Equipe de Desenvolvimento                              | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral | RAD                    |
 | ------------------------------------------------------ | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ------- | ---------------------- |
@@ -176,6 +181,12 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Disponibilidade de treinamento, se necessário          | :x: Não                | :x: Não                | :white_check_mark: Sim | :white_check_mark: Sim | :x: Não | :white_check_mark: Sim |
 | **Total**                                              | 1                      | 2                      | 3                      | 3                      | 0       | 4                      |
 
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que a equipe não tem tanta experiência com projetos semelhantes, mas que ainda apresenta conhecimento com as tecnologias e ferramentas usadas. Vale ressaltar que, como descrito em "Análise de Viabilidade", parte da equipe não é tão habilidosa, entretanto estão dispostos a participar de treinamentos caso necessário.
+</p>
+
+---
+
 | Envolvimento dos usuários                                              | Waterfall              | Protótipo              | Iterativo              | Evolucionário | Espiral | RAD                    |
 | ---------------------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ------------- | ------- | ---------------------- |
 | Envolvimento dos usuários em todas as fases                            | :x: Não                | :white_check_mark: Sim | :x: Não                | :x: Não       | :x: Não | :white_check_mark: Sim |
@@ -183,6 +194,12 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Usuário sem experiência anterior de participação em projetos similares | :white_check_mark: Não | :x: Sim                | :x: Sim                | :x: Sim       | :x: Sim | :white_check_mark: Não |
 | Usuários são especialistas no domínio do problema                      | :x: Não                | :white_check_mark: Sim | :white_check_mark: Não | :x: Não       | :x: Não | :white_check_mark: Sim |
 | **Total**                                                              | 1                      | 3                      | 1                      | 0             | 0       | 4                      |
+
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que o projeto terá muito envolvimento dos usuários, sumariamente a própria cliente, além de ser especialista no assunto, podendo auxiliar a equipe quando necessário. 
+</p>
+
+---
 
 | Tipo de Projeto e Risco                                    | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
 | ---------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
@@ -194,6 +211,12 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Os recursos (tempo, dinheiro, pessoas, etc.) são escassos? | :x: Não                | :white_check_mark: Sim | :x: Não                | :x: Não                | :white_check_mark: Sim | :x: Não                |
 | **Total**                                                  | 2                      | 5                      | 2                      | 2                      | 5                      | 3                      |
 
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que o projeto tem cronograma curto, além da ausência de financiamento. Porém, os requisitos não são de alta confiabilidade e não é uma melhoria de um sistema existente.
+</p>
+
+---
+
 | Conclusão                 | Waterfall | Protótipo | Iterativo | Evolucionário | Espiral | RAD                   |
 | ------------------------- | --------- | --------- | --------- | ------------- | ------- | --------------------- |
 | Requisitos                | 3         | 1         | 3         | 3             | 1       | 3                     |
@@ -201,6 +224,12 @@ Com o intuito de escolher a melhor abordágem de desenvolvimento de software par
 | Envolvimento dos usuários | 1         | 3         | 1         | 0             | 0       | 4                     |
 | Tipo de Projeto e Risco   | 2         | 5         | 2         | 2             | 5       | 3                     |
 | **Total**                 | :x: 7     | :x: 11    | :x: 9     | :x: 8         | :x: 6   | :white_check_mark: 14 |
+
+<p style="text-indent: 50px; text-align: justify;">
+Por fim, a tabela acima busca evidenciar quais processos mais se alinham com o projeto em pauta, através de uma soma das respostas em cada um dos 4 segmentos.
+</p>
+
+---
 
 <p style="text-indent: 50px; text-align: justify;">
 Baseado na análise comparativa entre os processos RAD e Scrum, junto com a análise através do método GUPTA, o processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
