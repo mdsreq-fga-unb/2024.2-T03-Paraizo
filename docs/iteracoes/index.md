@@ -1,4 +1,4 @@
-# **Sprints**
+# **Iterações**
 
 ??? abstract "Histórico de Revisão"
 
@@ -9,9 +9,9 @@
 
 ---
 
-=== "Sprint 0"
+=== "Iteração 0"
 
-    ### **Sprint 0**
+    ### **Iteração 0**
 
     ---
 
@@ -25,7 +25,7 @@
 
     !!! tip "Primeiros passos"
 
-        Durante esta sprint, o grupo tomou decisões cruciais para o início do projeto, estabelecendo as bases para o desenvolvimento e organização.
+        Durante esta Iteração, o grupo tomou decisões cruciais para o início do projeto, estabelecendo as bases para o desenvolvimento e organização.
 
     | **Decisão**                                         | **Descrição**                                                                                             |
     |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@
     #### **🎯 Entregas Realizadas**
 
     !!! success "Boas decisões"
-        As entregas desta sprint garantiram o início sólido do projeto, com definições importantes e progresso substancial nas primeiras atividades.
+        As entregas desta Iteração garantiram o início sólido do projeto, com definições importantes e progresso substancial nas primeiras atividades.
 
     | **Entrega**                                         | **Descrição**                                                                                             |
     |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -52,17 +52,17 @@
 
     ---
 
-    #### **🧐 Sprint Retrospective**
+    #### **🧐 Iteração Retrospective**
 
     !!! info "Ponto de reflexão"
-        A retrospectiva foi realizada para refletir sobre os pontos fortes e áreas de melhoria da sprint, promovendo aprendizado contínuo.
+        A retrospectiva foi realizada para refletir sobre os pontos fortes e áreas de melhoria da Iteração, promovendo aprendizado contínuo.
 
     - **Tópicos discutidos**: Durante a retrospectiva, foram abordados os desafios encontrados e os processos que funcionaram bem.
-    - **Conclusão**: Todas as entregas foram realizadas dentro do prazo, e o time expressou satisfação com o andamento do projeto, com sugestões de melhorias para a próxima sprint.
+    - **Conclusão**: Todas as entregas foram realizadas dentro do prazo, e o time expressou satisfação com o andamento do projeto, com sugestões de melhorias para a próxima Iteração.
 
     ---
 
-    #### **🏆 Conquistas da Sprint**
+    #### **🏆 Conquistas da Iteração**
 
     !!! success "Vale comemorar"
 
@@ -74,7 +74,7 @@
 
     #### **📌 Próximos Passos**
 
-    > Foco na execução da próxima sprint com a continuidade das entregas e integração das tecnologias escolhidas.
+    > Foco na execução da próxima Iteração com a continuidade das entregas e integração das tecnologias escolhidas.
 
     ---
 
