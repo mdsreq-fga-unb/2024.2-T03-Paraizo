@@ -154,10 +154,9 @@ O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversa
 Com o intuito de escolher a melhor abordágem de desenvolvimento de software para o desenvolvimento desse projeto, será utilizado o método GUPTA, que estabelece critérios importantes para essa definição. A seguir, serão apresentados as análises feitas pela equipe com relação às Características dos Requisitos, Status da Equipe de Desenvolvimento, Envolvimento do Usuário e Tipo de Projeto e Risco Associado.
 </p>
 
-
 !!! note "Vale ressaltar"
 
-    <p style="text-indent: 50px;text-align: justify;">As perguntas com respostas marcadas com ":white_check_mark:" referen-se a resposta que a equipe julgou mais adequada para o projeto. Por exemplo, em "Os requisitos são fáceis de entender e definir?", a respostas mais adequada é "Não".</p>
+    <p style="text-indent: 50px;text-align: justify;">As perguntas com respostas marcadas com :white_check_mark: referen-se a resposta que a equipe julgou mais adequada para o projeto. Por exemplo, em "Os requisitos são fáceis de entender e definir?", a respostas mais adequada é "Não".</p>
 
 | Requisitos                                                  | Waterfall              | Protótipo              | Iterativo              | Evolucionário          | Espiral                | RAD                    |
 | ----------------------------------------------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- |
