@@ -15,10 +15,10 @@
 | Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                  |
 | ---------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- |
 | Gerente do Projeto     | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas.         | Maykon Júnio dos Santos Soares | Marllon Fausto                                 |
-| Desenvolvedor Frontend | Responsável pela interface do usuário, design e implementação das funcionalidades no lado do cliente. | Marllon Fausto                 | Henrique Martins                               |
+| Desenvolvedor Frontend | Responsável pela interface do usuário, design e implementação das funcionalidades no lado do cliente. | Marllon Fausto                 | Henrique Martins, Pedro Miguel                              |
 | Desenvolvedor Backend  | Implementa a lógica de negócios, integração com banco de dados e APIs.                                | Erick Miranda                  | Maykon Júnio dos Santos Soares, Marllon Fausto |
 | Analista de QA         | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade.       | Pedro Miguel Martins           | Erick Miranda                                  |
-| Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel Martins                           |
+| Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel, Maykon Júnio dos Santos Soares, Marllon Fausto, Erick Miranda                           |
 
 ---
 
