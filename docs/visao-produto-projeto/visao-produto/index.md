@@ -131,24 +131,30 @@ Com a criação do software PARAIZO, espera-se um impacto significativo no que s
 ### **Quadro Comparativo**
 
 <p style="text-indent: 50px; text-align: justify;"> 
-O quadro a seguir compara os processos de desenvolvimento RAD e Scrum em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.
+O quadro a seguir compara os processos de desenvolvimento RAD e ScrumXP em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.
 </p>
 
-| Características                      | RAD                                                                            | Scrum                                                                                 |
-| ------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
-| Abordagem Geral                      | Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas     | Framework ágil baseado em sprints curtos e entregas incrementais                      |
-| Foco em Arquitetura                  | Menor foco inicial em arquitetura; ênfase em protótipos                        | Maior atenção à arquitetura para manter flexibilidade                                 |
-| Estrutura de Processos               | Estrutura flexível, com iterações rápidas e prototipagem                       | Estrutura bem definida com sprints, backlog e eventos específicos                     |
-| Flexibilidade de Requisitos          | Alta; requisitos podem ser alterados durante o desenvolvimento                 | Moderada; alterações podem ser aceitas, mas devem passar pelo backlog e priorização   |
-| Colaboração com Clientes             | Intensa; cliente envolvido em feedback frequente e revisão de protótipos       | Essencial; cliente revisa e prioriza o backlog e participa de revisões de sprint      |
-| Complexidade do Processo             | Baixa a moderada; processos adaptáveis e menos formais                         | Moderada a alta; requer disciplina para seguir eventos e artefatos do Scrum           |
-| Qualidade Técnica                    | Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade | Alta; qualidade técnica é essencial, com revisões e melhorias contínuas               |
-| Práticas de Desenvolvimento          | Prototipagem rápida, foco em entrega de funcionalidades principais             | Desenvolvimento incremental, com práticas ágeis como revisão de código e testes       |
-| Adaptação ao Projeto                 | Ideal para projetos com escopo indefinido ou mudanças constantes               | Adequado para projetos complexos e de longo prazo com escopo claro, mas adaptável     |
-| Documentação                         | Documentação mínima, foco em protótipos e entregas rápidas                     | Documentação moderada, geralmente vinculada ao backlog e requisitos do sprint         |
-| Controle de Qualidade                | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final | Controle rigoroso; envolve revisões contínuas e testes integrados nos sprints         |
-| Escalabilidade                       | Limitada, mais indicada para projetos pequenos e médios                        | Alta, adequado para grandes equipes e projetos complexos                              |
-| Suporte a Equipes de Desenvolvimento | Moderado; mais dependente do feedback do cliente e protótipos rápidos          | Alto; suporta equipes organizadas com papéis claros como Product Owner e Scrum Master |
+| Características                      | RAD                                                                            | ScrumXP                                                                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| Abordagem Geral                      | Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas     | Desenvolvimento incremental e iterativo, com ênfase na agilidade e na qualidade do código.                  |
+| Foco em Arquitetura                  | Menor foco inicial em arquitetura; ênfase em protótipos                        | Alto; arquitetura emergente é planejada e ajustada para garantir flexibilidade e qualidade.                 |
+| Estrutura de Processos               | Estrutura flexível, com iterações rápidas e prototipagem                       | Bem definida, com sprints baseados em Scrum e práticas de engenharia do XP, como TDD e integração contínua. |
+| Flexibilidade de Requisitos          | Alta; requisitos podem ser alterados durante o desenvolvimento                 | Moderada; mudanças são bem-vindas, mas priorizadas e organizadas no backlog do produto.                     |
+| Colaboração com Clientes             | Intensa; cliente envolvido em feedback frequente e revisão de protótipos       | Muito alta; cliente é frequentemente envolvido em testes e feedback contínuos.                              |
+| Complexidade do Processo             | Baixa a moderada; processos adaptáveis e menos formais                         | Moderada a alta; requer domínio técnico devido às práticas avançadas de desenvolvimento.                    |
+| Qualidade Técnica                    | Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade | Alta; qualidade é garantida por práticas como TDD, refatoração contínua e código coletivo.                  |
+| Práticas de Desenvolvimento          | Prototipagem rápida, foco em entrega de funcionalidades principais             | Desenvolvimento ágil com práticas técnicas rigorosas (TDD, pair programming, etc.).                         |
+| Adaptação ao Projeto                 | Ideal para projetos com escopo indefinido ou mudanças constantes               | Adequado para projetos complexos, que exigem alta qualidade e entregas regulares.                           |
+| Documentação                         | Documentação mínima, foco em protótipos e entregas rápidas                     | Mínima, mas suficiente para suportar o desenvolvimento e garantir rastreabilidade.                          |
+| Controle de Qualidade                | Controle mais básico, com ênfase em entregas rápidas e testes do usuário final | Rigoroso; inclui testes automatizados, integração contínua e revisões de código.                            |
+| Escalabilidade                       | Limitada, mais indicada para projetos pequenos e médios                        | Alta, pode ser aplicado a equipes maiores com coordenação eficaz.                                           |
+| Suporte a Equipes de Desenvolvimento | Moderado; dependente mais do feedback do cliente e protótipos rápidos          | Alto, suporte técnico e organizacional robusto por meio de papéis claros e práticas ágeis.                  |
+
+#### **Bibliografia**
+
+> 1. BECKER, ALICE: Entenda o que é o Rapid Application Delivery (RAD) e sua Relação com os Métodos Ágeis. Disponível em: <a href="https://voitto.com.br/blog/artigo/rapid-application-delivery-rad" target="_blank">https://voitto.com.br/blog/artigo/rapid-application-delivery-rad</a>
+
+> 2. CASA DO DESENVOLVEDOR: XP e Scrum: qual método utilizar para gerir seus projetos de software? Disponível em: <a href="https://blog.casadodesenvolvedor.com.br/xp-scrum/" target="_blank">https://blog.casadodesenvolvedor.com.br/xp-scrum/</a>
 
 ### **Justificativa**
 
