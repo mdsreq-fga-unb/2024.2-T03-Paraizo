@@ -6,6 +6,7 @@
     | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de Processo de desenvolvimento de software | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
     |  10/11   |    1.1     | Especificação do processo de desenvolvimento | Erick Miranda Santos |
+    |  24/11   |    1.2     | Alteração do processo de desenvolvimento (remoção do Dual Track Agile) | Erick Miranda Santos |
 
 ---
 
@@ -37,23 +38,8 @@
 
 | Etapa           | Método                      | Ferramenta      | Entregas |
 | --------------- | --------------------------- | --------------- | -------- |
-| Desenvolvimento | Dual-track Agile (adaptado) | VS Code, Github | Produto  |
+| Desenvolvimento | Kanban                      | VS Code, Github | Produto  |
 
-#### **Dual-track Agile**
-
-<p style="text-indent: 50px;text-align: justify;">Dual-Track Agile é uma abordagem que divide o processo de desenvolvimento de software em duas trilhas paralelas: Descoberta (Discovery) e Entrega (Delivery). Essa metodologia visa equilibrar a inovação e a validação contínua com a implementação eficiente, garantindo que o que está sendo construído atenda às necessidades reais dos usuários e do negócio.</p>
-
-![alt text](../../assets/image.png)
-/// caption
-Representação gráfica de processo dual-track Agile.
-///
-
-!!! Tip "Dual-track Agile (adaptado)"
-
-    <p style="text-indent: 50px;text-align: justify;">Dual-Track Agile (adapatado) é um abordagem que vai dividir o processo de desenvolvimento de software em duas trilhas paralela:</P>
-
-
-    <p style="text-indent: 50px;text-align: justify;">Desenvolvimento e Testes. Fazendo uma entrega contínua que visa otimizar desenvolvimento e validação, com uma implementação eficiente.</P>
 
 ### **Etapa 4 - Testes**
 

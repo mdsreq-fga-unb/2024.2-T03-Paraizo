@@ -5,6 +5,7 @@
     | **Data** | **Versão** |                **Descrição**                |                                      **Autor**                                       |
     | :------: | :--------: | :-----------------------------------------: | :----------------------------------------------------------------------------------: |
     |  08/11   |    1.0     | Criação das seção de visão geral do projeto | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
+    |  24/11   |    1.1     |O planejamento do quadro e das iterações está sendo ajustado para promover maior clareza e eficiência no fluxo de trabalho.| Erick Miranda Santos |
 
 ---
 
@@ -51,16 +52,16 @@
 
 ## **Planejamento das Fases e/ou Iterações do Projeto**
 
-| Iteração | Produto (Entrega)                                                                                              | Data Início | Data Fim   | Quantidade de Dias |
-| ------ | -------------------------------------------------------------------------------------------------------------- | ----------- | ---------- | ------------------ |
-| 0      | Definição do produto<br>Definição do Problema<br>Início do GitPages<br>Lista Inicial dos requisitos do produto | 22/10/2024  | 10/11/2024 | 19                 |
-| 1      | Definição do Backlog do Produto<br> Definição de MVP<br> Definição de DoR e DoD                                | 11/11/2024  | 24/11/2024 | 14                 |
-| 2      | Validação do Backlog do Produto<br> Desenvolvimento - Entrega de MVP1                                          | 25/11/2024  | 08/12/2024 | 14                 |
-| 3      | Desenvolvimento - Entrega de MVP1                                                                              | 09/12/2024  | 18/12/2024 | 10                 |
-| Pausa  | Recesso de Fim de Ano                                                                                          | 19/12/2024  | 07/01/2025 | 20                 |
-| 4      | Desenvolvimento - Entrega de MVP1                                                                              | 08/01/2025  | 21/01/2025 | 14                 |
-| 5      | Desenvolvimento - Entrega de MVP2                                                                              | 22/01/2025  | 04/02/2025 | 14                 |
-| 6      | Desenvolvimento - Entrega de MVP2                                                                              | 05/02/2025  | 13/02/2025 | 9                  |
+| Iteração | Fase RAD                       | Processo de Engenharia                                                                                     | Produto (Entrega)                                  | Data Início | Data Fim   | Quantidade de Dias |
+| -------- | ------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ----------- | ---------- | ------------------ |
+| 0        | Planejamento de Requisitos     | Definição do produto<br>Definição do Problema<br>Lista inicial dos requisitos do produto                  | Documento de requisitos e visão geral do produto | 22/10/2024  | 10/11/2024 | 19                 |
+| 1        | Design do Usuário              | Definição do Backlog do Produto<br>Definição de MVP<br>Definição de DoR e DoD                              | Protótipo inicial e critérios de aceite          | 11/11/2024  | 29/11/2024 | 18                 |
+| 2        | Construção Rápida              | Validação do Backlog do Produto<br>Desenvolvimento iterativo                                              | MVP1 com funcionalidades básicas                 | 25/11/2024  | 08/12/2024 | 14                 |
+| 3        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP1 refinado                                    | 09/12/2024  | 18/12/2024 | 10                 |
+| Pausa    | -                              | Recesso de Fim de Ano                                                                                      | -                                                 | 19/12/2024  | 07/01/2025 | 20                 |
+| 4        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP1 finalizado                                  | 08/01/2025  | 21/01/2025 | 14                 |
+| 5        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP2 com novas funcionalidades                   | 22/01/2025  | 04/02/2025 | 14                 |
+| 6        | Cutover (Transição e Entrega)  | Testes finais e entrega do produto                                                                         | Produto final                                    | 05/02/2025  | 13/02/2025 | 9                  |
 
 ---
 
