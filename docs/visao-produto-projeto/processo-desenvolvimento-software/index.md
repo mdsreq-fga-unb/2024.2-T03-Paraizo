@@ -7,6 +7,7 @@
     |  08/11   |    1.0     | Criação das seção de Processo de desenvolvimento de software | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos |
     |  10/11   |    1.1     | Especificação do processo de desenvolvimento | Erick Miranda Santos |
     |  24/11   |    1.2     | Alteração do processo de desenvolvimento (remoção do Dual Track Agile) | Erick Miranda Santos |
+    |  06/12   |    1.3     | Alteração do processo de desenvolvimento (remoção do Kanban) | Erick Miranda Santos |
 
 ---
 
@@ -34,11 +35,7 @@
 
 ### **Etapa 3 - Desenvolvimento**
 
-<p style="text-indent: 50px;text-align: justify;">Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer ao mesmo tempo que a etapa de User Design, com isso, o desenvolvimento ocorrerá ao mesmo tempo com a prototipação.</p>
-
-| Etapa           | Método                      | Ferramenta      | Entregas |
-| --------------- | --------------------------- | --------------- | -------- |
-| Desenvolvimento | Kanban                      | VS Code, Github | Produto  |
+<p style="text-indent: 50px;text-align: justify;">Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer após a etapa de User Design e Prototipação.</p>
 
 
 ### **Etapa 4 - Testes**
