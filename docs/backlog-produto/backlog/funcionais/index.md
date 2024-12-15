@@ -1,4 +1,4 @@
-# **Backlog do Produto**
+# **Requisitos Funcionais**
 
 ??? abstract "Histórico de Revisão"
 
@@ -7,9 +7,7 @@
     |  01/11   |    1.0     | Criação do tópico de Backlog do Produto | Maykon Júnio dos Santos Soares |
     |  15/12   |    2.0     | Adição dos artefatos | Pedro Miguel M. de O. dos Santos, Maykon Júnio dos Santos Soares |
 
----
-
-## **Requisitos Funcionais**
+## **Requisitos**
 
 === "Temas"
 
@@ -67,17 +65,7 @@
     | **[TM04]** Gestão de Documentos | **[EP08]** Visualização e Salvamento Relatórios | **[US28]** Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf. |
     | **[TM04]** Gestão de Documentos | **[EP08]** Visualização e Salvamento Relatórios | **[US29]** Eu, como usuário, desejo visualizar meus relatórios de avaliação. |
 
-## **Requisitos não funcionais**
-
-| **Requisito**                                               | **URPS+**       |
-| ----------------------------------------------------------- | --------------- |
-| **[RNF01]** Oferecer uma interface responsiva               | Usabilidade     |
-| **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | Usabilidade     |
-| **[RNF03]** Implementar SEO                                 | Suportabilidade |
-| **[RNF04]** Implementar protocolo HTTPS                     | Suportabilidade |
-| **[RNF05]** Otimizar vídeos e imagens                       | Performance     |
-
-### **Critérios de Aceitação**
+## **Critérios de Aceitação**
 
 | **História de Usuário**                                                                                                                      | **Critérios de Aceitação**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -111,7 +99,7 @@
 | **[US28]** Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf.                                                       | - O relatório salvo pelo paciente deve seguir o template fornecido pela cliente.<br>- O paciente deve poder exportar qualquer tipo de relatório (de RPG, de Pilates, de Avaliação Neurológica ou de Avaliação Uroginecológica).<br>- O relatório deve conter as informações registradas pelo administrador ao ter criado e/ou editado o relatório.<br>- O paciente não deve ser capaz de exportar um relatório excluído pelo administrador.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.<br>- O relatório poderá ser exportado quantas vezes forem necessárias. |
 | **[US29]** Eu, como usuário, desejo visualizar meus relatórios de avaliação.                                                                 | - O paciente deve ser capaz de visualizar todos os relatórios vinculados à sua conta de usuário.<br>- O usuário deve ser capaz de visualizar seus relatórios sem a necessidade de exportar o documento em formato .pdf.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.                                                                                                                                                                                                                                                                                            |
 
-### **Definition of Ready (DoR) e Definition of Done (DoD)**
+## **Definition of Ready (DoR) e Definition of Done (DoD)**
 
 === "Definition of Ready (DoR)"
 

@@ -150,7 +150,9 @@ nav:
       - Visão do Projeto: visao-produto-projeto/visao-projeto/index.md
       - Processo de desenvolvimento de software: visao-produto-projeto/processo-desenvolvimento-software/index.md
   - Backlog do Produto:
-      - Backlog: backlog-produto/backlog/index.md
+      - Backlog:
+          - Requisitos Funcionais: backlog-produto/backlog/funcionais/index.md
+          - Requisitos Não funcionais: backlog-produto/backlog/nao-funcionais/index.md
       - Priorização: backlog-produto/priorizacao/index.md
       - Entregas: backlog-produto/entregas/index.md
   - Iterações: iteracoes/index.md
