@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#priorizacao" class="md-skip">
+        <a href="#escala-likert-e-pesos" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -647,16 +647,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#priorizacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Priorização
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Priorização">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#escala-likert-e-pesos" class="md-nav__link">
     <span class="md-ellipsis">
       Escala Likert e Pesos
@@ -664,8 +654,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#escala-de-valores" class="md-nav__link">
     <span class="md-ellipsis">
       Escala de Valores
@@ -678,14 +668,9 @@
           <li class="md-nav__item">
   <a href="#legenda" class="md-nav__link">
     <span class="md-ellipsis">
-      Legenda:
+      Legenda
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -700,6 +685,30 @@
       Priorização (Final)
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Priorização (Final)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Funcionais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-funcionais_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos Funcionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -890,7 +899,6 @@
 
   <h1>Priorização</h1>
 
-<h3 id="priorizacao"><strong>Priorização</strong><a class="headerlink" href="#priorizacao" title="Permanent link">&para;</a></h3>
 <h4 id="escala-likert-e-pesos"><strong>Escala Likert e Pesos</strong><a class="headerlink" href="#escala-likert-e-pesos" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
@@ -980,7 +988,7 @@
 \frac{(Vn \cdot 4 + Com \cdot (-1) + Crit \cdot 2 + Indep \cdot 3)}{9}
 \]</div>
 <hr />
-<h5 id="legenda"><strong>Legenda</strong>:<a class="headerlink" href="#legenda" title="Permanent link">&para;</a></h5>
+<h5 id="legenda"><strong>Legenda</strong><a class="headerlink" href="#legenda" title="Permanent link">&para;</a></h5>
 <ul>
 <li><span class="arithmatex">\( Vn \)</span>: Valor de Negócio</li>
 <li><span class="arithmatex">\( Com \)</span>: Complexidade</li>
@@ -2538,6 +2546,7 @@
 </details>
 <hr />
 <h3 id="priorizacao-final"><strong>Priorização (Final)</strong><a class="headerlink" href="#priorizacao-final" title="Permanent link">&para;</a></h3>
+<h4 id="requisitos-funcionais">Requisitos Funcionais<a class="headerlink" href="#requisitos-funcionais" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -2841,6 +2850,68 @@
 <td>1.2</td>
 <td>1.6</td>
 <td>1.53 🟢</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="requisitos-funcionais_1">Requisitos Funcionais<a class="headerlink" href="#requisitos-funcionais_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3.11 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AAA (WCAG 2.2)</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2.44 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2.22 🟡</td>
 </tr>
 </tbody>
 </table>
