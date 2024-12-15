@@ -48,6 +48,8 @@ extra:
     provider: mike
 extra_javascript:
   - javascripts/removeCredits.js
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 watch:
   - assets/includes
   - assets/stylesheets/extra.css
@@ -73,6 +75,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.details
   - footnotes
+  - pymdownx.arithmatex:
+      generic: true
   - toc:
       permalink: true
       title: On this page
@@ -110,8 +114,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-
-  # Extensões exclusivas do segundo adicionadas
   - footnotes
   - pymdownx.betterem
   - pymdownx.caret
@@ -147,7 +149,10 @@ nav:
       - Visão do Produto: visao-produto-projeto/visao-produto/index.md
       - Visão do Projeto: visao-produto-projeto/visao-projeto/index.md
       - Processo de desenvolvimento de software: visao-produto-projeto/processo-desenvolvimento-software/index.md
-  # - Backlog do Produto: backlog-produto/index.md
+  - Backlog do Produto:
+      - Backlog: backlog-produto/backlog/index.md
+      - Priorização: backlog-produto/priorizacao/index.md
+      - Entregas: backlog-produto/entregas/index.md
   - Iterações: iteracoes/index.md
   - Entregas: entregas/index.md
   - Lições Aprendidas: licoes-aprendidas/index.md

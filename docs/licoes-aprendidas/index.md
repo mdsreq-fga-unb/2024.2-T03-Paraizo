@@ -5,6 +5,7 @@
     | **Data** | **Versão** |            **Descrição**            |           **Autor**            |
     | :------: | :--------: | :---------------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de lições aprendidas | Maykon Júnio dos Santos Soares |
+    |  15/12   |    1.1     | Adição de lições aprendidas da unidade 2 | Henrique Martins Alencar |
 
 ---
 
@@ -47,5 +48,33 @@
     Além das metodologias, a equipe teve a oportunidade de **explorar novas ferramentas** que facilitarão o desenvolvimento do projeto:
 
     - **GitHub Pages**: Plataforma gratuita de hospedagem que a equipe utilizará para **documentar o projeto** de forma clara e acessível, garantindo que todos os membros estejam alinhados quanto aos processos e etapas.
+
+    ---
+
+=== "Unidade 2"
+
+    ### **Unidade 2**
+
+    ---
+
+    #### **Processo de Engenharia de Requisitos**
+    
+    Aprendemos a importância de compreender profundamente as necessidades dos stakeholders e transformá-las em requisitos claros e definidos, pois nos ajudam a organizar e priorizar as etapas do desenvolvimento, trazendo um trabalho eficaz. A comunicação efetiva entre os principais interessados e a equipe de desenvolvimento é crucial para minimizar a ambiguidade e o retrabalho.
+
+    #### **Requisitos Funcionais e não funcionais**
+
+    Compreendemos que os requisitos funcionais definem o que o sistema deve fazer, enquanto os não funcionais especificam como o sistema deve funcionar. Aprendemos que ignorar requisitos não funcionais, como desempenho, segurança e usabilidade, pode comprometer a qualidade final do produto. Um desafio foi compreender quais são cada um desses requisitos de forma alinhada com os objetivos do projeto.
+
+    #### **Elaboração de Backlog**
+
+    Durante a elaboração do backlog, aprendemos que a clareza das tarefas são cruciais para o sucesso da equipe. Organizar os requisitos separando-os por temas e épicos e atribuindo histórias de usuário nos ajudou a compreender melhor o que exatamente desenvolver para o cumprimento dos requisitos, com o objetivo de entregar um produto de maior qualidade.
+
+    #### **Priorização do Backlog**
+
+    A priorização do backlog  nos ensinou a equilibrar as necessidades do negócio com as restrições técnicas e de tempo. A utilização de critérios de prioridade com pesos atribuídos, como valor de negócio, complexidade, criticidade e independência, nos ajudou a definir que requisitos tinham maior importância em nosso projeto, o que nos permite ter uma melhor organização, possibilitando entregas que estejam mais alinhadas com os objetivos do projeto.
+
+    #### **Definição de MVP**
+
+    A definição do MVP (Minimum Viable Product) foi um exercício valioso para aprender a entregar valor rápido com recursos limitados. A definição do que é essencial nos permite focar nas funcionalidades mais críticas e de maior valor para o produto, garantindo que as necessidades principais sejam entregues dentro do prazo determinado.
 
     ---
