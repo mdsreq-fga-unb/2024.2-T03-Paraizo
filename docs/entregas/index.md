@@ -6,6 +6,7 @@
     | :------: | :--------: | :-------------------------: | :----------------------------: |
     |  08/11   |    1.0     | Criação do tópico de Entregas | Maykon Júnio dos Santos Soares |
     |  14/12   |    1.1     | Criação da Unidade 2 | Erick Miranda Santos |
+    |  15/12   |    1.2     | Adição do DoR | Henrique Martins Alencar |
 
 ---
 
