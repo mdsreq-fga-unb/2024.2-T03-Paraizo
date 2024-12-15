@@ -40,6 +40,16 @@
 | **[TM05]** Gestão de documentos  | **[EP05]** Gestão de relatório do Cliente | **[US28]** Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf                                                       | 3.2                      | 2.4                   | 2.8                 | 2                     | 2.44 🟡   |
 | **[TM05]** Gestão de documentos  | **[EP05]** Gestão de relatório do Cliente | **[US29]** Eu, como usuário, desejo visualizar meus relatórios de avaliação                                                                 | 3.2                      | 2.8                   | 2.8                 | 2.4                   | 2.53 🟡   |
 
+#### Requisitos não funcionais
+
+| **Requisito**                                               | **URPS+**       |
+| ----------------------------------------------------------- | --------------- |
+| **[RNF01]** Oferecer uma interface responsiva               | Usabilidade     |
+| **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | Usabilidade     |
+| **[RNF03]** Implementar SEO                                 | Suportabilidade |
+| **[RNF04]** Implementar protocolo HTTPS                     | Suportabilidade |
+| **[RNF05]** Otimizar vídeos e imagens                       | Performance     |
+
 ### **Critérios de Aceitação**
 
 ### **Definition of Ready (DoR) e Definition of Done (DoD)**

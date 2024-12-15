@@ -1,5 +1,3 @@
-### **Priorização**
-
 #### **Escala Likert e Pesos**
 
 | **Critério**             | **Descrição**                                                                                     | **Peso** |
@@ -31,7 +29,7 @@
 
     ---
 
-    ##### **Legenda**:
+    ##### **Legenda**
 
     - \( Vn \): Valor de Negócio
     - \( Com \): Complexidade
@@ -219,6 +217,8 @@
 
 ### **Priorização (Final)**
 
+#### Requisitos Funcionais
+
 | **Temas**                        | **Épicos**                                | **História de Usuário**                                                                                                                     | **Valor de Negócio (4)** | **Complexidade (-1)** | **Criticidade (2)** | **Independência (3)** | **Total** |
 | -------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------- | ------------------- | --------------------- | --------- |
 | **[TM05]** Gestão de documentos  | **[EP05]** Gestão da Ficha do Cliente     | **[US20]** Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos          | 5                        | 2.8                   | 5                   | 3.8                   | 4.29 🔴   |
@@ -250,3 +250,15 @@
 | **[TM01]** Gestão de Depoimentos | **[EP01]** Gestão de Depoimentos          | **[US03]** Eu, como usuário, desejo registrar depoimentos para relatar minha experiência                                                    | 2.4                      | 2.2                   | 1.4                 | 1.2                   | 1.53 🟢   |
 | **[TM01]** Gestão de Depoimentos | **[EP01]** Gestão de Depoimentos          | **[US04]** Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.                         | 2                        | 2.6                   | 1.2                 | 2                     | 1.53 🟢   |
 | **[TM01]** Gestão de Depoimentos | **[EP01]** Gestão de Depoimentos          | **[US05]** Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.                          | 2.2                      | 2.2                   | 1.2                 | 1.6                   | 1.53 🟢   |
+
+---
+
+#### Requisitos Funcionais
+
+| **URPS+**       | **Requisito**                                               | **Valor de Negócio (4)** | **Complexidade (-1)** | **Criticidade (2)** | **Independência (3)** | **Total** |
+| --------------- | ----------------------------------------------------------- | ------------------------ | --------------------- | ------------------- | --------------------- | --------- |
+| Suportabilidade | **[RNF03]** Implementar SEO                                 | 4                        | 3                     | 3                   | 3                     | 3.11 🟠   |
+| Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 4                        | 3                     | 4                   | 1                     | 2.67 🟡   |
+| Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 3                        | 4                     | 2                   | 4                     | 2.67 🟡   |
+| Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2                        | 3                     | 4                   | 3                     | 2.44 🟡   |
+| Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 2                        | 4                     | 2                   | 4                     | 2.22 🟡   |
