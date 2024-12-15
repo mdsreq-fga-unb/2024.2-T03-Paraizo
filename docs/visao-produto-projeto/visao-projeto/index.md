@@ -13,13 +13,13 @@
 
 ### **Composição da Equipe**
 
-| Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                  |
-| ---------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------- |
-| Gerente do Projeto     | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas.         | Maykon Júnio dos Santos Soares | Marllon Fausto                                 |
-| Desenvolvedor Frontend | Responsável pela interface do usuário, design e implementação das funcionalidades no lado do cliente. | Marllon Fausto                 | Henrique Martins, Pedro Miguel                              |
-| Desenvolvedor Backend  | Implementa a lógica de negócios, integração com banco de dados e APIs.                                | Erick Miranda                  | Maykon Júnio dos Santos Soares, Marllon Fausto |
-| Analista de QA         | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade.       | Pedro Miguel Martins           | Erick Miranda                                  |
-| Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel, Maykon Júnio dos Santos Soares, Marllon Fausto, Erick Miranda                           |
+| Papel                  | Descrição                                                                                             | Responsável                    | Participantes                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------ | --------------------------------------------------------------------------- |
+| Gerente do Projeto     | Coordena o projeto, garante a comunicação entre cliente e equipe, controla prazos e entregas.         | Maykon Júnio dos Santos Soares | Marllon Fausto                                                              |
+| Desenvolvedor Frontend | Responsável pela interface do usuário, design e implementação das funcionalidades no lado do cliente. | Marllon Fausto                 | Henrique Martins, Pedro Miguel                                              |
+| Desenvolvedor Backend  | Implementa a lógica de negócios, integração com banco de dados e APIs.                                | Erick Miranda                  | Maykon Júnio dos Santos Soares, Marllon Fausto                              |
+| Analista de QA         | Garante a qualidade do produto, executando testes de funcionalidade, performance e usabilidade.       | Pedro Miguel Martins           | Erick Miranda                                                               |
+| Analista de Requisitos | Define os requisitos funcionais e não funcionais do sistema e garante que eles sejam atendidos.       | Henrique Martins               | Pedro Miguel, Maykon Júnio dos Santos Soares, Marllon Fausto, Erick Miranda |
 
 ---
 
@@ -35,8 +35,8 @@
 
 ### **Métodos e Frequência de Reuniões**
 
-| **Reunião**                                     | **Objetivo**                                                            | **Frequência** |
-| ----------------------------------------------- | ----------------------------------------------------------------------- | -------------- |
+| **Reunião**                                       | **Objetivo**                                                              | **Frequência** |
+| ------------------------------------------------- | ------------------------------------------------------------------------- | -------------- |
 | **Reunião de planejamento e revisão de Iteração** | Planejamento e revisão do progresso das Iterações, alinhamento da equipe. | Semanal        |
 
 ---
@@ -45,23 +45,24 @@
 
 | **Interação**                           | **Objetivo**                                          | **Frequência**      |
 | --------------------------------------- | ----------------------------------------------------- | ------------------- |
-| **Revisões de Iteração**                  | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
+| **Revisões de Iteração**                | Cliente valida entregas e fornece feedback.           | A cada 2 semanas    |
 | **Interações esporádicas via WhatsApp** | Comunicação rápida para dúvidas ou ajustes imediatos. | Conforme necessário |
 
 ---
 
 ## **Planejamento das Fases e/ou Iterações do Projeto**
 
-| Iteração | Fase RAD                       | Processo de Engenharia                                                                                     | Produto (Entrega)                                  | Data Início | Data Fim   | Quantidade de Dias |
-| -------- | ------------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ----------- | ---------- | ------------------ |
-| 0        | Planejamento de Requisitos     | Definição do produto<br>Definição do Problema<br>Lista inicial dos requisitos do produto                  | Documento de requisitos e visão geral do produto | 22/10/2024  | 10/11/2024 | 19                 |
-| 1        | Design do Usuário              | Definição do Backlog do Produto<br>Definição de MVP<br>Definição de DoR e DoD                              | Protótipo inicial e critérios de aceite          | 11/11/2024  | 29/11/2024 | 18                 |
-| 2        | Construção Rápida              | Validação do Backlog do Produto<br>Desenvolvimento iterativo                                              | MVP1 com funcionalidades básicas                 | 25/11/2024  | 08/12/2024 | 14                 |
-| 3        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP1 refinado                                    | 09/12/2024  | 18/12/2024 | 10                 |
-| Pausa    | -                              | Recesso de Fim de Ano                                                                                      | -                                                 | 19/12/2024  | 07/01/2025 | 20                 |
-| 4        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP1 finalizado                                  | 08/01/2025  | 21/01/2025 | 14                 |
-| 5        | Construção Rápida              | Desenvolvimento iterativo                                                                                  | MVP2 com novas funcionalidades                   | 22/01/2025  | 04/02/2025 | 14                 |
-| 6        | Cutover (Transição e Entrega)  | Testes finais e entrega do produto                                                                         | Produto final                                    | 05/02/2025  | 13/02/2025 | 9                  |
+| Iteração  | Fase RAD                    | Processo de Engenharia                                                                                | Produto (Entrega)                     | Data Início | Data Fim   | Dias |
+| --------- | --------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------- | ---------- | ---- |
+| 0         | Planejamento dos Requisitos | Definição do produto<br>Definição do Problema<br>Levantamento inicial e análise de requisitos         | Documento de visão inicial do produto | 22/10/2024  | 04/11/2024 | 14   |
+| 1         | Planejamento dos Requisitos | Levantamento inicial e análise de requisitos                                                          | Levantamento de backlog incial        | 05/11/2024  | 18/11/2024 | 14   |
+| 2         | Planejamento dos Requisitos | Levantamento inicial e análise de requisitos<br>Priorização incial de requisitos                      | Levantamento de backlog incial        | 19/11/2024  | 02/12/2024 | 14   |
+| 3         | Planejamento dos Requisitos | Refinamento e priorização de backlog<br>Definição de DoR e DoD<br>Definição de critérios de aceitação | Backlog detalhado para MVP1 e MVP2    | 03/12/2024  | 16/12/2024 | 14   |
+| 4         | User Design                 | Prototipação detalhada de US01 a US27<br>Feedback de usuários<br>Ajustes com base no feedback         | Protótipos para MVP1 e MVP2           | 17/12/2024  | 30/12/2024 | 14   |
+| **Pausa** | -                           | Recesso de Fim de Ano                                                                                 | -                                     | 31/12/2024  | 07/01/2025 | 8    |
+| 5         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para US01 a US07                                                   | Entrega de MVP1                       | 08/01/2025  | 21/01/2025 | 14   |
+| 6         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para US08 a US16                                                   | Entrega parcial de MVP2               | 22/01/2025  | 04/02/2025 | 14   |
+| 7         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para US16 a US27                                                   | Entrega de MVP2                       | 05/02/2025  | 18/02/2025 | 14   |
 
 ---
 

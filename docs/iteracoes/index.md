@@ -17,7 +17,7 @@
 
     #### **📅 Período**
 
-    > **data**: 22/10/2023 - 11/11/2023
+    > **data**: 22/10/2023 - 04/11/2023
 
     ---
 
@@ -268,3 +268,359 @@
         !!! warning "Atenção"
 
             **Nota**: Sem notas adicionais.
+
+=== "Iteração 1"
+
+    ### **Iteração 1**
+
+    ---
+
+    #### **📅 Período**
+
+    > **Data**: 05/11/2023 - 18/11/2023
+
+    ---
+
+    #### **🔑 Principais Decisões**
+
+    !!! tip "Primeiros passos"
+
+        Durante esta Iteração, o grupo buscou estabelecer uma primeira relação com os requisitos e corrigir alguns débitos da iteração anterior, como ajustes na visão do produto, refinamento do projeto e pequenos ajustes operacionais.
+
+    | **Decisão**                         | **Descrição**                                                                                             |
+    |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Escopo inicial de requisitos**    | A equipe se reuniu para identificar, nos documentos disponíveis, oportunidades para definição de requisitos.|
+    | **Definição de escopo para MVP1**   | Com base na primeira versão dos requisitos, foi determinado o que poderia compor o MVP1.                  |
+    | **Conversa com cliente para alinhar expectativas** | Após a proposta inicial do escopo, a equipe reuniu-se com o cliente para ajustar a lista de requisitos.  |
+    | **Priorização de MVP1**             | Realizada a primeira priorização do escopo definido para o MVP1, considerando os interesses da equipe e do cliente.|
+
+    ---
+
+    #### **🎯 Entregas Realizadas**
+
+    !!! success "Boas decisões"
+        As entregas da Iteração 1 garantiram um bom início para a criação e priorização do backlog, fortalecendo o alinhamento com o cliente.
+
+    | **Entrega**                         | **Descrição**                                                                                             |
+    |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Primeira lista de requisitos**    | Estabelecimento de uma lista básica de requisitos.                                                        |
+    | **Definição inicial de escopo para MVP1** | Identificação do escopo inicial para o MVP1, alinhado com os objetivos da equipe e do cliente.            |
+    | **Definição inicial de priorização**| Priorização inicial do MVP1 baseada nos interesses do cliente e da equipe.                                |
+
+    ---
+
+    #### **🧐 Retrospectiva da Iteração**
+
+    !!! info "Ponto de reflexão"
+        A retrospectiva foi realizada para avaliar os pontos fortes e as áreas de melhoria, promovendo aprendizado contínuo.
+
+    - **Tópicos discutidos**: Durante a retrospectiva, foram analisadas oportunidades de melhoria para as próximas entregas.
+    - **Conclusão**: Todas as entregas foram realizadas dentro do prazo, mas foi identificado que uma melhor comunicação interna poderia trazer maior harmonia à equipe.
+
+    ---
+
+    #### **🏆 Conquistas da Iteração**
+
+    !!! success "Vale comemorar"
+
+        - **Entregas realizadas dentro do prazo.**
+        - **Ajustes implementados conforme o feedback do cliente.**
+
+    ---
+
+    #### **📌 Próximos Passos**
+
+    > O foco será a definição do escopo para o MVP2 e a priorização inicial de suas entregas.
+
+    ---
+
+    #### **🤝 Reuniões**
+
+    === "1ª Reunião"
+
+    **Alinhamento interno da equipe**
+
+    !!! info "Detalhes do Encontro"
+
+        - **Data**: 13/11/2024
+        - **Horário**: 08:00
+        - **Modalidade**: Videoconferência (Teams)
+        - **Participantes**: Equipe
+
+    ---
+
+    **Propósito**
+
+    Esta reunião teve como objetivo elicitar uma primeira versão do backlog.
+
+    ??? tip "Gravação da Reunião"
+
+        A reunião não foi gravada.
+
+    ---
+
+    **Principais Tópicos**
+
+    |  #  | **Tópico**                              |
+    |-----|-----------------------------------------|
+    | 1   | Busca de documentos relevantes.         |
+    | 2   | Alinhamento sobre as entregas planejadas.|
+    | 3   | Divisão de tarefas entre os membros.    |
+
+    ---
+
+    **Decisões Críticas**
+
+    !!! danger "Atenção"
+
+        Durante a reunião, foram tomadas decisões importantes para o andamento e comunicação do projeto:
+
+        - Determinação dos documentos que serviriam como base.
+        - Alinhamento sobre as datas limites das entregas.
+        - Definição das tarefas para a entrega da lista inicial de requisitos.
+
+    ---
+
+    **Observações Adicionais**
+
+    !!! warning "Atenção"
+
+        **Nota**: Nem todos os membros da equipe puderam estar presentes.
+
+=== "Iteração 2"
+
+    ### **Iteração 2**
+
+    ---
+
+    #### **📅 Período**
+
+    > **Data**: 19/11/2024 - 02/12/2024
+
+    ---
+
+    #### **🔑 Principais Decisões**
+
+    !!! tip "Avanço nos requisitos"
+
+        Durante esta Iteração, a equipe focou no levantamento inicial e na análise detalhada dos requisitos, além de avançar na priorização e estruturação de um backlog inicial.
+
+    | **Decisão**                           | **Descrição**                                                                                             |
+    |---------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Planejamento dos Requisitos**       | Foi realizada a análise inicial dos requisitos levantados na Iteração anterior, ajustando e refinando detalhes técnicos e funcionais. |
+    | **Priorização inicial de requisitos** | Com base nos requisitos identificados, a equipe definiu prioridades para orientar o planejamento do projeto. |
+    | **Levantamento de backlog inicial**   | A partir das prioridades estabelecidas, foi estruturado um backlog inicial, alinhado às entregas futuras.  |
+
+    ---
+
+    #### **🎯 Entregas Realizadas**
+
+    !!! success "Evolução contínua"
+        As entregas desta Iteração consolidaram a base para um planejamento mais claro e direcionado, garantindo avanços no desenvolvimento do projeto.
+
+    | **Entrega**                             | **Descrição**                                                                                             |
+    |-----------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Levantamento inicial de requisitos**  | Identificação e análise de requisitos detalhados para direcionar as próximas etapas do projeto.            |
+    | **Priorização inicial de backlog**      | Estabelecimento de uma lista de prioridades com base nos objetivos do cliente e da equipe.                |
+    | **Backlog inicial estruturado**         | Criação de um backlog contendo as principais tarefas e entregas para nortear o desenvolvimento.            |
+
+    ---
+
+    #### **🧐 Retrospectiva da Iteração**
+
+    !!! info "Ponto de reflexão"
+        A retrospectiva da Iteração 2 destacou os avanços obtidos e os desafios enfrentados na análise e priorização de requisitos.
+
+    - **Tópicos discutidos**: Melhorias no processo de levantamento e priorização de requisitos, além da necessidade de maior clareza na documentação.
+    - **Conclusão**: Apesar do progresso significativo, foi identificado que uma melhor organização das reuniões e registros poderia acelerar o processo de planejamento.
+
+    ---
+
+    #### **🏆 Conquistas da Iteração**
+
+    !!! success "Vale comemorar"
+
+        - **Backlog inicial estruturado com sucesso.**
+        - **Análise inicial de requisitos concluída dentro do prazo.**
+        - **Consolidação do escopo para as próximas iterações.**
+
+    ---
+
+    #### **📌 Próximos Passos**
+
+    > Trabalhar no detalhamento do backlog inicial, refinando os requisitos e começando a planejar a implementação do MVP2.
+
+    ---
+
+    #### **🤝 Reuniões**
+
+    === "1ª Reunião"
+
+    **Planejamento de requisitos e alinhamento inicial**
+
+    !!! info "Detalhes do Encontro"
+
+        - **Data**: 23/11/2024
+        - **Horário**: 09:00
+        - **Modalidade**: Videoconferência (Teams)
+        - **Participantes**: Equipe
+
+    ---
+
+    **Propósito**
+
+    Esta reunião teve como objetivo revisar os requisitos levantados e iniciar a priorização e estruturação do backlog.
+
+    ??? tip "Gravação da Reunião"
+
+        A reunião não foi gravada.
+
+    ---
+
+    **Principais Tópicos**
+
+    |  #  | **Tópico**                              |
+    |-----|-----------------------------------------|
+    | 1   | Revisão dos requisitos levantados na Iteração 1. |
+    | 2   | Priorização inicial de requisitos e tarefas. |
+    | 3   | Estruturação do backlog inicial.        |
+
+    ---
+
+    **Decisões Críticas**
+
+    !!! danger "Atenção"
+
+        Durante a reunião, foram tomadas decisões importantes para o planejamento do projeto:
+
+        - Ajustes nos requisitos levantados anteriormente.
+        - Priorização de funcionalidades e tarefas.
+        - Definição das entregas prioritárias para o MVP2.
+
+    ---
+
+    **Observações Adicionais**
+
+    !!! warning "Atenção"
+
+        **Nota**: Nem todos os requisitos foram completamente detalhados durante a Iteração, sendo necessário complementar nas próximas reuniões.
+
+=== "Iteração 3"
+
+    ### **Iteração 3**
+
+    ---
+
+    #### **📅 Período**
+
+    > **Data**: 03/12/2024 - 16/12/2024
+
+    ---
+
+    #### **🔑 Principais Decisões**
+
+    !!! tip "Avanços no planejamento"
+
+        Durante esta Iteração, a equipe focou no refinamento do backlog, priorização das tarefas e na definição de critérios essenciais para garantir a entrega de valor contínuo.
+
+    | **Decisão**                           | **Descrição**                                                                                             |
+    |---------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Refinamento e priorização de backlog** | A equipe revisou e detalhou o backlog existente, definindo as tarefas e funcionalidades essenciais para os MVPs. |
+    | **Definição de DoR (Definition of Ready)** | Estabelecimento de critérios claros para garantir que as tarefas estejam prontas para desenvolvimento. |
+    | **Definição de DoD (Definition of Done)** | Definição dos critérios de conclusão das tarefas para garantir entregas de alta qualidade. |
+    | **Definição de critérios de aceitação** | A equipe detalhou os critérios específicos de aceitação para cada funcionalidade do backlog. |
+
+    ---
+
+    #### **🎯 Entregas Realizadas**
+
+    !!! success "Planejamento consolidado"
+        As entregas desta Iteração garantiram a preparação detalhada dos MVPs, com uma visão clara das expectativas e dos requisitos para os próximos passos.
+
+    | **Entrega**                             | **Descrição**                                                                                             |
+    |-----------------------------------------|-----------------------------------------------------------------------------------------------------------|
+    | **Backlog detalhado para MVP1 e MVP2**  | O backlog foi refinado e detalhado, com funcionalidades e prioridades bem definidas para os dois MVPs.     |
+    | **Definição de DoR (Definition of Ready)** | Estabelecimento de critérios claros para garantir que as tarefas estejam prontas para o desenvolvimento.   |
+    | **Definição de DoD (Definition of Done)** | Definição dos critérios de aceitação e conclusão das tarefas, assegurando a entrega de funcionalidades completas e testadas. |
+    | **Critérios de aceitação definidos**    | Para cada tarefa do backlog, foram estabelecidos critérios claros de aceitação, garantindo que as funcionalidades atendam aos requisitos do cliente. |
+
+    ---
+
+    #### **🧐 Retrospectiva da Iteração**
+
+    !!! info "Ponto de reflexão"
+        A retrospectiva da Iteração 3 destacou os avanços na definição dos requisitos, mas também revelou oportunidades de melhorar a comunicação sobre as expectativas de qualidade e aceitação.
+
+    - **Tópicos discutidos**: A necessidade de maior alinhamento entre a equipe sobre a definição dos critérios de aceitação e as expectativas de qualidade.
+    - **Conclusão**: Embora as entregas tenham avançado conforme o planejado, o alinhamento dos critérios de aceitação foi considerado um ponto de melhoria para garantir que todos os membros da equipe compreendam as expectativas de forma clara e consistente.
+
+    ---
+
+    #### **🏆 Conquistas da Iteração**
+
+    !!! success "Conquistas importantes"
+
+        - **Backlog detalhado para MVP1 e MVP2 concluído.**
+        - **Definição de critérios claros de DoR e DoD.**
+        - **Estabelecimento de critérios de aceitação para funcionalidades.**
+
+    ---
+
+    #### **📌 Próximos Passos**
+
+    > Refinamento final do backlog, foco na implementação das funcionalidades de maior prioridade para o MVP1 e alinhamento da equipe quanto aos critérios de aceitação.
+
+    ---
+
+    #### **🤝 Reuniões**
+
+    === "1ª Reunião"
+
+    **Planejamento detalhado e definição de critérios**
+
+    !!! info "Detalhes do Encontro"
+
+        - **Data**: 05/12/2024
+        - **Horário**: 10:00
+        - **Modalidade**: Videoconferência (Teams)
+        - **Participantes**: Equipe
+
+    ---
+
+    **Propósito**
+
+    Esta reunião teve como objetivo refinar o backlog e definir claramente os critérios de aceitação, DoR e DoD para garantir a execução eficiente das entregas futuras.
+
+    ??? tip "Gravação da Reunião"
+
+        A reunião não foi gravada.
+
+    ---
+
+    **Principais Tópicos**
+
+    |  #  | **Tópico**                              |
+    |-----|-----------------------------------------|
+    | 1   | Refinamento e priorização do backlog.   |
+    | 2   | Definição dos critérios de DoR e DoD.   |
+    | 3   | Estabelecimento dos critérios de aceitação para as funcionalidades. |
+
+    ---
+
+    **Decisões Críticas**
+
+    !!! danger "Atenção"
+
+        Durante a reunião, as seguintes decisões críticas foram tomadas para garantir o progresso do projeto:
+
+        - Refinamento do backlog com base nas prioridades dos MVPs.
+        - Definição clara dos critérios de DoR e DoD para garantir o alinhamento de qualidade.
+        - Estabelecimento de critérios de aceitação para todas as tarefas do backlog.
+
+    ---
+
+    **Observações Adicionais**
+
+    !!! warning "Atenção"
+
+        **Nota**: A equipe deve garantir que os critérios de aceitação sejam revisados continuamente para alinhá-los com as expectativas do cliente e com as mudanças no escopo.
