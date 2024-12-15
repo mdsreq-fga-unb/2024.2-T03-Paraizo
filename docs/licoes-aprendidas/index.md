@@ -49,3 +49,11 @@
     - **GitHub Pages**: Plataforma gratuita de hospedagem que a equipe utilizará para **documentar o projeto** de forma clara e acessível, garantindo que todos os membros estejam alinhados quanto aos processos e etapas.
 
     ---
+
+=== "Unidade 2"
+
+    ### **Unidade 2**
+
+    ---
+
+    ---

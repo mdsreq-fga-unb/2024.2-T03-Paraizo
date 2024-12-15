@@ -106,5 +106,37 @@
 | **Finalização e Entrega**       | **Verificação e Validação**                     | Testes de Aceitação                                                  | Testes com usuário                                                         | Requisitos devidamente validados com o cliente                                                                   |
 |                                | **Organização e Atualização**                   | Fechamento do Backlog                                                | Revisão da iteração                                                       | Retrospectiva do backlog, acertos e erros                                                                         |
 
+#### **CRONOGRAMA E ENTREGAS**
+<p style="text-indent: 50px;text-align: justify;">Dado as estratégias de desenvolvimeto de software descritas, estabelece-se o seguinte cronograma:</p>
 
+##### **Considerações importantes:**
 
+### **REQUISITOS DE SOFTWARE**
+
+#### **Lista de Requisitos Funcionais**
+
+#### **Lista de Requisitos Não Funcionais**
+
+### **DOR E DOD**
+
+#### **Definition of Ready (DoR)**
+
+#### **Definition of Done (DoD)**
+<p style="text-indent: 50px;text-align: justify;">O Definition of Done (DoD) é usado para garantir a qualidade e a consistência do trabalho entregue pela equipe a partir de uma definição clara e objetiva de critérios que precisam ser atendidos para que um item do backlog (User Story) seja considerado como concluído. A seguir, será apresentado os critérios escolhidos pela equipe para composição do DoD:
+</p>
+
+- **Código segue os padrões do projeto:** O código desenvolvido deve respeitar os padrões estabelecidos pela equipe, como a padronização de tecnologias, bibliotecas, nomenclaturas e comentários de código;
+- **Código submetido a testes:** Durante o desenvolvimento do código da User Story em questão, os desenvolvedores devem submeter suas implementações à testes unitários, testes de integração e testes end to end;
+- **Respeitar os critérios de aceite da User Story:** Para quaisquer User Story implementada, os desenvolvedores envolvidos devem garantir que o resultado atenda aos critérios de aceitação específicos da própria User Story;
+- **Código aprovado pelo QA:** Todo o trabalho desenvolvido deve passar por um processo de revisão, feito pelo QA e assistente, e ser aprovado;
+- **Entrega segue os padrões definidos no protótipo:** O código desenvolvido deve estar de acordo com o design prototipado pela equipe, sendo responsivo e seguindo as diretrizes de acessibilidade da WCAG;
+- **Código da User Story deve estar documentado:** Ao implementar a User Story, os envolvidos devem documentar a nova funcionalidade para uso e manutenções futuras;
+- **Código deve estar livre de bugs:** O desenvolvedor deve verificar que o código não está sujeito a bugs de quaisquer severidade (pequeno, crítico, moderado e/ou grave).
+- 
+
+---
+### **BACKLOG DO PRODUTO**
+
+#### **Backlog Geral**
+
+#### **Priorização do Backlog**
