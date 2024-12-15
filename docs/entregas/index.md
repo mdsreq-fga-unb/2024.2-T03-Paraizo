@@ -121,6 +121,19 @@
 
 #### **Definition of Ready (DoR)**
 
+<p style="text-indent: 50px;text-align: justify;">
+
+O DoR é um conjunto de critérios que fala sobre quando um item, independente de ser uma história, tarefa ou épico, está pronto para a equipe de desenvolvimento trabalhar nela ou outro grupo no projeto. O que significa que é um acordo feito entre as partes interessadas – Product Owner, equipe de desenvolvimento, stakeholders, etc. o qual garante clareza, alinhamento e pré-requisitos para o trabalho poder ser feito. Os critérios para realização do DoR serão listados abaixo:
+
+</p>
+
+- **Clareza:** A descrição da história está clara e bem compreendida? A história deve seguir o padrão “Eu como… quero… para…” e ter detalhes suficientes para que a equipe entenda o que precisa ser feito.
+- **Critérios de Aceitação:** Os critérios de aceitação foram definidos? Os critérios de aceitação devem estar definidos para garantir que os objetivos do requisito sejam entendidos..
+- **Priorização:** O requisito foi priorizado e tem um valor definido para o negócio, alinhada com  os objetivos do projeto?O requisito deve ter sido priorizado, para que a equipe saiba quando deve desenvolvê-lo.
+- **Dependência:** Todas as dependências foram identificadas e tratadas? O requisito precisa que todas as suas dependências tenham sido resolvidas para prosseguir com o desenvolvimento.
+- **Validação:** O requisito foi analisado e aprovado pelo Product Owner? O requisito deve ter sido previamente analisado e aprovado pelo Product Owner para garantir que está alinhado com as suas necessidades.
+- **Tamanho:** O item tem tamanho adequado para ser completado dentro de uma sprint ou período estipulado? O requisito deve ser suficientemente pequeno para ser concluído dentro de uma sprint.
+
 #### **Definition of Done (DoD)**
 <p style="text-indent: 50px;text-align: justify;">O Definition of Done (DoD) é usado para garantir a qualidade e a consistência do trabalho entregue pela equipe a partir de uma definição clara e objetiva de critérios que precisam ser atendidos para que um item do backlog (User Story) seja considerado como concluído. A seguir, será apresentado os critérios escolhidos pela equipe para composição do DoD:
 </p>
