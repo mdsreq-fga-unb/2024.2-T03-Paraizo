@@ -147,7 +147,7 @@ nav:
       - Visão do Produto: visao-produto-projeto/visao-produto/index.md
       - Visão do Projeto: visao-produto-projeto/visao-projeto/index.md
       - Processo de desenvolvimento de software: visao-produto-projeto/processo-desenvolvimento-software/index.md
-  # - Backlog do Produto: backlog-produto/index.md
+  - Backlog do Produto: backlog-produto/index.md
   - Iterações: iteracoes/index.md
   - Entregas: entregas/index.md
   - Lições Aprendidas: licoes-aprendidas/index.md
