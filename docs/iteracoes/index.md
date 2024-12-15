@@ -5,7 +5,11 @@
     | **Data** | **Versão** | **Descrição** | **Autor** |
     | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------------------------------------------------: |
     | 08/11 | 1.0 | Criação das seção de Processo de desenvolvimento de software | Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso |
-    | 10/11 | 1.1 | Adicionando informação da primeira reunião | Erick Miranda Santos |
+    | 10/11 | 1.1 | Adicionando informações sobre iteração 01 | Erick Miranda Santos |
+    | 14/11 | 1.2 | Adicionando informações sobre iteração 02 | Maykon Júnio dos Santos Soares |
+    | 23/11 | 1.3 | Adicionando informações sobre iteração 02 | Maykon Júnio dos Santos Soares |
+    | 06/12 | 1.4 | Adicionando informações sobre iteração 03 | Maykon Júnio dos Santos Soares |
+    | 13/12 | 1.4 | Adicionando informações sobre iteração 03 | Maykon Júnio dos Santos Soares |
 
 ---
 
