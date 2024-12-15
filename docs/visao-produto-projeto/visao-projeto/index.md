@@ -65,17 +65,3 @@
 | 7         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para US16 a US27                                                   | Entrega de MVP2                       | 05/02/2025  | 18/02/2025 | 14   |
 
 ---
-
-<!-- ## **Gerenciamento de Riscos**
-
-!!! Warning "Atenção"
-
-    Devido às incertezas e receios que surgem durante um projeto, é importante ceder atenção ao gerenciamento de riscos como forma de prevenir possíveis situações que possam abalar o cenário do time.
-
-| **Descrição**                     | **Causa**                                                                                                                                         | **Mitigação**                                                                                                                                                                 |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Redução da equipe**             | Trancamento da disciplina ou questões pessoais que possam surgir no decorrer do semestre, levando à redução do time                               | Reunião com o cliente para redefinição de alguns requisitos / Aumento na carga horária para desenvolvimento do projeto                                                        |
-| **Falta de Comunicação Externa**  | O cliente pode estar indisponível para a validação constante do projeto, bem como a falta de feedback e dificuldade em marcação de reuniões       | Realizar reuniões regulares e com objetivo pré-definido para que as atualizações sejam compartilhadas de forma clara e acessível, além de não consumir tanto tempo do cliente |
-| **Falta de Comunicação Interna**  | Falta de comunicação entre os membros da equipe, levando a dúvidas e dificuldades para realização do projeto por falta de transparência e clareza | Analisar a situação e marcar uma reunião para repensar na metodologia de comunicação                                                                                          |
-| **Falta de habilidades técnicas** | A equipe não se capacitou o suficiente para realização do projeto, causando uma entrega de baixa qualidade                                        | Capacitar a equipe constantemente durante o projeto e acompanhar essa capacitação                                                                                             |
-| **Indisponibilidade do Cliente**  | O cliente não estará disponível para os testes de validação                                                                                       | Manter um contato constante com o cliente a fim de que os testes estejam de acordo com o esperado sem que onere seu fluxo de trabalho                                         | -->
