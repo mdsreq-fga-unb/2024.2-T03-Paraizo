@@ -2,14 +2,13 @@
 
 ??? abstract "Histórico de Revisão"
 
-    | **Data** | **Versão** |              **Descrição**              |           **Autor**            |
-    | :------: | :--------: | :-------------------------------------: | :----------------------------: |
-    |  01/11   |    1.0     | Criação do tópico de Backlog do Produto | Maykon Júnio dos Santos Soares |
-    |  15/12   |    2.0     | Adição dos artefatos | Pedro Miguel M. de O. dos Santos, Maykon Júnio dos Santos Soares |
+    | **Data** | **Versão** |        **Descrição**        |           **Autor**            |
+    | :------: | :--------: | :-------------------------: | :----------------------------: |
+    |  08/11   |    1.0     | Criação do tópico de Backlog do Produto | Maykon Júnio dos Santos Soares |
 
 ---
 
-## **Descrição do Backlog**
+## Backlog geral
 
 !!! info "Temas e Épicos Relacionados"
     A tabela abaixo contém os temas e seus respectivos épicos relacionados, organizados de forma hierárquica.
@@ -33,6 +32,8 @@
     | E6          | Gestão da Ficha do Cliente     |
     | E7          | Gestão de Relatório do Cliente |
     | E8          | Visualização e Salvamento Relatórios |
+
+## Descrição do Backlog
 
 Tabela 3: Backlog detalhado
 
@@ -68,8 +69,9 @@ Tabela 3: Backlog detalhado
 | **T4 - Gestão de Documentos**  | **E8 - Visualização e Salvamento Relatórios** | **US28**  | Salvar relatório PDF                 | Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf.                      |
 | **T4 - Gestão de Documentos**  | **E8 - Visualização e Salvamento Relatórios** | **US29**  | Visualizar relatório do paciente     | Eu, como usuário, desejo visualizar meus relatórios de avaliação.                                |
 
+## Priorização do Backlog geral
 
-<!-- ## Critérios de priorização e suas escalas
+## Critérios de priorização e suas escalas
 
 Abaixo é possível ver as escalas utilizadas na priorização:
 
@@ -93,19 +95,9 @@ Abaixo é possível ver as escalas utilizadas na priorização:
 - **Vn** = Valor de Negócio  
 - **Com** = Complexidade  
 - **Crit** = Criticidade  
-- **Indep** = Independência   -->
+- **Indep** = Independência  
 
-### Requisitos não funcionais
-
-| **Requisito**                                               | **URPS+**       |
-| ----------------------------------------------------------- | --------------- |
-| **[RNF01]** Oferecer uma interface responsiva               | Usabilidade     |
-| **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | Usabilidade     |
-| **[RNF03]** Implementar SEO                                 | Suportabilidade |
-| **[RNF04]** Implementar protocolo HTTPS                     | Suportabilidade |
-| **[RNF05]** Otimizar vídeos e imagens                       | Performance     |
-
-### **Critérios de Aceitação**
+## Critérios de aceitação
 
 | ID da US  | Título da US                         | Critérios da aceitação |
 |-----------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,36 +130,3 @@ Abaixo é possível ver as escalas utilizadas na priorização:
 | US27      | Visualizar relatórios de avaliação   | - O administrador deve conseguir visualizar todos os relatórios de avaliação cadastrados no sistema; <br> - O sistema deve identificar a qual usuário o relatório de avaliação está vinculado; <br> - O sistema deve exibir as informações do paciente de forma organizada e clara; <br> - As páginas envolvidas nessa User Story devem respeitar o design responsivo; <br> - As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG; |
 | US28      | Salvar relatório de avaliação do paciente | - O paciente deve ser capaz de exportar relatórios de avaliação nos tipos que definimos (ex.: PDF, XLS, etc.); <br> - O sistema deve permitir que o paciente exporte os relatórios com todas as informações que foram registradas; <br> - O paciente não pode exportar relatórios excluídos. |
 | US29      | Visualizar relatório de avaliação do paciente | - O paciente deve ser capaz de visualizar todos os relatórios vinculados a sua conta de usuário; <br> - O sistema deve garantir que os relatórios exibidos estejam atualizados, incluindo as informações mais recentes; <br> - As páginas envolvidas nessa User Story devem respeitar o design responsivo; <br> - As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG; |
-
-### **Definition of Ready (DoR) e Definition of Done (DoD)**
-
-#### **_Definition of Ready_ (DoR)**
-
-!!! info "Sobre"
-
-    O DoR é um conjunto de critérios que fala sobre quando um item, independente de ser uma história, tarefa ou épico, está pronto para a equipe de desenvolvimento trabalhar nela ou outro grupo no projeto. O que significa que é um acordo feito entre as partes interessadas – Product Owner, equipe de desenvolvimento, stakeholders, etc. o qual garante clareza, alinhamento e pré-requisitos para o trabalho poder ser feito. Os critérios para realização do DoR serão listados abaixo:
-
-| Critério                   | Descrição                                                                                                                                                                           |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Clareza**                | A descrição da história deve estar clara e bem compreendida. Deve seguir o formato “Eu como… quero… para…” com detalhes suficientes para a equipe entender o que precisa ser feito. |
-| **Critérios de Aceitação** | Os critérios de aceitação devem estar definidos para garantir que os objetivos do requisito sejam entendidos.                                                                       |
-| **Priorização**            | O requisito deve ter sido priorizado e ter um valor definido para o negócio, alinhado com os objetivos do projeto.                                                                  |
-| **Dependência**            | Todas as dependências do requisito precisam ser identificadas e tratadas para que o desenvolvimento possa prosseguir.                                                               |
-| **Validação**              | O requisito deve ser analisado e aprovado pelo Product Owner para garantir que está alinhado com as necessidades dele.                                                              |
-| **Tamanho**                | O item precisa ter um tamanho adequado para ser completado dentro de uma sprint ou período estipulado.                                                                              |
-
-#### **Definition of Done (DoD)**
-
-!!! info "Sobre"
-
-    O Definition of Done (DoD) é usado para garantir a qualidade e a consistência do trabalho entregue pela equipe a partir de uma definição clara e objetiva de critérios que precisam ser atendidos para que um item do backlog (User Story) seja considerado como concluído. A seguir, será apresentado os critérios escolhidos pela equipe para composição do DoD:
-
-| Critério                                            | Descrição                                                                                                                                           |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Código segue os padrões do projeto**              | O código deve respeitar os padrões estabelecidos pela equipe, como padronização de tecnologias, bibliotecas, nomenclaturas e comentários de código. |
-| **Código submetido a testes**                       | O código deve passar por testes unitários, de integração e end to end.                                                                              |
-| **Respeitar os critérios de aceite da User Story**  | O código deve atender aos critérios de aceitação específicos da User Story.                                                                         |
-| **Código aprovado pelo QA**                         | O código deve passar por uma revisão de QA e ser aprovado antes da entrega.                                                                         |
-| **Entrega segue os padrões definidos no protótipo** | O código deve estar conforme o design prototipado, ser responsivo e seguir as diretrizes de acessibilidade da WCAG.                                 |
-| **Código da User Story deve estar documentado**     | A nova funcionalidade deve ser documentada para facilitar manutenção futura.                                                                        |
-| **Código deve estar livre de bugs**                 | O código deve ser verificado para garantir que não tenha bugs de qualquer severidade.                                                               |
