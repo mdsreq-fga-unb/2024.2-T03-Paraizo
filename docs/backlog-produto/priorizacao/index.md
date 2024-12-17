@@ -83,7 +83,7 @@
             | Suportabilidade | **[RNF03]** Implementar SEO                                 | 5                        | 2                     | 3                   | 4                     | 3.11 🟠   |
             | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 3                        | 4                     | 4                   | 2                     | 2.78 🟠   |
             | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 4                        | 3                     | 2                   | 3                     | 2.78 🟠   |
-            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2                        | 3                     | 3                   | 4                     | 2.44 🟡   |
+            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 2                        | 3                     | 3                   | 4                     | 2.44 🟡   |
             | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3                        | 2                     | 4                   | 3                     | 2.78 🟠   |
 
     === "Marllon"
@@ -129,7 +129,7 @@
             | Suportabilidade | **[RNF03]** Implementar SEO                                 | 4                        | 3                     | 4                   | 3                     | 3.00 🟠   |
             | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 5                        | 2                     | 3                   | 3                     | 3.11 🟠   |
             | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 3                        | 3                     | 3                   | 4                     | 3.00 🟠   |
-            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 4                        | 2                     | 3                   | 2                     | 2.89 🟠   |
+            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 4                        | 2                     | 3                   | 2                     | 2.89 🟠   |
             | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3                        | 4                     | 2                   | 4                     | 2.78 🟠   |
 
     === "Erick"
@@ -175,7 +175,7 @@
             | Suportabilidade | **[RNF03]** Implementar SEO                                 | 4                        | 3                     | 2                   | 2                     | 2.44 🟡   |
             | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 3                        | 3                     | 4                   | 2                     | 2.67 🟡   |
             | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 4                        | 4                     | 3                   | 3                     | 3.00 🟠   |
-            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2                        | 4                     | 4                   | 3                     | 2.67 🟡   |
+            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 2                        | 4                     | 4                   | 3                     | 2.67 🟡   |
             | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3                        | 2                     | 2                   | 4                     | 2.44 🟡   |
 
 
@@ -223,7 +223,7 @@
             | Suportabilidade | **[RNF03]** Implementar SEO                                 | 3                        | 4                     | 3                   | 3                     | 2.78 🟠   |
             | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 5                        | 2                     | 4                   | 4                     | 3.33 🟠   |
             | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 4                        | 3                     | 4                   | 2                     | 3.00 🟠   |
-            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2                        | 2                     | 2                   | 4                     | 2.44 🟡   |
+            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 2                        | 2                     | 2                   | 4                     | 2.44 🟡   |
             | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3                        | 3                     | 3                   | 3                     | 2.67 🟡   |
 
 
@@ -272,7 +272,7 @@
             | Suportabilidade | **[RNF03]** Implementar SEO                                 | 3                        | 3                     | 3                   | 2                     | 2.67 🟡   |
             | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 4                        | 4                     | 2                   | 4                     | 3.00 🟠   |
             | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 4                        | 2                     | 3                   | 5                     | 3.11 🟠   |
-            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2                        | 3                     | 3                   | 3                     | 2.67 🟡   |
+            | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 2                        | 3                     | 3                   | 3                     | 2.67 🟡   |
             | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3                        | 3                     | 4                   | 3                     | 2.89 🟠   |
 
 ### **Priorização (Final)**
@@ -318,5 +318,5 @@
     | Performance     | **[RNF05]** Otimizar vídeos e imagens                       | 4.00                     | 3.20                  | 3.00                | 3.80                  | 3.00 🟠   |
     | Usabilidade     | **[RNF01]** Oferecer uma interface responsiva               | 4.20                     | 3.00                  | 3.80                | 3.00                  | 2.98 🟠   |
     | Suportabilidade | **[RNF03]** Implementar SEO                                 | 4.00                     | 2.80                  | 3.20                | 3.20                  | 2.98 🟠   |
-    | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AAA (WCAG 2.2) | 2.40                     | 3.00                  | 3.20                | 3.40                  | 2.61 🟡   |
+    | Usabilidade     | **[RNF02]** Oferecer nível de acessibilidade AA (WCAG 2.2) | 2.40                     | 3.00                  | 3.20                | 3.40                  | 2.61 🟡   |
     | Suportabilidade | **[RNF04]** Implementar protocolo HTTPS                     | 3.00                     | 3.00                  | 3.20                | 3.40                  | 2.71 🟡   |
