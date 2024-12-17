@@ -65,81 +65,16 @@
 | 6         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para **[US13]**, **[US02]**, **[US07]**, **[US16]**, **[US17]**, **[US18]**, **[US19]**, **[US20]** e **[US24]**                                                                                                                                                        | Entrega parcial 2 - MVP               | 22/01/2025  | 04/02/2025 | 14   |
 | 7         | Desenvolvimento e Testes    | Desenvolvimento iterativo e testes para **[US09]**, **[US10]**, **[US11]** e **[US14]**                                                                                                                                                                                                                    | Entrega parcial 3 - MVP               | 05/02/2025  | 18/02/2025 | 14   |
 
----
+## **Gerenciamento de Riscos**
 
-## **Engenharia de Requisitos e o RAD**
+!!! info "Sobre"
 
-| **Fases do RAD**                | **Atividades da Engenharia de Requisitos (ER)** | **Prática**                                                               | **Técnica**                                                                                   | **Resultados Esperados**                                                                |
-| ------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| **Planejamento dos Requisitos** | **Elicitação e Descoberta**                     | Levantamento de Requisitos                                                | Análise Documental, Brainstorming, Entrevista, Análise de Concorrentes                        | Identificar todos os requisitos de alto nível do projeto                                |
-|                                 | **Análise e Consenso**                          | Análise de dependência entre os requisitos e eliminar ambiguidades        | Brainstorming, Entrevista, Análise de Objetivos de Domínio                                    | Lista de requisitos bem definidos; Definição dos critérios de prioridade dos requisitos |
-|                                 | **Declaração**                                  | Apontamento dos requisitos levantados                                     | User Story, Especificação de Requisitos                                                       | Estabelecimento das especificações de todos os requisitos                               |
-|                                 | **Organização e Atualização**                   | Elencar os requisitos levantados de acordo com os critérios de prioridade | Backlog de Requisitos, Critérios (pontuação, priorização), Lista de Requisitos (RF's e RNF's) | Lista de requisitos organizada com o grau de prioridade                                 |
-|                                 | **Verificação e Validação**                     | Verificar e validar os requisitos levantados                              | User Story, DoD e DoR, pontuação                                                              | Backlog validado com a equipe de desenvolvimento e com o cliente; Definir DoR e DoD     |
-|                                 |                                                 |                                                                           |                                                                                               |                                                                                         |
-| **User Design**                 | **Representação**                               | Elaboração do design do produto                                           | Prototipagem e Mockup                                                                         | Finalização de protótipo de alta fidelidade                                             |
-|                                 | **Verificação e Validação**                     | Verificar e validar os requisitos atualizados e/ou novos requisitos       | Revisão, DoD e DoR, testes com usuário                                                        | Design validado com o cliente                                                           |
-|                                 |                                                 |                                                                           |                                                                                               |                                                                                         |
-| **Construção**                  | **Representação**                               | Desenvolvimento dos requisitos                                            | Discussões em Equipe, Análise de Tarefas                                                      | Requisito desenvolvido                                                                  |
-|                                 | **Verificação e Validação**                     | Teste dos requisitos                                                      | DoR, testes de sistema                                                                        | Requisito devidamente testado                                                           |
-|                                 |                                                 |                                                                           |                                                                                               |                                                                                         |
-| **Finalização e Entrega**       | **Verificação e Validação**                     | Testes de Aceitação                                                       | Testes com usuário                                                                            | Requisitos devidamente validados com o cliente                                          |
-|                                 | **Organização e Atualização**                   | Fechamento do Backlog                                                     | Revisão da iteração                                                                           | Retrospectiva do backlog, acertos e erros                                               |
+    Devido às incertezas e receios que surgem durante um projeto, é importante ceder atenção ao gerenciamento de riscos como forma de prevenir possíveis situações que possam abalar o cenário do time.
 
-## **Engenharia de Requisitos**
-
-### **Atividades e Técnicas de ER**
-
-#### **Elicitação e Descoberta:**
-
-- **Análise Documental:** Será utilizada para levantar questões técnicas necessárias para o projeto, como fichas dos pacientes e relatórios médicos.
-
-- **Brainstorming:** Será realizada uma reunião em grupo para discutir e levantar ideias a respeito do projeto.
-
-- **Entrevista:** Será conduzida junto ao cliente, direcionando para o entendimento do negócio e do problema enfrentado.
-
-- **Análise de Concorrentes:** Será realizada uma pesquisa mercadológica, buscando produtos já existentes que se assemelhem em alguns pontos à solução de software proposta.
-
-- **Análise e Consenso:** O entendimento da equipe será alinhado junto ao cliente.
-
-- **Análise de Objetivos de Domínio:** Será feita para identificar e consolidar os principais objetivos relacionados ao domínio do projeto.
-
-**Declaração de Requisitos:**
-
-- **User Story:** Será feita uma construção dos requisitos através dessa técnica, onde será possível destrinchar os requisitos em temas, épicos, histórias e tarefas.
-
-- **Especificação de Requisitos:** Será feito um detalhamento das necessidades e restrições no sistema.
-
-#### **Representação de Requisitos:**
-
-- **Prototipagem:** Será criado um protótipo do sistema, com fluxo de usuário para futura validação do cliente.
-
-- **Mockup:** Será uma representação que simulará o projeto final, permitindo visualizar e testar conceitos de um projeto.
-
-- **Discussões em Equipe:** Serão levantadas discussões para o alinhamento do entendimento dos requisitos trabalhados.
-
-- **Análise de Tarefas:** Será construída uma estratégia que permita dividir uma tarefa mais complexa em tarefas mais simples.
-
-#### **Verificação e Validação de Requisitos:**
-
-- **User Story:** Será validado o User Story construído, para evitar redundância e a possibilidade de um requisito ausente.
-
-- **DoR:** Serão definidos critérios para aprovar que um requisito esteja pronto para ser construído ou entrar no backlog.
-
-- **DoD:** Serão definidos critérios para atestar que o requisito esteja feito por completo, sem nenhuma deficiência técnica e funcional.
-
-- **Pontuação:** Serão definidos pontos com base na complexidade, criticidade, independência e no valor de negócio; essa pontuação será usada para priorização dos requisitos.
-
-- **Testes de Sistema:** Serão realizados testes no sistema para garantir que ele atenda aos critérios de aceitação e esteja com o mínimo de falhas possível.
-
-- **Testes com Usuário:** Serão realizados testes diretamente com o usuário, onde o mesmo poderá navegar pelo sistema para validar a funcionalidade implementada.
-
-#### **Organização e Atualização de Requisitos:**
-
-- **Backlog de Requisitos:** Serão definidos os possíveis requisitos do sistema.
-
-- **Critérios (Pontuação, Priorização):** Serão definidos os critérios de aceitação, assim como seus valores para pontuação e respectiva priorização dos requisitos.
-
-- **Lista de Requisitos (RF's e RNF's):** Serão definidos e filtrados os requisitos, distinguindo-os entre funcionais e não funcionais.
-
-- **Revisão da Iteração:** Será feita uma revisão da iteração, onde serão abordados os acertos, erros e dificuldades enfrentadas, para melhor entendimento entre os membros da equipe.
+| **Descrição**                     | **Causa**                                                                                                                                         | **Mitigação**                                                                                                                                                                 |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Redução da equipe**             | Trancamento da disciplina ou questões pessoais que possam surgir no decorrer do semestre, levando à redução do time                               | Reunião com o cliente para redefinição de alguns requisitos / Aumento na carga horária para desenvolvimento do projeto                                                        |
+| **Falta de Comunicação Externa**  | O cliente pode estar indisponível para a validação constante do projeto, bem como a falta de feedback e dificuldade em marcação de reuniões       | Realizar reuniões regulares e com objetivo pré-definido para que as atualizações sejam compartilhadas de forma clara e acessível, além de não consumir tanto tempo do cliente |
+| **Falta de Comunicação Interna**  | Falta de comunicação entre os membros da equipe, levando a dúvidas e dificuldades para realização do projeto por falta de transparência e clareza | Analisar a situação e marcar uma reunião para repensar na metodologia de comunicação                                                                                          |
+| **Falta de habilidades técnicas** | A equipe não se capacitou o suficiente para realização do projeto, causando uma entrega de baixa qualidade                                        | Capacitar a equipe constantemente durante o projeto e acompanhar essa capacitação                                                                                             |
+| **Indisponibilidade do Cliente**  | O cliente não estará disponível para os testes de validação                                                                                       | Manter um contato constante com o cliente a fim de que os testes estejam de acordo com o esperado sem que onere seu fluxo de trabalho                                         |
