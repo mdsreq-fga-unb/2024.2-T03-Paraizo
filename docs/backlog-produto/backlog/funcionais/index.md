@@ -7,7 +7,9 @@
     |  01/11   |    1.0     | Criação do tópico de Backlog do Produto | Maykon Júnio dos Santos Soares |
     |  15/12   |    2.0     | Adição dos artefatos | Pedro Miguel M. de O. dos Santos, Maykon Júnio dos Santos Soares |
 
-## **Requisitos**
+## **Lista de Requisitos Funcionais**
+
+## **Backlog**
 
 === "Temas"
 
