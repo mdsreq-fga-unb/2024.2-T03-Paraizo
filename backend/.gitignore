@@ -3,5 +3,5 @@
 
 /__pycache__
 
-*/.env.development
-*/.env
+.env.development
+.env
