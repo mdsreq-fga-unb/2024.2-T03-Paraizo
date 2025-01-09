@@ -18,7 +18,7 @@ class Authenticator:
         
     def __init__(self) -> None:
         self.Functions = Functions()
-        self.config = dotenv_values(f".env.{os.getenv("PYTHON_AGRS")}")
+        self.config = dotenv_values(f".env.{os.getenv('PYTHON_AGRS')}")
         
     def authenticate(self, body) -> str:
 

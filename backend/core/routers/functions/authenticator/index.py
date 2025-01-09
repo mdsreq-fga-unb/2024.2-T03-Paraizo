@@ -20,7 +20,7 @@ class Authenticator:
         
         self.collection = MongoDB().connect('authenticator', 'user')
         
-        self.config = dotenv_values(f".env.{os.getenv("PYTHON_AGRS")}")
+        self.config = dotenv_values(f".env.{os.getenv('PYTHON_AGRS')}")
 
     def verifyPassword(self, plainPassword, hashedPassword):
         return bcrypt.checkpw(plainPassword, hashedPassword)

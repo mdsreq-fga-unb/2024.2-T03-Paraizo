@@ -6,7 +6,7 @@ load_dotenv()
 
 class MongoDB:
     def __init__(self):
-        self.config = dotenv_values(f".env.{os.getenv("PYTHON_AGRS")}")
+        self.config = dotenv_values(f".env.{os.getenv('PYTHON_AGRS')}")
 
     def connect(self, database, collection):
         client = MongoClient(self.config['MONGO_DB_URI'])
