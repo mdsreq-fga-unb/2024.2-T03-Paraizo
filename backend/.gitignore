@@ -1,7 +1,7 @@
-/site
-/venv
+site
+venv
 
-/__pycache__
+__pycache__
 
 .env.development
 .env
