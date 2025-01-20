@@ -59,7 +59,7 @@
 | ------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | **Planejamento dos Requisitos** | **Elicitação e Descoberta**                     | Levantamento de Requisitos                                                | Análise Documental, Brainstorming, Entrevista, Análise de Concorrentes                        | Identificar todos os requisitos de alto nível do projeto                                |
 |                                 | **Análise e Consenso**                          | Análise de dependência entre os requisitos e eliminar ambiguidades        | Brainstorming, Entrevista, Análise de Objetivos de Domínio                                    | Lista de requisitos bem definidos; Definição dos critérios de prioridade dos requisitos |
-|                                 | **Declaração**                                  | Apontamento dos requisitos levantados                                     | User Story, Especificação de Requisitos                                                       | Estabelecimento das especificações de todos os requisitos                               |
+|                                 | **Declaração**                                  | Apontamento dos requisitos levantados                                     | User Story                                                     | Estabelecimento de todos os requisitos                               |
 |                                 | **Organização e Atualização**                   | Elencar os requisitos levantados de acordo com os critérios de prioridade | Backlog de Requisitos, Critérios (pontuação, priorização), Lista de Requisitos (RF's e RNF's) | Lista de requisitos organizada com o grau de prioridade                                 |
 |                                 | **Verificação e Validação**                     | Verificar e validar os requisitos levantados                              | User Story, DoD e DoR, pontuação                                                              | Backlog validado com a equipe de desenvolvimento e com o cliente; Definir DoR e DoD     |
 |                                 |                                                 |                                                                           |                                                                                               |                                                                                         |
@@ -93,8 +93,6 @@
 **Declaração de Requisitos:**
 
 - **User Story:** Será feita uma construção dos requisitos através dessa técnica, onde será possível destrinchar os requisitos em temas, épicos, histórias e tarefas.
-
-- **Especificação de Requisitos:** Será feito um detalhamento das necessidades e restrições no sistema.
 
 #### **Representação de Requisitos:**
 
