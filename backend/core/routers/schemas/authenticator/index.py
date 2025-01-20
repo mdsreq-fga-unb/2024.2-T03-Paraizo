@@ -5,8 +5,8 @@ from core.routers.models.authenticator.index import User
 
 app = FastAPI()
 
-@app.get('')
-def main(body: Annotated[User, Query()]):
+@app.post('/login')
+def main(body: User):
     try:
         
         result = Modules().Authenticator.authenticate(body)
@@ -18,14 +18,14 @@ def main(body: Annotated[User, Query()]):
         }
     except Exception as e:
         response = {
-            "message": f"Erro não catalogado: {e}",
+            "message": f"Erro: {e}",
             "status": 500,
             "result": {}
         }
     finally:
         return response
     
-@app.post('')
+@app.post('/register')
 def main(body: User):
     try:
         result = Modules().Authenticator.registerUser(body)
@@ -37,7 +37,7 @@ def main(body: User):
         }
     except Exception as e:
         response = {
-            "message": f"Erro não catalogado: {e}",
+            "message": f"Erro: {e}",
             "status": 500,
             "result": {}
         }

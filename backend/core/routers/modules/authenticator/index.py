@@ -66,7 +66,11 @@ class Authenticator:
         user = {
             'email': body.email,
             'username': body.username,
-            'password': hash
+            'password': hash,
+            'fullName': body.fullName,
+            'dateOfBirth': body.dateOfBirth,
+            'phone': body.phone,
+            'role': body.role
         }
         
         self.Functions.Authenticator.setUser(user)
