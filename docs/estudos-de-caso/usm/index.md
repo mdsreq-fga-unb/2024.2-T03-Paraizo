@@ -160,44 +160,44 @@ User Story Mapping - EduConnect
     | [TA88] | Visualizar informações gerais do evento | [BB08] |
     | [TA89] | Visualizar todos os feedbacks do evento | [BB08] |
     | [TA90] | Excluir evento da lista de eventos realizados | [BB08] |
-    | [TA91] | Visualizar informações e detalhes do projeto | 
-    | [TA92] | Receber notificações sobre projetos e eventos |
-    | [TA93] | Acessar materiais relacionados ao projeto |
-    | [TA94] | Visualizar relatórios sobre desempenho dos filhos |
-    | [TA95] | Visualizar participação dos filhos em atividades |
-    | [TA96] | Receber notificações  sobre o desempenho dos filhos |
-    | [TA97] | Enviar mensagens diretas para os professores |
-    | [TA98] | Receber mensagens diretas de professores |
-    | [TA99] | Agendar reuniões com professores |
-    | [TA100] | Fornecer feedbacks sobre os projetos |
-    | [TA93] | Participar de reuniões |
-    | [TA94] | Visualizar relatórios sobre desempenho e notas |
-    | [TA95] | Visualizar participações (entregas e atividades realizadas) |
-    | [TA96] | Visualizar atividades pendentes |
-    | [TA97] | Receber notificações sobre o projeto |
-    | [TA98] | Visualizar feedbacks recebidos |
-    | [TA99] | Enviar atividades (pesquisas, trabalhos) |
-    | [TA100] | Editar envio de atividades |
-    | [TA101] | Participar de reuniões e debates |
-    | [TA102] | Participar de grupos de trabalho |
-    | [TA103] | Visualizar informações detalhadas do projeto |
-    | [TA104] | Visualizar prazos e cronograma |
-    | [TA105] | Visualizar materiais relacionados |
-    | [TA106] | Acessar tutoriais de uso da plataforma |
-    | [TA107] | Visualizar recomendações sobre ferramentas relacionadas |
-    | [TA108] | Enviar mensagens diretas para os professores |
-    | [TA109] | Receber mensagens diretas dos professores |
-    | [TA110] | Enviar mensagens diretas para os colegas |
-    | [TA111] | Receber mensagens diretas dos colegas |
-    | [TA112] | Enviar mensagens diretas para os grupos de trabalho |
-    | [TA113] | Receber mensagens diretas dos grupos de trabalho |
-    | [TA114] | Acessar materiais do projeto |
-    | [TA115] | Compartilhar materiais com alunos e professores |
-    | [TA116] | Visualizar detalhes sobre o projeto |
-    | [TA116] | Visualizar relatórios gerais sobre o andamento do projeto |
-    | [TA117] | Fornecer feedbacks sobre o andamento do projeto |
-    | [TA118] | Agendar reuniões e eventos |
-    | [TA119] | Participar de reuniões e eventos |
+    | [TA91] | Visualizar informações e detalhes do projeto | [BB09] |
+    | [TA92] | Receber notificações sobre projetos e eventos | [BB09] |
+    | [TA93] | Acessar materiais relacionados ao projeto | [BB09] |
+    | [TA94] | Visualizar relatórios sobre desempenho dos filhos | [BB10] |
+    | [TA95] | Visualizar participação dos filhos em atividades | [BB10] |
+    | [TA96] | Receber notificações  sobre o desempenho dos filhos | [BB11] |
+    | [TA97] | Enviar mensagens diretas para os professores | [BB11] |
+    | [TA98] | Receber mensagens diretas de professores | [BB12] |
+    | [TA99] | Agendar reuniões com professores | [BB12] |
+    | [TA100] | Fornecer feedbacks sobre os projetos | [BB12] |
+    | [TA101] | Participar de reuniões | [BB12] |
+    | [TA102] | Visualizar relatórios sobre desempenho e notas | [BB12] |
+    | [TA103] | Visualizar participações (entregas e atividades realizadas) | [BB13] |
+    | [TA104] | Visualizar atividades pendentes | [BB13] |
+    | [TA105] | Receber notificações sobre o projeto | [BB13] |
+    | [TA106] | Visualizar feedbacks recebidos | [BB13] |
+    | [TA107] | Enviar atividades (pesquisas, trabalhos) | [BB13] |
+    | [TA108] | Editar envio de atividades | [BB14] |
+    | [TA109] | Participar de reuniões e debates | [BB14] |
+    | [TA110] | Participar de grupos de trabalho | [BB14] |
+    | [TA111] | Visualizar informações detalhadas do projeto | [BB14] |
+    | [TA112] | Visualizar prazos e cronograma | [BB15] |
+    | [TA113] | Visualizar materiais relacionados | [BB15] |
+    | [TA114] | Acessar tutoriais de uso da plataforma | [BB15] |
+    | [TA115] | Visualizar recomendações sobre ferramentas relacionadas | [BB16] |
+    | [TA116] | Enviar mensagens diretas para os professores | [BB16] |
+    | [TA117] | Receber mensagens diretas dos professores | [BB17] |
+    | [TA118] | Enviar mensagens diretas para os colegas | [BB17] |
+    | [TA119] | Receber mensagens diretas dos colegas | [BB17] |
+    | [TA120] | Enviar mensagens diretas para os grupos de trabalho | [BB17] |
+    | [TA121] | Receber mensagens diretas dos grupos de trabalho | [BB17] |
+    | [TA122] | Acessar materiais do projeto | [BB18] |
+    | [TA123] | Compartilhar materiais com alunos e professores | [BB18] |
+    | [TA124] | Visualizar detalhes sobre o projeto | [BB18] |
+    | [TA125] | Visualizar relatórios gerais sobre o andamento do projeto | [BB18] |
+    | [TA126] | Fornecer feedbacks sobre o andamento do projeto | [BB19] |
+    | [TA127] | Agendar reuniões e eventos | [BB19] |
+    | [TA128] | Participar de reuniões e eventos | [BB19] |
 
 === "Release 2"
 
@@ -210,14 +210,14 @@ User Story Mapping - EduConnect
     | [TA74] | Visualizar poncentágem de participantes que participaram do encontro | [BB05] |
     | [TA75] | Inserir informações de gasto real com as atividades do encontro | [BB05] |
     | [TA76] | Inserir informações de gasto real com todo o encontro | [BB05] |
-    | [TA77] | Visualizar poncentágem de participantes que realizaram a entrega | [BB06] |
-    | [TA77] | Visualizar comparação entre as porcentágens de participantes ativos e atividades entregues com suas respectivas metas | [BB07] |
-    | [TA77] | Visualizar comparação entre gastos previstos e gastos reais de todo o evento | [BB07] |
-    | [TA77] | Visualizar informações sobre todos os gastos reais do evento | [BB07] |
-    | [TA77] | Filtrar informações sobre todos os gastos reais do evento por encontro | [BB07] |
-    | [TA77] | Filtrar informações sobre todos os gastos reais do evento por data | [BB07] |
-    | [TA77] | Filtrar informações sobre todos os gastos reais do evento por colaboradores | [BB07] |
-    | [TA77] | Visualizar informações sobre gastos do evento | [BB08] |
+    | [TA129] | Visualizar poncentágem de participantes que realizaram a entrega | [BB06] |
+    | [TA130] | Visualizar comparação entre as porcentágens de participantes ativos e atividades entregues com suas respectivas metas | [BB07] |
+    | [TA131] | Visualizar comparação entre gastos previstos e gastos reais de todo o evento | [BB07] |
+    | [TA132] | Visualizar informações sobre todos os gastos reais do evento | [BB07] |
+    | [TA133] | Filtrar informações sobre todos os gastos reais do evento por encontro | [BB07] |
+    | [TA134] | Filtrar informações sobre todos os gastos reais do evento por data | [BB07] |
+    | [TA135] | Filtrar informações sobre todos os gastos reais do evento por colaboradores | [BB07] |
+    | [TA136] | Visualizar informações sobre gastos do evento | [BB08] |
 
 ## **Critérios de Aceitação**
 
@@ -230,11 +230,11 @@ User Story Mapping - EduConnect
 | [TA48] | O sistema deve impedir que o usuário tente adicionar imagens que não sejam de extensões .png e .jpeg; O sistema deve impedir que o usuário tente inserir uma imagem que exceda o tamanho de 5mb; O sistema deve impedir que o usuário tente inserir um vídeo que não seja de extensão .mp4; O sistema deve impedir que o usuário tente inserir um vídeo que exceda o tamanho de 100mb; |
 | [TA56] | O sistema deve permitir que o usuário visualize todas as informações do encontro em uma só interface; O sistema deve apresentar um design de interface responsivo, permitindo que todas as informações sejam visíveis para qualquer tamanho de tela. |
 | [TA77] | O sistema deve permitir que o usuário visualize os arquivos enviados pelos participantes dentro do próprio sistema; O sistema deve permitir que o usuário exporte os arquivos enviados pelos participantes para seu próprio computador. |
-| [TA83] | -	O sistema deve exibir informações detalhadas sobre cada projeto. <br> -	Os pais devem poder acessar essas informações de forma intuitiva no painel. |
-| [TA84] | -	Notificações devem ser enviadas por e-mail e/ou aplicativo. <br> - As notificações devem conter informações claras sobre datas e objetivos. |
-| [TAS86] | -	Relatórios devem apresentar gráficos e dados quantitativos. <br> - Deve haver a opção de baixar os relatórios em PDF. |
-| [TAS87] | -	O sistema deve exibir uma lista de atividades realizadas pelos filhos. <br> - Deve incluir datas e observações sobre a participação. |
+| [TA91] | -	O sistema deve exibir informações detalhadas sobre cada projeto. <br> -	Os pais devem poder acessar essas informações de forma intuitiva no painel. |
+| [TA92] | -	Notificações devem ser enviadas por e-mail e/ou aplicativo. <br> - As notificações devem conter informações claras sobre datas e objetivos. |
+| [TA94] | -	Relatórios devem apresentar gráficos e dados quantitativos. <br> - Deve haver a opção de baixar os relatórios em PDF. |
+| [TA95] | -	O sistema deve exibir uma lista de atividades realizadas pelos filhos. <br> - Deve incluir datas e observações sobre a participação. |
 | [TA108] | -	O sistema deve permitir envio de mensagens via chat. <br> - As mensagens devem ser recebidas pelo professor em tempo real. |
-| [TA109] | -	Alunos devem ser notificados ao receber uma mensagem. <br> - O sistema deve permitir responder diretamente à mensagem. |
-| [TA95] | -	O painel do aluno deve exibir todas as entregas realizadas com status (ex.: "Entregue", "Pendente"). <br> - Deve ser possível filtrar atividades por período ou tipo. |
-| [TA97] | -	Alunos devem ser notificados sobre alterações de prazos ou adição de novas tarefas. <br> - Notificações devem incluir links diretos para as atividades afetadas. |
+| [TA97] | -	Alunos devem ser notificados ao receber uma mensagem. <br> - O sistema deve permitir responder diretamente à mensagem. |
+| [TA103] | -	O painel do aluno deve exibir todas as entregas realizadas com status (ex.: "Entregue", "Pendente"). <br> - Deve ser possível filtrar atividades por período ou tipo. |
+| [TA105] | -	Alunos devem ser notificados sobre alterações de prazos ou adição de novas tarefas. <br> - Notificações devem incluir links diretos para as atividades afetadas. |
