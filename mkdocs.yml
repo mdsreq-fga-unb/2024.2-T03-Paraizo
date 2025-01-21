@@ -96,8 +96,6 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - assets/includes/abbreviations.md
-
-  - admonition
   - codehilite
   - markdown_include.include:
       base_path: .
@@ -114,7 +112,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - footnotes
   - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.inlinehilite
@@ -137,10 +134,8 @@ markdown_extensions:
   - pymdownx.blocks.tab:
       alternate_style: true
   - mdx_include
-  - attr_list
   - md_in_html
   - pymdownx.blocks.caption
-  - pymdownx.superfences
   - pymdownx.caret
 
 nav:
@@ -157,6 +152,8 @@ nav:
           - Definition of Ready (DoR) e Definition of Done (DoD): backlog-produto/backlog/dor-e-dod/index.md
       - Priorização: backlog-produto/priorizacao/index.md
       - Entregas: backlog-produto/entregas/index.md
+  - Estudos de caso: 
+      - PBB: estudos-de-caso/pbb/index.md
   - Iterações: iteracoes/index.md
   - Entregas: entregas/index.md
   - Lições Aprendidas: licoes-aprendidas/index.md
