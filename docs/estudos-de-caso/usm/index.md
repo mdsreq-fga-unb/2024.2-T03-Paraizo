@@ -14,8 +14,7 @@ A técnica de User Story Mapping é uma abordagem colaborativa e visual para o p
 ## **Estudo de Caso**
 
 <p style="text-indent: 50px;text-align: justify;">
-Para a realização da tarefa, utilizamos como base a empresa fictícia "EduConnect" que é é uma empresa fictícia que busca transformar a forma como instituições 
-educacionais gerenciam projetos interdisciplinares e atividades extracurriculares. A visão é criar um sistema educacional onde professores alunos e a comunidade escolar possam colaborar efetivamente em projetos que promovam aprendizagem significativa e desenvolvimento de habilidades práticas. O mapa realizado pode ser conferido a seguir:
+Para a realização da tarefa, utilizamos como base a empresa fictícia "EduConnect" que busca transformar a forma como instituições educacionais gerenciam projetos interdisciplinares e atividades extracurriculares. A visão é criar um sistema educacional onde professores alunos e a comunidade escolar possam colaborar efetivamente em projetos que promovam aprendizagem significativa e desenvolvimento de habilidades práticas. O mapa realizado pode ser conferido a seguir:
 </p>
 
 <iframe width="768" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764613436993404&embedId=734064771361" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
@@ -90,7 +89,6 @@ User Story Mapping - EduConnect
     | [TA08] | Editar lista de coordenadores ou professor(es) participante(es) no evento | [BB01] |
     | [TA10] | Inserir critérios de avaliação para o evento | [BB01] |
     | [TA11] | Editar critérios de avaliação para o evento | [BB01] |
-
     | [TA13] | Definir datas de início e fim do evento | [BB02] |
     | [TA14] | Edtar datas de início e fim do evento | [BB02] |
     | [TA15] | Definir data e horários de encontros importantes do evento | [BB02] |
@@ -102,7 +100,6 @@ User Story Mapping - EduConnect
     | [TA21] | Cadastrar encontros importantes | [BB02] |
     | [TA22] | Editar encontros importantes | [BB02] |
     | [TA23] | Excluir encontros importantes | [BB02] |
-
     | [TA25] | Adicionar descrição do encontro | [BB03] |
     | [TA26] | Editar descrição do encontro | [BB03] |
     | [TA27] | Adicionar roteiro para o encontro | [BB03] |
@@ -120,7 +117,6 @@ User Story Mapping - EduConnect
     | [TA39] | Excluir atividades para serem realizadas | [BB03] |
     | [TA40] | Inserir um ou mais responsáveis para cada atividade do encontro | [BB03] |
     | [TA41] | Inserir campo para postágem dos entregáveis do encontro por parte dos participantes | [BB03] |
-    
     | [TA44] | Inserir texto para divulgação do evento para participantes e seus responsáveis | [BB04] |
     | [TA45] | Editar texto para divulgação do evento para participantes e seus responsáveis | [BB04] |
     | [TA46] | Inserir texto com os profissionais que participarão do evento | [BB04] |
@@ -133,7 +129,6 @@ User Story Mapping - EduConnect
     | [TA53] | Retirar um membro da lista de participantes do evento manualmente | [BB04] |
     | [TA54] | Criar formulário para inscrição no evento | [BB04] |
     | [TA55] | Gerar link de compartilhamento do formulário de inscrição | [BB04] |
-
     | [TA56] | Visualizar programação dos encontros importantes | [BB05] |
     | [TA57] | Enviar mensagem a outro colaborador | [BB05] |
     | [TA58] | Visualizar mensagens enviadas por outro colaborador ou grupo | [BB05] |
@@ -152,25 +147,62 @@ User Story Mapping - EduConnect
     | [TA71] | Editar grupos de participantes para realização de atividades | [BB05] |
     | [TA72] | Adicionar texto sobre os resultados do encontro | [BB05] |
     | [TA73] | Adicionar texto sobre os resultados do evento | [BB05] |
-
-    | [TA77] | Visualizar arquivos enviados pelos participantes ou por grupos de participantes | [BB06] |
-    | [TA77] | Enviar feedback em texto para os participantes ou por grupos de participantes | [BB06] |
-    | [TA77] | Compartilhar feedback das atividades para os pais ou responsáveis | [BB06] |
-
-    | [TA77] | Marcar evento como concluido | [BB07] |
-    | [TA77] | Relatar feedback final sobre o evento em texto | [BB07] |
-    | [TA77] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os colaboradores | [BB07] |
-    | [TA77] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os participantes | [BB07] |
-    | [TA77] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os pais ou responsáveis | [BB07] |
-
-    | [TA77] | Visualizar lista de participantes do evento | [BB08] |
-    | [TA77] | Visualizar relatórios de todas as atividades do evento | [BB08] |
-    | [TA77] | Visualizar informações gerais do evento | [BB08] |
-    | [TA77] | Visualizar todos os feedbacks do evento | [BB08] |
-    | [TA77] | Excluir evento da lista de eventos realizados | [BB08] |
+    | [TA78] | Visualizar arquivos enviados pelos participantes ou por grupos de participantes | [BB06] |
+    | [TA79] | Enviar feedback em texto para os participantes ou por grupos de participantes | [BB06] |
+    | [TA80] | Compartilhar feedback das atividades para os pais ou responsáveis | [BB06] |
+    | [TA81] | Marcar evento como concluido | [BB07] |
+    | [TA82] | Relatar feedback final sobre o evento em texto | [BB07] |
+    | [TA83] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os colaboradores | [BB07] |
+    | [TA84] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os participantes | [BB07] |
+    | [TA85] | Divulgar texto, imagens e/ou vídeos de finalização do evento para os pais ou responsáveis | [BB07] |
+    | [TA86] | Visualizar lista de participantes do evento | [BB08] |
+    | [TA87] | Visualizar relatórios de todas as atividades do evento | [BB08] |
+    | [TA88] | Visualizar informações gerais do evento | [BB08] |
+    | [TA89] | Visualizar todos os feedbacks do evento | [BB08] |
+    | [TA90] | Excluir evento da lista de eventos realizados | [BB08] |
+    | [TA91] | Visualizar informações e detalhes do projeto | 
+    | [TA92] | Receber notificações sobre projetos e eventos |
+    | [TA93] | Acessar materiais relacionados ao projeto |
+    | [TA94] | Visualizar relatórios sobre desempenho dos filhos |
+    | [TA95] | Visualizar participação dos filhos em atividades |
+    | [TA96] | Receber notificações  sobre o desempenho dos filhos |
+    | [TA97] | Enviar mensagens diretas para os professores |
+    | [TA98] | Receber mensagens diretas de professores |
+    | [TA99] | Agendar reuniões com professores |
+    | [TA100] | Fornecer feedbacks sobre os projetos |
+    | [TA93] | Participar de reuniões |
+    | [TA94] | Visualizar relatórios sobre desempenho e notas |
+    | [TA95] | Visualizar participações (entregas e atividades realizadas) |
+    | [TA96] | Visualizar atividades pendentes |
+    | [TA97] | Receber notificações sobre o projeto |
+    | [TA98] | Visualizar feedbacks recebidos |
+    | [TA99] | Enviar atividades (pesquisas, trabalhos) |
+    | [TA100] | Editar envio de atividades |
+    | [TA101] | Participar de reuniões e debates |
+    | [TA102] | Participar de grupos de trabalho |
+    | [TA103] | Visualizar informações detalhadas do projeto |
+    | [TA104] | Visualizar prazos e cronograma |
+    | [TA105] | Visualizar materiais relacionados |
+    | [TA106] | Acessar tutoriais de uso da plataforma |
+    | [TA107] | Visualizar recomendações sobre ferramentas relacionadas |
+    | [TA108] | Enviar mensagens diretas para os professores |
+    | [TA109] | Receber mensagens diretas dos professores |
+    | [TA110] | Enviar mensagens diretas para os colegas |
+    | [TA111] | Receber mensagens diretas dos colegas |
+    | [TA112] | Enviar mensagens diretas para os grupos de trabalho |
+    | [TA113] | Receber mensagens diretas dos grupos de trabalho |
+    | [TA114] | Acessar materiais do projeto |
+    | [TA115] | Compartilhar materiais com alunos e professores |
+    | [TA116] | Visualizar detalhes sobre o projeto |
+    | [TA116] | Visualizar relatórios gerais sobre o andamento do projeto |
+    | [TA117] | Fornecer feedbacks sobre o andamento do projeto |
+    | [TA118] | Agendar reuniões e eventos |
+    | [TA119] | Participar de reuniões e eventos |
 
 === "Release 2"
 
+    | **ID** | **Descrição** | **Atividades** |
+    | :----: | ------------- | :----------:|
     | [TA12] | Inserir metas de porcentágem de parcitipantes ativos e atividades entregues | [BB01] |
     | [TA24] | Inserir gasto previsto para realização do evento | [BB02] |
     | [TA42] | Inserir gasto previsto para realização do encontro | [BB03] |
@@ -187,14 +219,22 @@ User Story Mapping - EduConnect
     | [TA77] | Filtrar informações sobre todos os gastos reais do evento por colaboradores | [BB07] |
     | [TA77] | Visualizar informações sobre gastos do evento | [BB08] |
 
-
 ## **Critérios de Aceitação**
 
-    | Tarefa do usuário | Critérios de Aceitação |    
-    | [TA13]  | O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; O sistema deve mostrar ao usuário a duração, em dias, do evento ao ser informado as datas de início e fim do mesmo; O sistema deve impedir que o usuário defina uma data que seja um feriado ou ponto facultativo; O sistema deve impedir que o usuário defina uma data que ocorra concomitante à outro evento com mesma equipe de coordenadores; |
-    | [TA17] | O sistema deve impedir que o usuário defina uma data fora o período de duração do evento; O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; |
-    | [TA21] | O sistema deve impedir que o usuário tente cadastrar o encontro caso não tenha inserido as informações obrigatórias; O sistema deve permitir que o usuário cadastre um novo encontro importante se, e somente se, ele inserir as seguintes informações: Data, horário, descrição, lista de organizadores e lista de materiais; O sistema deve impedir que usuário que não sejam da equipe de coordenadores tentem cadastrar um encontro importante; |
-    | [TA31] | O sistema deve impedir que o usuário tente adicionar um membro que não esteja na equipe do evento; O sistema deve impedir que o usuário tente adicionar um membro que já esteja presente em outra equipe de um encontro importante que ocorrerá na mesma data e horário; O sistema deve impedir que o usuário tente adicionar um membro já presente na lista. |
-    | [TA48] | O sistema deve impedir que o usuário tente adicionar imagens que não sejam de extensões .png e .jpeg; O sistema deve impedir que o usuário tente inserir uma imagem que exceda o tamanho de 5mb; O sistema deve impedir que o usuário tente inserir um vídeo que não seja de extensão .mp4; O sistema deve impedir que o usuário tente inserir um vídeo que exceda o tamanho de 100mb; |
-    | [TA56] | O sistema deve permitir que o usuário visualize todas as informações do encontro em uma só interface; O sistema deve apresentar um design de interface responsivo, permitindo que todas as informações sejam visíveis para qualquer tamanho de tela. |
-    | [TA77] | O sistema deve permitir que o usuário visualize os arquivos enviados pelos participantes dentro do próprio sistema; O sistema deve permitir que o usuário exporte os arquivos enviados pelos participantes para seu próprio computador. |
+| Tarefa do usuário | Critérios de Aceitação |
+| :---------------: | ---------------------- |
+| [TA13]  | O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; O sistema deve mostrar ao usuário a duração, em dias, do evento ao ser informado as datas de início e fim do mesmo; O sistema deve impedir que o usuário defina uma data que seja um feriado ou ponto facultativo; O sistema deve impedir que o usuário defina uma data que ocorra concomitante à outro evento com mesma equipe de coordenadores; |
+| [TA17] | O sistema deve impedir que o usuário defina uma data fora o período de duração do evento; O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; |
+| [TA21] | O sistema deve impedir que o usuário tente cadastrar o encontro caso não tenha inserido as informações obrigatórias; O sistema deve permitir que o usuário cadastre um novo encontro importante se, e somente se, ele inserir as seguintes informações: Data, horário, descrição, lista de organizadores e lista de materiais; O sistema deve impedir que usuário que não sejam da equipe de coordenadores tentem cadastrar um encontro importante; |
+| [TA31] | O sistema deve impedir que o usuário tente adicionar um membro que não esteja na equipe do evento; O sistema deve impedir que o usuário tente adicionar um membro que já esteja presente em outra equipe de um encontro importante que ocorrerá na mesma data e horário; O sistema deve impedir que o usuário tente adicionar um membro já presente na lista. |
+| [TA48] | O sistema deve impedir que o usuário tente adicionar imagens que não sejam de extensões .png e .jpeg; O sistema deve impedir que o usuário tente inserir uma imagem que exceda o tamanho de 5mb; O sistema deve impedir que o usuário tente inserir um vídeo que não seja de extensão .mp4; O sistema deve impedir que o usuário tente inserir um vídeo que exceda o tamanho de 100mb; |
+| [TA56] | O sistema deve permitir que o usuário visualize todas as informações do encontro em uma só interface; O sistema deve apresentar um design de interface responsivo, permitindo que todas as informações sejam visíveis para qualquer tamanho de tela. |
+| [TA77] | O sistema deve permitir que o usuário visualize os arquivos enviados pelos participantes dentro do próprio sistema; O sistema deve permitir que o usuário exporte os arquivos enviados pelos participantes para seu próprio computador. |
+| [TA83] | -	O sistema deve exibir informações detalhadas sobre cada projeto. <br> -	Os pais devem poder acessar essas informações de forma intuitiva no painel. |
+| [TA84] | -	Notificações devem ser enviadas por e-mail e/ou aplicativo. <br> - As notificações devem conter informações claras sobre datas e objetivos. |
+| [TAS86] | -	Relatórios devem apresentar gráficos e dados quantitativos. <br> - Deve haver a opção de baixar os relatórios em PDF. |
+| [TAS87] | -	O sistema deve exibir uma lista de atividades realizadas pelos filhos. <br> - Deve incluir datas e observações sobre a participação. |
+| [TA108] | -	O sistema deve permitir envio de mensagens via chat. <br> - As mensagens devem ser recebidas pelo professor em tempo real. |
+| [TA109] | -	Alunos devem ser notificados ao receber uma mensagem. <br> - O sistema deve permitir responder diretamente à mensagem. |
+| [TA95] | -	O painel do aluno deve exibir todas as entregas realizadas com status (ex.: "Entregue", "Pendente"). <br> - Deve ser possível filtrar atividades por período ou tipo. |
+| [TA97] | -	Alunos devem ser notificados sobre alterações de prazos ou adição de novas tarefas. <br> - Notificações devem incluir links diretos para as atividades afetadas. |
