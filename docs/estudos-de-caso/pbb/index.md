@@ -8,8 +8,13 @@
 
 ## **Introdução**
 
+Marsicano (2024) fala que Product Backlog Building (PBB) um método e um Canvas para
+a elaboração e a criação de um Product Backlog. Tem como objetivo ajudar na construção e no refinamento do Product Backlog de forma colaborativa – construindo um entendimento compartilhado e levando todos os envolvidos à compreensão do produto – e na preparação do backlog para o time começar a trabalhar de modo
+ágil e eficaz.
+
 ## **Estudo de Caso**
 
+Nesse caso iremos tratar de uma empresa de tecnologia chamada TechFix que opera serviços de reparo de equipamentos para clientes corporativos e deseja facilitar o agendamento e o acompanhamento dos serviços.
 
 ## **Resolução**
 
