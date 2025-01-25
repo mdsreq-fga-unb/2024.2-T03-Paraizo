@@ -12,7 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         paraizo: {
-          cyan: "#739DAB" 
+          cyan: "#739DAB",
+          whiteLines: "#F9F9FB", 
+          background: "#F3F6F9",
         }
       },
     },

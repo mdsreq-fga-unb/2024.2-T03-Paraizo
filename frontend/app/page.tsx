@@ -7,7 +7,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export default function Home() {
   return (
-    <>
+    <section className="bg-paraizo-background">
     <Background>
       <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
         <Grid sx={{ margin: 10}}>
@@ -30,6 +30,6 @@ export default function Home() {
         </Grid>
       </Box>
     </Background>
-    </>
+    </section>
   );
 }
