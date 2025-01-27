@@ -2,6 +2,7 @@ import logo from "../../../public/logo_azul.png"
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay';
+import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 
 export default function AdminMenu(){
     return <section className="h-screen w-80 md:w-60 bg-paraizo-cyan flex justify-start items-center flex-col gap-9">
@@ -28,6 +29,12 @@ export default function AdminMenu(){
             href="">
                 <CalendarViewDayIcon />
                 <p>Agendamentos</p>
+            </a>
+            <a 
+            className="flex justify-start items-center w-full gap-2 md:gap-1"
+            href="">
+                <SupervisedUserCircleIcon />
+                <p>Pacientes</p>
             </a>
         </div>
     </section>
