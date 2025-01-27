@@ -1,3 +1,4 @@
+'use client'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 interface patientInterface {

@@ -1,7 +1,6 @@
 import AdminMenu from "@/app/components/admin_menu"
 import CardPatient from "@/app/components/cardPatient"
 import SearchComponent from "@/app/components/searchComponent"
-import { useState, useEffect } from "react"
 
 import patients from "@/app/mocks/patients"
 

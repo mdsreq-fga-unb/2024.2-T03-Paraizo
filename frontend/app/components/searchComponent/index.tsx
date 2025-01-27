@@ -1,5 +1,6 @@
+'use client'
 import { Button, TextField } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function SearchComponent(){
     const [input, setInput] = useState<string>("")
