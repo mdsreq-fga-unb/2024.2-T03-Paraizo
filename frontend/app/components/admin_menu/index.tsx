@@ -32,7 +32,7 @@ export default function AdminMenu(){
             </a>
             <a 
             className="flex justify-start items-center w-full gap-2 md:gap-1"
-            href="">
+            href="/admin/patients">
                 <SupervisedUserCircleIcon />
                 <p>Pacientes</p>
             </a>

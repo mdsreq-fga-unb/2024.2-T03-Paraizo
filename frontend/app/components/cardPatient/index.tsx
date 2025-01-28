@@ -10,22 +10,18 @@ interface patientInterface {
 }
 
 export default function CardPatient({id, name, email}:patientInterface){
-    const handleClick = () => {
-        console.log('ir para paciente')
-    }
-
-    return <button className='w-full' onClick={handleClick}>
-        <div className="bg-white rounded-md w-full flex justify-between items-center px-4 py-1">
-            <div className='flex flex-col'>
-                <h1 className="text-paraizo-textGray text-start">{name}</h1>
-                <p className='text-paraizo-textGray text-start text-sm'>{email}</p>
-            </div>
-            <div>
-                <Link to={`${id}`}>
+    return <Link to={`${id}`} className='w-full'>
+        <div>
+            <div className="bg-white rounded-md w-full flex justify-between items-center px-4 py-1">
+                <div className='flex flex-col'>
+                    <h1 className="text-paraizo-textGray text-start">{name}</h1>
+                    <p className='text-paraizo-textGray text-start text-sm'>{email}</p>
+                </div>
+                <div>
                     <KeyboardArrowRightIcon
                     sx={{color:"#666666"}}/>
-                </Link>
+                </div>
             </div>
         </div>
-    </button>
+    </Link>
 }

@@ -1,12 +1,16 @@
 'use client'
 import { Button, TextField } from "@mui/material";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
-export default function SearchComponent(){
+interface InterfaceSearchComponent {
+    setFilterParams: Dispatch<SetStateAction<string>>
+}
+
+export default function SearchComponent({setFilterParams}:InterfaceSearchComponent){
     const [input, setInput] = useState<string>("")
 
     const handleClick = () => {
-        console.log('pesquisar', input)
+        setFilterParams(input)
     }
     
     return <div className="flex justify-around gap-8 items-center">
@@ -18,7 +22,7 @@ export default function SearchComponent(){
             backgroundColor: "#F5F4FF",
             width: "65%",
         }}
-        onChange={(e)=> setInput(e.target.value)}/>
+        onChange={(e)=> setFilterParams(e.target.value)}/>
         <Button 
         variant="contained" 
         sx={{
