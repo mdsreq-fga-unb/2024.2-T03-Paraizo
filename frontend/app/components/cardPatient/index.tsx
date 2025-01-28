@@ -1,5 +1,6 @@
 'use client'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { Link } from 'react-router';
 
 interface patientInterface {
     key: string,
@@ -20,8 +21,10 @@ export default function CardPatient({id, name, email}:patientInterface){
                 <p className='text-paraizo-textGray text-start text-sm'>{email}</p>
             </div>
             <div>
-                <KeyboardArrowRightIcon
-                sx={{color:"#666666"}}/>
+                <Link to={`${id}`}>
+                    <KeyboardArrowRightIcon
+                    sx={{color:"#666666"}}/>
+                </Link>
             </div>
         </div>
     </button>

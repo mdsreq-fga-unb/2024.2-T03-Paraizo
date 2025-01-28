@@ -1,13 +1,12 @@
 import AdminMenu from "@/app/components/admin_menu"
 import CardPatient from "@/app/components/cardPatient"
-import SearchComponent from "@/app/components/searchComponent"
-
 import patients from "@/app/mocks/patients"
+import SearchComponent from "./components/searchComponent"
 
 export default function PatientsPage() {
-    return <div className="flex justify-between items-center">
+    return <div className="flex justify-start items-center bg-paraizo-background">
     <AdminMenu/>
-    <div className="w-[58rem] bg-white mx-20 py-8">
+    <div className="h-1/2 min-h-96 mx-[10%] p-4 mt-6 w-2/3 bg-white">
         <SearchComponent/>
         <div className="bg-[#F5F4FF] mx-2 p-4 mt-6">
             <h1 className="text-paraizo-textGray text-xl font-light pl-2 pb-4">Pacientes:</h1>
