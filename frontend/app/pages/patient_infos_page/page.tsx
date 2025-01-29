@@ -6,6 +6,10 @@ import AdminMenu from "@/app/components/admin_menu"
 import patients from "@/app/mocks/patients"
 import HeaderMenu from "./components/header_menu"
 
+import { Alert, Button } from "@mui/material"
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import DeletePatientModal from "./components/delete_patient_modal"
+
 export default function PatientInfo(){
     const navigate = useNavigate()
     const params = useParams()
@@ -47,6 +51,11 @@ export default function PatientInfo(){
                     {/* INSERIR RELATÓRIOS DO PACIENTE! */}
                 </div>
                 }
+
+                <DeletePatientModal 
+                patient={patient ? patient : null} 
+                title="Deseja excluir os dados deste pacimente?" 
+                msgAlert="Atenção: Ao excluir um paciente, todos os dados serão apagados. Isso inclui seus dados pessoais, documentos e registros de atendimentos!"/>
             </div>
         </div>
     )
