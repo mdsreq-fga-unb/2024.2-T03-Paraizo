@@ -16,6 +16,7 @@ export default {
           whiteLines: "#F9F9FB", 
           background: "#F3F6F9",
           textGray: "#666666",
+          textBlack: "#31353D",
         }
       },
     },
