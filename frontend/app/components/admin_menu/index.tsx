@@ -11,7 +11,7 @@ import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import { Button } from "@mui/material";
 
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router";
+import { NavLink, useLocation } from "react-router";
 
 
 export default function AdminMenu(){
@@ -56,31 +56,31 @@ export default function AdminMenu(){
             </div>
             {statusMenu && <div className="w-screen h-screen my-4 bg-paraizo-cyan flex justify-start items-center flex-col gap-9">
                 <div className="flex flex-col justify-start items-center w-full gap-9 py-4 pl-6">
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/home">
+                <NavLink 
+                to={"/admin/home"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBalanceIcon />
                     <p>Visão Geral</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "central" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/central">
+                </NavLink>
+                <NavLink
+                to={"/admin/central"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "central" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBoxIcon />
                     <p>Área do Administrador</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "calendar" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/calendar">
+                </NavLink>
+                <NavLink
+                to={"/admin/calendar"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "calendar" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <CalendarViewDayIcon />
                     <p>Agendamentos</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "patients" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/patients">
+                </NavLink>
+                <NavLink
+                to={"/admin/patients"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "patients" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <SupervisedUserCircleIcon />
                     <p>Pacientes</p>
-                </a>
-            </div>
+                </NavLink>
+                </div>
             </div>}
         </div>
         <div className="hidden h-screen w-80 md:w-60 bg-paraizo-cyan md:flex justify-start items-center flex-col gap-9">
@@ -90,30 +90,30 @@ export default function AdminMenu(){
             alt="Logo Janayna Paraizo"/>
             <div className="w-full h-[0.125rem] bg-paraizo-whiteLines "></div>
             <div className="flex flex-col justify-start items-center w-full gap-9 py-4 pl-6">
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/home">
+                <NavLink 
+                to={"/admin/home"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBalanceIcon />
                     <p>Visão Geral</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "central" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/central">
+                </NavLink>
+                <NavLink
+                to={"/admin/central"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "central" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBoxIcon />
                     <p>Área do Administrador</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "calendar" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/calendar">
+                </NavLink>
+                <NavLink
+                to={"/admin/calendar"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "calendar" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <CalendarViewDayIcon />
                     <p>Agendamentos</p>
-                </a>
-                <a 
-                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "patients" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}
-                href="/admin/patients">
+                </NavLink>
+                <NavLink
+                to={"/admin/patients"}
+                className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "patients" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <SupervisedUserCircleIcon />
                     <p>Pacientes</p>
-                </a>
+                </NavLink>
             </div>
         </div>
     </section>

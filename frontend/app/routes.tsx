@@ -16,13 +16,17 @@ export default function RouteProvider(){
                 {/* Rotas para o usuário ADM: */}
                 <Route path="admin">
                     <Route index element={<AdminHome/>}/>
-                    <Route path="patients">
-                        <Route index element={<PatientsPage/>}/>
-                            <Route path=":id">
-                                <Route index element={<PatientInfo/>}/>
-                            <Route path="edit" element={<PatientInfosEdit/>}/>
+                        <Route path="home" element={<AdminHome/>}/>
+                        <Route path="central" element={<AdminHome/>}/>
+                        <Route path="calendar" element={<AdminHome/>}/>
+                        <Route path="patients">
+                            <Route index element={<PatientsPage/>}/>
+
+                                <Route path=":id">
+                                    <Route index element={<PatientInfo/>}/>
+                                <Route path="edit" element={<PatientInfosEdit/>}/>
+                            </Route>
                         </Route>
-                    </Route>
                 </Route>
             </Routes>
         </BrowserRouter>
