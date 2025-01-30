@@ -29,7 +29,7 @@ export default function PatientInfo(){
     }
 
     return(
-        <div className="md:bg-white w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
+        <div className="md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
             <HeaderMenu name="Dados Gerais" tagButton="Editar" infosStatus={infosStatus} setInfosStatus={setInfosStatus} handleClick={handleClickEdit}/>
             { 
             infosStatus && <div 
