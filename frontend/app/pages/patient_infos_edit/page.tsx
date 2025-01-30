@@ -103,7 +103,6 @@ export default function PatientInfosEdit(){
                         width: "30%",
                     }}>Salvar</Button>
                     <Button
-                    type="submit"
                     variant="contained" 
                     sx={{
                         backgroundColor: "#F44250", 
