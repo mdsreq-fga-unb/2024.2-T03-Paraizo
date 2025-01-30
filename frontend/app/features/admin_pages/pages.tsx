@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 
 export default function AdminBasePage(){
     return(
-        <section className="w-screen h-screen flex">
+        <section className="w-screen h-screen md:flex bg-paraizo-background">
             <AdminMenu/>
             <Outlet/>
         </section>

@@ -26,19 +26,24 @@ export default function AdminMenu(){
     },[])
 
     return <section>
-        <div className="md:hidden py-4 w-full bg-paraizo-cyan flex flex-col">
+        <div className="md:hidden py-1 w-full mb-4 bg-paraizo-cyan flex flex-col">
             <div>
-                {!statusMenu ? 
-                <Button
-                onClick={() => setStatusMenu(prev => !prev)}>
-                    <MenuIcon
-                    sx={{
-                        color: "white",
-                        width: "3rem",
-                        height: "3rem",
-                    }}/>
-                </Button> :
-                <div className="flex justify-between items-center">
+                {!statusMenu ? <div className="flex justify-between items-center px-4 w-full">
+                    <Button
+                    onClick={() => setStatusMenu(prev => !prev)}>
+                        <MenuIcon
+                        sx={{
+                            color: "white",
+                            width: "3rem",
+                            height: "3rem",
+                        }}/>
+                    </Button>
+                    <img 
+                className="mt-4 w-20"
+                src={logo.src} 
+                alt="Logo Janayna Paraizo"/>
+                </div> :
+                <div className="flex justify-between items-center px-4">
                 <Button
                 onClick={() => setStatusMenu(prev => !prev)}>
                     <CloseIcon

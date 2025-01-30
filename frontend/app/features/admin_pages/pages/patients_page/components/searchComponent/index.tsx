@@ -13,26 +13,26 @@ export default function SearchComponent({setFilterParams}:InterfaceSearchCompone
         setFilterParams(input)
     }
     
-    return <div className="flex justify-around gap-8 items-center">
-        <TextField 
-        id="outlined-basic" 
-        label="Digite o nome de um paciente" 
-        variant="outlined" 
-        sx={{
-            backgroundColor: "#F5F4FF",
-            width: "65%",
-        }}
-        onChange={(e)=> setFilterParams(e.target.value)}/>
-        <Button 
-        variant="contained" 
-        sx={{
-            backgroundColor: "#739DAB", 
-            color: "white", 
-            fontSize: 20, 
-            fontFamily: "Rubik", 
-            width: "25%",
-            height: "55px",
-        }}
-        onClick={handleClick}>Pesquisar</Button>
+    return <div>
+        <h2 className="text-paraizo-textBlack text-xl p-4">Procure pelo nome ou email de um paciente abaixo:</h2>
+        <div className="flex justify-around items-center">
+            <TextField 
+            id="outlined-basic" 
+            label="Digite o nome de um paciente" 
+            variant="outlined" 
+            sx={{
+                backgroundColor: "#F5F4FF",
+            }}
+            onChange={(e)=> setFilterParams(e.target.value)}/>
+            <Button 
+            variant="contained" 
+            sx={{
+                backgroundColor: "#739DAB", 
+                color: "white", 
+                fontFamily: "Rubik", 
+                height: "55px",
+            }}
+            onClick={handleClick}>Pesquisar</Button>
+        </div>
     </div>
 }
