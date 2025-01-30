@@ -13,10 +13,11 @@ export default function SearchComponent({setFilterParams}:InterfaceSearchCompone
         setFilterParams(input)
     }
     
-    return <div>
+    return <div className="xl:mx-4">
         <h2 className="text-paraizo-textBlack text-xl p-4">Procure pelo nome ou email de um paciente abaixo:</h2>
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around items-center md:gap-4">
             <TextField 
+            className="md:w-full"
             id="outlined-basic" 
             label="Digite o nome de um paciente" 
             variant="outlined" 

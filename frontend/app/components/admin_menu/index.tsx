@@ -89,7 +89,7 @@ export default function AdminMenu(){
                 </div>
             </div>}
         </div>
-        <div className="hidden h-screen w-80 md:w-60 bg-paraizo-cyan md:flex justify-start items-center flex-col gap-9">
+        <div className="hidden h-screen w-80 md:w-44 xl:w-60 bg-paraizo-cyan md:flex justify-start items-center flex-col gap-9">
             <img 
             className="mt-4"
             src={logo.src} 

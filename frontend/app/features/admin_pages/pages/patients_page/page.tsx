@@ -20,11 +20,11 @@ export default function PatientsPage() {
         )
     }, [filterParams])
 
-    return <div className="md:bg-white">
+    return <div className="md:bg-white md:mx-12 md:p-4 md:my-20 xl:mx-32">
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-start w-full text-2xl text-paraizo-textBlack px-4 font-bold">Seus Pacientes</h1>
                 <p className="text-lg text-paraizo-textBlack p-4">Esta é sua central de gestão dos pacientes! Aqui você pode visualizar, editar, cadastrar ou excluir dados relacionados às informações gerias de cada paciente, além manipular seus regístros de atendimento a tratamendo. Abaixo está a lista com todos os pacientes da clinica.</p>
-                <div className="h-[.3rem] bg-paraizo-textGray w-11/12 rounded-full"></div>
+                <div className="h-[.3rem] bg-paraizo-textGray w-11/12 md:w-[97%] rounded-full"></div>
             </div>
             <SearchComponent setFilterParams={setFilterParams}/>
             <div className="bg-[#F5F4FF] mx-2 p-4 mt-6">

@@ -38,12 +38,11 @@ export default function PatientInfosEdit(){
     }
 
     return (
-        <div className="flex justify-start items-center bg-paraizo-background rounded">
-            <AdminMenu/>
-            <div className="h-1/2 min-h-96 mx-[10%] p-4 mt-6 w-2/3 bg-white">
+        <div className="flex justify-center items-start w-full bg-white rounded mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
+            <div className="min-h-96 px-4 w-full">
             <div className="lex justify-center items-center bg-paraizo-cyan rounded-md mb-4">
                 <h1 className="text-black my-2 w-full p-2 rounded-md flex justify-between text-xl">
-                    Edite as informações do paciente abaixo:
+                    Edite as informações gerais do paciente:
                 </h1>
             </div>
             <Box
