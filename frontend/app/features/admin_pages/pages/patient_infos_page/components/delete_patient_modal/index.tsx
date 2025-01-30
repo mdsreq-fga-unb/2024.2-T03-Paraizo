@@ -44,10 +44,9 @@ export default function DeletePatientModal({patient=null, title, msgAlert}:Inter
                     sx={{
                         backgroundColor: "#F44250", 
                         color: "white", 
-                        fontSize: 14, 
                         fontFamily: "Rubik",
                         height: "10%",
-                        width: "30%",
+                        width: "35%",
                     }}
                     onClick={handleOpen}>
                         Excluir paciente
