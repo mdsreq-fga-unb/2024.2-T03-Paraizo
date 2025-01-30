@@ -16,7 +16,8 @@ import { NavLink, useLocation } from "react-router";
 
 export default function AdminMenu(){
     const location = useLocation()
-    const currentUrl = location.pathname.split("/")[2]
+    let currentUrl
+    (location.pathname.split("/").length >= 3) ? currentUrl = location.pathname.split("/")[2] : currentUrl = 'home' 
     const [statusMenu, setStatusMenu] = useState(false)
 
     useEffect(()=>{
@@ -57,7 +58,7 @@ export default function AdminMenu(){
             {statusMenu && <div className="w-screen h-screen my-4 bg-paraizo-cyan flex justify-start items-center flex-col gap-9">
                 <div className="flex flex-col justify-start items-center w-full gap-9 py-4 pl-6">
                 <NavLink 
-                to={"/admin/home"}
+                to={"/admin"}
                 className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBalanceIcon />
                     <p>Visão Geral</p>
@@ -91,7 +92,7 @@ export default function AdminMenu(){
             <div className="w-full h-[0.125rem] bg-paraizo-whiteLines "></div>
             <div className="flex flex-col justify-start items-center w-full gap-9 py-4 pl-6">
                 <NavLink 
-                to={"/admin/home"}
+                to={"/admin"}
                 className={`flex justify-start items-center w-full gap-2 md:gap-1 ${currentUrl === "home" ? 'bg-paraizo-background text-paraizo-textBlack h-20 pl-4 rounded-tl-xl rounded-bl-xl' : ''}`}>
                     <AccountBalanceIcon />
                     <p>Visão Geral</p>

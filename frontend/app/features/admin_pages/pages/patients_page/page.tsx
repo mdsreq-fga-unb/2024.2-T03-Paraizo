@@ -20,9 +20,7 @@ export default function PatientsPage() {
         )
     }, [filterParams])
 
-    return <div className="flex justify-start items-center bg-paraizo-background">
-        <AdminMenu/>
-        <div className="h-1/2 min-h-96 mx-[10%] p-4 mt-6 w-2/3 bg-white">
+    return <div className="">
             <SearchComponent setFilterParams={setFilterParams}/>
             <div className="bg-[#F5F4FF] mx-2 p-4 mt-6">
                 <h1 className="text-paraizo-textGray text-xl font-light pl-2 pb-4">Pacientes:</h1>
@@ -43,5 +41,4 @@ export default function PatientsPage() {
                 </div>
             </div>
         </div>
-    </div>
 }
