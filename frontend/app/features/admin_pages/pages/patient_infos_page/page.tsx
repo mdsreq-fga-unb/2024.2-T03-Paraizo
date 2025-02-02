@@ -2,13 +2,11 @@
 import { useNavigate, useParams } from "react-router"
 import { useState } from "react"
 
-import AdminMenu from "@/app/components/admin_menu"
 import patients from "@/app/mocks/patients"
 import HeaderMenu from "./components/header_menu"
 
-import { Alert, Button } from "@mui/material"
-import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import DeletePatientModal from "./components/delete_patient_modal"
+import DocsCard from "./components/docs_card"
 
 export default function PatientInfo(){
     const navigate = useNavigate()
@@ -19,6 +17,7 @@ export default function PatientInfo(){
 
     // Substituir com get da api:
     const patient = patients.find((patient) => patient.id === patientId)
+    const patientDocs = patient?.docs
 
     const handleClickEdit = () => {
         navigate(`edit`)
@@ -43,11 +42,8 @@ export default function PatientInfo(){
             }
             
             <HeaderMenu name="Avaliações e tratamentos" tagButton="Cadastrar" infosStatus={docsStatus} setInfosStatus={setDocsStatus} handleClick={handleClickAdd}/>
-            { 
-            docsStatus && <div 
-            className="my-4 flex flex-col justify-center items-center gap-2">
-                {/* INSERIR RELATÓRIOS DO PACIENTE! */}
-            </div>
+            {
+                patient && patientDocs?.map(doc => <DocsCard idDocs={doc.id} key={`${parent.name}-${doc.id}`} name={patient.name} id={patient.id} typeDocs={doc.type} dateDocs={doc.infos.data}/>)
             }
 
             <DeletePatientModal 
