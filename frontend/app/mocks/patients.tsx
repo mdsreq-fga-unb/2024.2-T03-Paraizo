@@ -38,7 +38,7 @@ const patients = [
                     cp: 0,
                     escoliose: '',
                     avaliador: '',
-                    drefito: '',
+                    crefito: '',
                     data: '',
                     evolução: [
                         {
@@ -94,7 +94,7 @@ const patients = [
                     cp: 0,
                     escoliose: '',
                     avaliador: '',
-                    drefito: '',
+                    crefito: '',
                     data: '',
                     evolução: [
                         {
@@ -137,20 +137,20 @@ const patients = [
                     piora: 'Sim',
                     cadeira_anterior: ['Pé plano / Tnz valgo','Anteversão pélvica', 'Hiperlordose cervical'],
                     cadeira_posterior: ['Retroversão pélvica','Retificação torácica'],
-                    alongamentos: '',
+                    alongamentos: 'Nenhum',
                     tracao: '',
                     pompagem: true,
                     lb_digito_comp: true,
-                    conduta_cadeira_anterior: ['', ''],
-                    conduta_cadeira_posterior: ['', ''],
-                    consciencia_corporal: '',
-                    adams_gibosidades: '',
-                    adams_zonasPlanas: '',
+                    conduta_cadeira_anterior: ['DE PÉ NO MEIO', 'RÃ NO CHÃO', 'DE PÉ PAREDE'],
+                    conduta_cadeira_posterior: ['ASA DELTA', 'RÃ NO AR', 'SENTADO'],
+                    consciencia_corporal: '100%',
+                    adams_gibosidades: 'CC',
+                    adams_zonasPlanas: 'CC',
                     ca: 0,
                     cp: 0,
                     escoliose: '',
                     avaliador: '',
-                    drefito: '',
+                    crefito: '',
                     data: '',
                     evolução: [
                         {
@@ -206,7 +206,7 @@ const patients = [
                     cp: 0,
                     escoliose: '',
                     avaliador: '',
-                    drefito: '',
+                    crefito: '',
                     data: '',
                     evolução: [
                         {
