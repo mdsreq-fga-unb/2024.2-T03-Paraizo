@@ -148,10 +148,10 @@ const patients = [
                     adams_zonasPlanas: 'CC',
                     ca: 0,
                     cp: 0,
-                    escoliose: '',
-                    avaliador: '',
-                    crefito: '',
-                    data: '',
+                    escoliose: 'Não',
+                    avaliador: 'Janayna Paraizo',
+                    crefito: 'XX',
+                    data: '20/01/2025',
                     evolução: [
                         {
                             s: '',

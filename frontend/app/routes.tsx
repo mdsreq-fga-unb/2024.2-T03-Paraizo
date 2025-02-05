@@ -7,6 +7,7 @@ import PatientsPage from "./features/admin_pages/pages/patients_page/page";
 import PatientInfo from "./features/admin_pages/pages/patient_infos_page/page";
 import PatientInfosEdit from "./features/admin_pages/pages/patient_infos_edit/page";
 import PatientDocsPage from "./features/admin_pages/pages/patient_docs_page/page";
+import PatientDocsEdit from "./features/admin_pages/pages/patient_docs_edit/page";
 
 
 export default function RouteProvider(){
@@ -25,7 +26,10 @@ export default function RouteProvider(){
                                 <Route path=":id">
                                     <Route index element={<PatientInfo/>}/>
                                     <Route path="edit" element={<PatientInfosEdit/>}/>
-                                    <Route path="docs/:id" element={<PatientDocsPage/>}/>
+                                    <Route path="docs/:id">
+                                        <Route index element={<PatientDocsPage/>}/>
+                                        <Route path="edit" element={<PatientDocsEdit/>}/>
+                                    </Route>
                             </Route>
                     </Route>
                 </Route>
