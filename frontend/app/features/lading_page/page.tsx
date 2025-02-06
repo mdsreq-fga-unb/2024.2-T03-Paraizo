@@ -1,14 +1,12 @@
 "use client"
 import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Background from "./components/background";
+import Background from "@/app/components/background";
 import Image from 'next/image';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-
-export default function Home() {
-  return (
-    <>
-    <Background>
+export default function LandingPage(){
+    return(
+        <Background>
       <Box sx={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
         <Grid sx={{ margin: 10}}>
           <Grid container direction="row" alignItems="center" >
@@ -30,6 +28,5 @@ export default function Home() {
         </Grid>
       </Box>
     </Background>
-    </>
-  );
+    )
 }
