@@ -3,7 +3,7 @@ import { Link } from "react-router"
 
 import { InterfaceDocsCard } from "./interfaces/docs_interfaces"
 
-export default function DocsCard({id, name, dateDocs, typeDocs, idDocs}:InterfaceDocsCard){
+export default function DocsCard({name, dateDocs, typeDocs, idDocs}:InterfaceDocsCard){
     return(
         <Link to={`docs/${idDocs}`} className='w-full'>
         <div>

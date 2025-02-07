@@ -26,7 +26,7 @@ export default function RouteProvider(){
                                 <Route path=":id">
                                     <Route index element={<PatientInfo/>}/>
                                     <Route path="edit" element={<PatientInfosEdit/>}/>
-                                    <Route path="docs/:id">
+                                    <Route path="docs/:type">
                                         <Route index element={<PatientDocsPage/>}/>
                                         <Route path="edit" element={<PatientDocsEdit/>}/>
                                     </Route>
