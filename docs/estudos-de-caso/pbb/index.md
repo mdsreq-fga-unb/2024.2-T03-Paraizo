@@ -18,7 +18,7 @@ Nesse caso iremos tratar de uma empresa de tecnologia chamada TechFix que opera 
 
 ## **Resolução**
 
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVLJ8O_A4=/?moveToViewport=-2863,-4727,7666,3934&embedId=424206837205" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVLJ8O_A4=/?moveToViewport=-3049,-4688,8095,3895&embedId=444483705891" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 /// caption
 Product Backlog Building - TechFix
 ///
