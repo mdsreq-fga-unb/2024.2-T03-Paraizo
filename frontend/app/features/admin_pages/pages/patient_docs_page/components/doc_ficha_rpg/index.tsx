@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import corpo1 from "@/public/corpo1.png"
 import corpo2 from "@/public/colVer.png"
 import { InterfacePatient } from "../../interfaces/docsInterface";
+import { useNavigate } from "react-router";
 
 interface InterfaceDocFichaRPGComponent {
     patient: InterfacePatient,
@@ -11,6 +12,10 @@ interface InterfaceDocFichaRPGComponent {
 
 export default function DocFichaRpg({patient}:InterfaceDocFichaRPGComponent){
     const patientDoc = patient.doc_rpg
+    const navigate = useNavigate()
+    const goToEdit = () => {
+        navigate("edit")
+    }
 
     return <>
     <div className="bg-paraizo-cyan h-14 rounded-md flex justify-between items-center px-4">
@@ -25,7 +30,7 @@ export default function DocFichaRpg({patient}:InterfaceDocFichaRPGComponent){
                         fontFamily: "Rubik", 
                         height: "40px",
                     }}
-                    >Editar
+                    onClick={goToEdit}>Editar
                     </Button>
                     <Button
                     variant="contained"

@@ -1,6 +1,7 @@
 import { Alert, Button } from "@mui/material";
 import CardText from "../cardText";
 import { InterfacePatient } from "../../interfaces/docsInterface";
+import { useNavigate } from "react-router";
 
 interface InterfaceDocFichaDAPComponent {
     patient: InterfacePatient
@@ -8,6 +9,7 @@ interface InterfaceDocFichaDAPComponent {
 
 export default function DocFichaDap({patient}:InterfaceDocFichaDAPComponent){
     const patientDoc = patient.doc_dap
+    const navigate = useNavigate()
 
     return <>
     <div className="bg-paraizo-cyan h-14 rounded-md flex justify-between items-center px-4">
@@ -22,7 +24,7 @@ export default function DocFichaDap({patient}:InterfaceDocFichaDAPComponent){
                 fontFamily: "Rubik", 
                 height: "40px",
             }}
-            >Editar
+            onClick={()=> navigate("edit")}>Editar
             </Button>
             <Button
             variant="contained"

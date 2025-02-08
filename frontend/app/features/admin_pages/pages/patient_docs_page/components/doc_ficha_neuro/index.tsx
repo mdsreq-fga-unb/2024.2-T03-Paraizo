@@ -2,6 +2,7 @@
 import { Button } from "@mui/material";
 import CardText from "../cardText";
 import { InterfacePatient } from "../../interfaces/docsInterface";
+import { useNavigate } from "react-router";
 
 interface InterfaceDocFichaNeuroComponent {
     patient: InterfacePatient
@@ -9,6 +10,7 @@ interface InterfaceDocFichaNeuroComponent {
 
 export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent){
     const patientDoc = patient.doc_neuro
+    const navigate = useNavigate()
 
     return <>
     <div className="bg-paraizo-cyan h-14 rounded-md flex justify-between items-center px-4">
@@ -23,7 +25,7 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
                 fontFamily: "Rubik", 
                 height: "40px",
             }}
-            >Editar
+            onClick={()=> navigate("edit")}>Editar
             </Button>
             <Button
             variant="contained"

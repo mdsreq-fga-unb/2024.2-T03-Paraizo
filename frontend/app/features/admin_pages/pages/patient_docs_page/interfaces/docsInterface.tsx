@@ -1,4 +1,4 @@
-interface InterfaceEvolucao {
+export interface InterfaceEvolucao {
     s: string,
     data: string,
     estado: string,
