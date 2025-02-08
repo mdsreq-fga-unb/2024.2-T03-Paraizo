@@ -32,8 +32,8 @@ export interface InterfaceDocFichaRPG {
     consciencia_corporal: string,
     adams_gibosidades: string,
     adams_zonasPlanas: string,
-    ca: Number,
-    cp: Number,
+    ca: number,
+    cp: number,
     escoliose: string,
     avaliador: string,
     crefito: string,
@@ -42,11 +42,14 @@ export interface InterfaceDocFichaRPG {
 }
 
 export interface InterfaceDocFichaPilates {
-    idade: Number,
+    idade: number,
     sexo: string,
     estadoCivil: string,
     teleResidencial: string,
     celular: string,
+    endereco: string,
+    patrickFabere: string,
+    profissao: string,
     escolaridade: string,
     queixasPrincipais: string,
     diagnosticoMedico: string,
@@ -154,7 +157,9 @@ export interface InterfaceDocFichaNeuro {
     convenioParticular: string,
     carteirinha: string,
     cpf: string,
-    idade: Number,
+    estadoCivil: string,
+    sexo: string,
+    idade: number,
     endereco: string,
     telResidencial: string,
     celular: string,
@@ -208,8 +213,13 @@ export interface InterfaceDocFichaNeuro {
 }
 
 export interface InterfaceDocFichaDAP {
+    usoProtecaoTipo: string,
+    usoProtecaoTrocas: string,
+    inicioAgravamentoAposParto: string,
+    quantoTempoAposParto: string,
+    enureseNoturnaUltimoEpisodio: string,
     data: string,
-    idade: Number,
+    idade: number,
     estadoCivil: string,
     profissao: string,
     endereco: string,
@@ -367,7 +377,7 @@ export interface InterfaceDocFichaDAP {
 }
 
 export interface InterfacePatient {
-    id: Number,
+    id: number,
     name: string,
     cpf: string,
     birthDate: string,

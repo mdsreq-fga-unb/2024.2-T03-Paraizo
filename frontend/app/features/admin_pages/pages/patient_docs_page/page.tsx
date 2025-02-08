@@ -16,40 +16,37 @@ export default function PatientDocsPage(){
     const patientID = Number(location.pathname.split("/")[3])
     const docType = params.type
 
-    
     // Substituir por GET da api:
     const [patient, setPatient] = useState(patients.find(patient => patient.id === patientID))
 
-    const goToEditPage = () => {
-        navigate('edit')
-    }
 
     const showDoc = () => {
         switch (docType){
             case 'doc_rpg':
                 if(patient)
                     return <DocFichaRpg 
-                goToEditPage={goToEditPage}
-                patient={patient}/> 
+                        patient={patient}/> 
             
             case 'doc_neuro':
                 if(patient)
-                    return <DocFichaNeuro/>
+                    return <DocFichaNeuro
+                    patient={patient}/>
     
             case 'doc_pilates':
                 if(patient)
-                    return <DocFichaPilates/>
+                    return <DocFichaPilates
+                    patient={patient}/>
     
             case 'doc_dap':
                 if(patient)
-                    return <DocFichaDap/>
+                    return <DocFichaDap
+                    patient={patient}/>
         }
     }
 
     return(
         <section className="max-h-[800px] overflow-y-auto md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
             {showDoc()}
-            
         </section>
     )
 }

@@ -7,14 +7,13 @@ import { InterfacePatient } from "../../interfaces/docsInterface";
 
 interface InterfaceDocFichaRPGComponent {
     patient: InterfacePatient,
-    goToEditPage: () => void,
 }
 
-export default function DocFichaRpg({goToEditPage, patient}:InterfaceDocFichaRPGComponent){
+export default function DocFichaRpg({patient}:InterfaceDocFichaRPGComponent){
     const patientDoc = patient.doc_rpg
 
     return <>
-    <div className="bg bg-paraizo-cyan h-14 rounded-md flex justify-between items-center px-4">
+    <div className="bg-paraizo-cyan h-14 rounded-md flex justify-between items-center px-4">
                 <h1 className="text-paraizo-whiteLines text-xl font-bold">Ficha Anamnese</h1>
                 <div className="flex gap-4">
                     <Button
@@ -26,7 +25,7 @@ export default function DocFichaRpg({goToEditPage, patient}:InterfaceDocFichaRPG
                         fontFamily: "Rubik", 
                         height: "40px",
                     }}
-                    onClick={goToEditPage}>Editar
+                    >Editar
                     </Button>
                     <Button
                     variant="contained"
@@ -40,7 +39,7 @@ export default function DocFichaRpg({goToEditPage, patient}:InterfaceDocFichaRPG
                     </Button>
                 </div>
             </div>
-            <div className="my-4">
+    <div className="my-4">
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-black w-full">ANAMNESE</h1>
                     <div className="h-[.125rem] bg-black w-full rounded-full"></div>
