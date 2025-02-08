@@ -35,7 +35,7 @@ Tabela 1 - Backlog feito com base nos PBIs
 |-----|-----------------------------------------------------------------------------------|------------------------------------|
 | US01 | Eu, como técnico, desejo realizar agendamento de serviço para centralizar agendamentos | Gerenciar solicitações e agendamentos dos clientes |
 | US02 | Eu, como técnico, desejo editar agendamento de serviço para manter os dados atualizados da agenda | Gerenciar solicitações e agendamentos dos clientes |
-| US03 | Eu, como técnico, desejo confirmar ou recusar solicitação de serviço para repassar a agenda aos clientes rapidamente | Gerenciar solicitações e agendamentos dos clientes |
+| US03 | Eu, como técnico, desejo responder solicitação de serviço para repassar a agenda aos clientes rapidamente | Gerenciar solicitações e agendamentos dos clientes |
 | US04 | Eu, como técnico, desejo acessar meus agendamentos para manter uma agenda única | Gerenciar solicitações e agendamentos dos clientes |
 | US05 | Eu, como técnico, desejo cadastrar cliente para manter seus dados centralizados | Gerenciar solicitações e agendamentos dos clientes |
 | US06 | Eu, como técnico, desejo editar cliente para manter seus dados atualizados | Gerenciar solicitações e agendamentos dos clientes |
@@ -60,11 +60,13 @@ Tabela 1 - Backlog feito com base nos PBIs
 | US25 | Eu, como corporativo, desejo gerar um histórico dos serviços prestados pelo estabelecimento para verificar todo seu alcance | Solicitação de serviços           |
 | US26 | Eu, como corporativo, desejo listar todas as solicitações realizadas de serviços para acompanhar meus pedidos | Solicitação de serviços           |
 | US27 | Eu, como operações, desejo listar as atividades das equipes a fim de acompanhar suas tarefas | Supervisão das equipes            |
-| US28 | Eu, como operações, desejo cadastrar atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US29 | Eu, como operações, desejo editar cadastro do atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US30 | Eu, como operações, desejo remover cadastro do atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US31 | Eu, como operações, gerar relatório das atividades por área para acompanhar o andamento em cada setor | Supervisão das equipes            |
-| US32 | Eu, como operações, gerar relatório das atividades por equipe para acompanhar o andamento em cada equipe | Supervisão das equipes            |
+| US28 | Eu, como operações, desejo cadastrar atendente na equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US29 | Eu, como operações, desejo cadastrar técnico na equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US30 | Eu, como operações, desejo editar cadastro do atendente da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US31 | Eu, como operações, desejo editar cadastro do técnico da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US32 | Eu, como operações, desejo remover cadastro do atendente da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US33 | Eu, como operações, desejo remover cadastro do técnico da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US34 | Eu, como operações, gerar relatório de supervisão da equipe para acompanhar o andamento das atividades | Supervisão das equipes            |
 
 Fonte: Pedro Miguel M. de O. dos Santos
 
