@@ -35,7 +35,7 @@ Tabela 1 - Backlog feito com base nos PBIs
 |-----|-----------------------------------------------------------------------------------|------------------------------------|
 | US01 | Eu, como técnico, desejo realizar agendamento de serviço para centralizar agendamentos | Gerenciar solicitações e agendamentos dos clientes |
 | US02 | Eu, como técnico, desejo editar agendamento de serviço para manter os dados atualizados da agenda | Gerenciar solicitações e agendamentos dos clientes |
-| US03 | Eu, como técnico, desejo confirmar ou recusar solicitação de serviço para repassar a agenda aos clientes rapidamente | Gerenciar solicitações e agendamentos dos clientes |
+| US03 | Eu, como técnico, desejo responder solicitação de serviço para repassar a agenda aos clientes rapidamente | Gerenciar solicitações e agendamentos dos clientes |
 | US04 | Eu, como técnico, desejo acessar meus agendamentos para manter uma agenda única | Gerenciar solicitações e agendamentos dos clientes |
 | US05 | Eu, como técnico, desejo cadastrar cliente para manter seus dados centralizados | Gerenciar solicitações e agendamentos dos clientes |
 | US06 | Eu, como técnico, desejo editar cliente para manter seus dados atualizados | Gerenciar solicitações e agendamentos dos clientes |
@@ -44,27 +44,29 @@ Tabela 1 - Backlog feito com base nos PBIs
 | US09 | Eu, como atendente, desejo cadastrar informações do equipamento para conseguir acessá-los depois | Reparo de equipamentos            |
 | US10 | Eu, como atendente, registrar resultado do atendimento para averiguar o desempenho geral | Reparo de equipamentos            |
 | US11 | Eu, como atendente, registrar recursos utilizados para a realização do atendimento a fim de obter histórico dos recursos | Reparo de equipamentos            |
-| US12 | Eu, como atendente, relatar funcionamento dos recursos usados durante o atendimento a fim de manter o controle dos recursos | Reparo de equipamentos            |
+| US12 | Eu, como atendente, desejo relatar funcionamento dos recursos usados durante o atendimento a fim de manter o controle dos recursos | Reparo de equipamentos            |
 | US13 | Eu, como atendente, desejo adicionar informações do cliente a fim de manter a base de dados atualizada | Reparo de equipamentos            |
 | US14 | Eu, como atendente, desejo solicitar comentário do cliente sobre atendimento a fim de obter retorno do serviço prestado | Reparo de equipamentos            |
 | US15 | Eu, como atendente, desejo relatar comentário sobre atendimento a fim de relatar ocorrências | Reparo de equipamentos            |
-| US16 | Eu, como atendente, desejo gerar agenda com meus serviços para facilitar a execução | Reparo de equipamentos            |
-| US17 | Eu, como operações, desejo consultar dados de um serviço solicitado para acompanhar o andamento | Relatórios dos serviços           |
-| US18 | Eu, como operações, desejo consultar informações do comentário do cliente para entender seu contexto | Relatórios dos serviços           |
-| US19 | Eu, como operações, desejo comparar dados sobre os serviços prestados a fim de propor melhorias | Relatórios dos serviços           |
-| US20 | Eu, como operações, desejo gerar histórico de comentário dos clientes a fim de analisar os serviços | Relatórios dos serviços           |
-| US21 | Eu, como operações, desejo filtrar informações financeiras do estabelecimento por tempo para entender seu impacto na empresa | Relatórios dos serviços           |
-| US22 | Eu, como corporativo, desejo solicitar serviço para resolver um problema da diretoria | Solicitação de serviços           |
-| US23 | Eu, como corporativo, desejo editar um serviço solicitado para que atenda realmente o que preciso | Solicitação de serviços           |
-| US24 | Eu, como corporativo, desejo cancelar um serviço solicitado para que não atenda sem necessidade | Solicitação de serviços           |
-| US25 | Eu, como corporativo, desejo gerar um histórico dos serviços prestados pelo estabelecimento para verificar todo seu alcance | Solicitação de serviços           |
-| US26 | Eu, como corporativo, desejo listar todas as solicitações realizadas de serviços para acompanhar meus pedidos | Solicitação de serviços           |
+| US16 | Eu, como atendente, desejo consultar agenda com meus serviços para facilitar a execução | Reparo de equipamentos            |
+| US17 | Eu, como corporativo, desejo solicitar serviço para resolver um problema da diretoria | Solicitação de serviços           |
+| US18 | Eu, como corporativo, desejo editar uma solicitação de servição para que atenda realmente o que preciso | Solicitação de serviços           |
+| US19 | Eu, como corporativo, desejo cancelar um serviço solicitado para que não atenda sem necessidade | Solicitação de serviços           |
+| US20 | Eu, como corporativo, desejo consultar informações sobre os serviços prestados pelo estabelecimento para verificar todo seu escopo | Solicitação de serviços           |
+| US21 | Eu, como corporativo, desejo listar todas as solicitações de serviços para acompanhar meus pedidos | Solicitação de serviços           |
+| US22 | Eu, como operações, desejo consultar dados de um serviço solicitado para acompanhar o andamento | Relatórios dos serviços           |
+| US23 | Eu, como operações, desejo consultar comentário do cliente para entender sua avaliação do serviço | Relatórios dos serviços           |
+| US24 | Eu, como operações, desejo comparar dados sobre os serviços prestados a fim de propor melhorias | Relatórios dos serviços           |
+| US25 | Eu, como operações, desejo consultar histórico de comentários dos clientes a fim de analisar os serviços | Relatórios dos serviços           |
+| US26 | Eu, como operações, desejo filtrar informações financeiras do estabelecimento por tempo para entender seu impacto na empresa | Relatórios dos serviços           |
 | US27 | Eu, como operações, desejo listar as atividades das equipes a fim de acompanhar suas tarefas | Supervisão das equipes            |
-| US28 | Eu, como operações, desejo cadastrar atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US29 | Eu, como operações, desejo editar cadastro do atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US30 | Eu, como operações, desejo remover cadastro do atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
-| US31 | Eu, como operações, gerar relatório das atividades por área para acompanhar o andamento em cada setor | Supervisão das equipes            |
-| US32 | Eu, como operações, gerar relatório das atividades por equipe para acompanhar o andamento em cada equipe | Supervisão das equipes            |
+| US28 | Eu, como operações, desejo cadastrar atendente na equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US29 | Eu, como operações, desejo cadastrar técnico na equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US30 | Eu, como operações, desejo editar cadastro do atendente da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US31 | Eu, como operações, desejo editar cadastro do técnico da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US32 | Eu, como operações, desejo remover cadastro do atendente da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US33 | Eu, como operações, desejo remover cadastro do técnico da equipe a fim de manter controle sobre suas atividades por equipe | Supervisão das equipes            |
+| US34 | Eu, como operações, gerar relatório de supervisão da equipe para acompanhar o andamento das atividades | Supervisão das equipes            |
 
 Fonte: Pedro Miguel M. de O. dos Santos
 
