@@ -1,0 +1,228 @@
+const patients = [
+    {
+        id: 1,
+        name: "Marllon Fausto Cardoso",
+        cpf: "123456123",
+        birthDate: "20/12/2001",
+        phone: "+55 61 996382428",
+        email: "marllonpc3@gmail.com",
+        docs: [
+            {
+                id: 1,
+                type: 'ficha-anamnese',
+                infos: {
+                    endereco: '',
+                    profissao: '',
+                    diagnostico: '',
+                    patologias_associadas: '',
+                    queixa_principal: '',
+                    etiologia: '',
+                    sinais: '',
+                    sintomas: '',
+                    obs: '',
+                    inicio: '',
+                    melhora: '',
+                    piora: '',
+                    cadeira_anterior: ['',''],
+                    cadeira_posterior: ['',''],
+                    alongamentos: '',
+                    tracao: '',
+                    pompagem: true,
+                    lb_digito_comp: true,
+                    conduta_cadeira_anterior: ['', ''],
+                    conduta_cadeira_posterior: ['', ''],
+                    consciencia_corporal: '',
+                    adams_gibosidades: '',
+                    adams_zonasPlanas: '',
+                    ca: 0,
+                    cp: 0,
+                    escoliose: '',
+                    avaliador: '',
+                    crefito: '',
+                    data: '',
+                    evolução: [
+                        {
+                            s: '',
+                            data: '',
+                            estado: '',
+                            conduta: '',
+                            eva_if: '',
+                            intercorrências: '',
+                            ass: ''
+                        }
+                    ]
+                },
+            }
+        ],
+    },
+    {
+        id: 2,
+        name: "João Pedro Cardoso",
+        cpf: "9999999999",
+        birthDate: "20/11/2001",
+        phone: "+55 62 996382428",
+        email: "pedropc3@gmail.com",
+        docs: [
+            {
+                id: 1,
+                type: 'ficha-anamnese',
+                infos: {
+                    endereco: '',
+                    profissao: '',
+                    diagnostico: '',
+                    patologias_associadas: '',
+                    queixa_principal: '',
+                    etiologia: '',
+                    sinais: '',
+                    sintomas: '',
+                    obs: '',
+                    inicio: '',
+                    melhora: '',
+                    piora: '',
+                    cadeira_anterior: ['',''],
+                    cadeira_posterior: ['',''],
+                    alongamentos: '',
+                    tracao: '',
+                    pompagem: true,
+                    lb_digito_comp: true,
+                    conduta_cadeira_anterior: ['', ''],
+                    conduta_cadeira_posterior: ['', ''],
+                    consciencia_corporal: '',
+                    adams_gibosidades: '',
+                    adams_zonasPlanas: '',
+                    ca: 0,
+                    cp: 0,
+                    escoliose: '',
+                    avaliador: '',
+                    crefito: '',
+                    data: '',
+                    evolução: [
+                        {
+                            s: '',
+                            data: '',
+                            estado: '',
+                            conduta: '',
+                            eva_if: '',
+                            intercorrências: '',
+                            ass: ''
+                        }
+                    ]
+                },
+            }
+        ],
+    },
+    {
+        id: 3,
+        name: "Rodrigues Hernandez Cardoso",
+        cpf: "77777777777",
+        birthDate: "20/01/2001",
+        phone: "+55 33 996382428",
+        email: "rodripc3@gmail.com",
+        docs: [
+            {
+                id: 1,
+                type: 'ficha-anamnese',
+                infos: {
+                    endereco: 'Gama/DF, Setor leste',
+                    profissao: 'Estudante',
+                    diagnostico: 'Dor na coluna',
+                    patologias_associadas: 'Nenhuma',
+                    queixa_principal: 'Dor nas costas',
+                    etiologia: 'Nenhuma',
+                    sinais: 'Dor nas costas',
+                    sintomas: 'Dor nas costas',
+                    obs: 'Não pratica atividades físicas',
+                    inicio: '01/01/2025',
+                    melhora: 'Não',
+                    piora: 'Sim',
+                    cadeira_anterior: ['Pé plano / Tnz valgo','Anteversão pélvica', 'Hiperlordose cervical'],
+                    cadeira_posterior: ['Retroversão pélvica','Retificação torácica'],
+                    alongamentos: 'Nenhum',
+                    tracao: '',
+                    pompagem: true,
+                    lb_digito_comp: true,
+                    conduta_cadeira_anterior: ['DE PÉ NO MEIO', 'RÃ NO CHÃO', 'DE PÉ PAREDE'],
+                    conduta_cadeira_posterior: ['ASA DELTA', 'RÃ NO AR', 'SENTADO'],
+                    consciencia_corporal: '100%',
+                    adams_gibosidades: 'CC',
+                    adams_zonasPlanas: 'CC',
+                    ca: 0,
+                    cp: 0,
+                    escoliose: 'Não',
+                    avaliador: 'Janayna Paraizo',
+                    crefito: 'XX',
+                    data: '20/01/2025',
+                    evolução: [
+                        {
+                            s: '',
+                            data: '',
+                            estado: '',
+                            conduta: '',
+                            eva_if: '',
+                            intercorrências: '',
+                            ass: ''
+                        }
+                    ]
+                },
+            }
+        ],
+    },
+    {
+        id: 4,
+        name: "Henzo Pirez Cardoso",
+        cpf: "111111111111",
+        birthDate: "20/08/2001",
+        phone: "+55 90 996382428",
+        email: "henzopc3@gmail.com",
+        docs: [
+            {
+                id: 1,
+                type: 'ficha-anamnese',
+                infos: {
+                    endereco: '',
+                    profissao: '',
+                    diagnostico: '',
+                    patologias_associadas: '',
+                    queixa_principal: '',
+                    etiologia: '',
+                    sinais: '',
+                    sintomas: '',
+                    obs: '',
+                    inicio: '',
+                    melhora: '',
+                    piora: '',
+                    cadeira_anterior: ['',''],
+                    cadeira_posterior: ['',''],
+                    alongamentos: '',
+                    tracao: '',
+                    pompagem: true,
+                    lb_digito_comp: true,
+                    conduta_cadeira_anterior: ['', ''],
+                    conduta_cadeira_posterior: ['', ''],
+                    consciencia_corporal: '',
+                    adams_gibosidades: '',
+                    adams_zonasPlanas: '',
+                    ca: 0,
+                    cp: 0,
+                    escoliose: '',
+                    avaliador: '',
+                    crefito: '',
+                    data: '',
+                    evolução: [
+                        {
+                            s: '',
+                            data: '',
+                            estado: '',
+                            conduta: '',
+                            eva_if: '',
+                            intercorrências: '',
+                            ass: ''
+                        }
+                    ]
+                },
+            }
+        ],
+    },
+]
+
+export default patients
