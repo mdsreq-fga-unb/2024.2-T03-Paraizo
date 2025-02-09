@@ -47,7 +47,7 @@ $ cd 2024.2-T03-Paraizo
 </p>
 <br/>
 
-<p style="text-indent: 50px;text-align: justify;">Estudantes da disciplina Métodos de Desenvolvimento de Software, Engenharia de Software, UnB. Saiba um pouco mais sobre nosso time...</p>
+<p style="text-indent: 50px;text-align: justify;">Estudantes da disciplina Requisitos de Software, Engenharia de Software, UnB. Saiba um pouco mais sobre nosso time...</p>
 
 <div align="center">
 <div style="-webkit-display: flex;
