@@ -5,6 +5,8 @@
     | **Data** | **Versão** |              **Descrição**              |           **Autor**            |
     | :------: | :--------: | :-------------------------------------: | :----------------------------: |
     |  20/01   |    1.0     | Documentação do PBB      | Pedro Miguel M. de O. dos Santos    |
+    |  08/02   |    1.1     | Correção das US's com base no PBI      | Pedro Miguel M. de O. dos Santos    |
+    |  09/02   |    1.2    | Correção dos critérios de aceitação | Pedro Miguel M. de O. dos Santos    |
 
 ## **Introdução**
 
@@ -76,21 +78,21 @@ Tabela 2 - Critérios de aceitação de 15 USs
 
 | Nº   | História de Usuário                                                                                                 | Critérios de Aceitação                                                                                                         |
 |------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| US01 | Eu, como técnico, desejo realizar agendamento de serviço para centralizar agendamentos                            | - Selecionar data e horário disponíveis <br> - Validar conflitos de horários <br> - Associar cliente ao agendamento         |
-| US03 | Eu, como técnico, desejo confirmar ou recusar solicitação de serviço para repassar a agenda aos clientes rapidamente | - Visualizar solicitações pendentes <br> - Confirmar ou recusar solicitação <br> - Notificar cliente por e-mail ou SMS     |
-| US05 | Eu, como técnico, desejo cadastrar cliente para manter seus dados centralizados                                   | - Cadastrar nome, telefone, e-mail e endereço <br> - Validar campos obrigatórios <br> - Impedir cadastro duplicado          |
+| US01 | Eu, como técnico, desejo realizar agendamento de serviço para centralizar agendamentos                            | - Selecionar uma data e horário dentre os horários disponíveis <br> - Somente um agendamento por horário <br> - Permitir inserir observações no agendamento do serviço  |
+| US03 | Eu, como técnico, desejo responder solicitação de serviço para repassar a agenda aos clientes rapidamente | - Visualizar solicitações pendentes com nome, local e observações do cliente <br> - Confirmar ou recusar solicitação <br> - Notificar cliente por e-mail com resposta da solicitação |
+| US05 | Eu, como técnico, desejo cadastrar cliente para manter seus dados centralizados                                   | - Cadastrar nome, telefone, e-mail e endereço <br> - Validar o preenchimento de todos os campos pois são obrigatórios <br> - Impedir cadastro com nome duplicado          |
 | US06 | Eu, como técnico, desejo editar cliente para manter seus dados atualizados                                       | - Editar dados do cliente cadastrado <br> - Validar campos alterados <br> - Atualizar informações corretamente              |
 | US08 | Eu, como técnico, desejo enviar mensagem para o cliente a fim de tratar sobre o serviço                          | - Selecionar cliente para envio <br> - Enviar mensagem via e-mail ou SMS <br> - Armazenar histórico de mensagens            |
-| US09 | Eu, como atendente, desejo cadastrar informações do equipamento para conseguir acessá-los depois                 | - Cadastrar modelo, número de série e descrição <br> - Validar campos obrigatórios <br> - Consultar informações cadastradas |
-| US11 | Eu, como atendente, registrar recursos utilizados para a realização do atendimento                               | - Selecionar recursos utilizados <br> - Adicionar quantidade utilizada <br> - Registrar corretamente                       |
-| US14 | Eu, como atendente, desejo solicitar comentário do cliente sobre atendimento                                     | - Enviar solicitação de feedback <br> - Cliente pode responder por link <br> - Armazenar respostas                          |
-| US17 | Eu, como operações, desejo consultar dados de um serviço solicitado                                             | - Buscar serviço por protocolo ou data <br> - Exibir status atual <br> - Mostrar detalhes de técnico e cliente             |
-| US19 | Eu, como operações, desejo comparar dados sobre os serviços prestados                                           | - Gerar relatórios comparativos <br> - Exibir métricas como tempo médio <br> - Exportar em PDF ou Excel                     |
-| US22 | Eu, como corporativo, desejo solicitar serviço para resolver um problema da diretoria                            | - Selecionar tipo de serviço <br> - Anexar documentos <br> - Gerar número de protocolo único                                 |
-| US23 | Eu, como corporativo, desejo editar um serviço solicitado para que atenda realmente o que preciso                | - Editar detalhes da solicitação <br> - Alterar data e tipo <br> - Registrar alterações no histórico                        |
-| US26 | Eu, como corporativo, desejo listar todas as solicitações realizadas de serviços                                | - Visualizar todas as solicitações <br> - Filtrar por data e tipo <br> - Exportar em PDF ou Excel                           |
-| US27 | Eu, como operações, desejo listar as atividades das equipes                                                     | - Visualizar atividades por equipe e data <br> - Filtrar por status <br> - Acessível apenas para usuários autorizados       |
-| US30 | Eu, como operações, desejo remover cadastro do atendente ou técnico nas equipes                                 | - Buscar atendente pelo nome ou ID <br> - Confirmar remoção antes de concluir <br> - Registrar data e responsável          |
+| US09 | Eu, como atendente, desejo cadastrar informações do equipamento para conseguir acessá-los depois                 | - Cadastrar modelo, número de série e descrição <br> - Validar campos obrigatórios que são o modelo e número de sére <br> - Consultar informações cadastradas |
+| US11 | Eu, como atendente, desejo registrar recursos utilizados para a realização do atendimento                               | - Selecionar recursos utilizados <br> - Adicionar quantidade utilizada <br> - Registrar corretamente  <br> - Consultar recursos disponíveis        |
+| US14 | Eu, como atendente, desejo solicitar comentário do cliente sobre atendimento                                     | - Enviar solicitação de comentário por e-mail <br> - Cliente pode responder por link <br> - Armazenar respostas em histórico |
+| US20 | Eu, como operações, desejo consultar dados de um serviço solicitado                                             | - Buscar serviço por protocolo ou data <br> - Exibir status atual <br> - Mostrar detalhes de técnico e cliente             |
+| US24 | Eu, como operações, desejo comparar dados sobre os serviços prestados a fim de propor melhorias | - Gerar relatórios comparativos <br> - Exibir métricas como tempo médio <br> - Exportar em PDF ou Excel                     |
+| US17 | Eu, como corporativo, desejo solicitar serviço para resolver um problema da diretoria                            | - Selecionar tipo de serviço <br> - Anexar documentos <br> - Gerar número de protocolo único                                 |
+| US18 | Eu, como corporativo, desejo editar um serviço solicitado para que atenda realmente o que preciso                | - Editar detalhes da solicitação <br> - Alterar data e tipo <br> - Registrar alterações no histórico                        |
+| US21 | Eu, como corporativo, desejo listar todas as solicitações  de serviços para acompanhar meus pedidos   | - Visualizar todas as solicitações <br> - Filtrar por data e tipo <br> - Exportar em PDF ou Excel                           |
+| US27 | Eu, como operações, desejo listar as atividades das equipes a fim de acompanhar suas tarefas  | - Visualizar atividades por equipe e data <br> - Filtrar por status <br> - Acessível apenas para usuários de operações   |
+| US32 | Eu, como operações, desejo remover cadastro do atendente da equipe  | - Buscar atendente pelo nome ou ID <br> - Confirmar remoção antes de concluir <br> - Registrar data e responsável          |
 
 Fonte: Pedro Miguel M. de O. dos Santos
 
