@@ -7,6 +7,7 @@
     |  20/01   |    1.0     | Documentação do PBB      | Pedro Miguel M. de O. dos Santos    |
     |  08/02   |    1.1     | Correção das US's com base no PBI      | Pedro Miguel M. de O. dos Santos    |
     |  09/02   |    1.2    | Correção dos critérios de aceitação | Pedro Miguel M. de O. dos Santos    |
+    |  09/02   |    1.3    | Correção dos BDDs | Pedro Miguel M. de O. dos Santos    |
 
 ## **Introdução**
 
@@ -98,20 +99,20 @@ Fonte: Pedro Miguel M. de O. dos Santos
 
 #### US01 - Eu, como técnico, desejo realizar agendamento de serviço para centralizar agendamentos
 
-**Cenário: Técnico realiza um novo agendamento com sucesso**  
+**Cenário 1: Técnico realiza um novo agendamento com sucesso**  
 Dado que o técnico está na página de agendamento  
-e existem horários disponíveis na agenda  
-Quando o técnico seleciona uma data e horário  
-e informa os dados do cliente corretamente  
+e existem horários disponíveis na agenda para o dia 15/02/2025, das 08:00 às 18:00, exceto às 12:00  
+Quando o técnico seleciona a data 15/02/2025 e o horário 14:00  
+e informa os dados do cliente "Carlos Souza, telefone: (11) 98765-4321, endereço: Rua das Palmeiras, 123"  
 e confirma o agendamento  
 Então o agendamento é realizado com sucesso  
 e o sistema exibe uma mensagem "Agendamento realizado com sucesso"  
-e o agendamento aparece na lista de compromissos do técnico  
+e o agendamento aparece na lista de compromissos do técnico para o dia 15/02/2025 às 14:00  
 
-**Cenário: Técnico tenta agendar em um horário já ocupado**  
+**Cenário 2: Técnico tenta agendar em um horário já ocupado**  
 Dado que o técnico está na página de agendamento  
-e o horário desejado já está ocupado na agenda  
-Quando o técnico tenta realizar o agendamento  
+e o horário 10:00 do dia 20/02/2025 já está ocupado na agenda  
+Quando o técnico tenta realizar o agendamento para o dia 20/02/2025 às 10:00  
 Então o agendamento não é realizado  
 e o sistema exibe uma mensagem de erro "Horário indisponível"  
 e a agenda permanece inalterada  
@@ -120,52 +121,52 @@ e a agenda permanece inalterada
 
 #### US09 - Eu, como atendente, desejo cadastrar informações do equipamento para conseguir acessá-los depois
 
-**Cenário: Atendente cadastra um novo equipamento com sucesso**  
+**Cenário 3: Atendente cadastra um novo equipamento com sucesso**  
 Dado que o atendente está na página de cadastro de equipamentos  
-e preenche todos os campos obrigatórios corretamente  
+e preenche todos os campos obrigatórios corretamente para o equipamento "Impressora HP LaserJet 1020" com número de série "ABC123456", adquirido em 10/01/2025  
 Quando confirma o cadastro  
-Então o equipamento é salvo no sistema  
+Então o equipamento "Impressora HP LaserJet 1020" é salvo no sistema  
 e o sistema exibe a mensagem "Equipamento cadastrado com sucesso"  
 e o equipamento aparece na lista de equipamentos registrados  
 
-**Cenário: Atendente tenta cadastrar um equipamento sem preencher os campos obrigatórios**  
+**Cenário 4: Atendente tenta cadastrar um equipamento sem preencher os campos obrigatórios**  
 Dado que o atendente está na página de cadastro de equipamentos  
-e não preenche todos os campos obrigatórios  
+e não preenche o campo "Número de Série" ao tentar cadastrar o equipamento "Notebook Dell Inspiron 15"  
 Quando tenta confirmar o cadastro  
 Então o cadastro não é realizado  
 e o sistema exibe a mensagem de erro "Preencha todos os campos obrigatórios"  
-e o equipamento não aparece na lista de equipamentos registrados  
+e o equipamento "Notebook Dell Inspiron 15" não aparece na lista de equipamentos registrados  
 
 ---
 
 #### US14 - Eu, como atendente, desejo solicitar comentário do cliente sobre atendimento a fim de obter retorno do serviço prestado
 
-**Cenário: Envio de solicitação de feedback com sucesso**  
-Dado que o atendimento foi finalizado  
-e o cliente possui um e-mail cadastrado no sistema  
-Quando o atendente solicita o feedback  
-Então a solicitação de feedback é enviada com sucesso  
-e o sistema exibe a mensagem "Solicitação de feedback enviada com sucesso"  
-e o cliente recebe um e-mail com o link de feedback  
+**Cenário 5: Envio de solicitação de comentário com sucesso**  
+Dado que o atendimento realizado no dia 05/02/2025 foi finalizado  
+e o cliente "Ana Pereira" possui um e-mail cadastrado "ana.pereira@email.com"  
+Quando o atendente solicita o comentário  
+Então a solicitação de comentário é enviada com sucesso  
+e o sistema exibe a mensagem "Solicitação de comentário enviada com sucesso"  
+e o cliente "Ana Pereira" recebe um e-mail com o link de comentário  
 
-**Cenário: Cliente tenta enviar feedback sem atendimento finalizado**  
-Dado que o atendimento ainda não foi finalizado  
-Quando o atendente tenta solicitar o feedback  
+**Cenário 6: Cliente tenta enviar comentário sem atendimento finalizado**  
+Dado que o atendimento iniciado no dia 07/02/2025 ainda não foi finalizado  
+Quando o atendente tenta solicitar o comentário  
 Então a solicitação não é enviada  
 e o sistema exibe a mensagem de erro "Atendimento ainda em andamento"  
 
 ---
 
-#### US17 - Eu, como operações, desejo consultar dados de um serviço solicitado para acompanhar o andamento
+#### US22 - Eu, como operações, desejo consultar dados de um serviço solicitado para acompanhar o andamento
 
-**Cenário: Consulta de serviço por número de protocolo válido**  
+**Cenário 7: Consulta de serviço por número de protocolo válido**  
 Dado que o usuário de operações está na página de consulta de serviços  
-e existe um serviço cadastrado com o número de protocolo "12345"  
-Quando ele informa o número de protocolo "12345"  
+e existe um serviço cadastrado com o número de protocolo "20250214-001" referente a uma manutenção agendada para 14/02/2025  
+Quando ele informa o número de protocolo "20250214-001"  
 Então o sistema exibe os detalhes do serviço correspondente  
-e o status atual do serviço é exibido  
+e o status atual do serviço é exibido como "Em andamento"  
 
-**Cenário: Consulta de serviço por número de protocolo inexistente**  
+**Cenário 8: Consulta de serviço por número de protocolo inexistente**  
 Dado que o usuário de operações está na página de consulta de serviços  
 e não existe um serviço com o número de protocolo "99999"  
 Quando ele informa o número de protocolo "99999"  
@@ -174,23 +175,24 @@ e nenhum detalhe de serviço é exibido
 
 ---
 
-#### US30 - Eu, como operações, desejo remover cadastro do atendente ou técnico nas equipes a fim de manter controle sobre suas atividades por equipe
+#### US33 - Eu, como operações, desejo remover cadastro do técnico da equipe a fim de manter controle sobre suas atividades por equipe
 
-**Cenário: Remoção bem-sucedida de técnico**  
+**Cenário 9: Remoção bem-sucedida de técnico**  
 Dado que o usuário de operações está na página de gerenciamento de equipes  
-e o técnico "João Silva" está cadastrado na equipe de manutenção  
+e o técnico "João Silva" está cadastrado na equipe de manutenção desde 10/03/2024  
 Quando o usuário seleciona o técnico "João Silva"  
 e confirma a remoção  
 Então o sistema remove o técnico da equipe  
 e exibe a mensagem "Técnico removido com sucesso"  
-e o técnico não aparece mais na lista de equipe  
+e o técnico "João Silva" não aparece mais na lista da equipe de manutenção  
 
-**Cenário: Tentativa de remoção sem confirmação**  
+**Cenário 10: Tentativa de remoção sem confirmação**  
 Dado que o usuário de operações está na página de gerenciamento de equipes  
-e o técnico "João Silva" está cadastrado na equipe de manutenção  
+e o técnico "João Silva" está cadastrado na equipe de manutenção desde 10/03/2024  
 Quando o usuário seleciona o técnico "João Silva"  
 e cancela a remoção  
-Então o técnico continua cadastrado na equipe  
+Então o técnico "João Silva" continua cadastrado na equipe  
 e o sistema não exibe mensagens de erro  
+
 
 Fonte: Pedro Miguel M. de O. dos Santos
