@@ -6,7 +6,7 @@
     | :------: | :--------: | :-------------------------------------: | :----------------------------: |
     |  20/01   |    1.0     | Documentação do PBB      | Pedro Miguel M. de O. dos Santos    |
     |  08/02   |    1.1     | Correção das US's com base no PBI      | Pedro Miguel M. de O. dos Santos    |
-    |  09/02   |    1.1     | Correção dos critérios de aceitação | Pedro Miguel M. de O. dos Santos    |
+    |  09/02   |    1.2    | Correção dos critérios de aceitação | Pedro Miguel M. de O. dos Santos    |
 
 ## **Introdução**
 
