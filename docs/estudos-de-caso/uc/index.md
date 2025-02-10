@@ -1,33 +1,10 @@
-# ConnectCare  
-## Especificação de Caso de Uso: Receber Sugestões Personalizadas
+# **ConnectCare**  
 
-**Versão 1.0**
+??? abstract "Histórico de Revisão"
 
----
-
-## Histórico da Revisão
-
-| Data       | Versão | Descrição                                                         | Autor                |
-|------------|--------|-------------------------------------------------------------------|----------------------|
-| 10/02/2025 | 1.0    | Inicialização do documento e definição do fluxo principal         | Maykon Júnio dos Santos Soares |
-
----
-
-## Índice
-
-1. [Breve Descrição](#breve-descrição)
-2. [Fluxo Básico de Eventos](#fluxo-básico-de-eventos)
-3. [Fluxos Alternativos](#fluxos-alternativos)
-    - [Perfil Incompleto](#a1-perfil-incompleto)
-    - [Usuário Opta por Não Receber Sugestões](#a2-usuário-opta-por-não-receber-sugestões)
-4. [Fluxos de Exceção](#fluxos-de-exceção)
-    - [Falha na Geração de Sugestões](#fe1-falha-na-geração-de-sugestões)
-    - [Erro de Comunicação com o Serviço de Sugestões](#fe2-erro-de-comunicação-com-o-serviço-de-sugestões)
-5. [Pré-Condições](#pré-condições)
-6. [Pós-Condições](#pós-condições)
-7. [Pontos de Extensão](#pontos-de-extensão)
-8. [Requisitos Especiais](#requisitos-especiais)
-9. [Informações Adicionais](#informações-adicionais)
+    | **Data** | **Versão** |                        **Descrição**                         |                **Autor**                 |
+    | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------: |
+    |  10/02   |    1.0     | Criação do documento e inserção de documentação              | Maykon Júnio dos Santos Soares           |
 
 ---
 
@@ -45,11 +22,11 @@ Este caso de uso tem o propósito de fornecer ao usuário sugestões personaliza
 ### 3. Fluxo Básico de Eventos
 
 1. O caso de uso é iniciado quando o usuário seleciona a opção **"Receber Sugestões Personalizadas"** na interface do ConnectCare.
-2. O sistema verifica se o usuário está autenticado e se o perfil possui as informações necessárias para a personalização.
-3. O sistema processa os dados do perfil, histórico de saúde e preferências cadastradas para gerar as sugestões.
-4. O sistema exibe as sugestões personalizadas, organizadas por categorias (ex.: alimentação, exercícios, cuidados médicos).
+2. O sistema verifica se o usuário está autenticado e se o perfil possui as informações necessárias para a personalização **[RN01]**.
+3. O sistema processa os dados do perfil, histórico de saúde e preferências cadastradas para gerar as sugestões **[RN02]**.
+4. O sistema exibe as sugestões personalizadas, organizadas por categorias (ex.: alimentação, exercícios, cuidados médicos) **[RN03]**.
 5. O usuário pode clicar em cada sugestão para visualizar detalhes, orientações e recomendações adicionais.
-6. O sistema registra o evento de entrega de sugestões para fins de auditoria e análise de uso.
+6. O sistema registra o evento de entrega de sugestões para fins de auditoria e análise de uso **[RN04]**.
 7. O caso de uso é encerrado.
 
 ### 4. Fluxos Alternativos
@@ -58,7 +35,7 @@ Este caso de uso tem o propósito de fornecer ao usuário sugestões personaliza
 
 No passo 2 do fluxo básico, caso o sistema identifique que o perfil do usuário está incompleto ou desatualizado:
 
-1. O sistema exibe uma mensagem solicitando a atualização do perfil para melhorar a precisão das sugestões.
+1. O sistema exibe uma mensagem solicitando a atualização do perfil para melhorar a precisão das sugestões **[RN01]**.
 2. O usuário pode optar por atualizar seu perfil imediatamente ou continuar sem atualizar.
 3. Se optar pela atualização, o sistema redireciona o usuário para o módulo de atualização de perfil.
 4. Após a atualização, o usuário retorna ao caso de uso, e o fluxo recomeça a partir do passo 2.
@@ -71,18 +48,18 @@ No passo 1, o usuário pode optar, previamente, por desabilitar a funcionalidade
 
 ### 5. Fluxos de Exceção
 
-#### FE1. Falha na Geração de Sugestões
+#### FE1. Falha na Geração de Sugestões [FE1]
 
 Durante o processamento dos dados (passo 3), se ocorrer uma falha (por exemplo, dados inconsistentes ou insuficientes para a personalização):
 
-1. O sistema exibe uma mensagem informando ao usuário que não foi possível gerar sugestões no momento.
+1. O sistema exibe uma mensagem informando ao usuário que não foi possível gerar sugestões no momento **[FE1]**.
 2. O evento de falha é registrado, e o caso de uso é encerrado.
 
-#### FE2. Erro de Comunicação com o Serviço de Sugestões
+#### FE2. Erro de Comunicação com o Serviço de Sugestões [FE2]
 
 Se o sistema depender de um serviço externo para o processamento e ocorrer um erro de comunicação:
 
-1. O sistema informa ao usuário que, devido a uma indisponibilidade temporária, as sugestões não podem ser geradas.
+1. O sistema informa ao usuário que, devido a uma indisponibilidade temporária, as sugestões não podem ser geradas **[FE2]**.
 2. O usuário é orientado a tentar novamente mais tarde, e o caso de uso é encerrado.
 
 ### 6. Pré-Condições
@@ -106,7 +83,14 @@ Se o sistema depender de um serviço externo para o processamento e ocorrer um e
 - As sugestões devem ser geradas com base em regras de negócio atualizadas e no histórico de interações do usuário.
 - A privacidade e segurança dos dados dos usuários devem ser garantidas, em conformidade com as normas de proteção de dados vigentes.
 
-### 10. Informações Adicionais
+### 10. Regras de Negócio
+
+- **[RN01] Validação de Perfil:** O perfil do usuário deve conter todas as informações obrigatórias (ex.: nome, idade, histórico de saúde, preferências) para a geração de sugestões personalizadas.
+- **[RN02] Processamento de Dados:** As sugestões devem ser geradas com base no processamento correto dos dados do perfil, histórico e preferências do usuário.
+- **[RN03] Exibição de Sugestões:** Somente as sugestões que atendam aos critérios de relevância e privacidade devem ser exibidas ao usuário.
+- **[RN04] Registro de Eventos:** Todos os eventos de geração e exibição de sugestões devem ser registrados para auditoria e análise de uso.
+
+### 11. Informações Adicionais
 
 - A funcionalidade de sugestões personalizadas pode ser ativada ou desativada nas configurações do usuário.
 - Recomenda-se que o sistema ofereça a opção de fornecer feedback sobre as sugestões, para que seja possível aprimorar continuamente o algoritmo de personalização.
