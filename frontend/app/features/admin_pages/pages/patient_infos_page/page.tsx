@@ -6,7 +6,7 @@ import patients from "@/app/mocks/patients"
 import HeaderMenu from "./components/header_menu"
 
 import DeletePatientModal from "./components/delete_patient_modal"
-import DocsCard from "./components/docs_card"
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function PatientInfo(){
     const navigate = useNavigate()
@@ -17,10 +17,13 @@ export default function PatientInfo(){
 
     // Substituir com get da api:
     const patient = patients.find((patient) => patient.id === patientId)
-    const patientDocs = patient?.docs
 
     const handleClickEdit = () => {
         navigate(`edit`)
+    }
+
+    const navigateToDoc = (typeDoc:string) => {
+        navigate(`${typeDoc}`)
     }
 
     const handleClickAdd = () => {
@@ -28,23 +31,47 @@ export default function PatientInfo(){
     }
 
     return(
-        <div className="md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
+        <div className="overflow-y-auto md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
             <HeaderMenu name="Dados Gerais" tagButton="Editar" infosStatus={infosStatus} setInfosStatus={setInfosStatus} handleClick={handleClickEdit}/>
             { 
             infosStatus && <div 
             className="my-4 flex flex-col justify-center items-center gap-2">
-                <p className="w-11/12 p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>Nome completo:</b> {patient?.name}</p>
-                <p className="w-11/12 p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>CPF:</b> {patient?.cpf}</p>
-                <p className="w-11/12 p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>Data de nascimento:</b> {patient?.birthDate}</p>
-                <p className="w-11/12 p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>Telefone:</b> {patient?.phone}</p>
-                <p className="w-11/12 p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>E-mail:</b> {patient?.email}</p>
+                <p className="w-11/12 p-2 text-paraizo-textGray bg-white md:bg-paraizo-background rounded-md"><b>Nome completo:</b> {patient?.name}</p>
+                <p className="w-11/12 p-2 text-paraizo-textGray bg-white md:bg-paraizo-background rounded-md"><b>CPF:</b> {patient?.cpf}</p>
+                <p className="w-11/12 p-2 text-paraizo-textGray bg-white md:bg-paraizo-background rounded-md"><b>Data de nascimento:</b> {patient?.birthDate}</p>
+                <p className="w-11/12 p-2 text-paraizo-textGray bg-white md:bg-paraizo-background rounded-md"><b>Telefone:</b> {patient?.phone}</p>
+                <p className="w-11/12 p-2 text-paraizo-textGray bg-white md:bg-paraizo-background rounded-md"><b>E-mail:</b> {patient?.email}</p>
             </div>
             }
             
             <HeaderMenu name="Avaliações e tratamentos" tagButton="Cadastrar" infosStatus={docsStatus} setInfosStatus={setDocsStatus} handleClick={handleClickAdd}/>
-            {
-                patient && patientDocs?.map(doc => <DocsCard idDocs={doc.id} key={`${parent.name}-${doc.id}`} name={patient.name} id={patient.id} typeDocs={doc.type} dateDocs={doc.infos.data}/>)
-            }
+            <div>
+                {
+                    docsStatus && patient?.doc_rpg && <button onClick={() => navigateToDoc('docs/doc_rpg')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
+                        <h1 className="text-paraizo-textGray"><b>Ficha RPG</b> | {patient.doc_rpg.data}</h1>
+                        <ArrowForwardIosIcon className="text-black"/>
+                    </button>
+                }
+                {
+                    docsStatus && patient?.doc_pilates && <button onClick={() => navigateToDoc('docs/doc_pilates')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
+                        <h1 className="text-paraizo-textGray"><b>Ficha Pilates</b> | {patient.doc_pilates.queixasPrincipais}</h1>
+                        <ArrowForwardIosIcon className="text-black"/>
+                    </button>
+                }
+                {
+                    docsStatus && patient?.doc_neuro && <button onClick={() => navigateToDoc('docs/doc_neuro')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
+                        <h1 className="text-paraizo-textGray"><b>Ficha de Avaliação Neurológica</b> | {patient.doc_neuro.dataAvaliacao}</h1>
+                        <ArrowForwardIosIcon className="text-black"/>
+                    </button>
+                }
+                {
+                    docsStatus && patient?.doc_dap && <button onClick={() => navigateToDoc('docs/doc_dap')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
+                        <h1 className="text-paraizo-textGray"><b>Ficha de Avaliação DAP</b> | {patient.doc_dap.data}</h1>
+                        <ArrowForwardIosIcon className="text-black"/>
+                    </button>
+                }
+            </div>
+
 
             <DeletePatientModal 
             patient={patient ? patient : null} 
