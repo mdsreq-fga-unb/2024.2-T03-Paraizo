@@ -50,6 +50,10 @@ export default function DocFichaPilates ({patient}:InterfaceDocFichaPilatesCompo
                     </div>
                 </div>
                 <div className="flex flex-wrap gap-4 my-4">
+                <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">DADOS PESSOAIS</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
                     <CardText tag="Nome:" texto={patient.name}/>
                     <CardText tag="Data de Nascimento:" texto={patient.birthDate}/>
                     <CardText tag="Estado Civil:" texto={patientDoc.estadoCivil}/>
@@ -66,8 +70,10 @@ export default function DocFichaPilates ({patient}:InterfaceDocFichaPilatesCompo
                     <CardText tag="Se sim, quais?" texto={patientDoc.examesComplementaresQuais}/>
                     <CardText tag="Tratamentos adotados:" texto={patientDoc.tratamentosAdotados}/>
 
-                    <h2 className="text-black">Anamnese</h2>
-                    <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Anamnese</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
                     <CardText tag="PA" texto={patientDoc.pa} tagEnd="mmHg"/>
                     <CardText tag="Peso" texto={patientDoc.peso} tagEnd="Kg"/>
                     <CardText tag="Altura" texto={patientDoc.altura} tagEnd="m"/>
@@ -90,20 +96,30 @@ export default function DocFichaPilates ({patient}:InterfaceDocFichaPilatesCompo
                     <CardText tag="Quais os objetivos em fazer o pilates?" texto={patientDoc.objetivosPilates}/>
                     <CardText tag="ACHADOS FISIOTERAPÊUTICOS: " texto={patientDoc.acahdosFisioterapeuticos}/>
 
-                    <h2 className="text-black">Observação</h2>
+                    <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Observação</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
                     <CardText tag="Capacidade Cardiovascular" texto={patientDoc.obs_capacidadeCardiovascular}/>
                     <CardText tag="Coordenação Motora" texto={patientDoc.obs_coordenacaoMotora}/>
                     <CardText tag="Equilíbrio" texto={patientDoc.obs_equilibrio}/>
                     <CardText tag="Força" texto={patientDoc.obs_forca}/>
                     <CardText tag="Flexibilidade" texto={patientDoc.obs_flexibilidade}/>
 
-                    <h2 className="text-black">Tratamento Clínico</h2>
+                    <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Tratamento Clínico</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
                     <CardText tag="Medicamentoso:" texto={patientDoc.tratamento_medicamentoso}/>
                     <CardText tag="Imobilização:" texto={patientDoc.tratamento_imobilizacao}/>
                     <CardText tag="Cirúrgico:" texto={patientDoc.tratamento_cirurgico}/>
                     <CardText tag="Outros:" texto={patientDoc.tratamento_outros}/>
 
-                    <h2 className="text-black">AVALIAÇÃO DA DOR</h2>
+                    <h2 className="text-black"></h2>
+                    <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">AVALIAÇÃO DA DOR</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
                     <CardText tag="História da dor: " texto={patientDoc.historiaDaDor}/>
                     <CardText tag="Frequência: " texto={patientDoc.frequencia}/>
                     <CardText tag="Intensidade: " texto={patientDoc.intensidade}/>

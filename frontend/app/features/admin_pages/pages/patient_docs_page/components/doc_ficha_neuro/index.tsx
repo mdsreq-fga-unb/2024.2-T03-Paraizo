@@ -52,13 +52,19 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
               </div>
           </div>
           <div className="flex flex-wrap gap-4 my-4">
-          <h2 className="text-black">Informações da Ficha:</h2>
+          <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Informações da Ficha:</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
           <CardText tag="Data da Avaliação:" texto={patientDoc.dataAvaliacao} />
             <CardText tag="Convênio/Particular:" texto={patientDoc.convenioParticular} />
             <CardText tag="N Carteirinha:" texto={patientDoc.carteirinha} />
             <CardText tag="CPF:" texto={patientDoc.cpf} />
 
-          <h2 className="text-black">Dados Pessoais</h2>
+            <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">DADOS PESSOAIS</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
           <CardText tag="Nome:" texto={patient.name} />
           <CardText tag="Data de Nascimento:" texto={patient.birthDate} />
             <CardText tag="Idade:" texto={patientDoc.idade} />
@@ -78,7 +84,10 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
             <CardText tag="Possui Exames Complementares - Quais:" texto={patientDoc.possuiExamesComplementaresQuais} />
             <CardText tag="Tratamentos Adotados Pelo Fisioterapeuta:" texto={patientDoc.tratamentosAdotadosPeloFisioterapeuta} />
 
-          <h2 className="text-black">Anamnese:</h2>
+          <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Anamnese</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
             <CardText tag="PA:" texto={patientDoc.pa} tagEnd="mmHg"/>
             <CardText tag="Peso:" texto={patientDoc.peso} tagEnd="Kg"/>
             <CardText tag="Altura:" texto={patientDoc.altura} tagEnd="m"/>
@@ -92,7 +101,10 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
             <CardText tag="Cardiopatia:" texto={patientDoc.cardiopatia} />
             <CardText tag="Histórico Familiar:" texto={patientDoc.historicoFamiliar} />
             
-          <h2 className="text-black">História da doença</h2>
+          <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">História da doença</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
             <CardText tag="Data da Lesão:" texto={patientDoc.dataLesao} />
             <CardText tag="Internação:" texto={patientDoc.internacao} />
             <CardText tag="Hospital de Atendimento:" texto={patientDoc.hospitalDeAtendimento} />
@@ -108,7 +120,10 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
             <CardText tag="Dependente para Locomoção:" texto={patientDoc.dependentePara_locomocao} />
             <CardText tag="Dependente para Pinça Fina:" texto={patientDoc.dependentePara_pincaFina} />
 
-          <h2 className="text-black">Teste Sensorial</h2>
+          <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Teste Sensorial</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
             <CardText tag="Calor:" texto={patientDoc.calor} />
             <CardText tag="Frio:" texto={patientDoc.frio} />
             <CardText tag="Pressão:" texto={patientDoc.pressao} />
@@ -119,10 +134,12 @@ export default function DocFichaNeuro({patient}:InterfaceDocFichaNeuroComponent)
             <CardText tag="No Queixo:" texto={patientDoc.noQueixo} />
             <CardText tag="No Antebraço:" texto={patientDoc.noAntebraco} />
 
-          <h2 className="text-black">Achados Fisioterapêuticos</h2>
             <CardText tag="Achados Fisioterapêuticos:" texto={patientDoc.achadosFisioterapeuticos} />
 
-          <h2 className="text-black">Evolição:</h2>
+          <div className="flex flex-col justify-center items-center">
+                        <h1 className="text-black w-full">Evolição</h1>
+                        <div className="h-[.125rem] bg-black w-full rounded-full"></div>
+                    </div>
             <CardText texto={patientDoc.evolucao} />
           </div>
         </section>
