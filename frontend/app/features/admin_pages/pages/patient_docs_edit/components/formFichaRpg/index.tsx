@@ -145,33 +145,34 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
               />
             </Stack>
 
+
             {/* Campos para arrays */}
             <TextField
-              label="Cadeira Anterior (separado por vírgula)"
+              label="Cadeira Anterior"
               name="cadeira_anterior"
-              value={formData.cadeira_anterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.cadeira_anterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Cadeira Posterior (separado por vírgula)"
+              label="Cadeira Posterior"
               name="cadeira_posterior"
-              value={formData.cadeira_posterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.cadeira_posterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Conduta Cadeira Anterior (separado por vírgula)"
+              label="Conduta Cadeira Anterior"
               name="conduta_cadeira_anterior"
-              value={formData.conduta_cadeira_anterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.conduta_cadeira_anterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Conduta Cadeira Posterior (separado por vírgula)"
+              label="Conduta Cadeira Posterior"
               name="conduta_cadeira_posterior"
-              value={formData.conduta_cadeira_posterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.conduta_cadeira_posterior}
+              onChange={handleChange}
               fullWidth
             />
 

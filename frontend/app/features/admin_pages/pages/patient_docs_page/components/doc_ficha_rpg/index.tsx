@@ -90,19 +90,11 @@ export default function DocFichaRpg({patient}:InterfaceDocFichaRPGComponent){
                             className="w-96 h-96"/>
                             <span className="w-full flex flex-col justify-start items-start gap-4 p-2 text-paraizo-textGray bg-paraizo-background rounded-md">
                                 <h2 className="w-full text-start"><b>CADEIA ANTERIOR:</b></h2>
-                                <div className="flex gap-4">
-                                    {
-                                        patientDoc?.cadeira_anterior.map(item => <p key={`${patient?.id}-${'KEY'}-${item}`} className="bg-white p-2 rounded-md">{item}</p>)
-                                    }
-                                </div>
+                            <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md">{patientDoc?.cadeira_anterior}</p>
                             </span>
                             <span className="w-full flex flex-col justify-start items-start gap-4 p-2 text-paraizo-textGray bg-paraizo-background rounded-md">
                                 <h2 className="w-full text-start"><b>CADEIA POSTERIOR:</b></h2>
-                                <div className="flex gap-4">
-                                    {
-                                        patientDoc?.cadeira_posterior.map(item => <p key={`${patient?.id}-${'KEY'}-${item}`} className="bg-white p-2 rounded-md">{item}</p>)
-                                    }
-                                </div>
+                            <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md">{patientDoc?.cadeira_posterior}</p>
                             </span>
                             <div className="flex justify-center items-center w-full bg-paraizo-background rounded-md p-4 gap-4">
                                 <h1 className="text-black">ADAMS</h1>
@@ -124,19 +116,11 @@ export default function DocFichaRpg({patient}:InterfaceDocFichaRPGComponent){
                             <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>LB/Digito-COMP:</b> {patientDoc?.lb_digito_comp}</p>
                             <div className="w-full flex flex-col justify-start items-start gap-4 p-2 text-paraizo-textGray bg-paraizo-background rounded-md">
                                 <h2 className="w-full text-start"><b>CADEIA ANTERIOR:</b></h2>
-                                    <div className="flex gap-4">
-                                        {
-                                            patientDoc?.conduta_cadeira_anterior.map(item => <p key={`${patient?.id}-${'KEY'}-${item}`} className="bg-white p-2 rounded-md">{item}</p>)
-                                        }
-                                    </div>
+                            <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md">{patientDoc?.conduta_cadeira_anterior}</p>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-4 p-2 text-paraizo-textGray bg-paraizo-background rounded-md">
                                 <h2 className="w-full text-start"><b>CADEIA POSTERIOR:</b></h2>
-                                    <div className="flex gap-4">
-                                        {
-                                            patientDoc?.conduta_cadeira_posterior.map(item => <p key={`${patient?.id}-${'KEY'}-${item}`} className="bg-white p-2 rounded-md">{item}</p>)
-                                        }
-                                    </div>
+                            <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md">{patientDoc?.conduta_cadeira_posterior}</p>
                             </div>
                             <p className="w-full p-2 text-paraizo-textGray bg-paraizo-background rounded-md"><b>Consciencia corporal:</b> {patientDoc?.consciencia_corporal}</p>
                         </span>
