@@ -5,6 +5,7 @@
     | **Data** | **Versão** |              **Descrição**              |           **Autor**            |
     | :------: | :--------: | :-------------------------------------: | :----------------------------: |
     |  20/01   |    1.0     | Criação do tópico de USM                | Henrique Martins Alencar       |
+    |  10/02   |    1.1     | Correções das issues                    | Henrique Martins Alencar       |
 
 ## **Introdução**
 
@@ -142,16 +143,16 @@ User Story Mapping - EduConnect
 
 | Tarefa do usuário | Critérios de Aceitação |
 | :---------------: | ---------------------- |
-| [US13]  | O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; O sistema deve mostrar ao usuário a duração, em dias, do evento ao ser informado as datas de início e fim do mesmo; O sistema deve impedir que o usuário defina uma data que seja um feriado ou ponto facultativo; O sistema deve impedir que o usuário defina uma data que ocorra concomitante à outro evento com mesma equipe de coordenadores; |
-| [US17] | O sistema deve impedir que o usuário defina uma data fora o período de duração do evento; O sistema deve emitir um alerta caso o usuário tente inserir uma data anterior ao dia em que está realizando essa atividade; |
-| [US21] | O sistema deve impedir que o usuário tente cadastrar o encontro caso não tenha inserido as informações obrigatórias; O sistema deve permitir que o usuário cadastre um novo encontro importante se, e somente se, ele inserir as seguintes informações: Data, horário, descrição, lista de organizadores e lista de materiais; O sistema deve impedir que usuário que não sejam da equipe de coordenadores tentem cadastrar um encontro importante; |
-| [US31] | O sistema deve impedir que o usuário tente adicionar um membro que não esteja na equipe do evento; O sistema deve impedir que o usuário tente adicionar um membro que já esteja presente em outra equipe de um encontro importante que ocorrerá na mesma data e horário; O sistema deve impedir que o usuário tente adicionar um membro já presente na lista. |
-| [US48] | O sistema deve impedir que o usuário tente adicionar imagens que não sejam de extensões .png e .jpeg; O sistema deve impedir que o usuário tente inserir uma imagem que exceda o tamanho de 5mb; O sistema deve impedir que o usuário tente inserir um vídeo que não seja de extensão .mp4; O sistema deve impedir que o usuário tente inserir um vídeo que exceda o tamanho de 100mb; |
-| [US56] | O sistema deve permitir que o usuário visualize todas as informações do encontro em uma só interface; O sistema deve apresentar um design de interface responsivo, permitindo que todas as informações sejam visíveis para qualquer tamanho de tela. |
-| [US77] | O sistema deve permitir que o usuário visualize os arquivos enviados pelos participantes dentro do próprio sistema; O sistema deve permitir que o usuário exporte os arquivos enviados pelos participantes para seu próprio computador. |
+| [US01] | - O usuário deve preencher um formulário com nome, descrição e data de início do projeto. <br> - O sistema deve validar campos obrigatórios. <br> - O projeto deve ser salvo com sucesso e exibido na lista de projetos ativos. |
+| [US08] | - O usuário deve poder anexar arquivos para materiais didáticos. <br> - O usuário deve poder anexar links para materiais didáticos. <br> - Os materiais devem ser acessíveis para os participantes do projeto. |
+| [US11] | - O usuário deve poder atribuir funções e responsabilidades para cada membro do projeto. <br> - O sistema deve permitir a edição e remoção de responsabilidades. |
+| [US18] | - O usuário deve ver uma lista com os alunos inscritos no projeto. <br> - A lista deve exibir nome, e-mail e status de participação. |
+| [US19] | - O usuário deve poder definir um objetivo pedagógico para o projeto. <br> - O sistema deve permitir a edição do objetivo posteriormente. |
+| [US02] | - O usuário deve poder visualizar todos os alunos cadastrados. <br> - A lista deve conter nome, e-mail e status de inscrição. |
+| [US10] | - O usuário deve acessar uma lista de atividades enviadas pelos alunos. <br> - A lista deve conter informações como aluno, data de entrega e status da correção. <br> - O sistema deve permitir o download dos arquivos entregues. |
 | [US31] | - O sistema deve exibir informações sobre cada projeto, como tema, datas, quantidade de vagas, professor responsável. |
 | [US41] | - Notificações devem ser enviadas por e-mail. <br> - Notificações devem ser enviadas por aplicativo. <br> - Notificações devem conter nome e data de entrega da atividade. |
-| [US94] | - Relatórios devem apresentar gráficos e dados quantitativos. <br> - Deve haver a opção de baixar os relatórios em PDF. |
+| [US54] | - Relatórios devem apresentar gráficos e dados quantitativos. <br> - Deve haver a opção de baixar os relatórios em PDF. |
 | [US40] | - O sistema deve exibir uma lista de atividades realizadas pelos filhos. <br> - Deve incluir datas e observações sobre a participação. |
 | [US47] | - O sistema deve permitir envio de mensagens via chat. <br> - As mensagens devem ser recebidas pelo professor em tempo real. |
 | [US48] | - Alunos devem ser notificados ao receber uma mensagem. <br> - O sistema deve permitir responder diretamente à mensagem. |
