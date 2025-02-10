@@ -20,11 +20,6 @@ export default function AdminMenu(){
     (location.pathname.split("/").length >= 3) ? currentUrl = location.pathname.split("/")[2] : currentUrl = 'home' 
     const [statusMenu, setStatusMenu] = useState(false)
 
-    useEffect(()=>{
-        console.log(currentUrl.split("/")[2])
-
-    },[])
-
     return <section>
         <div className="md:hidden py-1 w-full mb-4 bg-paraizo-cyan flex flex-col">
             <div>
