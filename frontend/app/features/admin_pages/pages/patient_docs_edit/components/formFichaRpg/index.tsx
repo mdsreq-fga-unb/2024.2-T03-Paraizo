@@ -1,11 +1,7 @@
 'use client'
 
 import { Box, Button, Stack, TextField, Typography } from "@mui/material"
-import SelectInputItens from "../selectInput"
-import { ChangeEvent, useEffect, useState } from "react"
-import { PatientInterface } from "../../../patient_infos_edit/interfaces/patient"
-import patients from "@/app/mocks/patients"
-import { useLocation, useNavigate } from "react-router"
+import { ChangeEvent, useState } from "react"
 import { InterfacePatient, InterfaceDocFichaRPG, InterfaceEvolucao } from "../../../patient_docs_page/interfaces/docsInterface"
 
 interface InterfaceFormFichaRpg {
@@ -15,28 +11,7 @@ interface InterfaceFormFichaRpg {
 export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
     const patientDoc = patient.doc_rpg
 
-    const [arrayFormDataCadeiraAnteriror, setArrayFormDataCadeiraAnteriror] = useState<Array<string>>([])
-    const names_cadeira_anterior = [
-        'Pé plano / Tnz valgo', 'Joelho valgo', 'Anteversão pélvica', 'Hiperlordose lombar', 'Hipercifose torácica', 'Hiperlordose cervical', 'Retificação cervical', 'Ombros enrolados'
-    ]
-
-    const [arrayFormDataCondutaCadeiraAnteriror, setArrayFormDataCondutaCadeiraAnteriror] = useState<Array<string>>([])
-    const names_conduta_cadeira_anterior = [
-        'DE PÉ NO MEIO', 'RÃ NO CHÃO', 'DE PÉ PAREDE'
-    ]
-    
-    const [arrayFormDataCadeiraPosterior, setArrayFormDataCadeiraPosterior] = useState<Array<string>>([])
-    const names_cadeira_posterior = [
-        'Pé cavo / Tnz varo', 'Joelho varo', 'Retroversão pélvica', 'Retificação lombar', 'Retificação torácica', 'Hiperlordose cervical', 'Ombros retraídos', 'Ombros elevados'
-    ]
-
-    const [arrayFormDataCondutaCadeiraPosterior, setArrayFormDataCondutaCadeiraPosterior] = useState<Array<string>>([])
-    const names_conduta_cadeira_posterior = [
-        'ASA DELTA', 'RÃ NO AR', 'SENTADO'
-    ]
-
     const [formData, setFormData] = useState<InterfaceDocFichaRPG>(patientDoc);
-
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     // Para campos numéricos, se necessário, converta o valor
@@ -153,6 +128,7 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
                 onChange={handleChange}
                 fullWidth
               />
+              
               <TextField
                 label="Melhora"
                 name="melhora"
