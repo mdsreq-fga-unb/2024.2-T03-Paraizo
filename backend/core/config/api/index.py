@@ -12,10 +12,8 @@ config = dotenv_values(f".env.{os.getenv('PYTHON_AGRS')}")
 class APIKeyMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         api_key = request.headers.get("X-API-KEY")
-        
         if api_key != API_KEY:
             raise HTTPException(status_code=403, detail="API Key inválida.")
-        
         response = await call_next(request)
         return response
 

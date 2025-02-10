@@ -43,7 +43,7 @@ class Pacient:
         result = self.collection.update_one(
             {"_id": pacient_id}, 
             {"$set": pacientData.dict(exclude={"id"})}
-        )        
+        )
         return self.collection.find_one({"_id": pacient_id})
 
     def deletePacient(self, pacientData: PacientModel):
