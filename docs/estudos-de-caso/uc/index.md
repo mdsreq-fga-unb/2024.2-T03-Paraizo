@@ -94,3 +94,75 @@ Se o sistema depender de um serviço externo para o processamento e ocorrer um e
 
 - A funcionalidade de sugestões personalizadas pode ser ativada ou desativada nas configurações do usuário.
 - Recomenda-se que o sistema ofereça a opção de fornecer feedback sobre as sugestões, para que seja possível aprimorar continuamente o algoritmo de personalização.
+
+## Especificação de Caso de Uso: Criar perfil básico
+
+### 1. Breve Descrição
+
+Este caso de uso tem o propósito de criar perfis de usuário para as pessoas que estão buscando profissionais de saúde para realizar seus tratamentos.
+
+### 2. Atores
+
+- **Usuário (Paciente):** Paciente que deseja criar seu perfil de usuário.
+
+### 3. Fluxo Básico de Eventos
+
+Este caso de uso é iniciado quando o paciente deseja cadastrar seu perfil de usuário na plataforma.
+
+1. O caso de uso é iniciado quando o paciente seleciona a opção “Cadastrar perfil”;
+2. O paciente seleciona o tipo de perfil “Paciente”;
+3. O paciente insere os seguintes dados:
+    - Nome completo;
+    - Data de nascimento;
+    - CPF;
+    - Telefone celular;
+    - E-mail;
+    - Senha;
+    - Confirmação de senha;
+    - Endereço.
+4. O paciente seleciona a opção de “Criar perfil”;
+5. O sistema cria o novo perfil com os dados cadastrados;
+6. O caso de uso é encerrado.
+
+### 4. Fluxos Alternativos
+
+##### [FA 01] Cancelar operação.
+
+1. No passo de inserir os dados para cadastrar o perfil, o paciente pode optar por cancelar essa operação ao selecionar a opção “Cancelar”.
+
+##### [FA 02] Prosseguir com o cadastro de informações do perfil.
+
+1. Após o passo de inserir os dados para cadastrar o perfil, o paciente pode selecionar a opção de “Inserir informações complementares”;
+2. O paciente insere as seguintes informações adicionais:
+    - Especialidades médicas que mais precisa atualmente;
+    - Doenças acometidas atualmente;
+    - Medicamentos utilizados;
+    - Quantidade de pessoas residentes com ele;
+    - Se é PcD;
+    - Se for PcD, especificar.
+3. O paciente seleciona a opção “Completar cadastro”.
+4. O caso de uso é encerrado.
+
+### 5. Fluxos de Exceção
+
+#### [FE 01] Usuário já cadastrado.
+
+1. No passo 3.1.4 do fluxo básico, o sistema acusa que já existe um perfil cadastrado com os dados de CPF e/ou E-mail e retorna ao passo 3.1.3
+
+#### [FE 02] Data de nascimento inválida.
+
+1. No passo 3.1.4 do fluxo básico, o usuário insere uma data de nascimento posterior à data atual. Isso retorna ao passo 2 do fluxo básico.
+
+### 6. Pré-Condições
+
+- O usuário não deve ter um perfil já cadastrado com seus dados.
+
+### 7. Pós-Condições
+
+1. Acesso à página de “Meu perfil”: Ao encerrar o caso de uso, o usuário poderá acessar a seção com todas as informações de seu perfil de usuário, sendo possível editar as informações cadastradas anteriormente (exceto “e-mail” e “CPF”).
+
+### 8. Requisitos Especiais
+
+- O sistema deve impedir que o usuário tente finalizar o cadastro caso um dos campos do formulário esteja em branco;
+- O sistema deve sugerir ao usuário, caso tente cadastrar uma conta já existente, que ele vá para seção de login de contas de usuário;
+- O sistema não deve permitir que o usuário cadastre uma conta usando sistemas de terceiros (como contas Google, Facebook ou outros).
