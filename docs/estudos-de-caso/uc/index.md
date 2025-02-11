@@ -10,6 +10,12 @@
 
 ---
 
+## Diagrama dos casos de uso
+
+Fizemos o diagrama na plataforma miro e é possível vê-lo abaixo:
+
+<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764615780921551&embedId=841518112651" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
 ## Especificação de Caso de Uso: Receber Sugestões Personalizadas
 
 ### 1. Breve Descrição
