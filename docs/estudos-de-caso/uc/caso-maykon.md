@@ -5,6 +5,7 @@
     | **Data** | **Versão** |                        **Descrição**                         |                **Autor**                 |
     | :------: | :--------: | :----------------------------------------------------------: | :----------------------------------------: |
     |  10/02   |    1.0     | Criação do documento e inserção de documentação              | Maykon Júnio dos Santos Soares           |
+    |  10/02   |    1.1     | Continuação do documento e inserção de documentação          | Erick Miranda Santos          |
 
 ---
 
@@ -166,3 +167,210 @@ Este caso de uso é iniciado quando o paciente deseja cadastrar seu perfil de us
 - O sistema deve impedir que o usuário tente finalizar o cadastro caso um dos campos do formulário esteja em branco;
 - O sistema deve sugerir ao usuário, caso tente cadastrar uma conta já existente, que ele vá para seção de login de contas de usuário;
 - O sistema não deve permitir que o usuário cadastre uma conta usando sistemas de terceiros (como contas Google, Facebook ou outros).
+
+
+# Especificação de Caso de Uso: Registrar Visitas Domiciliares
+
+## 1. Breve Descrição
+Este caso de uso tem o propósito de cadastrar visitas domiciliares, para que seja feito o controle das visitas realizadas pelos agentes comunitários nas residências dos pacientes.
+
+## 2. Atores
+- Agente comunitário
+
+## 3. Fluxo Básico de Eventos
+Este caso de uso é iniciado quando o agente comunitário registra uma visita domiciliar.
+
+### 3.1 Fluxo Principal
+3.1.1 O sistema apresenta as seguintes opções:
+- Registrar nova visita domiciliar;
+- Atualizar dados da visita [FA01];
+- Inativar dados da visita [FA02];
+
+3.1.2 O agente comunitário seleciona a opção de registrar uma nova visita domiciliar.
+
+3.1.3 O sistema apresenta as informações a serem preenchidas para o registro de uma nova visita [RN03][FE02].
+
+3.1.4 O agente comunitário preenche as informações e solicita o registro da visita.
+
+3.1.5 O sistema valida as informações preenchidas [RN01] [FE01].
+
+3.1.6 O sistema apresenta mensagem de registro realizado com sucesso.
+
+3.1.7 O caso de uso é encerrado.
+
+## 4. Fluxos Alternativos
+
+### 4.1 [FA01] Atualizar dados da visita
+No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para atualização cadastral da visita.
+
+4.1.1 O sistema solicita que o agente de saúde informe o CEP, nome e CPF da visita que deseja atualizar.
+
+4.1.2 O agente comunitário informa o CEP, nome e CPF e solicita a consulta [RN01][FE01].
+
+4.1.3 O sistema apresenta os dados da visita desejada [RN03][FE02].
+
+4.1.4 O agente comunitário realiza as atualizações necessárias.
+
+4.1.5 O sistema valida os dados atualizados [FE01][RN01].
+
+4.1.6 O sistema pergunta ao agente comunitário se o mesmo realmente deseja fazer as alterações.
+
+4.1.7 O agente comunitário confirma as atualizações [FE03].
+
+4.1.8 O sistema exibe uma mensagem de atualizações realizadas com sucesso.
+
+4.1.9 O caso de uso é encerrado.
+
+### 4.2 Inativar visita
+No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para inativar uma visita.
+
+4.2.1 O sistema solicita que o agente comunitário informe o CPF e o CEP da visita que deseja inativar.
+
+4.2.2 O agente comunitário informa o CPF e o CEP e solicita a consulta.
+
+4.2.3 O sistema apresenta os dados da visita que deseja (nome, CEP, CPF, telefone, endereço {número, quadra, cidade, estado}) [RN02][FE02].
+
+4.2.4 O agente comunitário realiza a inativação da visita.
+
+4.2.5 O sistema pergunta ao usuário se o mesmo realmente deseja fazer a inativação.
+
+4.2.6 O agente comunitário confirma a inativação [FE03].
+
+4.2.7 O sistema exibe a mensagem de inativação realizada com sucesso.
+
+4.2.8 O caso de uso é encerrado.
+
+### 4.3 Ativar visita
+No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para ativar uma visita.
+
+4.3.1 O sistema solicita que o agente comunitário informe o CPF e o CEP da visita que deseja ativar.
+
+4.3.2 O agente comunitário informa o CPF e o CEP e solicita a consulta.
+
+4.3.3 O sistema apresenta os dados da visita que deseja (nome, CEP, CPF, telefone, endereço {número, quadra, cidade, estado}) [RN03][FE02].
+
+4.3.4 O agente comunitário realiza a ativação da visita.
+
+4.3.5 O sistema pergunta ao usuário se o mesmo realmente deseja fazer a ativação.
+
+4.3.6 O agente comunitário confirma a ativação [FE03].
+
+4.3.7 O sistema exibe a mensagem de ativação realizada com sucesso.
+
+4.3.8 O caso de uso é encerrado.
+
+## 5. Fluxos de Exceção
+
+### 5.1 [FE01] Validação de informações
+Nos passos 3.1.5, 4.1.2, 4.1.5, o sistema verifica que uma ou mais informações não foram validadas (formato e/ou obrigatoriedade) e exibe mensagem informando ao agente comunitário. O sistema retorna ao passo 3.1.4, ou 4.1.1, ou 4.1.4 conforme o local de onde foi chamado.
+
+### 5.2 [FE02] Visita não encontrada
+Nos passos 3.1.3, 4.1.3, 4.1.4, 4.1.7, o sistema não encontra a visita informada pelo agente comunitário e apresenta mensagem. O sistema retorna ao passo 3.1.2, ou 4.1.2, ou 4.1.3, ou 4.1.6 conforme o local que foi chamado.
+
+### 5.3 [FE03] Atualizações não Confirmadas
+Nos passos 4.1.7, 4.2.6, 4.3.6, o sistema não confirma as atualizações. O sistema retorna ao passo 4.1.6, ou 4.2.5, ou 4.3.5 conforme o local que foi chamado.
+
+## 6. Requisitos Especiais
+O sistema deve possuir acessibilidade para Libras.
+
+## 7. Regras de Negócio
+
+### 7.1 [RN01] Validação de informações
+
+| Campo        | Tipo                               | Obrigatório | Observações                |
+|--------------|------------------------------------|-------------|----------------------------|
+| **Nome**     | Texto até 100 caracteres           | Sim         | -                          |
+| **CEP**      | Texto até 100 caracteres           | Sim         | -                          |
+| **Endereço** | Texto até 100 caracteres           | Sim         | -                          |
+| **Visita**   | Texto até 100 caracteres           | Sim         | -                          |
+| **Data e Hora** | dd/mm/yyyy hh: mm:ss             | Sim         | -                          |
+| **CPF**      | 999.999.999-99                     | Sim         | -                          |
+| **Situação** | Ativo; Inativo                     | Sim         | -                          |
+
+
+### 7.2 [RN02] Visitas de Situação Inativa
+Apenas as visitas com a situação de “inativo” devem ser apresentadas como resultado da consulta.
+
+### 7.3 [RN03] Visitas de Situação Ativa
+Apenas as visitas com a situação de “ativas” devem ser apresentadas como resultado da consulta.
+
+## 8. Precondições
+- **Login**: Para utilizar este caso de uso, é necessário que o agente comunitário esteja “logado” na aplicação.
+
+## 9. Pós-condições
+- **Registro de Operações**: Ao final deste caso de uso, as operações realizadas devem ser registradas, com o objetivo de tornar possível a recuperação de informações sobre quem realizou as operações e quando.
+
+## Especificação de Caso de Uso: Visualizar Agenda de Consultas
+
+### 1. Breve Descrição
+
+Este caso de uso descreve como o Profissional de Saúde visualiza sua agenda de consultas no sistema ConnectCare. A agenda exibe as consultas agendadas, com informações como data, horário, nome do paciente e histórico médico relevante.
+
+### 2. Atores
+
+- **Usuário (Profissional da Saúde)**: Responsável por realizar as consultas marcadas na agenda
+
+### 3. Fluxo Básico de Eventos
+
+1. O Profissional de Saúde acessa o sistema ConnectCare e faz login com suas credenciais.
+2. O sistema valida as credenciais e exibe o painel principal do profissional.
+3. O Profissional de Saúde seleciona a opção "Visualizar Agenda" no menu.
+4. O sistema recupera as consultas agendadas para o profissional, filtrando por data e horário.
+5. O sistema exibe a agenda, com as seguintes informações para cada consulta:
+    - Nome do paciente.
+    - Data e horário da consulta.
+    - Histórico médico resumido (se disponível).
+6. O Profissional de Saúde pode navegar pela agenda para visualizar consultas em diferentes dias.
+7. O caso de uso termina quando o Profissional de Saúde fecha a agenda ou retorna ao painel principal.
+
+### 4. Fluxos Alternativos
+
+#### 4.1 Consultas sem histórico médico
+
+- Se o paciente não possui histórico médico registrado no sistema, o sistema exibe uma mensagem indicando que não há informações adicionais disponíveis.
+
+#### 4.2 Agenda vazia
+
+- Se não houver consultas agendadas para o profissional na data selecionada, o sistema exibe uma mensagem informando que a agenda está vazia.
+
+### 5. Fluxos de Exceção
+
+#### 5.1 Falha na conexão com o banco de dados
+
+- Se o sistema não conseguir se conectar ao banco de dados para recuperar as informações da agenda, uma mensagem de erro é exibida ao Profissional de Saúde, e o caso de uso é interrompido.
+  
+#### 5.2 Credenciais Inválidas
+
+- Se as credenciais do Profissional de Saúde forem inválidas, o sistema exibe uma mensagem de erro e não permite o acesso à agenda.
+
+### 6. Pré-Condições
+
+#### 6.1 Profissional de Saúde Registrado
+
+- O Profissional de Saúde deve estar registrado no sistema ConnectCare e possuir um perfil ativo.
+  
+#### 6.2 Conexão com a Internet
+
+- O sistema deve estar conectado à internet para acessar o banco de dados e recuperar as informações da agenda.
+
+### 7. Pós-Condições
+
+#### 7.1 Agenda Visualizada
+
+- O Profissional de Saúde visualiza sua agenda de consultas com sucesso.
+
+#### 7.2 Dados Atualizados
+
+- Caso o Profissional de Saúde tenha realizado alterações na agenda (como reagendamentos), o sistema atualiza os dados em tempo real.
+
+### 8. Pontos de Extensão
+
+#### 8.1 Reagendamento de Consultas
+
+- O Profissional de Saúde pode optar por reagendar uma consulta diretamente na agenda, caso haja disponibilidade.
+
+### 9. Requisitos Especiais
+
+#### 9.1 Segurança de Dados
+
+- O sistema deve garantir que apenas o Profissional de Saúde autorizado tenha acesso à sua agenda de consultas, seguindo as normas de proteção de dados.
