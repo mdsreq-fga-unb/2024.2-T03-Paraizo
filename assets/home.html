@@ -1,0 +1,186 @@
+<!-- Elements added to "home.html" will only be displayed on the home page -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<style>
+    .hero {
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), #1d2026 99%, #1d2026 99%);
+        flex: 1 0 auto;
+    }
+
+    .md-main {
+        content-visibility: hidden;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=" utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solid Template</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet"> -->
+    <link rel="stylesheet" href="morse/css/style.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/morse/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Equipe Torcicolo</h1>
+                            <p class="hero-paragraph">Um time de desenvolvedores multidisciplinares da Universidade de
+                                Brasília.</p>
+                            <div class="hero-cta">
+
+                                <a class="button button-primary"
+                                    href="/2024.2-T03-Paraizo/visao-produto-projeto/visao-produto/">Visão de
+                                    Produto e Projeto</a>
+                            </div>
+                        </div>
+                        <div class="hero-figure anime-element">
+                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                <rect width="528" height="396" style="fill:transparent;" />
+                            </svg>
+                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+                            <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+                            <div class="hero-figure-box hero-figure-box-05"></div>
+                            <div class="hero-figure-box hero-figure-box-06"></div>
+                            <div class="hero-figure-box hero-figure-box-07"></div>
+                            <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+                            <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+                            <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="morse/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">CI/CD</h4>
+                                    <p class="text-sm mb-0">CI/CD preenche as lacunas entre as atividades e equipes de
+                                        desenvolvimento e operação, reforçando a automação na compilação, teste e
+                                        implantação de aplicativos.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="morse/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">DevOps</h4>
+                                    <p class="text-sm mb-0">DevOps é a união de pessoas, processos e tecnologias para
+                                        fornecer continuamente valor aos clientes.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="morse/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Automação</h4>
+                                    <p class="text-sm mb-0">Automação é a aplicação de tecnologia, programas, robótica
+                                        ou processos para alcançar resultados com o mínimo de input humano.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing section">
+                <div class="container">
+                    <div class="pricing-inner section-inner">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">Nosso Time</h2>
+                            <p class="section-paragraph mb-0">
+                                Dedique-se as grandes ideias, deixe conosco o trabalho de torna-las possível.
+                            </p>
+                        </div>
+                        <div class="features-inner section-inner has-bottom-divider">
+                            <div class="features-wrap">
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="paraizo/maykon.jpeg"
+                                                style="border-radius: 50px; width: 100px; height: 100px;">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Maykon Júnio dos Santos Soares</h4>
+                                        <p class="text-sm mb-0">Líder</p>
+                                    </div>
+                                </div>
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="paraizo/foto-erick.png"
+                                                style="border-radius: 50px; width: 100px; height: 100px;">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Erick Miranda Santos</h4>
+                                        <p class="text-sm mb-0">Desenvolvedor</p>
+                                    </div>
+                                </div>
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="paraizo/foto-marllon.png"
+                                                style="border-radius: 50px; width: 100px; height: 100px;">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Marllon Fausto Cardoso</h4>
+                                        <p class="text-sm mb-0">Desenvolvedor</p>
+                                    </div>
+                                </div>
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="paraizo/foto-henrique.jpg"
+                                                style="border-radius: 50px; width: 100px; height: 100px;">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Henrique Martins Alencar</h4>
+                                        <p class="text-sm mb-0">Desenvolvedor</p>
+                                    </div>
+                                </div>
+                                <div class="feature text-center is-revealing">
+                                    <div class="feature-inner">
+                                        <div class="feature-icon">
+                                            <img src="paraizo/foto-pedro.png"
+                                                style="border-radius: 50px; width: 100px; height: 100px;">
+                                        </div>
+                                        <h4 class="feature-title mt-24">Pedro Miguel Martins de Oliveira dos Santos</h4>
+                                        <p class="text-sm mb-0">Desenvolvedor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+
+    <script src="morse/js/main.min.js"></script>
+</body>
+
+</html>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
