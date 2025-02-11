@@ -35,52 +35,72 @@ O caso de uso "Monitorar Indicador de Desempenho" permite que o administrador do
 
 ### **4.1 Fluxo Principal**  
 
-1. O administrador acessa o sistema ConnectCare e realiza login.  
-2. O administrador seleciona o painel administrativo na tela principal.  
-3. O administrador seleciona a opção "Monitorar Indicadores de Desempenho" no painel administrativo.  
-4. O sistema exibe os principais indicadores de desempenho, incluindo:  
+__4.1.1__ O sistema exibe os principais indicadores de desempenho, incluindo:  
    - Número de atendimentos realizados.  
    - Tempo médio de espera por consulta.  
    - Taxa de satisfação dos usuários.  
    - Quantidade de consultas agendadas e concluídas.  
-5. O sistema apresenta as seguintes opções:  
-   - Filtrar análise entre datas específicas  
-   - Exportar indicadores em formato PDF ou XML  
-6. O administrador filtra para um período específico.  
-7. O sistema atualiza os indicadores com o período específico.  
-8. Caso de uso encerrado.  
+__4.1.2__ O sistema apresenta as seguintes opções:  
+   - Filtrar análise entre datas específicas;
+   - Exportar indicadores em formato PDF [FA01].
+   - Exportar indicadores em formato XML [FA02].  
+__4.1.3__ O administrador filtra para um período específico. 
+__4.1.4__ O sistema valida o período específico inserido [RN01] [FE01] [FE02] [FE03].  
+__4.1.5__ O sistema atualiza os indicadores com o período específico.  
+__4.1.6__ Caso de uso é encerrado.  
 
 ### **4.2 Fluxos Alternativos**  
 
-#### **[FA01] Aplicar Filtros Personalizados**  
-4a. O administrador pode aplicar filtros avançados, como localização, tipo de atendimento e período específico.  
+#### **4.2.1 [FA01] Exportar indicadores em formato PDF**
 
-#### **[FA02] Comparar Desempenho**  
-4b. O administrador pode selecionar dois períodos distintos para comparar os indicadores de desempenho.  
+      No passo 4.1.2 do Fluxo Principal o Administrador seleciona a opção de exportar indicadores em formato PDF
+
+__4.2.1.1__ O sistema exibe um resumo do documento que será exportado.
+__4.2.1.2__ O sistema solicita o local de salvamento do documento.
+__4.2.1.3__ O administrador preenche com o local desejado.
+__4.2.1.4__ O sistema exporta o arquivo.
+__4.2.1.5__ Caso de uso é encerrado.
+
+#### **4.2.2 [FA02] Exportar indicadores em formato XML**
+
+      No passo 4.1.2 do Fluxo Principal o Administrador seleciona a opção de exportar indicadores em formato XML
+
+__4.2.1.1__ O sistema exibe um resumo do documento que será exportado.
+__4.2.1.2__ O sistema solicita o local de salvamento do documento.
+__4.2.1.3__ O administrador preenche com o local desejado.
+__4.2.1.4__ O sistema exporta o arquivo.
+__4.2.1.5__ Caso de uso é encerrado.
 
 ---
 
 **5. Fluxos de Exceção**  
 
 #### **[FE01] Falha na Conexão com o Banco de Dados**  
-- Se houver erro ao recuperar os dados, o sistema exibe uma mensagem de erro e sugere tentar novamente mais tarde.  
+   No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.
 
 #### **[FE02] Nenhum Dado Disponível**  
-- Se não houver dados disponíveis para o período selecionado, o sistema exibe uma mensagem informativa e sugere ajustar os filtros.  
+   No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.
+
+#### **[FE03] Período selecionado não encontrado**  
+   No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.
 
 ---
 
 **6. Requisitos Especiais**  
 
-- O sistema deve permitir a exportação dos relatórios nos formatos CSV e PDF.  
 - A interface deve ser responsiva para acesso via dispositivos móveis.  
 
 ---
 
 **7. Regras de Negócio**  
 
-- Apenas administradores autenticados podem acessar os indicadores de desempenho.  
-- Os relatórios devem ser gerados com dados anonimizados para preservar a privacidade dos usuários.  
+__7.1 [RN01] Validação do período selecionado__
+
+   As seguintes informações devem ser validadas:
+
+| Nome | Formato | Obrigatoriedade | Valores |
+|:----:|:----:|:----:|:----:|
+| Período | 99/99/99 - 99/99/99 | Sim | Primeiro registro;Data atual |
 
 ---
 
@@ -91,13 +111,3 @@ O caso de uso "Monitorar Indicador de Desempenho" permite que o administrador do
 
 ---
 
-**9. Pós-condições**  
-
-- O administrador obtém insights sobre o desempenho da plataforma e pode tomar decisões baseadas nos dados.  
-- Os relatórios podem ser utilizados para futuras estratégias de melhoria.  
-
----
-
-**10. Pontos de Extensão**  
-
-- Este caso de uso pode ser estendido para permitir o cruzamento de dados com outras fontes externas de informações de saúde.  
