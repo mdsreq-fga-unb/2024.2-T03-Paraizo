@@ -3,7 +3,6 @@ from typing import Annotated
 from dotenv import load_dotenv, dotenv_values
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from jwt.exceptions import InvalidTokenError
 from passlib.context import CryptContext
 from pydantic import BaseModel
 from core.config.mongoDB.index import MongoDB
