@@ -299,3 +299,78 @@ Apenas as visitas com a situação de “ativas” devem ser apresentadas como r
 
 ## 9. Pós-condições
 - **Registro de Operações**: Ao final deste caso de uso, as operações realizadas devem ser registradas, com o objetivo de tornar possível a recuperação de informações sobre quem realizou as operações e quando.
+
+## Especificação de Caso de Uso: Visualizar Agenda de Consultas
+
+### 1. Breve Descrição
+
+Este caso de uso descreve como o Profissional de Saúde visualiza sua agenda de consultas no sistema ConnectCare. A agenda exibe as consultas agendadas, com informações como data, horário, nome do paciente e histórico médico relevante.
+
+### 2. Atores
+
+- **Usuário (Profissional da Saúde)**: Responsável por realizar as consultas marcadas na agenda
+
+### 3. Fluxo Básico de Eventos
+
+1. O Profissional de Saúde acessa o sistema ConnectCare e faz login com suas credenciais.
+2. O sistema valida as credenciais e exibe o painel principal do profissional.
+3. O Profissional de Saúde seleciona a opção "Visualizar Agenda" no menu.
+4. O sistema recupera as consultas agendadas para o profissional, filtrando por data e horário.
+5. O sistema exibe a agenda, com as seguintes informações para cada consulta:
+    - Nome do paciente.
+    - Data e horário da consulta.
+    - Histórico médico resumido (se disponível).
+6. O Profissional de Saúde pode navegar pela agenda para visualizar consultas em diferentes dias.
+7. O caso de uso termina quando o Profissional de Saúde fecha a agenda ou retorna ao painel principal.
+
+### 4. Fluxos Alternativos
+
+#### 4.1 Consultas sem histórico médico
+
+- Se o paciente não possui histórico médico registrado no sistema, o sistema exibe uma mensagem indicando que não há informações adicionais disponíveis.
+
+#### 4.2 Agenda vazia
+
+- Se não houver consultas agendadas para o profissional na data selecionada, o sistema exibe uma mensagem informando que a agenda está vazia.
+
+### 5. Fluxos de Exceção
+
+#### 5.1 Falha na conexão com o banco de dados
+
+- Se o sistema não conseguir se conectar ao banco de dados para recuperar as informações da agenda, uma mensagem de erro é exibida ao Profissional de Saúde, e o caso de uso é interrompido.
+  
+#### 5.2 Credenciais Inválidas
+
+- Se as credenciais do Profissional de Saúde forem inválidas, o sistema exibe uma mensagem de erro e não permite o acesso à agenda.
+
+### 6. Pré-Condições
+
+#### 6.1 Profissional de Saúde Registrado
+
+- O Profissional de Saúde deve estar registrado no sistema ConnectCare e possuir um perfil ativo.
+  
+#### 6.2 Conexão com a Internet
+
+- O sistema deve estar conectado à internet para acessar o banco de dados e recuperar as informações da agenda.
+
+### 7. Pós-Condições
+
+#### 7.1 Agenda Visualizada
+
+- O Profissional de Saúde visualiza sua agenda de consultas com sucesso.
+
+#### 7.2 Dados Atualizados
+
+- Caso o Profissional de Saúde tenha realizado alterações na agenda (como reagendamentos), o sistema atualiza os dados em tempo real.
+
+### 8. Pontos de Extensão
+
+#### 8.1 Reagendamento de Consultas
+
+- O Profissional de Saúde pode optar por reagendar uma consulta diretamente na agenda, caso haja disponibilidade.
+
+### 9. Requisitos Especiais
+
+#### 9.1 Segurança de Dados
+
+- O sistema deve garantir que apenas o Profissional de Saúde autorizado tenha acesso à sua agenda de consultas, seguindo as normas de proteção de dados.

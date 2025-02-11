@@ -88,9 +88,9 @@
 
     #### Product Backlog Building (PBB)
 
-Durante o *Product Backlog Building (PBB)*, aprendemos que o sucesso de um projeto ágil depende da clareza e da evolução constante do backlog. O processo de revisar e refinar o backlog periodicamente é essencial para ajustar as prioridades e garantir que os itens mais importantes sejam tratados primeiro, permitindo entregas contínuas de valor ao cliente.
+    Durante o *Product Backlog Building (PBB)*, aprendemos que o sucesso de um projeto ágil depende da clareza e da evolução constante do backlog. O processo de revisar e refinar o backlog periodicamente é essencial para ajustar as prioridades e garantir que os itens mais importantes sejam tratados primeiro, permitindo entregas contínuas de valor ao cliente.
 
-- *Lição Aprendida*: A construção de um backlog bem estruturado e a revisão constante do mesmo são cruciais para o sucesso de um projeto ágil. Adaptar as prioridades de acordo com o progresso do projeto e as necessidades do cliente ajuda a mitigar riscos e a garantir que o trabalho esteja sempre alinhado com os objetivos do produto.
+    - *Lição Aprendida*: A construção de um backlog bem estruturado e a revisão constante do mesmo são cruciais para o sucesso de um projeto ágil. Adaptar as prioridades de acordo com o progresso do projeto e as necessidades do cliente ajuda a mitigar riscos e a garantir que o trabalho esteja sempre alinhado com os objetivos do produto.
 
     #### *User Story Mapping (USM)*
 
@@ -105,3 +105,21 @@ Durante o *Product Backlog Building (PBB)*, aprendemos que o sucesso de um proje
     Durante o processo de integração entre *Product Backlog Building (PBB)* e *User Story Mapping (USM)*, percebemos como essas duas metodologias se complementam. O PBB ajuda a organizar o trabalho de maneira eficiente, enquanto o USM oferece uma visão detalhada das funcionalidades, permitindo que a equipe foque nas histórias mais relevantes para o produto. A integração de ambas as técnicas é essencial para garantir que o backlog esteja bem estruturado e alinhado com as necessidades do usuário.
 
     - *Lição Aprendida: A integração de PBB e USM* deve ser feita de forma cuidadosa, garantindo que o planejamento estratégico do projeto seja complementado pela visão detalhada das histórias de usuário. Isso permite que o trabalho seja executado de forma mais eficiente e alinhada com os objetivos do produto.
+
+=== "Unidade 4"
+
+    ### *Unidade 4*
+
+    ---
+
+    #### Diagrama de Caso de Uso 
+
+    O Diagrama de Caso de Uso é uma ferramenta visual utilizada para representar as interações entre os atores e o sistema. Ele auxilia na identificação dos principais casos de uso e na compreensão do escopo do sistema de forma clara e objetiva. Esse diagrama facilita a comunicação entre stakeholders, analistas e desenvolvedores, promovendo um entendimento compartilhado sobre as funcionalidades esperadas.
+
+    - *Lição Aprendida*: A construção de um Diagrama de Caso de Uso bem elaborado ajuda a visualizar os limites do sistema e suas interações com os usuários. Esse mapeamento inicial é essencial para alinhar expectativas e evitar ambiguidades na definição dos requisitos.
+  
+    #### Especificação de Caso de Uso 
+
+    A Especificação de Caso de Uso descreve detalhadamente o comportamento do sistema para cada caso de uso identificado. Esse documento contém informações como fluxo principal, fluxos alternativos, pré-condições e pós-condições, garantindo uma definição precisa das interações esperadas. Essa especificação é fundamental para o desenvolvimento e teste do sistema, reduzindo incertezas e inconsistências.
+
+    - *Lição Aprendida*: A documentação detalhada da Especificação de Caso de Uso é essencial para garantir que todas as possíveis interações sejam consideradas. Uma especificação bem definida melhora a comunicação entre as equipes e reduz falhas na implementação, contribuindo para um desenvolvimento mais eficiente e alinhado com os requisitos do cliente.
