@@ -155,9 +155,7 @@ nav:
   - Estudos de Caso: 
     - Product Backlog Building: estudos-de-caso/pbb/index.md
     - User Story Mapping: estudos-de-caso/usm/index.md
-    - Use Case: 
-      - Receber Sugestões Personalizadas: estudos-de-caso/uc/caso-maykon.md
-      - Monitorar Indicador de Desempenho: estudos-de-caso/uc/caso-pedro.md
+    - Use Case: estudos-de-caso/uc/index.md
   - Iterações: iteracoes/index.md
   - Entregas: entregas/index.md
   - Lições Aprendidas: licoes-aprendidas/index.md
