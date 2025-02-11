@@ -1,7 +1,6 @@
 'use client'
 
 import patients from "@/app/mocks/patients"
-import { useEffect } from "react"
 import { useLocation, useNavigate } from "react-router"
 import FormFichaRpg from "./components/formFichaRpg"
 import FormFichaNeuro from "./components/formFichaNeuro"

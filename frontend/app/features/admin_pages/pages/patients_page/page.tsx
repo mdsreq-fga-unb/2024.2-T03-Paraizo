@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react"
 import AdminMenu from "@/app/components/admin_menu"
 import CardPatient from "@/app/components/cardPatient"
