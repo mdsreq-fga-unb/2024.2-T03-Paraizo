@@ -16,6 +16,49 @@ Fizemos o diagrama na plataforma miro e é possível vê-lo abaixo:
 
 <iframe width="768" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764615780921551&embedId=841518112651" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
+### Lista de casos de uso 
+
+#### Ator: Paciente
+
+1. **Fornecer feedbacks** – Permite que os usuários compartilhem suas opiniões sobre os serviços prestados, ajudando a aprimorar a plataforma.  
+2. **Acessar recursos adicionais** – Garante que os usuários possam obter informações extras, como materiais educativos ou suporte especializado.  
+3. **Receber confirmação automática** – Envia notificações aos usuários sobre agendamentos ou atualizações importantes.  
+4. **Criar perfil básico** – Permite que novos usuários cadastrem suas informações na plataforma.  
+5. **Receber sugestões personalizadas** – Oferece recomendações baseadas no histórico e nas necessidades do usuário.  
+6. **Agendar serviço de saúde** – Facilita a marcação de consultas e procedimentos médicos.  
+
+#### Ator: Administrador 
+
+7. **Monitorar indicador de desempenho** – Acompanha métricas de saúde e progresso de tratamentos.  
+8. **Corrigir erros técnicos** – Identifica e resolve problemas técnicos que possam impactar o funcionamento do sistema.  
+9. **Garantir a segurança da informação** – Implementa medidas de proteção para manter os dados seguros.  
+10. **Realizar ajustes no sistema** – Permite a manutenção e configuração da plataforma para garantir seu funcionamento ideal.  
+
+#### Ator: Agente comunitário
+
+11. **Criar relatório de condições de saúde nas comunidades** – Gera análises sobre o estado de saúde da população atendida.  
+12. **Registrar visitas domiciliares** – Documenta atendimentos realizados em casa pelos profissionais de saúde.  
+
+#### Ator: Agente comunitário e Profissional de saúde
+
+13. **Criar perfil profissional** – Permite que médicos e outros profissionais registrem seus dados na plataforma.  
+14. **Visualizar agenda de consultas** – Exibe os compromissos agendados para facilitar a organização.  
+15. **Organizar fluxo de trabalho** – Estrutura as atividades dos profissionais de saúde dentro da plataforma.  
+
+#### Ator: Profissional de saúde
+
+16. **Acessar informações de agendamento** – Permite a consulta de detalhes sobre consultas marcadas.  
+17. **Acessar histórico de médico de paciente** – Fornece acesso ao histórico de atendimentos médicos.  
+18. **Atualizar prontuário de paciente** – Permite a inclusão e modificação de informações clínicas.  
+
+#### Ator: Organização parceira
+
+19. **Divulgar iniciativa de saúde** – Promove campanhas e ações preventivas para a comunidade.  
+20. **Gerenciar iniciativa de saúde** – Administra programas de saúde, garantindo sua efetividade.  
+21. **Visualizar relatório de impacto** – Exibe métricas e dados sobre a eficácia das iniciativas de saúde.  
+
+
+
 ## Especificação de Caso de Uso: Receber Sugestões Personalizadas
 
 ### 1. Breve Descrição
