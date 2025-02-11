@@ -1,3 +1,4 @@
+"use client"
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Background from "@/app/components/background";

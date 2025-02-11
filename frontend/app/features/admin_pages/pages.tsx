@@ -1,5 +1,3 @@
-"use client"
-
 import AdminMenu from "@/app/components/admin_menu";
 import { Outlet } from "react-router";
 
