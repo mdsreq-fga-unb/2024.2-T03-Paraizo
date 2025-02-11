@@ -9,11 +9,11 @@ import SearchComponent from "./components/searchComponent"
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 export default function PatientsPage() {
-    const [patientsList, setPatientsList] = useState(patients)
     const [filterParams, setFilterParams] = useState('')
-
+    
+    // Substituir por busca na API:
+    const [patientsList, setPatientsList] = useState(patients)
     useEffect(()=>{
-        // Substituir por busca na API:
         setPatientsList(patients.filter(patient => 
                 patient.name.toLocaleLowerCase().includes(filterParams.toLocaleLowerCase()) ||
                 patient.email.toLocaleLowerCase().includes(filterParams.toLocaleLowerCase())

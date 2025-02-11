@@ -1,8 +1,9 @@
 'use client'
 
-import { Box, Button, Stack, TextField, Typography } from "@mui/material"
+import { Alert, Box, Button, Snackbar, SnackbarCloseReason, Stack, TextField, Typography } from "@mui/material"
 import { ChangeEvent, useState } from "react"
 import { InterfacePatient, InterfaceDocFichaRPG, InterfaceEvolucao } from "../../../patient_docs_page/interfaces/docsInterface"
+import { useNavigate } from "react-router"
 
 interface InterfaceFormFichaRpg {
     patient:InterfacePatient
@@ -10,18 +11,10 @@ interface InterfaceFormFichaRpg {
 
 export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
     const patientDoc = patient.doc_rpg
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState<InterfaceDocFichaRPG>(patientDoc);
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    // Para campos numéricos, se necessário, converta o valor
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
 
-  // Para campos que são arrays (entrada como valores separados por vírgula)
   const handleArrayChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -30,7 +23,6 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
     }));
   };
 
-  // Manipulador para atualizar um registro de evolução
   const handleEvolutionChange = (
     index: number,
     field: keyof InterfaceEvolucao,
@@ -41,19 +33,54 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
     setFormData((prev) => ({ ...prev, evolução: newEvolucao }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Dados atualizados:', formData);
-    // Chamada à API para atualização dos dados
-  };
+  const [alertOpen, setAlertOpen] = useState<boolean>(false);
+    const [alertMessage, setAlertMessage] = useState<string>('');
+  
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { name, value } = e.target;
+      setFormData((prev) => ({
+        ...prev,
+        [name]: name === 'idade' ? parseInt(value) || 0 : value,
+      }));
+    };
+  
+    const handleAlertClose = (event: React.SyntheticEvent | Event, reason: SnackbarCloseReason) => {
+      if (reason === 'clickaway') {
+        return;
+      }
+      setAlertOpen(false);
+    };
+  
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      const hasEmptyField = Object.keys(formData).some((key) => {
+        if (typeof (formData as any)[key] === 'string') {
+          return (formData as any)[key].trim() === '';
+        }
+        return false;
+      });
+  
+      if (hasEmptyField) {
+        setAlertMessage('Por favor, preencha todos os campos.');
+        setAlertOpen(true);
+        return;
+      }
+  
+      console.log('Dados atualizados:', formData);
+      // Aqui você pode realizar a chamada à API para atualizar os dados
+    };
 
   return (
     <div className="max-h-[800px] overflow-y-auto md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
       <Box sx={{ maxWidth: '800px', margin: 'auto', p: 2 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Editar Ficha de Avaliação e Tratamento - RPG
-        </Typography>
+      <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleAlertClose}>
+        <Alert severity="error" sx={{ width: '100%' }}>
+          {alertMessage}
+        </Alert>
+      </Snackbar>
+        <h1 className="text-xl font-bold text-paraizo-whiteLines bg-paraizo-cyan p-4 mb-4 w-full rounded-md">Edite as informações da Ficha de Avaliação - RPG</h1>
         <form onSubmit={handleSubmit}>
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Anamnese</h2>
           <Stack spacing={2}>
             <TextField
               label="Endereço"
@@ -145,33 +172,34 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
               />
             </Stack>
 
-            {/* Campos para arrays */}
+
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Exame Físico</h2>
             <TextField
-              label="Cadeira Anterior (separado por vírgula)"
+              label="Cadeira Anterior"
               name="cadeira_anterior"
-              value={formData.cadeira_anterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.cadeira_anterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Cadeira Posterior (separado por vírgula)"
+              label="Cadeira Posterior"
               name="cadeira_posterior"
-              value={formData.cadeira_posterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.cadeira_posterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Conduta Cadeira Anterior (separado por vírgula)"
+              label="Conduta Cadeira Anterior"
               name="conduta_cadeira_anterior"
-              value={formData.conduta_cadeira_anterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.conduta_cadeira_anterior}
+              onChange={handleChange}
               fullWidth
             />
             <TextField
-              label="Conduta Cadeira Posterior (separado por vírgula)"
+              label="Conduta Cadeira Posterior"
               name="conduta_cadeira_posterior"
-              value={formData.conduta_cadeira_posterior.join(', ')}
-              onChange={handleArrayChange}
+              value={formData.conduta_cadeira_posterior}
+              onChange={handleChange}
               fullWidth
             />
 
@@ -276,7 +304,7 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
             />
 
             {/* Seção Evolução */}
-            <Typography variant="h6">Evolução</Typography>
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Evolução</h2>
             {formData.evolução.map((evo, index) => (
               <Stack key={index} spacing={2}>
                 <TextField
@@ -332,9 +360,14 @@ export default function FormFichaRpg({patient}:InterfaceFormFichaRpg){
             ))}
 
             {/* Botão de submissão */}
-            <Button type="submit" variant="contained" color="primary">
-              Salvar Alterações
-            </Button>
+            <div className="flex justify-start gap-4 items-center">
+              <Button type="submit" variant="contained" color="primary" sx={{width: 'auto'}}>
+                Salvar Alterações
+              </Button>
+              <Button onClick={()=> navigate(-1)} variant="contained" color="primary" sx={{width: 'auto', backgroundColor: "#F44250"}}>
+                Cancelar
+              </Button>
+            </div>
           </Stack>
         </form>
       </Box>

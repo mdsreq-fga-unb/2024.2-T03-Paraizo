@@ -1,8 +1,9 @@
 'use client'
 
-import { Box, Button, Stack, TextField, Typography } from "@mui/material"
+import { Alert, Box, Button, Snackbar, SnackbarCloseReason, Stack, TextField, Typography } from "@mui/material"
 import { InterfacePatient, InterfaceDocFichaPilates } from "../../../patient_docs_page/interfaces/docsInterface"
 import { ChangeEvent, useState } from "react"
+import { useNavigate } from "react-router"
 
 interface InterfaceFormFichaRpg {
     patient:InterfacePatient
@@ -11,27 +12,55 @@ interface InterfaceFormFichaRpg {
 export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
     const patientDoc = patient.doc_pilates
     const [formData, setFormData] = useState<InterfaceDocFichaPilates>(patientDoc);
+    const navigate = useNavigate()
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      const { name, value } = e.target;
-      setFormData((prev) => ({
-        ...prev,
-        [name]: name === 'idade' ? parseInt(value) || 0 : value,
-      }));
-    };
-  
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      console.log('Dados atualizados:', formData);
-      // Aqui você pode integrar com sua API para salvar os dados
-    };
+    const [alertOpen, setAlertOpen] = useState<boolean>(false);
+      const [alertMessage, setAlertMessage] = useState<string>('');
+    
+      const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+          ...prev,
+          [name]: name === 'idade' ? parseInt(value) || 0 : value,
+        }));
+      };
+    
+      const handleAlertClose = (event: React.SyntheticEvent | Event, reason: SnackbarCloseReason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+        setAlertOpen(false);
+      };
+    
+      const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const hasEmptyField = Object.keys(formData).some((key) => {
+          if (typeof (formData as any)[key] === 'string') {
+            return (formData as any)[key].trim() === '';
+          }
+          return false;
+        });
+    
+        if (hasEmptyField) {
+          setAlertMessage('Por favor, preencha todos os campos.');
+          setAlertOpen(true);
+          return;
+        }
+    
+        console.log('Dados atualizados:', formData);
+        // Aqui você pode realizar a chamada à API para atualizar os dados
+      };
     return(
         <section className="max-h-[800px] overflow-y-auto md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
-            <Box sx={{ maxWidth: '800px', margin: 'auto', p: 2 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Editar Ficha do Paciente
-      </Typography>
+        <h1 className="text-xl font-bold text-paraizo-whiteLines bg-paraizo-cyan p-4 mb-4 w-full rounded-md">Edite as informações da Ficha de Avaliação Pilates</h1>
+        <Box sx={{ maxWidth: '800px', margin: 'auto', p: 2 }}>
+        <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleAlertClose}>
+        <Alert severity="error" sx={{ width: '100%' }}>
+          {alertMessage}
+        </Alert>
+      </Snackbar>
       <form onSubmit={handleSubmit}>
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">DADOS PESSOAIS</h2>
         <Stack spacing={2}>
           <TextField
             label="Idade"
@@ -146,6 +175,8 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">ANAMNESE</h2>
+
           <TextField
             label="Tratamentos Adotados"
             name="tratamentosAdotados"
@@ -328,6 +359,8 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">TRATAMENTO CLÍNICO</h2>
+
           <TextField
             label="Tratamento Medicamentoso"
             name="tratamento_medicamentoso"
@@ -356,6 +389,8 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">AVALIAÇÃO DA DOR </h2>
+
           <TextField
             label="História da Dor"
             name="historiaDaDor"
@@ -412,6 +447,8 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Exames Complementares</h2>
+
           <TextField
             label="Exames Complementares"
             name="examesComplementares"
@@ -503,6 +540,8 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Testes Especiais Membros:</h2>
+      
           <TextField
             label="Teste Allen"
             name="testeAllen"
@@ -790,9 +829,14 @@ export default function FormFichaPilates({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
-          <Button type="submit" variant="contained" color="primary">
-            Salvar Alterações
-          </Button>
+          <div className="flex justify-start gap-4 items-center">
+                <Button type="submit" variant="contained" color="primary" sx={{width: 'auto'}}>
+                    Salvar Alterações
+                </Button>
+                <Button onClick={()=> navigate(-1)} type="submit" variant="contained" color="primary" sx={{width: 'auto', backgroundColor: "#F44250"}}>
+                    Cancelar
+                </Button>
+            </div>
         </Stack>
       </form>
     </Box>

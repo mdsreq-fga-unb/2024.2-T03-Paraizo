@@ -2,7 +2,8 @@
 
 import { ChangeEvent, useState } from "react";
 import { InterfacePatient, InterfaceDocFichaDAP } from "../../../patient_docs_page/interfaces/docsInterface"
-import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import { Alert, Box, Button, Snackbar, SnackbarCloseReason, Stack, TextField, Typography } from "@mui/material";
+import { useNavigate } from "react-router";
 
 interface InterfaceFormFichaRpg {
     patient:InterfacePatient
@@ -11,6 +12,9 @@ interface InterfaceFormFichaRpg {
 export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
     const patientDoc = patient.doc_dap
     const [formData, setFormData] = useState<InterfaceDocFichaDAP>(patientDoc);
+    const navigate = useNavigate()
+    const [alertOpen, setAlertOpen] = useState<boolean>(false);
+  const [alertMessage, setAlertMessage] = useState<string>('');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -20,18 +24,43 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
     }));
   };
 
+  const handleAlertClose = (event: React.SyntheticEvent | Event, reason: SnackbarCloseReason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setAlertOpen(false);
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const hasEmptyField = Object.keys(formData).some((key) => {
+      if (typeof (formData as any)[key] === 'string') {
+        return (formData as any)[key].trim() === '';
+      }
+      return false;
+    });
+
+    if (hasEmptyField) {
+      setAlertMessage('Por favor, preencha todos os campos.');
+      setAlertOpen(true);
+      return;
+    }
+
     console.log('Dados atualizados:', formData);
-    // Integre sua chamada à API aqui
+    // Aqui você pode realizar a chamada à API para atualizar os dados
   };
     return(
         <section className="max-h-[800px] overflow-y-auto md:bg-white md:w-full mx-4 md:mx-12 md:p-4 md:my-20 xl:mx-32">
+        <h1 className="text-xl font-bold text-paraizo-whiteLines bg-paraizo-cyan p-4 mb-4 w-full rounded-md">Edite as informações da Ficha de Avaliação Uroginecológica</h1>
             <Box sx={{ maxWidth: '900px', margin: 'auto', p: 2 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Editar Ficha do Paciente
-      </Typography>
       <form onSubmit={handleSubmit}>
+      <Snackbar open={alertOpen} autoHideDuration={6000} onClose={handleAlertClose}>
+        <Alert severity="error" sx={{ width: '100%' }}>
+          {alertMessage}
+        </Alert>
+      </Snackbar>
+      <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">Dados gerais</h2>
+
         <Stack spacing={2}>
           {/* Campos específicos do objeto */}
           <TextField
@@ -141,6 +170,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">1. ANTECEDENTES GINECOLÓGICOS:</h2>
+
           <TextField
             label="Aluno"
             name="aluno"
@@ -246,6 +277,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">2. ANTECEDENTES OBSTÉTRICOS:</h2>
+
           <TextField
             label="G"
             name="g"
@@ -309,6 +342,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">3. HISTÓRIA DA MOLÉSTIA ATUAL:</h2>
+
           <TextField
             label="Queixa Principal - Início/Duração"
             name="queixaPrincipalInicioDuracao"
@@ -323,6 +358,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">4. HÁBITOS DE VIDA E ANTECENDENTES CLÍNICOS E CIRURGICOS</h2>
+
           <TextField
             label="Antecedentes Familiares"
             name="antecedentesFamiliares"
@@ -344,6 +381,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">5. HÁBITOS DE VIDA</h2>
+
           <TextField
             label="Ingestão Hídrica"
             name="ingestaoHidrica"
@@ -386,6 +425,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">6. SINTOMAS DO TRATO URINÁRIO INFERIOR (TUI)</h2>
+
           <TextField
             label="Apresenta UI"
             name="apresentaUI"
@@ -519,6 +560,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">7. SINTOMAS INTESTINAIS</h2>
+
           <TextField
             label="Necessidade de Manobras para Evacuação"
             name="necessidadeDeManobrasParaEvacuacao"
@@ -554,6 +597,7 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">8. SINTOMAS VAGINAIS</h2>
           <TextField
             label="Percepção de Prolapso"
             name="percepcapDeProlapso"
@@ -568,6 +612,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">9. FUNÇÃO SEXUAL </h2>
+
           <TextField
             label="Incontinência por Urgência"
             name="incontinenciaUrgencia"
@@ -757,6 +803,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">10. DOR</h2>
+          
           <TextField
             label="Dor Pélvica Crônica"
             name="dorPelvicaCronica"
@@ -785,6 +833,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">11. EXAMES COMPLEMENTARES EM UROLOGIA/UROGINECOLOGIA</h2>
+
           <TextField
             label="Diagnóstico dos Exames Complementares"
             name="diagnosticoExamesComple"
@@ -834,6 +884,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">12.EXAMES COMPLEMENTARES EM PROCTOLOGIA</h2>
+
           <TextField
             label="Manometria Anorretal"
             name="manometriaAnorretal"
@@ -862,6 +914,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">EXAMES FÍSICOS</h2>
+          
           <TextField
             label="Exame Físico - Esclarecimento"
             name="exameFisicoEsclarecimento"
@@ -932,6 +986,8 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
+        <h2 className="text-lg text-paraizo-whiteLines bg-paraizo-cyan p-2 mb-2 w-full rounded-md">AVALIAÇÃO FUNCIONAL DO ASSOALHO PÉLVICO:</h2>
+
           <TextField
             label="Exame Físico - Períneo"
             name="exameFisicoPerineo"
@@ -1163,9 +1219,14 @@ export default function FormFichaDAP({patient}:InterfaceFormFichaRpg){
             onChange={handleChange}
             fullWidth
           />
-          <Button type="submit" variant="contained" color="primary">
-            Salvar Alterações
-          </Button>
+          <div className="flex justify-start gap-4 items-center">
+              <Button type="submit" variant="contained" color="primary" sx={{width: 'auto'}}>
+                Salvar Alterações
+              </Button>
+              <Button onClick={()=> navigate(-1)} variant="contained" color="primary" sx={{width: 'auto', backgroundColor: "#F44250"}}>
+                Cancelar
+              </Button>
+            </div>
         </Stack>
       </form>
     </Box>

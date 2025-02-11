@@ -44,29 +44,29 @@ export default function PatientInfo(){
             </div>
             }
             
-            <HeaderMenu name="Avaliações e tratamentos" tagButton="Cadastrar" infosStatus={docsStatus} setInfosStatus={setDocsStatus} handleClick={handleClickAdd}/>
+            <HeaderMenu name="Avaliações e tratamentos" infosStatus={docsStatus} setInfosStatus={setDocsStatus}/>
             <div>
                 {
                     docsStatus && patient?.doc_rpg && <button onClick={() => navigateToDoc('docs/doc_rpg')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
-                        <h1 className="text-paraizo-textGray"><b>Ficha RPG</b> | {patient.doc_rpg.data}</h1>
+                        <h1 className="text-paraizo-textGray"><b>RPG - FICHA DE AVALIAÇÃO E TRATAMENTO</b></h1>
                         <ArrowForwardIosIcon className="text-black"/>
                     </button>
                 }
                 {
                     docsStatus && patient?.doc_pilates && <button onClick={() => navigateToDoc('docs/doc_pilates')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
-                        <h1 className="text-paraizo-textGray"><b>Ficha Pilates</b> | {patient.doc_pilates.queixasPrincipais}</h1>
+                        <h1 className="text-paraizo-textGray"><b>FICHA DE AVALIAÇÃO PILATES</b></h1>
                         <ArrowForwardIosIcon className="text-black"/>
                     </button>
                 }
                 {
                     docsStatus && patient?.doc_neuro && <button onClick={() => navigateToDoc('docs/doc_neuro')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
-                        <h1 className="text-paraizo-textGray"><b>Ficha de Avaliação Neurológica</b> | {patient.doc_neuro.dataAvaliacao}</h1>
+                        <h1 className="text-paraizo-textGray"><b>FICHA DE AVALIAÇÃO NEUROLÓGICA</b></h1>
                         <ArrowForwardIosIcon className="text-black"/>
                     </button>
                 }
                 {
                     docsStatus && patient?.doc_dap && <button onClick={() => navigateToDoc('docs/doc_dap')} className="bg-white md:md:bg-paraizo-background my-2 p-4 rounded-md flex justify-between w-full">
-                        <h1 className="text-paraizo-textGray"><b>Ficha de Avaliação DAP</b> | {patient.doc_dap.data}</h1>
+                        <h1 className="text-paraizo-textGray"><b>FICHA DE AVALIAÇÃO UROGINECOLÓGICA</b></h1>
                         <ArrowForwardIosIcon className="text-black"/>
                     </button>
                 }
