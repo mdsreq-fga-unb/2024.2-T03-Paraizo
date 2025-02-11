@@ -1,0 +1,2060 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../usm/">
+      
+      
+        <link rel="next" href="../../iteracoes/">
+      
+      
+      <link rel="icon" href="../../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Use Case - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#connectcare" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Use Case
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../visao-produto-projeto/visao-produto/" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backlog-produto/backlog/funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../iteracoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/visao-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/processo-desenvolvimento-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/historias-de-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-dos-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrama dos casos de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagrama dos casos de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-casos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lista de casos de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista de casos de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ator-paciente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Paciente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ator-administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Administrador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ator-agente-comunitario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Agente comunitário
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ator-agente-comunitario-e-profissional-de-saude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Agente comunitário e Profissional de saúde
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ator-profissional-de-saude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Profissional de saúde
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ator-organizacao-parceira" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ator: Organização parceira
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-de-caso-de-uso-receber-sugestoes-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Especificação de Caso de Uso: Receber Sugestões Personalizadas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Especificação de Caso de Uso: Receber Sugestões Personalizadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-breve-descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Breve Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-atores" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Atores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fluxo-basico-de-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fluxo Básico de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fluxos-alternativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fluxos Alternativos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fluxos Alternativos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a1-perfil-incompleto" class="md-nav__link">
+    <span class="md-ellipsis">
+      A1. Perfil Incompleto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a2-usuario-opta-por-nao-receber-sugestoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      A2. Usuário Opta por Não Receber Sugestões
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fluxos-de-excecao" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fluxos de Exceção
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Fluxos de Exceção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fe1-falha-na-geracao-de-sugestoes-fe1" class="md-nav__link">
+    <span class="md-ellipsis">
+      FE1. Falha na Geração de Sugestões [FE1]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fe2-erro-de-comunicacao-com-o-servico-de-sugestoes-fe2" class="md-nav__link">
+    <span class="md-ellipsis">
+      FE2. Erro de Comunicação com o Serviço de Sugestões [FE2]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-pre-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pré-Condições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pos-condicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Pós-Condições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-pontos-de-extensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Pontos de Extensão
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-requisitos-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Requisitos Especiais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-regras-de-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Regras de Negócio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-informacoes-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Informações Adicionais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-de-caso-de-uso-criar-perfil-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Especificação de Caso de Uso: Criar perfil básico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Especificação de Caso de Uso: Criar perfil básico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-breve-descricao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Breve Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-atores_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Atores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fluxo-basico-de-eventos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fluxo Básico de Eventos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fluxos-alternativos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fluxos Alternativos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fluxos Alternativos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fa-01-cancelar-operacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      [FA 01] Cancelar operação.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fa-02-prosseguir-com-o-cadastro-de-informacoes-do-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      [FA 02] Prosseguir com o cadastro de informações do perfil.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fluxos-de-excecao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fluxos de Exceção
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Fluxos de Exceção">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fe-01-usuario-ja-cadastrado" class="md-nav__link">
+    <span class="md-ellipsis">
+      [FE 01] Usuário já cadastrado.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fe-02-data-de-nascimento-invalida" class="md-nav__link">
+    <span class="md-ellipsis">
+      [FE 02] Data de nascimento inválida.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-pre-condicoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pré-Condições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-pos-condicoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Pós-Condições
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-requisitos-especiais" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Requisitos Especiais
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="connectcare"><strong>ConnectCare</strong><a class="headerlink" href="#connectcare" title="Permanent link">&para;</a></h1>
+<details class="abstract">
+<summary>Histórico de Revisão</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Versão</strong></th>
+<th style="text-align: center;"><strong>Descrição</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">10/02</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação do documento e inserção de documentação</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/02</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Continuação do documento e inserção de documentação</td>
+<td style="text-align: center;">Erick Miranda Santos</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/02</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Adição do caso de uso Monitor Indicador de Desempenho</td>
+<td style="text-align: center;">Pedro Miguel M. de O. dos Santos</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="diagrama-dos-casos-de-uso">Diagrama dos casos de uso<a class="headerlink" href="#diagrama-dos-casos-de-uso" title="Permanent link">&para;</a></h2>
+<p>Fizemos o diagrama na plataforma miro e é possível vê-lo abaixo:</p>
+<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764615780921551&embedId=841518112651" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+<h3 id="lista-de-casos-de-uso">Lista de casos de uso<a class="headerlink" href="#lista-de-casos-de-uso" title="Permanent link">&para;</a></h3>
+<h4 id="ator-paciente">Ator: Paciente<a class="headerlink" href="#ator-paciente" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Fornecer feedbacks</strong> – Permite que os usuários compartilhem suas opiniões sobre os serviços prestados, ajudando a aprimorar a plataforma.  </li>
+<li><strong>Acessar recursos adicionais</strong> – Garante que os usuários possam obter informações extras, como materiais educativos ou suporte especializado.  </li>
+<li><strong>Receber confirmação automática</strong> – Envia notificações aos usuários sobre agendamentos ou atualizações importantes.  </li>
+<li><strong>Criar perfil básico</strong> – Permite que novos usuários cadastrem suas informações na plataforma.  </li>
+<li><strong>Receber sugestões personalizadas</strong> – Oferece recomendações baseadas no histórico e nas necessidades do usuário.  </li>
+<li><strong>Agendar serviço de saúde</strong> – Facilita a marcação de consultas e procedimentos médicos.  </li>
+</ol>
+<h4 id="ator-administrador">Ator: Administrador<a class="headerlink" href="#ator-administrador" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Monitorar indicador de desempenho</strong> – Acompanha métricas de saúde e progresso de tratamentos.  </li>
+<li><strong>Corrigir erros técnicos</strong> – Identifica e resolve problemas técnicos que possam impactar o funcionamento do sistema.  </li>
+<li><strong>Garantir a segurança da informação</strong> – Implementa medidas de proteção para manter os dados seguros.  </li>
+<li><strong>Realizar ajustes no sistema</strong> – Permite a manutenção e configuração da plataforma para garantir seu funcionamento ideal.  </li>
+</ol>
+<h4 id="ator-agente-comunitario">Ator: Agente comunitário<a class="headerlink" href="#ator-agente-comunitario" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Criar relatório de condições de saúde nas comunidades</strong> – Gera análises sobre o estado de saúde da população atendida.  </li>
+<li><strong>Registrar visitas domiciliares</strong> – Documenta atendimentos realizados em casa pelos profissionais de saúde.  </li>
+</ol>
+<h4 id="ator-agente-comunitario-e-profissional-de-saude">Ator: Agente comunitário e Profissional de saúde<a class="headerlink" href="#ator-agente-comunitario-e-profissional-de-saude" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Criar perfil profissional</strong> – Permite que médicos e outros profissionais registrem seus dados na plataforma.  </li>
+<li><strong>Visualizar agenda de consultas</strong> – Exibe os compromissos agendados para facilitar a organização.  </li>
+<li><strong>Organizar fluxo de trabalho</strong> – Estrutura as atividades dos profissionais de saúde dentro da plataforma.  </li>
+</ol>
+<h4 id="ator-profissional-de-saude">Ator: Profissional de saúde<a class="headerlink" href="#ator-profissional-de-saude" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Acessar informações de agendamento</strong> – Permite a consulta de detalhes sobre consultas marcadas.  </li>
+<li><strong>Acessar histórico de médico de paciente</strong> – Fornece acesso ao histórico de atendimentos médicos.  </li>
+<li><strong>Atualizar prontuário de paciente</strong> – Permite a inclusão e modificação de informações clínicas.  </li>
+</ol>
+<h4 id="ator-organizacao-parceira">Ator: Organização parceira<a class="headerlink" href="#ator-organizacao-parceira" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Divulgar iniciativa de saúde</strong> – Promove campanhas e ações preventivas para a comunidade.  </li>
+<li><strong>Gerenciar iniciativa de saúde</strong> – Administra programas de saúde, garantindo sua efetividade.  </li>
+<li><strong>Visualizar relatório de impacto</strong> – Exibe métricas e dados sobre a eficácia das iniciativas de saúde.  </li>
+</ol>
+<h2 id="especificacao-de-caso-de-uso-receber-sugestoes-personalizadas">Especificação de Caso de Uso: Receber Sugestões Personalizadas<a class="headerlink" href="#especificacao-de-caso-de-uso-receber-sugestoes-personalizadas" title="Permanent link">&para;</a></h2>
+<h3 id="1-breve-descricao">1. Breve Descrição<a class="headerlink" href="#1-breve-descricao" title="Permanent link">&para;</a></h3>
+<p>Este caso de uso tem o propósito de fornecer ao usuário sugestões personalizadas com base em seu perfil, histórico de saúde e preferências cadastradas. Tais sugestões podem incluir recomendações de hábitos saudáveis, dicas de exercícios, orientações nutricionais, lembretes de consultas e exames, entre outros, com o objetivo de promover a melhoria da qualidade de vida.</p>
+<h3 id="2-atores">2. Atores<a class="headerlink" href="#2-atores" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Usuário (Paciente):</strong> Responsável por solicitar e visualizar as sugestões personalizadas.</li>
+<li><strong>Sistema ConnectCare:</strong> Processa os dados do usuário e gera as sugestões conforme as regras de negócio.</li>
+</ul>
+<h3 id="3-fluxo-basico-de-eventos">3. Fluxo Básico de Eventos<a class="headerlink" href="#3-fluxo-basico-de-eventos" title="Permanent link">&para;</a></h3>
+<ol>
+<li>O caso de uso é iniciado quando o usuário seleciona a opção <strong>"Receber Sugestões Personalizadas"</strong> na interface do ConnectCare.</li>
+<li>O sistema verifica se o usuário está autenticado e se o perfil possui as informações necessárias para a personalização <strong>[RN01]</strong>.</li>
+<li>O sistema processa os dados do perfil, histórico de saúde e preferências cadastradas para gerar as sugestões <strong>[RN02]</strong>.</li>
+<li>O sistema exibe as sugestões personalizadas, organizadas por categorias (ex.: alimentação, exercícios, cuidados médicos) <strong>[RN03]</strong>.</li>
+<li>O usuário pode clicar em cada sugestão para visualizar detalhes, orientações e recomendações adicionais.</li>
+<li>O sistema registra o evento de entrega de sugestões para fins de auditoria e análise de uso <strong>[RN04]</strong>.</li>
+<li>O caso de uso é encerrado.</li>
+</ol>
+<h3 id="4-fluxos-alternativos">4. Fluxos Alternativos<a class="headerlink" href="#4-fluxos-alternativos" title="Permanent link">&para;</a></h3>
+<h4 id="a1-perfil-incompleto">A1. Perfil Incompleto<a class="headerlink" href="#a1-perfil-incompleto" title="Permanent link">&para;</a></h4>
+<p>No passo 2 do fluxo básico, caso o sistema identifique que o perfil do usuário está incompleto ou desatualizado:</p>
+<ol>
+<li>O sistema exibe uma mensagem solicitando a atualização do perfil para melhorar a precisão das sugestões <strong>[RN01]</strong>.</li>
+<li>O usuário pode optar por atualizar seu perfil imediatamente ou continuar sem atualizar.</li>
+<li>Se optar pela atualização, o sistema redireciona o usuário para o módulo de atualização de perfil.</li>
+<li>Após a atualização, o usuário retorna ao caso de uso, e o fluxo recomeça a partir do passo 2.</li>
+</ol>
+<h4 id="a2-usuario-opta-por-nao-receber-sugestoes">A2. Usuário Opta por Não Receber Sugestões<a class="headerlink" href="#a2-usuario-opta-por-nao-receber-sugestoes" title="Permanent link">&para;</a></h4>
+<p>No passo 1, o usuário pode optar, previamente, por desabilitar a funcionalidade de sugestões personalizadas nas configurações do sistema:</p>
+<ol>
+<li>O sistema confirma a escolha do usuário e encerra o caso de uso sem processar ou exibir sugestões.</li>
+</ol>
+<h3 id="5-fluxos-de-excecao">5. Fluxos de Exceção<a class="headerlink" href="#5-fluxos-de-excecao" title="Permanent link">&para;</a></h3>
+<h4 id="fe1-falha-na-geracao-de-sugestoes-fe1">FE1. Falha na Geração de Sugestões [FE1]<a class="headerlink" href="#fe1-falha-na-geracao-de-sugestoes-fe1" title="Permanent link">&para;</a></h4>
+<p>Durante o processamento dos dados (passo 3), se ocorrer uma falha (por exemplo, dados inconsistentes ou insuficientes para a personalização):</p>
+<ol>
+<li>O sistema exibe uma mensagem informando ao usuário que não foi possível gerar sugestões no momento <strong>[FE1]</strong>.</li>
+<li>O evento de falha é registrado, e o caso de uso é encerrado.</li>
+</ol>
+<h4 id="fe2-erro-de-comunicacao-com-o-servico-de-sugestoes-fe2">FE2. Erro de Comunicação com o Serviço de Sugestões [FE2]<a class="headerlink" href="#fe2-erro-de-comunicacao-com-o-servico-de-sugestoes-fe2" title="Permanent link">&para;</a></h4>
+<p>Se o sistema depender de um serviço externo para o processamento e ocorrer um erro de comunicação:</p>
+<ol>
+<li>O sistema informa ao usuário que, devido a uma indisponibilidade temporária, as sugestões não podem ser geradas <strong>[FE2]</strong>.</li>
+<li>O usuário é orientado a tentar novamente mais tarde, e o caso de uso é encerrado.</li>
+</ol>
+<h3 id="6-pre-condicoes">6. Pré-Condições<a class="headerlink" href="#6-pre-condicoes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O usuário deve estar autenticado (logado) no sistema.</li>
+<li>O perfil do usuário deve conter, no mínimo, informações básicas de saúde e preferências para viabilizar a personalização.</li>
+</ul>
+<h3 id="7-pos-condicoes">7. Pós-Condições<a class="headerlink" href="#7-pos-condicoes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>As sugestões personalizadas foram apresentadas ao usuário com sucesso.</li>
+<li>O evento de exibição das sugestões foi registrado para fins de auditoria e análise de uso.</li>
+</ul>
+<h3 id="8-pontos-de-extensao">8. Pontos de Extensão<a class="headerlink" href="#8-pontos-de-extensao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Integração com dispositivos de monitoramento de saúde:</strong> Permitir a coleta de dados em tempo real para aprimorar as sugestões.</li>
+<li><strong>Módulo de feedback:</strong> Coletar opiniões do usuário sobre a utilidade das sugestões para refinar o algoritmo de personalização.</li>
+</ul>
+<h3 id="9-requisitos-especiais">9. Requisitos Especiais<a class="headerlink" href="#9-requisitos-especiais" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O sistema deve processar e exibir as sugestões em tempo real, sem comprometer a performance da aplicação.</li>
+<li>As sugestões devem ser geradas com base em regras de negócio atualizadas e no histórico de interações do usuário.</li>
+<li>A privacidade e segurança dos dados dos usuários devem ser garantidas, em conformidade com as normas de proteção de dados vigentes.</li>
+</ul>
+<h3 id="10-regras-de-negocio">10. Regras de Negócio<a class="headerlink" href="#10-regras-de-negocio" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>[RN01] Validação de Perfil:</strong> O perfil do usuário deve conter todas as informações obrigatórias (ex.: nome, idade, histórico de saúde, preferências) para a geração de sugestões personalizadas.</li>
+<li><strong>[RN02] Processamento de Dados:</strong> As sugestões devem ser geradas com base no processamento correto dos dados do perfil, histórico e preferências do usuário.</li>
+<li><strong>[RN03] Exibição de Sugestões:</strong> Somente as sugestões que atendam aos critérios de relevância e privacidade devem ser exibidas ao usuário.</li>
+<li><strong>[RN04] Registro de Eventos:</strong> Todos os eventos de geração e exibição de sugestões devem ser registrados para auditoria e análise de uso.</li>
+</ul>
+<h3 id="11-informacoes-adicionais">11. Informações Adicionais<a class="headerlink" href="#11-informacoes-adicionais" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A funcionalidade de sugestões personalizadas pode ser ativada ou desativada nas configurações do usuário.</li>
+<li>Recomenda-se que o sistema ofereça a opção de fornecer feedback sobre as sugestões, para que seja possível aprimorar continuamente o algoritmo de personalização.</li>
+</ul>
+<h2 id="especificacao-de-caso-de-uso-criar-perfil-basico">Especificação de Caso de Uso: Criar perfil básico<a class="headerlink" href="#especificacao-de-caso-de-uso-criar-perfil-basico" title="Permanent link">&para;</a></h2>
+<h3 id="1-breve-descricao_1">1. Breve Descrição<a class="headerlink" href="#1-breve-descricao_1" title="Permanent link">&para;</a></h3>
+<p>Este caso de uso tem o propósito de criar perfis de usuário para as pessoas que estão buscando profissionais de saúde para realizar seus tratamentos.</p>
+<h3 id="2-atores_1">2. Atores<a class="headerlink" href="#2-atores_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Usuário (Paciente):</strong> Paciente que deseja criar seu perfil de usuário.</li>
+</ul>
+<h3 id="3-fluxo-basico-de-eventos_1">3. Fluxo Básico de Eventos<a class="headerlink" href="#3-fluxo-basico-de-eventos_1" title="Permanent link">&para;</a></h3>
+<p>Este caso de uso é iniciado quando o paciente deseja cadastrar seu perfil de usuário na plataforma.</p>
+<ol>
+<li>O caso de uso é iniciado quando o paciente seleciona a opção “Cadastrar perfil”;</li>
+<li>O paciente seleciona o tipo de perfil “Paciente”;</li>
+<li>O paciente insere os seguintes dados:<ul>
+<li>Nome completo;</li>
+<li>Data de nascimento;</li>
+<li>CPF;</li>
+<li>Telefone celular;</li>
+<li>E-mail;</li>
+<li>Senha;</li>
+<li>Confirmação de senha;</li>
+<li>Endereço.</li>
+</ul>
+</li>
+<li>O paciente seleciona a opção de “Criar perfil”;</li>
+<li>O sistema cria o novo perfil com os dados cadastrados;</li>
+<li>O caso de uso é encerrado.</li>
+</ol>
+<h3 id="4-fluxos-alternativos_1">4. Fluxos Alternativos<a class="headerlink" href="#4-fluxos-alternativos_1" title="Permanent link">&para;</a></h3>
+<h5 id="fa-01-cancelar-operacao">[FA 01] Cancelar operação.<a class="headerlink" href="#fa-01-cancelar-operacao" title="Permanent link">&para;</a></h5>
+<ol>
+<li>No passo de inserir os dados para cadastrar o perfil, o paciente pode optar por cancelar essa operação ao selecionar a opção “Cancelar”.</li>
+</ol>
+<h5 id="fa-02-prosseguir-com-o-cadastro-de-informacoes-do-perfil">[FA 02] Prosseguir com o cadastro de informações do perfil.<a class="headerlink" href="#fa-02-prosseguir-com-o-cadastro-de-informacoes-do-perfil" title="Permanent link">&para;</a></h5>
+<ol>
+<li>Após o passo de inserir os dados para cadastrar o perfil, o paciente pode selecionar a opção de “Inserir informações complementares”;</li>
+<li>O paciente insere as seguintes informações adicionais:<ul>
+<li>Especialidades médicas que mais precisa atualmente;</li>
+<li>Doenças acometidas atualmente;</li>
+<li>Medicamentos utilizados;</li>
+<li>Quantidade de pessoas residentes com ele;</li>
+<li>Se é PcD;</li>
+<li>Se for PcD, especificar.</li>
+</ul>
+</li>
+<li>O paciente seleciona a opção “Completar cadastro”.</li>
+<li>O caso de uso é encerrado.</li>
+</ol>
+<h3 id="5-fluxos-de-excecao_1">5. Fluxos de Exceção<a class="headerlink" href="#5-fluxos-de-excecao_1" title="Permanent link">&para;</a></h3>
+<h4 id="fe-01-usuario-ja-cadastrado">[FE 01] Usuário já cadastrado.<a class="headerlink" href="#fe-01-usuario-ja-cadastrado" title="Permanent link">&para;</a></h4>
+<ol>
+<li>No passo 3.1.4 do fluxo básico, o sistema acusa que já existe um perfil cadastrado com os dados de CPF e/ou E-mail e retorna ao passo 3.1.3</li>
+</ol>
+<h4 id="fe-02-data-de-nascimento-invalida">[FE 02] Data de nascimento inválida.<a class="headerlink" href="#fe-02-data-de-nascimento-invalida" title="Permanent link">&para;</a></h4>
+<ol>
+<li>No passo 3.1.4 do fluxo básico, o usuário insere uma data de nascimento posterior à data atual. Isso retorna ao passo 2 do fluxo básico.</li>
+</ol>
+<h3 id="6-pre-condicoes_1">6. Pré-Condições<a class="headerlink" href="#6-pre-condicoes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O usuário não deve ter um perfil já cadastrado com seus dados.</li>
+</ul>
+<h3 id="7-pos-condicoes_1">7. Pós-Condições<a class="headerlink" href="#7-pos-condicoes_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Acesso à página de “Meu perfil”: Ao encerrar o caso de uso, o usuário poderá acessar a seção com todas as informações de seu perfil de usuário, sendo possível editar as informações cadastradas anteriormente (exceto “e-mail” e “CPF”).</li>
+</ol>
+<h3 id="8-requisitos-especiais">8. Requisitos Especiais<a class="headerlink" href="#8-requisitos-especiais" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O sistema deve impedir que o usuário tente finalizar o cadastro caso um dos campos do formulário esteja em branco;</li>
+<li>O sistema deve sugerir ao usuário, caso tente cadastrar uma conta já existente, que ele vá para seção de login de contas de usuário;</li>
+<li>O sistema não deve permitir que o usuário cadastre uma conta usando sistemas de terceiros (como contas Google, Facebook ou outros).</li>
+</ul>
+<h1 id="especificacao-de-caso-de-uso-registrar-visitas-domiciliares">Especificação de Caso de Uso: Registrar Visitas Domiciliares<a class="headerlink" href="#especificacao-de-caso-de-uso-registrar-visitas-domiciliares" title="Permanent link">&para;</a></h1>
+<h2 id="1-breve-descricao_2">1. Breve Descrição<a class="headerlink" href="#1-breve-descricao_2" title="Permanent link">&para;</a></h2>
+<p>Este caso de uso tem o propósito de cadastrar visitas domiciliares, para que seja feito o controle das visitas realizadas pelos agentes comunitários nas residências dos pacientes.</p>
+<h2 id="2-atores_2">2. Atores<a class="headerlink" href="#2-atores_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Agente comunitário</li>
+</ul>
+<h2 id="3-fluxo-basico-de-eventos_2">3. Fluxo Básico de Eventos<a class="headerlink" href="#3-fluxo-basico-de-eventos_2" title="Permanent link">&para;</a></h2>
+<p>Este caso de uso é iniciado quando o agente comunitário registra uma visita domiciliar.</p>
+<h3 id="31-fluxo-principal">3.1 Fluxo Principal<a class="headerlink" href="#31-fluxo-principal" title="Permanent link">&para;</a></h3>
+<p>3.1.1 O sistema apresenta as seguintes opções:
+- Registrar nova visita domiciliar;
+- Atualizar dados da visita [FA01];
+- Inativar dados da visita [FA02];</p>
+<p>3.1.2 O agente comunitário seleciona a opção de registrar uma nova visita domiciliar.</p>
+<p>3.1.3 O sistema apresenta as informações a serem preenchidas para o registro de uma nova visita [RN03][FE02].</p>
+<p>3.1.4 O agente comunitário preenche as informações e solicita o registro da visita.</p>
+<p>3.1.5 O sistema valida as informações preenchidas [RN01] [FE01].</p>
+<p>3.1.6 O sistema apresenta mensagem de registro realizado com sucesso.</p>
+<p>3.1.7 O caso de uso é encerrado.</p>
+<h2 id="4-fluxos-alternativos_2">4. Fluxos Alternativos<a class="headerlink" href="#4-fluxos-alternativos_2" title="Permanent link">&para;</a></h2>
+<h3 id="41-fa01-atualizar-dados-da-visita">4.1 [FA01] Atualizar dados da visita<a class="headerlink" href="#41-fa01-atualizar-dados-da-visita" title="Permanent link">&para;</a></h3>
+<p>No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para atualização cadastral da visita.</p>
+<p>4.1.1 O sistema solicita que o agente de saúde informe o CEP, nome e CPF da visita que deseja atualizar.</p>
+<p>4.1.2 O agente comunitário informa o CEP, nome e CPF e solicita a consulta [RN01][FE01].</p>
+<p>4.1.3 O sistema apresenta os dados da visita desejada [RN03][FE02].</p>
+<p>4.1.4 O agente comunitário realiza as atualizações necessárias.</p>
+<p>4.1.5 O sistema valida os dados atualizados [FE01][RN01].</p>
+<p>4.1.6 O sistema pergunta ao agente comunitário se o mesmo realmente deseja fazer as alterações.</p>
+<p>4.1.7 O agente comunitário confirma as atualizações [FE03].</p>
+<p>4.1.8 O sistema exibe uma mensagem de atualizações realizadas com sucesso.</p>
+<p>4.1.9 O caso de uso é encerrado.</p>
+<h3 id="42-inativar-visita">4.2 Inativar visita<a class="headerlink" href="#42-inativar-visita" title="Permanent link">&para;</a></h3>
+<p>No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para inativar uma visita.</p>
+<p>4.2.1 O sistema solicita que o agente comunitário informe o CPF e o CEP da visita que deseja inativar.</p>
+<p>4.2.2 O agente comunitário informa o CPF e o CEP e solicita a consulta.</p>
+<p>4.2.3 O sistema apresenta os dados da visita que deseja (nome, CEP, CPF, telefone, endereço {número, quadra, cidade, estado}) [RN02][FE02].</p>
+<p>4.2.4 O agente comunitário realiza a inativação da visita.</p>
+<p>4.2.5 O sistema pergunta ao usuário se o mesmo realmente deseja fazer a inativação.</p>
+<p>4.2.6 O agente comunitário confirma a inativação [FE03].</p>
+<p>4.2.7 O sistema exibe a mensagem de inativação realizada com sucesso.</p>
+<p>4.2.8 O caso de uso é encerrado.</p>
+<h3 id="43-ativar-visita">4.3 Ativar visita<a class="headerlink" href="#43-ativar-visita" title="Permanent link">&para;</a></h3>
+<p>No passo 3.1.1 do fluxo básico, o agente comunitário seleciona a opção para ativar uma visita.</p>
+<p>4.3.1 O sistema solicita que o agente comunitário informe o CPF e o CEP da visita que deseja ativar.</p>
+<p>4.3.2 O agente comunitário informa o CPF e o CEP e solicita a consulta.</p>
+<p>4.3.3 O sistema apresenta os dados da visita que deseja (nome, CEP, CPF, telefone, endereço {número, quadra, cidade, estado}) [RN03][FE02].</p>
+<p>4.3.4 O agente comunitário realiza a ativação da visita.</p>
+<p>4.3.5 O sistema pergunta ao usuário se o mesmo realmente deseja fazer a ativação.</p>
+<p>4.3.6 O agente comunitário confirma a ativação [FE03].</p>
+<p>4.3.7 O sistema exibe a mensagem de ativação realizada com sucesso.</p>
+<p>4.3.8 O caso de uso é encerrado.</p>
+<h2 id="5-fluxos-de-excecao_2">5. Fluxos de Exceção<a class="headerlink" href="#5-fluxos-de-excecao_2" title="Permanent link">&para;</a></h2>
+<h3 id="51-fe01-validacao-de-informacoes">5.1 [FE01] Validação de informações<a class="headerlink" href="#51-fe01-validacao-de-informacoes" title="Permanent link">&para;</a></h3>
+<p>Nos passos 3.1.5, 4.1.2, 4.1.5, o sistema verifica que uma ou mais informações não foram validadas (formato e/ou obrigatoriedade) e exibe mensagem informando ao agente comunitário. O sistema retorna ao passo 3.1.4, ou 4.1.1, ou 4.1.4 conforme o local de onde foi chamado.</p>
+<h3 id="52-fe02-visita-nao-encontrada">5.2 [FE02] Visita não encontrada<a class="headerlink" href="#52-fe02-visita-nao-encontrada" title="Permanent link">&para;</a></h3>
+<p>Nos passos 3.1.3, 4.1.3, 4.1.4, 4.1.7, o sistema não encontra a visita informada pelo agente comunitário e apresenta mensagem. O sistema retorna ao passo 3.1.2, ou 4.1.2, ou 4.1.3, ou 4.1.6 conforme o local que foi chamado.</p>
+<h3 id="53-fe03-atualizacoes-nao-confirmadas">5.3 [FE03] Atualizações não Confirmadas<a class="headerlink" href="#53-fe03-atualizacoes-nao-confirmadas" title="Permanent link">&para;</a></h3>
+<p>Nos passos 4.1.7, 4.2.6, 4.3.6, o sistema não confirma as atualizações. O sistema retorna ao passo 4.1.6, ou 4.2.5, ou 4.3.5 conforme o local que foi chamado.</p>
+<h2 id="6-requisitos-especiais">6. Requisitos Especiais<a class="headerlink" href="#6-requisitos-especiais" title="Permanent link">&para;</a></h2>
+<p>O sistema deve possuir acessibilidade para Libras.</p>
+<h2 id="7-regras-de-negocio">7. Regras de Negócio<a class="headerlink" href="#7-regras-de-negocio" title="Permanent link">&para;</a></h2>
+<h3 id="71-rn01-validacao-de-informacoes">7.1 [RN01] Validação de informações<a class="headerlink" href="#71-rn01-validacao-de-informacoes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Obrigatório</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome</strong></td>
+<td>Texto até 100 caracteres</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>CEP</strong></td>
+<td>Texto até 100 caracteres</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Endereço</strong></td>
+<td>Texto até 100 caracteres</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Visita</strong></td>
+<td>Texto até 100 caracteres</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Data e Hora</strong></td>
+<td>dd/mm/yyyy hh: mm:ss</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>CPF</strong></td>
+<td>999.999.999-99</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Situação</strong></td>
+<td>Ativo; Inativo</td>
+<td>Sim</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-rn02-visitas-de-situacao-inativa">7.2 [RN02] Visitas de Situação Inativa<a class="headerlink" href="#72-rn02-visitas-de-situacao-inativa" title="Permanent link">&para;</a></h3>
+<p>Apenas as visitas com a situação de “inativo” devem ser apresentadas como resultado da consulta.</p>
+<h3 id="73-rn03-visitas-de-situacao-ativa">7.3 [RN03] Visitas de Situação Ativa<a class="headerlink" href="#73-rn03-visitas-de-situacao-ativa" title="Permanent link">&para;</a></h3>
+<p>Apenas as visitas com a situação de “ativas” devem ser apresentadas como resultado da consulta.</p>
+<h2 id="8-precondicoes">8. Precondições<a class="headerlink" href="#8-precondicoes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Login</strong>: Para utilizar este caso de uso, é necessário que o agente comunitário esteja “logado” na aplicação.</li>
+</ul>
+<h2 id="9-pos-condicoes">9. Pós-condições<a class="headerlink" href="#9-pos-condicoes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Registro de Operações</strong>: Ao final deste caso de uso, as operações realizadas devem ser registradas, com o objetivo de tornar possível a recuperação de informações sobre quem realizou as operações e quando.</li>
+</ul>
+<h2 id="especificacao-de-caso-de-uso-visualizar-agenda-de-consultas">Especificação de Caso de Uso: Visualizar Agenda de Consultas<a class="headerlink" href="#especificacao-de-caso-de-uso-visualizar-agenda-de-consultas" title="Permanent link">&para;</a></h2>
+<h3 id="1-breve-descricao_3">1. Breve Descrição<a class="headerlink" href="#1-breve-descricao_3" title="Permanent link">&para;</a></h3>
+<p>Este caso de uso descreve como o Profissional de Saúde visualiza sua agenda de consultas no sistema ConnectCare. A agenda exibe as consultas agendadas, com informações como data, horário, nome do paciente e histórico médico relevante.</p>
+<h3 id="2-atores_3">2. Atores<a class="headerlink" href="#2-atores_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Usuário (Profissional da Saúde)</strong>: Responsável por realizar as consultas marcadas na agenda</li>
+</ul>
+<h3 id="3-fluxo-basico-de-eventos_3">3. Fluxo Básico de Eventos<a class="headerlink" href="#3-fluxo-basico-de-eventos_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>O Profissional de Saúde acessa o sistema ConnectCare e faz login com suas credenciais.</li>
+<li>O sistema valida as credenciais e exibe o painel principal do profissional.</li>
+<li>O Profissional de Saúde seleciona a opção "Visualizar Agenda" no menu.</li>
+<li>O sistema recupera as consultas agendadas para o profissional, filtrando por data e horário.</li>
+<li>O sistema exibe a agenda, com as seguintes informações para cada consulta:<ul>
+<li>Nome do paciente.</li>
+<li>Data e horário da consulta.</li>
+<li>Histórico médico resumido (se disponível).</li>
+</ul>
+</li>
+<li>O Profissional de Saúde pode navegar pela agenda para visualizar consultas em diferentes dias.</li>
+<li>O caso de uso termina quando o Profissional de Saúde fecha a agenda ou retorna ao painel principal.</li>
+</ol>
+<h3 id="4-fluxos-alternativos_3">4. Fluxos Alternativos<a class="headerlink" href="#4-fluxos-alternativos_3" title="Permanent link">&para;</a></h3>
+<h4 id="41-consultas-sem-historico-medico">4.1 Consultas sem histórico médico<a class="headerlink" href="#41-consultas-sem-historico-medico" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Se o paciente não possui histórico médico registrado no sistema, o sistema exibe uma mensagem indicando que não há informações adicionais disponíveis.</li>
+</ul>
+<h4 id="42-agenda-vazia">4.2 Agenda vazia<a class="headerlink" href="#42-agenda-vazia" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Se não houver consultas agendadas para o profissional na data selecionada, o sistema exibe uma mensagem informando que a agenda está vazia.</li>
+</ul>
+<h3 id="5-fluxos-de-excecao_3">5. Fluxos de Exceção<a class="headerlink" href="#5-fluxos-de-excecao_3" title="Permanent link">&para;</a></h3>
+<h4 id="51-falha-na-conexao-com-o-banco-de-dados">5.1 Falha na conexão com o banco de dados<a class="headerlink" href="#51-falha-na-conexao-com-o-banco-de-dados" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Se o sistema não conseguir se conectar ao banco de dados para recuperar as informações da agenda, uma mensagem de erro é exibida ao Profissional de Saúde, e o caso de uso é interrompido.</li>
+</ul>
+<h4 id="52-credenciais-invalidas">5.2 Credenciais Inválidas<a class="headerlink" href="#52-credenciais-invalidas" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Se as credenciais do Profissional de Saúde forem inválidas, o sistema exibe uma mensagem de erro e não permite o acesso à agenda.</li>
+</ul>
+<h3 id="6-pre-condicoes_2">6. Pré-Condições<a class="headerlink" href="#6-pre-condicoes_2" title="Permanent link">&para;</a></h3>
+<h4 id="61-profissional-de-saude-registrado">6.1 Profissional de Saúde Registrado<a class="headerlink" href="#61-profissional-de-saude-registrado" title="Permanent link">&para;</a></h4>
+<ul>
+<li>O Profissional de Saúde deve estar registrado no sistema ConnectCare e possuir um perfil ativo.</li>
+</ul>
+<h4 id="62-conexao-com-a-internet">6.2 Conexão com a Internet<a class="headerlink" href="#62-conexao-com-a-internet" title="Permanent link">&para;</a></h4>
+<ul>
+<li>O sistema deve estar conectado à internet para acessar o banco de dados e recuperar as informações da agenda.</li>
+</ul>
+<h3 id="7-pos-condicoes_2">7. Pós-Condições<a class="headerlink" href="#7-pos-condicoes_2" title="Permanent link">&para;</a></h3>
+<h4 id="71-agenda-visualizada">7.1 Agenda Visualizada<a class="headerlink" href="#71-agenda-visualizada" title="Permanent link">&para;</a></h4>
+<ul>
+<li>O Profissional de Saúde visualiza sua agenda de consultas com sucesso.</li>
+</ul>
+<h4 id="72-dados-atualizados">7.2 Dados Atualizados<a class="headerlink" href="#72-dados-atualizados" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Caso o Profissional de Saúde tenha realizado alterações na agenda (como reagendamentos), o sistema atualiza os dados em tempo real.</li>
+</ul>
+<h3 id="8-pontos-de-extensao_1">8. Pontos de Extensão<a class="headerlink" href="#8-pontos-de-extensao_1" title="Permanent link">&para;</a></h3>
+<h4 id="81-reagendamento-de-consultas">8.1 Reagendamento de Consultas<a class="headerlink" href="#81-reagendamento-de-consultas" title="Permanent link">&para;</a></h4>
+<ul>
+<li>O Profissional de Saúde pode optar por reagendar uma consulta diretamente na agenda, caso haja disponibilidade.</li>
+</ul>
+<h3 id="9-requisitos-especiais_1">9. Requisitos Especiais<a class="headerlink" href="#9-requisitos-especiais_1" title="Permanent link">&para;</a></h3>
+<h4 id="91-seguranca-de-dados">9.1 Segurança de Dados<a class="headerlink" href="#91-seguranca-de-dados" title="Permanent link">&para;</a></h4>
+<ul>
+<li>O sistema deve garantir que apenas o Profissional de Saúde autorizado tenha acesso à sua agenda de consultas, seguindo as normas de proteção de dados.</li>
+</ul>
+<h2 id="especificacao-de-caso-de-uso-monitorar-indicador-de-desempenho">Especificação de Caso de Uso: Monitorar Indicador de Desempenho<a class="headerlink" href="#especificacao-de-caso-de-uso-monitorar-indicador-de-desempenho" title="Permanent link">&para;</a></h2>
+<h3 id="1-identificacao"><strong>1. Identificação</strong><a class="headerlink" href="#1-identificacao" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sistema:</strong> ConnectCare</li>
+<li><strong>Versão:</strong> 1.0</li>
+<li><strong>Data:</strong> 10/02/2025</li>
+<li><strong>Caso de Uso:</strong> UC002</li>
+<li><strong>Autor:</strong> Pedro Miguel Martins de Oliveira dos Santos</li>
+</ul>
+<hr />
+<h3 id="2-breve-descricao"><strong>2. Breve Descrição</strong><a class="headerlink" href="#2-breve-descricao" title="Permanent link">&para;</a></h3>
+<p>O caso de uso "Monitorar Indicador de Desempenho" permite que o administrador do sistema ConnectCare visualize e analise indicadores-chave de desempenho (KPIs) relacionados ao uso da plataforma, como número de atendimentos realizados, tempo médio de espera e feedback dos usuários. A funcionalidade auxilia na avaliação da eficiência do sistema e no planejamento de melhorias.</p>
+<hr />
+<h3 id="3-atores"><strong>3. Atores</strong><a class="headerlink" href="#3-atores" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Administrador:</strong> Responsável por acessar, monitorar e interpretar os indicadores de desempenho do ConnectCare.</li>
+</ul>
+<hr />
+<h3 id="4-fluxo-de-eventos"><strong>4. Fluxo de Eventos</strong><a class="headerlink" href="#4-fluxo-de-eventos" title="Permanent link">&para;</a></h3>
+<h4 id="41-fluxo-principal"><strong>4.1 Fluxo Principal</strong><a class="headerlink" href="#41-fluxo-principal" title="Permanent link">&para;</a></h4>
+<p><strong>4.1.1</strong> O sistema exibe os principais indicadores de desempenho, incluindo:</p>
+<ul>
+<li>Número de atendimentos realizados.  </li>
+<li>Tempo médio de espera por consulta.  </li>
+<li>Taxa de satisfação dos usuários.  </li>
+<li>Quantidade de consultas agendadas e concluídas.</li>
+</ul>
+<p><strong>4.1.2</strong> O sistema apresenta as seguintes opções:  </p>
+<ul>
+<li>Filtrar análise entre datas específicas;</li>
+<li>Exportar indicadores em formato PDF [FA01].</li>
+<li>Exportar indicadores em formato XML [FA02].  </li>
+</ul>
+<p><strong>4.1.3</strong> O administrador filtra para um período específico. </p>
+<p><strong>4.1.4</strong> O sistema valida o período específico inserido [RN01] [FE01] [FE02] [FE03].  </p>
+<p><strong>4.1.5</strong> O sistema atualiza os indicadores com o período específico.  </p>
+<p><strong>4.1.6</strong> Caso de uso é encerrado.  </p>
+<h4 id="42-fluxos-alternativos"><strong>4.2 Fluxos Alternativos</strong><a class="headerlink" href="#42-fluxos-alternativos" title="Permanent link">&para;</a></h4>
+<h5 id="421-fa01-exportar-indicadores-em-formato-pdf"><strong>4.2.1 [FA01] Exportar indicadores em formato PDF</strong><a class="headerlink" href="#421-fa01-exportar-indicadores-em-formato-pdf" title="Permanent link">&para;</a></h5>
+<p>No passo 4.1.2 do Fluxo Principal o Administrador seleciona a opção de exportar indicadores em formato PDF</p>
+<p><strong>4.2.1.1</strong> O sistema exibe um resumo do documento que será exportado.</p>
+<p><strong>4.2.1.2</strong> O sistema solicita o local de salvamento do documento.</p>
+<p><strong>4.2.1.3</strong> O administrador preenche com o local desejado.</p>
+<p><strong>4.2.1.4</strong> O sistema exporta o arquivo.</p>
+<p><strong>4.2.1.5</strong> Caso de uso é encerrado.</p>
+<h5 id="422-fa02-exportar-indicadores-em-formato-xml"><strong>4.2.2 [FA02] Exportar indicadores em formato XML</strong><a class="headerlink" href="#422-fa02-exportar-indicadores-em-formato-xml" title="Permanent link">&para;</a></h5>
+<p>No passo 4.1.2 do Fluxo Principal o Administrador seleciona a opção de exportar indicadores em formato XML</p>
+<p><strong>4.2.1.1</strong> O sistema exibe um resumo do documento que será exportado.</p>
+<p><strong>4.2.1.2</strong> O sistema solicita o local de salvamento do documento.</p>
+<p><strong>4.2.1.3</strong> O administrador preenche com o local desejado.</p>
+<p><strong>4.2.1.4</strong> O sistema exporta o arquivo.</p>
+<p><strong>4.2.1.5</strong> Caso de uso é encerrado.</p>
+<hr />
+<h3 id="5-fluxos-de-excecao_4"><strong>5. Fluxos de Exceção</strong><a class="headerlink" href="#5-fluxos-de-excecao_4" title="Permanent link">&para;</a></h3>
+<h4 id="fe01-falha-na-conexao-com-o-banco-de-dados"><strong>[FE01] Falha na Conexão com o Banco de Dados</strong><a class="headerlink" href="#fe01-falha-na-conexao-com-o-banco-de-dados" title="Permanent link">&para;</a></h4>
+<p>No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.</p>
+<h4 id="fe02-nenhum-dado-disponivel"><strong>[FE02] Nenhum Dado Disponível</strong><a class="headerlink" href="#fe02-nenhum-dado-disponivel" title="Permanent link">&para;</a></h4>
+<p>No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.</p>
+<h4 id="fe03-periodo-selecionado-nao-encontrado"><strong>[FE03] Período selecionado não encontrado</strong><a class="headerlink" href="#fe03-periodo-selecionado-nao-encontrado" title="Permanent link">&para;</a></h4>
+<p>No passo 4.1.4 o sistema não encontra o período selecionado e apresenta a mensagem. O sistema retorna ao passo 4.1.2 conforme o local de onde foi chamado.</p>
+<hr />
+<h3 id="6-requisitos-especiais_1"><strong>6. Requisitos Especiais</strong><a class="headerlink" href="#6-requisitos-especiais_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A interface deve ser responsiva para acesso via dispositivos móveis.  </li>
+</ul>
+<hr />
+<h3 id="7-regras-de-negocio_1"><strong>7. Regras de Negócio</strong><a class="headerlink" href="#7-regras-de-negocio_1" title="Permanent link">&para;</a></h3>
+<p><strong>7.1 [RN01] Validação do período selecionado</strong></p>
+<p>As seguintes informações devem ser validadas:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Nome</th>
+<th style="text-align: center;">Formato</th>
+<th style="text-align: center;">Obrigatoriedade</th>
+<th style="text-align: center;">Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Período</td>
+<td style="text-align: center;">99/99/99 - 99/99/99</td>
+<td style="text-align: center;">Sim</td>
+<td style="text-align: center;">Primeiro registro;Data atual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="8-precondicoes_1"><strong>8. Precondições</strong><a class="headerlink" href="#8-precondicoes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>O administrador deve estar autenticado no sistema.  </li>
+<li>O sistema deve estar conectado ao banco de dados para recuperar as informações.  </li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>

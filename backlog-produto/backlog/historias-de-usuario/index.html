@@ -1,0 +1,1580 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../nao-funcionais/">
+      
+      
+        <link rel="next" href="../dor-e-dod/">
+      
+      
+      <link rel="icon" href="../../../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Histórias de usuário - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../termynal.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#historias-de-usuario" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Histórias de usuário
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../visao-produto-projeto/visao-produto/" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../estudos-de-caso/pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../iteracoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../visao-produto-projeto/visao-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../visao-produto-projeto/visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../visao-produto-projeto/processo-desenvolvimento-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#organizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organização
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criterios-de-aceitacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critérios de Aceitação
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../estudos-de-caso/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../estudos-de-caso/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../estudos-de-caso/uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../iteracoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="historias-de-usuario"><strong>Histórias de Usuário</strong><a class="headerlink" href="#historias-de-usuario" title="Permanent link">&para;</a></h1>
+<details class="abstract">
+<summary>Histórico de Revisão</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Versão</strong></th>
+<th style="text-align: center;"><strong>Descrição</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">01/11</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação do tópico de Backlog do Produto</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">15/12</td>
+<td style="text-align: center;">2.0</td>
+<td style="text-align: center;">Adição dos artefatos</td>
+<td style="text-align: center;">Pedro Miguel M. de O. dos Santos, Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">03/01</td>
+<td style="text-align: center;">2.2</td>
+<td style="text-align: center;">Separação do arquivo incluso em requisitos funcionais para esse daqui</td>
+<td style="text-align: center;">Pedro Miguel M. de O. dos Santos</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="organizacao"><strong>Organização</strong><a class="headerlink" href="#organizacao" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Temas</label><label for="__tabbed_1_2">Épicos</label><label for="__tabbed_1_3">Histórias de Usuário</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong></td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong></td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP03]</strong>, <strong>[EP04]</strong>, <strong>[EP05]</strong></td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP06]</strong>, <strong>[EP07]</strong>, <strong>[EP08]</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Épicos</strong></th>
+<th><strong>Histórias de Usuário</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01], [US02], [US03], [US04], [US05]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06], [US07], [US08], [US09]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10], [US11], [US12], [US13]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14], [US15], [US16], [US17]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP05]</strong> Autenticação do Usuário</td>
+<td><strong>[US18], [US19]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP06]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20], [US21], [US22], [US23]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP07]</strong> Gestão de Relatório do Cliente</td>
+<td><strong>[US24], [US25], [US26], [US27]</strong></td>
+</tr>
+<tr>
+<td><strong>[EP08]</strong> Visualização e Salvamento Relatórios</td>
+<td><strong>[US28], [US29]</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>Histórias de Usuário</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência.</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos.</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle dos relatos.</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle dos relatos.</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle dos relatos.</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida.</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida.</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida.</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema para utilizar funcionalidades.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para corrigir informações.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil para remover qualquer vínculo com o sistema.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para acessar funcionalidades de cliente.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para corrigir informações incorretas.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil para remover qualquer vínculo com o site.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu perfil para verificar minhas informações.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP05]</strong> Autenticação do Usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades.</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de Usuário</td>
+<td><strong>[EP05]</strong> Autenticação do Usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP06]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP06]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente para alterar dados médicos.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP06]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter dados atualizados.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP06]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP07]</strong> Gestão de Relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP07]</strong> Gestão de Relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP07]</strong> Gestão de Relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP07]</strong> Gestão de Relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP08]</strong> Visualização e Salvamento Relatórios</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf.</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de Documentos</td>
+<td><strong>[EP08]</strong> Visualização e Salvamento Relatórios</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="criterios-de-aceitacao"><strong>Critérios de Aceitação</strong><a class="headerlink" href="#criterios-de-aceitacao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Critérios de Aceitação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>- O sistema deve disponibilizar uma área voltada para pacientes, para que o usuário possa colocar um depoimento.<br>- O sistema deve garantir que seja possível colocar depoimentos em texto, fotos e vídeos.<br>- O sistema deve disponibilizar uma escala de 0 a 5 onde o paciente classificará o atendimento prestado pela clínica.</td>
+</tr>
+<tr>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>- O sistema deve ter uma área disponível para administradores, onde a relação de depoimentos que estão aparecendo na landing page.<br>- O sistema deve garantir que seja possível ver depoimentos pendentes de aprovação.<br>- O sistema deve garantir que administradores possam aprovar ou excluir depoimentos.<br>- O sistema deve garantir que tenha um alerta de confirmação de escolha antes da aprovação de qualquer depoimento.</td>
+</tr>
+<tr>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>- O sistema deve disponibilizar uma área na landing page para que sejam apresentados os depoimentos aprovados previamente pelo administrador.<br>- O sistema deve garantir uma área restrita para visualizar depoimentos feitos pelos pacientes.<br>- O sistema deve garantir uma área com todos os depoimentos de todos os pacientes disponíveis para o administrador visualizar.</td>
+</tr>
+<tr>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>- O sistema deve garantir que o usuário, após postar um novo depoimento, também possa fazer a edição de seu conteúdo (textos, fotos e vídeos), necessitando de aprovação posterior de um administrador.<br>- O sistema deve garantir que tenha um alerta de confirmação de escolha antes da edição de qualquer depoimento.</td>
+</tr>
+<tr>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>- O sistema deve garantir que o paciente possa excluir seus depoimentos.<br>- O sistema deve garantir que administradores possam excluir qualquer depoimento.<br>- O sistema deve garantir que tenha um alerta de confirmação de escolha antes da exclusão de qualquer depoimento.</td>
+</tr>
+<tr>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida.</td>
+<td>- O sistema deve exibir uma lista das modalidades disponíveis, como Fisioterapia, Personal Trainer, Treinamento em Grupo, entre outras, para que o usuário selecione a modalidade desejada antes de cadastrar o horário de atendimento.<br>- O sistema deve permitir que o usuário informe a data de início e fim (ou uma única data para atendimentos pontuais), além da hora de início e término do atendimento.</td>
+</tr>
+<tr>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida.</td>
+<td>- O sistema deve permitir que o usuário selecione um horário de atendimento previamente cadastrado para edição.<br>- O sistema deve permitir que o usuário altere a data, horário, profissional ou local do atendimento.<br>- O sistema deve exibir uma mensagem confirmando que as alterações foram salvas com sucesso.</td>
+</tr>
+<tr>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida.</td>
+<td>- O sistema deve permitir que o usuário selecione um horário de atendimento previamente cadastrado para exclusão.<br>- O sistema deve solicitar a confirmação do usuário antes de excluir o horário, exibindo uma mensagem como: "Tem certeza de que deseja excluir este horário?".<br>- Após a exclusão, o sistema deve exibir uma mensagem clara confirmando que o horário foi excluído com sucesso.</td>
+</tr>
+<tr>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida.</td>
+<td>- O sistema deve permitir que o usuário filtre os horários de atendimento por modalidade (ex.: Fisioterapia, Personal Trainer, etc.).<br>- O sistema deve permitir que o usuário filtre os horários por data específica, intervalo de datas ou horário.<br>- O sistema deve exibir os horários encontrados de forma clara e organizada, incluindo informações como data, horário, profissional responsável e local (presencial ou remoto).<br>- O sistema deve permitir que o usuário busque horários associados a um profissional ou cliente específico.</td>
+</tr>
+<tr>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador.</td>
+<td>- O sistema deve disponibilizar um formulário onde o administrador possa preencher as informações necessárias, como nome, e-mail, senha e, se aplicável, cargo ou organização.<br>- O sistema deve validar os campos obrigatórios e exibir mensagens claras caso alguma informação esteja incorreta ou ausente.<br>- O sistema deve exigir uma senha com critérios mínimos de segurança (ex.: pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais).<br>- Após completar o cadastro com sucesso, o sistema deve exibir uma mensagem confirmando que o administrador foi registrado e orientando sobre os próximos passos, como ativação do e-mail.</td>
+</tr>
+<tr>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>- O sistema deve permitir que o administrador acesse uma página ou seção dedicada para edição de perfil.<br>- O sistema deve permitir que o administrador altere informações como nome, e-mail, senha e outros dados pessoais ou profissionais cadastrados.<br>- O sistema deve validar os campos editados e exibir mensagens claras caso alguma informação esteja incorreta ou não atenda aos critérios (ex.: e-mail inválido, senha insegura).<br>- Para alterações sensíveis, como senha ou e-mail, o sistema deve solicitar a senha atual para confirmar a identidade do administrador.</td>
+</tr>
+<tr>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>- O administrador deve ter acesso à opção de excluir seu perfil.<br>- O sistema deve exibir uma confirmação de exclusão.<br>- O sistema deve apresentar uma mensagem de que o perfil foi excluído.<br>- O sistema deve remover o perfil e todas as suas associações após a exclusão.</td>
+</tr>
+<tr>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>- O administrador deve ter acesso à opção de exibir seu perfil.<br>- O sistema deve exibir todas as informações associadas, como nome, e-mail, etc.</td>
+</tr>
+<tr>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente.</td>
+<td>- O sistema deve disponibilizar um formulário para o usuário preencher suas informações, como nome, e-mail e senha.<br>- O sistema deve validar campos obrigatórios e exibir mensagens claras caso alguma informação esteja incorreta ou ausente.<br>- O sistema deve exigir uma senha com critérios mínimos de segurança (ex.: pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais).<br>- O sistema deve exibir uma mensagem de confirmação após o cadastro.</td>
+</tr>
+<tr>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>- O paciente deve ter acesso à opção de editar seu perfil.<br>- O sistema deve disponibilizar campos de preenchimento nas informações editáveis como nome e senha.<br>- O sistema deve exibir uma mensagem de confirmação de edições.<br>- O sistema deve validar e salvar as alterações realizadas.</td>
+</tr>
+<tr>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>- O paciente deve ter acesso à opção de excluir seu perfil.<br>- O sistema deve exibir uma confirmação de exclusão.<br>- O sistema deve apresentar uma mensagem de que o perfil foi excluído.<br>- O sistema deve remover o perfil e todas as suas associações após a exclusão.</td>
+</tr>
+<tr>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>- O paciente deve ter acesso à opção de exibir seu perfil.<br>- O sistema deve exibir todas as informações associadas, como nome, e-mail, etc.</td>
+</tr>
+<tr>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário.</td>
+<td>- O sistema deve apresentar uma tela de login com campos para "Usuário" e "Senha".<br>- O usuário deve ser redirecionado para a tela correspondente ao seu nível de acesso após login bem-sucedido.<br>- Caso o usuário insira dados inválidos, o sistema deve exibir uma mensagem de erro: "Usuário ou senha inválidos".<br>- O sistema deve permitir ao usuário tentar novamente ou acessar a opção de "Recuperar senha".</td>
+</tr>
+<tr>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil.</td>
+<td>- O sistema deve oferecer uma opção "Esqueci minha senha" na tela de login.<br>- O sistema deve solicitar o e-mail cadastrado para recuperação de senha.<br>- O sistema deve enviar um link seguro para redefinir a senha ao e-mail informado.<br>- O link de redefinição de senha deve expirar em 24 horas por questões de segurança.<br>- Após a redefinição, a nova senha deve ser válida para login.<br>- O sistema deve exibir uma mensagem de sucesso após a senha ser alterada: "Sua senha foi redefinida com sucesso."</td>
+</tr>
+<tr>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos.</td>
+<td>- O sistema deve permitir cadastrar uma nova ficha com os seguintes campos obrigatórios:<br> - Nome completo do paciente<br> - CPF<br> - Data de nascimento<br> - Contato (telefone e e-mail)<br> - Dados médicos iniciais (diagnóstico, tratamentos recomendados).<br>- O sistema deve validar se o CPF já existe para evitar duplicações.<br>- O sistema deve notificar o sucesso do cadastro com a mensagem: "Ficha cadastrada com sucesso."<br>- O sistema deve permitir que o administrador visualize a ficha logo após o cadastro.</td>
+</tr>
+<tr>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas.</td>
+<td>- O sistema deve permitir editar qualquer campo da ficha do paciente.<br>- O sistema deve validar as alterações e evitar campos obrigatórios vazios.<br>- O sistema deve registrar a data e o horário da última edição.<br>- O sistema deve apresentar um resumo das alterações feitas.<br>- O sistema deve exibir uma mensagem de sucesso após a edição: "Ficha atualizada com sucesso."</td>
+</tr>
+<tr>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista.</td>
+<td>- O sistema deve solicitar uma confirmação de exclusão antes de apagar a ficha do paciente.<br>- A ficha excluída deve ser removida da lista principal de pacientes ativos.<br>- O sistema deve registrar um histórico da exclusão com os seguintes dados:<br> - Nome do paciente<br> - Data e horário da exclusão<br> - Usuário responsável pela exclusão.<br>- O sistema deve impedir a exclusão de fichas vinculadas a tratamentos ativos.<br>- O sistema deve exibir a mensagem: "Ficha excluída com sucesso."</td>
+</tr>
+<tr>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados.</td>
+<td>- O sistema deve permitir buscar fichas de pacientes usando os seguintes critérios:<br> - Nome completo<br> - CPF<br> - Data de nascimento.<br>- O sistema deve exibir os dados completos da ficha, incluindo:<br> - Dados pessoais do paciente (nome, CPF, contato, etc.)<br> - Histórico de consultas e tratamentos<br> - Diagnóstico atual.<br>- O sistema deve permitir filtrar registros por data de cadastro ou última atualização.<br>- O sistema deve exibir uma mensagem caso nenhum registro seja encontrado: "Nenhuma ficha encontrada para os critérios informados."</td>
+</tr>
+<tr>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo.</td>
+<td>- O relatório deve conter todos os campos existentes nos documentos fornecidos pela cliente.<br>- O usuário deve poder criar três tipos de relatório diferentes: de RPG, de Pilates, de Avaliação Neurológica ou de Avaliação Uroginecológica.<br>- Cada relatório deve conter as informações específicas do paciente e as informações específicas do tipo de relatório.<br>- O relatório criado pelo administrador deve ser associado a um usuário, de forma que o paciente seja capaz de visualizar seu relatório em sua conta de usuário.<br>- O relatório criado deve ser devidamente adicionado ao banco de dados.</td>
+</tr>
+<tr>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes.</td>
+<td>- As edições feitas no relatório devem ser salvas no banco de dados.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.</td>
+</tr>
+<tr>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente.</td>
+<td>- O relatório excluído não deve ser apagado do banco de dados, mas sim marcado como "inativo".<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.<br>- O paciente e o administrador não devem ser capazes de visualizar um relatório excluído.</td>
+</tr>
+<tr>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes.</td>
+<td>- O administrador deve ser capaz de visualizar todos os relatórios de avaliação.<br>- O administrador deve ser capaz de identificar a qual usuário o relatório está vinculado.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.</td>
+</tr>
+<tr>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf.</td>
+<td>- O relatório salvo pelo paciente deve seguir o template fornecido pela cliente.<br>- O paciente deve poder exportar qualquer tipo de relatório (de RPG, de Pilates, de Avaliação Neurológica ou de Avaliação Uroginecológica).<br>- O relatório deve conter as informações registradas pelo administrador ao ter criado e/ou editado o relatório.<br>- O paciente não deve ser capaz de exportar um relatório excluído pelo administrador.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.<br>- O relatório poderá ser exportado quantas vezes forem necessárias.</td>
+</tr>
+<tr>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação.</td>
+<td>- O paciente deve ser capaz de visualizar todos os relatórios vinculados à sua conta de usuário.<br>- O usuário deve ser capaz de visualizar seus relatórios sem a necessidade de exportar o documento em formato .pdf.<br>- As páginas envolvidas nessa User Story devem respeitar o design definido no protótipo.<br>- As páginas envolvidas nessa User Story devem respeitar o design responsivo.<br>- As páginas envolvidas nessa User Story devem respeitar as diretrizes de acessibilidade da WCAG.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../termynal.js"></script>
+      
+    
+  </body>
+</html>

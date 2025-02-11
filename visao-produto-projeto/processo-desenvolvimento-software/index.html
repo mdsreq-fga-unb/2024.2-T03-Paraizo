@@ -1,0 +1,1613 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../visao-projeto/">
+      
+      
+        <link rel="next" href="../../backlog-produto/backlog/funcionais/">
+      
+      
+      <link rel="icon" href="../../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Processo de desenvolvimento de software - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#processo-de-desenvolvimento-de-software" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Processo de desenvolvimento de software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../visao-produto/" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backlog-produto/backlog/funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estudos-de-caso/pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../iteracoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#etapas-do-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapas do RAD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Etapas do RAD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-planejamento-dos-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapa 1 - Planejamento dos requisitos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-user-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapa 2 - User Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapa 3 - Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-4-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etapa 4 - Testes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-requisitos-e-o-rad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engenharia de Requisitos e o RAD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engenharia de Requisitos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Engenharia de Requisitos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atividades-e-tecnicas-de-er" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atividades e Técnicas de ER
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Atividades e Técnicas de ER">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elicitacao-e-descoberta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elicitação e Descoberta:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representacao-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representação de Requisitos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacao-e-validacao-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificação e Validação de Requisitos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizacao-e-atualizacao-de-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organização e Atualização de Requisitos:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/historias-de-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="processo-de-desenvolvimento-de-software"><strong>Processo de Desenvolvimento de Software</strong><a class="headerlink" href="#processo-de-desenvolvimento-de-software" title="Permanent link">&para;</a></h1>
+<details class="abstract">
+<summary>Histórico de Revisão</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Versão</strong></th>
+<th style="text-align: center;"><strong>Descrição</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">08/11</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação das seção de Processo de desenvolvimento de software</td>
+<td style="text-align: center;">Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/11</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Especificação do processo de desenvolvimento</td>
+<td style="text-align: center;">Erick Miranda Santos</td>
+</tr>
+<tr>
+<td style="text-align: center;">24/11</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Alteração do processo de desenvolvimento (remoção do Dual Track Agile)</td>
+<td style="text-align: center;">Erick Miranda Santos</td>
+</tr>
+<tr>
+<td style="text-align: center;">06/12</td>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">Alteração do processo de desenvolvimento (remoção do Kanban)</td>
+<td style="text-align: center;">Erick Miranda Santos</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="etapas-do-rad"><strong>Etapas do RAD</strong><a class="headerlink" href="#etapas-do-rad" title="Permanent link">&para;</a></h2>
+<h3 id="etapa-1-planejamento-dos-requisitos"><strong>Etapa 1 - Planejamento dos requisitos</strong><a class="headerlink" href="#etapa-1-planejamento-dos-requisitos" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;">Na etapa de planejamento dos requisitos, fazemos uma análise completa do cenário e elicitamos os requisitos, nesse projeto nós seguimos o material do Professor George Marsicano(2023)[4], por isso nós seguimos os pontos, Descoberta e elicitação de requisitos, Análise e consenso de requisitos, Declaração de requisitos, Verificação e Validação e por último a Organização e atualização.</p>
+
+<table>
+<thead>
+<tr>
+<th>Atividade</th>
+<th>Método</th>
+<th>Ferramenta</th>
+<th>Entrega</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Descoberta e elicitação de requisitos</td>
+<td>Diagrama de causa e 5 porquês</td>
+<td>Trello</td>
+<td>Backlog de requisitos não validado</td>
+</tr>
+<tr>
+<td>Análise e consenso de requisitos</td>
+<td>Análise de viabilidade</td>
+<td>Teams</td>
+<td>Backlog de requisitos não validado</td>
+</tr>
+<tr>
+<td>Declaração</td>
+<td>Épicos, Features e User Stories</td>
+<td>Trello</td>
+<td>User Stories não validado</td>
+</tr>
+<tr>
+<td>Verificação e Validação</td>
+<td>Feedback</td>
+<td>Google Meet</td>
+<td>User Stories validados</td>
+</tr>
+<tr>
+<td>Organização e Atualização</td>
+<td>MoSCoW e Kanban</td>
+<td>Trello</td>
+<td>Definição de prioridades(MVP1 e MVP2)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="etapa-2-user-design"><strong>Etapa 2 - User Design</strong><a class="headerlink" href="#etapa-2-user-design" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;">Na etapa de User Design, é feito a prototipação da aplicação, no caso é feito o protótipo equivalente aos User Stories relacionados ao MVP1 na terceira unidade e ao MVP2 na quarta unidade.</p>
+
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Método</th>
+<th>Ferramenta</th>
+<th>Entregas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prototipação</td>
+<td>Mock-up digital</td>
+<td>Figma</td>
+<td>Protótipo de alta fidelidade</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="etapa-3-desenvolvimento"><strong>Etapa 3 - Desenvolvimento</strong><a class="headerlink" href="#etapa-3-desenvolvimento" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;">Na etapa de desenvolvimento é onde é feito o projeto e seu código é desenvolvido, esta etapa irá ocorrer após a etapa de User Design e Prototipação.</p>
+
+<hr />
+<h3 id="etapa-4-testes"><strong>Etapa 4 - Testes</strong><a class="headerlink" href="#etapa-4-testes" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;">Na etapa de testagem será feito os testes de todas as funcionalidades da aplicação</p>
+
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Método</th>
+<th>Ferramenta</th>
+<th>Entregas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Testagem</td>
+<td>Testes Unitários, Testes End-to-end</td>
+<td>Jest, Pytest, Cypress</td>
+<td>Produto testado</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="engenharia-de-requisitos-e-o-rad"><strong>Engenharia de Requisitos e o RAD</strong><a class="headerlink" href="#engenharia-de-requisitos-e-o-rad" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Fases do RAD</strong></th>
+<th><strong>Atividades da Engenharia de Requisitos (ER)</strong></th>
+<th><strong>Prática</strong></th>
+<th><strong>Técnica</strong></th>
+<th><strong>Resultados Esperados</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Planejamento dos Requisitos</strong></td>
+<td><strong>Elicitação e Descoberta</strong></td>
+<td>Levantamento de Requisitos</td>
+<td>Análise Documental, Brainstorming, Entrevista, Análise de Concorrentes</td>
+<td>Identificar todos os requisitos de alto nível do projeto</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Análise e Consenso</strong></td>
+<td>Análise de dependência entre os requisitos e eliminar ambiguidades</td>
+<td>Brainstorming, Entrevista, Análise de Objetivos de Domínio</td>
+<td>Lista de requisitos bem definidos; Definição dos critérios de prioridade dos requisitos</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Declaração</strong></td>
+<td>Apontamento dos requisitos levantados</td>
+<td>User Story</td>
+<td>Estabelecimento de todos os requisitos</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Organização e Atualização</strong></td>
+<td>Elencar os requisitos levantados de acordo com os critérios de prioridade</td>
+<td>Backlog de Requisitos, Critérios (pontuação, priorização), Lista de Requisitos (RF's e RNF's)</td>
+<td>Lista de requisitos organizada com o grau de prioridade</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Verificação e Validação</strong></td>
+<td>Verificar e validar os requisitos levantados</td>
+<td>User Story, DoD e DoR, pontuação</td>
+<td>Backlog validado com a equipe de desenvolvimento e com o cliente; Definir DoR e DoD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>User Design</strong></td>
+<td><strong>Representação</strong></td>
+<td>Elaboração do design do produto</td>
+<td>Prototipagem e Mockup</td>
+<td>Finalização de protótipo de alta fidelidade</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Verificação e Validação</strong></td>
+<td>Verificar e validar os requisitos atualizados e/ou novos requisitos</td>
+<td>Revisão, DoD e DoR, testes com usuário</td>
+<td>Design validado com o cliente</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Construção</strong></td>
+<td><strong>Representação</strong></td>
+<td>Desenvolvimento dos requisitos</td>
+<td>Discussões em Equipe, Análise de Tarefas</td>
+<td>Requisito desenvolvido</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Verificação e Validação</strong></td>
+<td>Teste dos requisitos</td>
+<td>DoR, testes de sistema</td>
+<td>Requisito devidamente testado</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Finalização e Entrega</strong></td>
+<td><strong>Verificação e Validação</strong></td>
+<td>Testes de Aceitação</td>
+<td>Testes com usuário</td>
+<td>Requisitos devidamente validados com o cliente</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Organização e Atualização</strong></td>
+<td>Fechamento do Backlog</td>
+<td>Revisão da iteração</td>
+<td>Retrospectiva do backlog, acertos e erros</td>
+</tr>
+</tbody>
+</table>
+<h2 id="engenharia-de-requisitos"><strong>Engenharia de Requisitos</strong><a class="headerlink" href="#engenharia-de-requisitos" title="Permanent link">&para;</a></h2>
+<h3 id="atividades-e-tecnicas-de-er"><strong>Atividades e Técnicas de ER</strong><a class="headerlink" href="#atividades-e-tecnicas-de-er" title="Permanent link">&para;</a></h3>
+<h4 id="elicitacao-e-descoberta"><strong>Elicitação e Descoberta:</strong><a class="headerlink" href="#elicitacao-e-descoberta" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Análise Documental:</strong> Será utilizada para levantar questões técnicas necessárias para o projeto, como fichas dos pacientes e relatórios médicos.</p>
+</li>
+<li>
+<p><strong>Brainstorming:</strong> Será realizada uma reunião em grupo para discutir e levantar ideias a respeito do projeto.</p>
+</li>
+<li>
+<p><strong>Entrevista:</strong> Será conduzida junto ao cliente, direcionando para o entendimento do negócio e do problema enfrentado.</p>
+</li>
+<li>
+<p><strong>Análise de Concorrentes:</strong> Será realizada uma pesquisa mercadológica, buscando produtos já existentes que se assemelhem em alguns pontos à solução de software proposta.</p>
+</li>
+<li>
+<p><strong>Análise e Consenso:</strong> O entendimento da equipe será alinhado junto ao cliente.</p>
+</li>
+<li>
+<p><strong>Análise de Objetivos de Domínio:</strong> Será feita para identificar e consolidar os principais objetivos relacionados ao domínio do projeto.</p>
+</li>
+</ul>
+<p><strong>Declaração de Requisitos:</strong></p>
+<ul>
+<li><strong>User Story:</strong> Será feita uma construção dos requisitos através dessa técnica, onde será possível destrinchar os requisitos em temas, épicos, histórias e tarefas.</li>
+</ul>
+<h4 id="representacao-de-requisitos"><strong>Representação de Requisitos:</strong><a class="headerlink" href="#representacao-de-requisitos" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Prototipagem:</strong> Será criado um protótipo do sistema, com fluxo de usuário para futura validação do cliente.</p>
+</li>
+<li>
+<p><strong>Mockup:</strong> Será uma representação que simulará o projeto final, permitindo visualizar e testar conceitos de um projeto.</p>
+</li>
+<li>
+<p><strong>Discussões em Equipe:</strong> Serão levantadas discussões para o alinhamento do entendimento dos requisitos trabalhados.</p>
+</li>
+<li>
+<p><strong>Análise de Tarefas:</strong> Será construída uma estratégia que permita dividir uma tarefa mais complexa em tarefas mais simples.</p>
+</li>
+</ul>
+<h4 id="verificacao-e-validacao-de-requisitos"><strong>Verificação e Validação de Requisitos:</strong><a class="headerlink" href="#verificacao-e-validacao-de-requisitos" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>User Story:</strong> Será validado o User Story construído, para evitar redundância e a possibilidade de um requisito ausente.</p>
+</li>
+<li>
+<p><strong>DoR:</strong> Serão definidos critérios para aprovar que um requisito esteja pronto para ser construído ou entrar no backlog.</p>
+</li>
+<li>
+<p><strong>DoD:</strong> Serão definidos critérios para atestar que o requisito esteja feito por completo, sem nenhuma deficiência técnica e funcional.</p>
+</li>
+<li>
+<p><strong>Pontuação:</strong> Serão definidos pontos com base na complexidade, criticidade, independência e no valor de negócio; essa pontuação será usada para priorização dos requisitos.</p>
+</li>
+<li>
+<p><strong>Testes de Sistema:</strong> Serão realizados testes no sistema para garantir que ele atenda aos critérios de aceitação e esteja com o mínimo de falhas possível.</p>
+</li>
+<li>
+<p><strong>Testes com Usuário:</strong> Serão realizados testes diretamente com o usuário, onde o mesmo poderá navegar pelo sistema para validar a funcionalidade implementada.</p>
+</li>
+</ul>
+<h4 id="organizacao-e-atualizacao-de-requisitos"><strong>Organização e Atualização de Requisitos:</strong><a class="headerlink" href="#organizacao-e-atualizacao-de-requisitos" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Backlog de Requisitos:</strong> Serão definidos os possíveis requisitos do sistema.</p>
+</li>
+<li>
+<p><strong>Critérios (Pontuação, Priorização):</strong> Serão definidos os critérios de aceitação, assim como seus valores para pontuação e respectiva priorização dos requisitos.</p>
+</li>
+<li>
+<p><strong>Lista de Requisitos (RF's e RNF's):</strong> Serão definidos e filtrados os requisitos, distinguindo-os entre funcionais e não funcionais.</p>
+</li>
+<li>
+<p><strong>Revisão da Iteração:</strong> Será feita uma revisão da iteração, onde serão abordados os acertos, erros e dificuldades enfrentadas, para melhor entendimento entre os membros da equipe.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>

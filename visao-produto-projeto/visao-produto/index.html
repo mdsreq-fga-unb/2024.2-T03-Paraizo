@@ -1,0 +1,2016 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../visao-projeto/">
+      
+      
+      <link rel="icon" href="../../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Visão do Produto - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visao-geral-do-produto" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visão do Produto
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../backlog-produto/backlog/funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estudos-de-caso/pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../iteracoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cenario-atual-do-cliente-e-do-negocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cenário atual do cliente e do negócio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cenário atual do cliente e do negócio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introducao-ao-negocio-e-contexto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução ao negócio e contexto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identificacao-da-oportunidade-ou-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identificação da Oportunidade ou Problema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafios-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desafios do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segmentacao-de-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segmentação de Clientes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucao-proposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solução proposta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solução proposta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos do Produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracteristicas-da-solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características da solução
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pesquisa-de-mercado-e-analise-competitiva" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pesquisa de Mercado e Análise Competitiva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analise-de-viabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Análise de Viabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tecnologias utilizadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impacto-da-solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impacto da Solução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrategias-de-engenharia-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estratégias de Engenharia de Software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estratégias de Engenharia de Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrategia-priorizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estratégia Priorizada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quadro-comparativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quadro Comparativo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quadro Comparativo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#justificativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Justificativa
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Justificativa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gupta" class="md-nav__link">
+    <span class="md-ellipsis">
+      GUPTA
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../processo-desenvolvimento-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/historias-de-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/backlog/dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../backlog-produto/entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="visao-geral-do-produto"><strong>Visão Geral do Produto</strong><a class="headerlink" href="#visao-geral-do-produto" title="Permanent link">&para;</a></h1>
+<details class="abstract">
+<summary>Histórico de Revisão</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Versão</strong></th>
+<th style="text-align: center;"><strong>Descrição</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">08/11</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação das seção de visão geral do produto</td>
+<td style="text-align: center;">Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso <br> Pedro Miguel M. de O. dos Santos <br> Henrique Martins Alencar</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/11</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Especificação do processo de desenvolvimento</td>
+<td style="text-align: center;">Erick Miranda Santos e Henrique Martins Alencar</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="cenario-atual-do-cliente-e-do-negocio"><strong>Cenário atual do cliente e do negócio</strong><a class="headerlink" href="#cenario-atual-do-cliente-e-do-negocio" title="Permanent link">&para;</a></h2>
+<h3 id="introducao-ao-negocio-e-contexto"><strong>Introdução ao negócio e contexto</strong><a class="headerlink" href="#introducao-ao-negocio-e-contexto" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;">
+O <b>Espaço Janayna Paraizo</b> é uma clínica de fisioterapia no Gama, Distrito Federal, fundada em meados de 2020 pela fisioterapeuta Janayna Paraizo. A clínica oferece serviços como Kinesio Taping, Acupuntura, Dry Needling, Ventosaterapia, RPG, entre outros, com foco no tratamento integrado de todo o corpo para melhorar a qualidade de vida dos pacientes. Operando atualmente de terça a quinta, o <b>Espaço Janayna Paraizo</b> planeja expandir seu atendimento.</p>
+<p style="text-indent: 50px;text-align: justify;">
+No entanto, a clínica enfrenta desafios em divulgar seus serviços, organizar e armazenar os dados dos pacientes (atualmente geridos manualmente em documentos manuscritos ou dispositivos de uma única funcionária) e agendar sessões, o que dificulta o crescimento do atendimento e sobrecarrega a equipe. Esses problemas resultam em baixa eficiência e limitação na capacidade de expansão e promoção do estabelecimento.</p>
+
+<h3 id="identificacao-da-oportunidade-ou-problema"><strong>Identificação da Oportunidade ou Problema</strong><a class="headerlink" href="#identificacao-da-oportunidade-ou-problema" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;"> As oportunidades para a clínica <b>Espaço Janayna Paraizo</b> giram em torno de aumentar sua visibilidade e eficiência operacional. A criação de um website seria essencial para atrair potenciais clientes, permitindo que as pessoas conheçam melhor os serviços oferecidos, o perfil dos profissionais, os diferenciais da clínica e os resultados obtidos com os tratamentos. Isso traria uma presença digital estratégica, facilitando a divulgação da clínica. </p>
+<p style="text-indent: 50px;text-align: justify;"> Além disso, a implantação de uma aplicação web centralizada reduziria significativamente o tempo gasto no registro, busca e visualização das informações dos pacientes. Com isso, todos os funcionários teriam acesso fácil e organizado aos dados dos pacientes, o que descentralizaria as tarefas e aliviaria a carga de trabalho de uma única pessoa. </p>
+<p style="text-indent: 50px;text-align: justify;"> Outra oportunidade importante é a implementação de uma agenda integrada à aplicação web, permitindo o registro de horários livres e ocupados para sessões. Isso daria tanto aos funcionários quanto aos clientes uma visão clara dos horários disponíveis, permitindo que os clientes agendem suas sessões de forma autônoma, sem a necessidade de intervenção direta da equipe, otimizando o fluxo de trabalho e oferecendo mais conveniência aos pacientes. </p>
+
+<p style="text-indent: 50px;text-align: justify;"> Para melhor compreensão do problema identificado, foi elaborado um diagrama de Ishikawa, que apresenta as principais causas e fatores relacionados ao problema. </p>
+
+<figure>
+<iframe width="1920" height="432" src="https://miro.com/app/embed/uXjVLJ8O_A4=/?pres=1&frameId=3458764605766194355&embedId=157682138991" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<figcaption>
+<p>Diagrama de Ishikawa - Espaço Janayna Paraizo.</p>
+</figcaption>
+</figure>
+<h3 id="desafios-do-projeto"><strong>Desafios do Projeto</strong><a class="headerlink" href="#desafios-do-projeto" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;"> Os principais desafios do projeto incluem o desenvolvimento de uma solução web capaz de registrar todas as informações essenciais sobre os pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, além das classificações e tipos de disfunções de movimento tratadas na fisioterapia. </p>
+<p style="text-indent: 50px;text-align: justify;"> Outro desafio importante é a criação de uma interface que não apenas facilite as operações com os dados dos pacientes, mas também torne essas atividades mais rápidas e organizadas em comparação ao registro manual em papel ou em documentos de texto. </p>
+
+<h3 id="segmentacao-de-clientes"><strong>Segmentação de Clientes</strong><a class="headerlink" href="#segmentacao-de-clientes" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;"> O <b>Espaço Janayna Paraizo</b> atende três segmentos principais de clientes. O primeiro grupo é composto por idosos entre 65 e 85 anos, que representam a maior parte dos clientes recorrentes da clínica, buscando melhorar sua qualidade de vida e lidar com problemas de saúde relacionados ao envelhecimento e, com isso, necessitam de acompanhamento constante, além de uma documentação detalhada de suas evoluções ao longo das seções, uma vez que rotineiramente precisam apresnetar essas informações em encontros com outros profissionais da saúde. O segundo grupo inclui os acompanhantes desses idosos, geralmente jovens e adultos entre 19 e 50 anos, que são parentes ou amigos próximos responsáveis por agendar, transportar e acompanhar os idosos durante as sessões, atuando como o principal canal de comunicação entre os pacientes idosos e a clínica. O terceiro grupo abrange pacientes de diferentes idades com problemas esporádicos, que procuram atendimento para distúrbios pontuais de curto ou médio prazo, constituindo uma fonte de receita adicional para a clínica, ao contrário dos idosos que requerem acompanhamento contínuo. </p>
+
+<hr />
+<h2 id="solucao-proposta"><strong>Solução proposta</strong><a class="headerlink" href="#solucao-proposta" title="Permanent link">&para;</a></h2>
+<h3 id="objetivos-do-produto"><strong>Objetivos do Produto</strong><a class="headerlink" href="#objetivos-do-produto" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px;text-align: justify;"> O objetivo do produto <b>Paraizo</b> é viabilizar a ampliação da quantidade de clientes da clínica. Para isso, faz-se necessário a redução do tempo demandado na execução de atividades relacionadas à documentação e agendamento de consultas, possibilitando assim a realização dessas atividades com um número maior de clientes, e facilitar a divulgação e marketing do estabelecimento. Para tanto, este produto irá, por meio de uma única plataforma web:</p>
+
+<p style="text-indent: 50px;text-align: justify;"> Aprimorar o cadatro e consulta de dados dos pacientes, como dados técnicos (informações referêntes a seus disturbios e problemas físicos), histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores, substituindo processos manuais e informais, como registros em planilhas e locais temporários, que já não atendem às necessidades da organização por conta do tempo significativo que esse processo exige atualmente e também pela centralização deste trabalho em uma só funcionária. </p>
+
+<p style="text-indent: 50px;text-align: justify;"> Fornecer um local de compartilhamento, acessado por meio de <i>login</i>, que reúna os resultados dos pacientes, facilitando a avaliação dos tratamentos realizados e o acompanhamento dos resultados por parte dos mesmos. Vale ressaltar que para isso o sistema deverá ser uma solução <i>web</i> com a capacidade de ser reproduzida em diferentes tamanhos de tela.</p>
+
+<p style="text-indent: 50px;text-align: justify;"> Ter uma <i>landing page</i>, que divulgará informações da clínica, como serviços, quadro de funcionários, avaliações e resultados, promovendo maior credibilidade a clínica no mercado, ao passo que auxiliará com a prospecção de novos clientes.</p>
+
+<p style="text-indent: 50px;text-align: justify;"> Possibilitar o cadastro e a visualização de agendamentos de consultas, com integração ao Google Agenda, facilitando a gestão dos horários por parte da equipe da clínica.  </p>
+
+<h3 id="caracteristicas-da-solucao"><strong>Características da solução</strong><a class="headerlink" href="#caracteristicas-da-solucao" title="Permanent link">&para;</a></h3>
+<p>Segue o conjunto preliminar das características deste produto:</p>
+<ul>
+<li>O sistema deverá ter a Centralização dos dados dos pacientes, como dados técnicos, histórico clínico, hábitos de vida, tratamentos realizados, uso de medicamentos e localizações de dores;</li>
+<li>O Sistema deverá ter um local de compartilhamento com login para pacientes, reunindo os resultados de consultas e facilitando a avaliação dos tratamentos realizados;</li>
+<li>O sistema deverá ter uma Landing page para divulgação de informações da clínica, como serviços, quadro de funcionários, avaliações e resultados;</li>
+<li>O Sistema deverá possuir uma ferramenta de cadastro e visualização de agendamentos de consultas para o cliente e seus pacientes, fazendo com que pacientes possam marcar consultas sem a intervenção direta de funcionários;</li>
+<li>Integração com o Google Agenda para a clínica, resultando em uma visualização mais ampla de horários disponíveis; e</li>
+<li>O sistema deverá ser implementado em uma plataforma web, podendo ser utilizada em diferentes dispositivos.</li>
+</ul>
+<h3 id="pesquisa-de-mercado-e-analise-competitiva"><strong>Pesquisa de Mercado e Análise Competitiva</strong><a class="headerlink" href="#pesquisa-de-mercado-e-analise-competitiva" title="Permanent link">&para;</a></h3>
+<p>Existem outras soluções no mercado que visam melhorar a gestão clínica, como, por exemplo:</p>
+<ul>
+<li><strong>Plena Vittae</strong>: O sistema de agendamento é realizado apenas através do contato com o profissional via WhatsApp. Não possui sistema de login para visualização das informações dos pacientes;</li>
+<li><strong>CETFISIO</strong>: Também se limita apenas ao contato e agendamento via WhatsApp, além de não apresentar detalhes sobre o próprio estabelecimento e seus serviços, como, por exemplo, informações sobre o quadro de funcionários, histórico de atendimento da clínica, tipos de serviços prestados e a quem eles são indicados e horários de funcionamento;</li>
+<li><strong>Rede D’OR São Luiz:</strong> Novamente, este sistema também não oferece formas dos pacientes visualizarem suas próprias informações e o sistema de contato e agendamento apresenta as mesmas características dos anteriores.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Vale ressaltar</p>
+<p><p style="text-indent: 50px;text-align: justify;">O produto <b>Paraizo</b> se destaca, principalmente, pela forma com que ele diminui a carga de trabalho dos funcionários da clínica, uma vez que o sistema de agendamento e o login para visualização das infomações do paciente descentraliza a responsabilidade dessas atividades, permitindo que, sem a necessidade de contato com algum representante da clínica, uma consulta seja marcada ou que algum documento desejado pelo paciente seja obtido.</p></p>
+</div>
+<h3 id="analise-de-viabilidade"><strong>Análise de Viabilidade</strong><a class="headerlink" href="#analise-de-viabilidade" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px; text-align: justify;">
+A respeito da viabilidade técnica do projeto, a equipe de desenvolvimento é dividida com relação à familiaridade com as tecnologias a serem utilizadas (segue abaixo a tabela com as tecnologias utilizadas), permitindo que aqueles com mais experiência e familiaridade auxiliem os demais quando julgarem necessário. Além disso, apesar de parte da equipe não apresentar muita familiaridade e experiência com as tecnologias usadas, todos possuem conhecimento com o desenvolvimento que envolvem funcionalidades que também serão desenvolvidas neste projeto (como a integração com o google agendas, sistema de autenticação e validação de contas de usuário e banco de dados), tornando o projeto viável tecnicamente. Com reção ao tempo de desenvolvimento, o projeto será realizado durante 6 meses, organizado em itenrações que, ao final, serão entregues partes do projeto, como o protótipo de alta fidelidade, implementação de funcionalidades ou incremento de outras.
+</p>
+
+<h3 id="tecnologias-utilizadas"><strong>Tecnologias utilizadas</strong><a class="headerlink" href="#tecnologias-utilizadas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tecnologia</th>
+<th>Descrição</th>
+<th>Área de Aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538 15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005 27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565"/></svg></span> React.js</strong></td>
+<td>Biblioteca JavaScript para construção de interfaces</td>
+<td>Frontend</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.665 21.978A11.94 11.94 0 0 1 12 24C5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251zm-3.332-8.533 1.6 2.061V7.2h-1.6z"/></svg></span> Next.js</strong></td>
+<td>Framework para React com renderização do lado do servidor</td>
+<td>Frontend, SSR</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 4.8q-4.8 0-6 4.8 1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12q4.8 0 6-4.8-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8m-6 7.2q-4.8 0-6 4.8 1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576q4.8 0 6-4.8-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12"/></svg></span> Tailwind CSS</strong></td>
+<td>Framework de CSS para estilização rápida e responsiva</td>
+<td>Frontend</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.172 20.36c-.914-.72-1.89-1.41-2.556-2.38-1.402-1.712-2.482-3.694-3.22-5.777-.446-1.355-.6-2.808-1.174-4.11-.602-.944.103-1.978 1.138-2.28.46-.087 1.272-.522.293-.211-.878.644-.963-.585-.063-.662.615-.082.84-.585.63-1.037-.66-.43 1.6-.903.463-1.544C1.5 1.08 4.34.835 3.64 2.285 3.473 3.4 5.624 2.08 5.125 3.368c.507.619 1.9.14 1.865 1.009.74.05.993.672 1.687.72.72.325 2.022.58 2.266 1.39-.713.566-2.364-1.165-2.443.398.215 2.31.16 4.689 1.004 6.888.4 1.332 1.37 2.38 2.244 3.418.837 1.016 1.971 1.73 3.127 2.333 1.014.478 2.107.795 3.213.994.448-.343 1.24-1.617 1.938-1.08.033.604-1.388 1.263-.067 1.196.776-.234 1.314.6 1.953-.152.588.697 2.446-.446 2.027.98-.566.364-1.392.144-1.959.646-.935-.467-1.68.418-2.715.306a20 20 0 0 1-3.484.29c-1.912-.15-3.865-.214-5.684-.88-1.024-.297-2.023-.881-2.924-1.464zm1.615.7c1 .432 1.978.888 3.074 1.026 1.74.24 3.537.614 5.283.274-.79-.357-1.608.14-2.395-.255-.944.203-1.957-.052-2.917-.177-1.092-.486-2.27-.82-3.291-1.452-1.277-.466.66.598 1.005.685.798.453-.877-.233-1.114-.421-.668-.375-.754-.297-.066.084.139.08.276.166.42.235zm-1.904-1.346c.97.359-.004-.682-.45-.622-.196-.341-.751-.557-.36-.74-.704.244-.737-.93-1.07-.763-.744-.235-.29-1.07-1.176-1.58-.081-.54-.882-1.008-1.138-1.822-.113-.416-.905-1.613-.418-.5.414 1.072 1.143 1.99 1.75 2.907.47.873 1.027 1.786 1.885 2.33.29.278.568.703.977.79M4.09 16.647c.033-.146.177.317 0 0m3.954 3.497c.215-.096-.31-.12 0 0m.526.192c-.054-.265-.24.148 0 0m.66.275c.312-.3-.484-.188 0 0m1.127.63c.191-.282-.61-.107 0 0M8.19 19.728c.487-.315-.63-.004 0 0m.494.246c-.014-.166-.176.075 0 0m2.47 1.542c.397.25 2.32.55 1.115.103-.2.042-2.23-.574-1.116-.103zm-3.921-3.054c-.04-.167-.616-.185 0 0m1.15.67c.3-.21-.621-.16 0 0m.966.593c.43-.162-.696-.163 0 0m-2.584-1.773c.466.358 1.88.046.714-.213-.53-.283-1.727-.476-.912.17zm3.24 1.978c.193-.33-.815-.19 0 0m-.984-.783c1.14.323-.958-.72-.281-.118l.15.068zm1.973 1.14c1.08.01-.975-.147 0 0m-4.644-2.96c-.042-.2-.266.018 0 0m6.47 3.985c.028-.363-.353.27 0 0m-4.63-2.856c-.064-.191-.336-.008 0 0m-1.738-1.254c.62-.037-.848-.273 0 0m-2.06-1.332c-.077-.297-.674-.534 0 0m5.407 3.435c-.114-.13-.054.028 0 0m3.366 2.065c-.01-.197-.183.075 0 0m-3.664-2.373c.06-.255-.528-.077 0 0m-2.506-1.592c.46-.05-.74-.311 0 0m4.241 2.637c.718-.285-.7-.14 0 0M9.03 18.545c.827.106-.985-.563-.181-.06zm2.876 1.768c.773-.462.518 1.082 1.311.13.782-.57-.675.707.29.103.696-.467 1.726.22 2.376.445.468-.023.923.405 1.403.145.923-.25-1.806-.37-1.09-.81-.845.245-1.47-.294-1.885-.835-.948-.22-2.044-.703-2.517-1.542-.192-.315.28.044-.166-.47-.57-.508-.856-1.085-1.24-1.702-.457-.244-.51-.963-.557-.024.004-.593-.553-.992-.688-.826-.002-.571.595-.285.176-.707-.09-.592-.386-1.21-.475-1.877-.138-.322-.02-1.011-.473-.282-.165.77-.055-.947.202-.38.337-.58-.12-.51-.14-.43.22-.488.14-1.18-.057-.916.117-.517.185-1.902-.175-1.656.218-.54.414-2.473-.534-1.736-.384.005-1.048.14-1.363.296.986.543-.1.196-.5.11-.052.502-.45.285-.946.29.793.098-.386.81-.841.534-.59.282.51.987.012 1.205.06.328-.905-.12-.83.64-.573-.241-.078.9.209.514.975.264.686.866.71 1.437-.158.333-.784-.783-.14-.731-.507-.827-.561-.3-.984.085-.1.028 1.079.547.34.803.65.1.668.67.8 1.03.39.407.31-.45.779.04-.296-.436-1.567-1.228-.544-.974-.005-.44-.185-.793.129-.784.31-.562-.325 1.387.375.672.193-.085.24-.563.59.045.505.498.182.858-.531.403.127.433.954.587.799 1.265.165.595.395.376.596.342.158.578.247.153.255-.123.72.155.552.58.778.88.497.224-.712-1.522.142-.526.898.81.337 1.15-.47 1.02.51-.041.675.69 1.313.664.582.277.975 1.34-.027.897-.348-.313-1.58-.7-.573-.104.929.43 1.665.688 2.561 1.227.64.458.918.982 1.16 1.086-.538.257-1.623-.206-.817-.348-.503-.091-1.068-.345-.587.28.41.343 1.45.306 1.637.345-.159.348-.43.376.006.403-.486.26.156.3.201.448zm-.994-2.808c-.296-.31-.373-.89-.053-.385.164.066.525.947.053.385m3.238 2.057c.185-.011.006.14 0 0m-3.706-2.816c-.01-.468.107.36 0 0m-.322-.433c-.372-.72.47.204 0 0m-3.9-2.692c.219-.06.108.374 0 0m3.104 1.682c.134-.504.158.424 0 0m-2.192-1.525c-.155-.278.323.26 0 0m1.882.604c-.352-.79.25-.432.078.13zM5.77 12.217c-.158-.26-.418-1.02-.334-1.252.076.378.804 1.627.357.518-.494-.93.59.302.702.534.05.23-.305-.063-.064.478-.44-.617-.26.34-.661-.278m-1.003-.691c.04-.603.23.413 0 0m.45.155c.216-.455.366.634 0 0m-1.084-.84c-.374-.37-.644-.713.017-.23.255.01-.566-.778.06-.25.66.12.327 1.082-.077.48m.57-.015c.217-.215.115.212 0 0m.35.113c-.328-.617.4.258 0 0m-.697-.667c-1.086-.966 1.365.506.177.18zm3.11 1.808c-.47-.282-.123-1.984.037-.82.457-.148-.025.6.315.594-.053.473-.206.643-.35.226zm1.15.68c.048-.513.099.35 0 0m-.2-.198c.054-.22.007.258 0 0M4.57 9.955c-.697-.963 2.027.973.447.244-.165-.043-.364-.06-.447-.244m2.216 1.175c-.066-.81.147.134 0 0m1.682 1.079c.13-.462.01.305 0 0M4.676 9.587c.415-.088 1.718.729.52.234-.132-.148-.416-.08-.52-.234m3.56 1.775c.044-.83.248-.495.002.118zM4.985 9.299c.169-.248-.45-1.12.089-.313.232.185.672.31.283.387.61.539-.15.146-.372-.074m3.075 1.804c.117-.944.103.553 0 0M4.632 8.427c.129-.055.068.172 0 0m.802.478c.206-.434.38.483 0 0m2.263 1.259c-.002-.167.043.242 0 0m-.131-.29c-.314-.776.292.41 0 0m-.193-.51c-.053-.32.18.404 0 0m.314-.51c-.216-.38.272-1.673.326-.87-.227.625-.065.975.093.136.293-.66-.063 1.303-.42.735zm.322-1.923c.094-.115.02.139 0 0M7.47 17.544c-.128-.111.016.07 0 0m1.11.56c.615.16.612-.095.055-.17-.3-.28-1.246-.575-.4-.035.057.142.235.139.344.206zM6.389 16.65c.34.253 1.28.719.484.096.269-.312-.514-.478-.254-.686-.66-.404-.52-.368-.058-.356-.794-.354.114-.328.07-.51-.305-.06-1.52-.54-.804.04-.726-.37-.173.138-.392.084-.743-.202.66.565-.118.375.425.337 1.146.864.18.357-.128.183.69.46.892.6m1.16.667c1.41.454-.691-.556 0 0m5.94 3.598c.02-.28-.193.24 0 0m.611.257c.325-.315.013.503.54-.077.005-.415-.017-.66-.606-.156-.162.09-.234.473.066.233m-9.692-6.087c-.1-.393-.7-.39 0 0m.652.428c-.242-.402-.864-.364 0 0m3.71 2.237c.362.32 1.662.236.44.04-.182-.27-1.151-.204-.44-.04m5.097 3.149c.558-.468-.54.208 0 0m1.16.796c.003-.15-.24.066 0 0m.001-.21c.617-.654-.598.039 0 0M2.805 13.743c-.526-.75-.327-1.088-.835-1.7-.096-.47-.87-1.533-.4-.406.43.659.558 1.679 1.235 2.106m12.03 7.534c1.135-.734-.466-.32 0 0m.866.34c.57-.488-.36-.102 0 0M4.215 14.255c.163-.242-.42-.031 0 0m11.305 7.129c.551-.355-.126-.3-.1.032zm-7.47-4.71c-.02-.24-.291.02 0 0m.46.267c-.145-.297-.224.047 0 0m7.894 4.684c.705-.51-.428-.098-.148.096zm-.27-.13c.574-.482-.607.213 0 0m1.38.918c.386-.258-.469-.083 0 0M4.57 14.08c.517.116 2.066 1.274 1.152.08-.468-.138-.187-1.283-.665-1.08.32.535.264.763-.41.426-.845-.413-.474.204-.31.374-.224.052.299.196.233.2m-2.356-1.86c.092-.383-.853-2.107-.446-.864.146.26.13.754.446.864m4.324 2.666c-.266-.223-.013-.032 0 0m.656.152c0-.405-.725-.164 0 0m5.681 3.583c-.108-.278-.428-.006 0 0m.273.199c-.04-.155-.157.03 0 0m2.252 1.42c.216-.16-.27-.02 0 0M3.39 12.52c.62-.24-.664-.17 0 0m8.984 5.662c-.007-.401-.395.1 0 0m-9.23-6.231c.399-.135-.367-.09 0 0m1.156.56c-.007-.133-.122.05 0 0m14.09 8.64c.512-.104 1.678.26 1.866-.136-.62-.015-2.15-.438-2.222.1l.136.023zM4.667 12.603c.009-.407-.317-.015 0 0M1.63 10.495c-.138-.775-.525-.118 0 0m.724.182c.009-.25-.663-.224 0 0m.414.203c-.12-.097-.094.122 0 0m2.605 1.67c.122-.112-.29-.083 0 0m-2.88-2.128c-.07-.585-.84-.088 0 0m-1.486-.964c-.02-.27-.144.102 0 0m.22-.167c-.035-.32-.19.04 0 0m1.22.729c.518-.203-.94-.42-.104-.04zm16.334 10.089c.33-.303-.42-.094 0 0m1.974 1.023c.132-.392-.334.05 0 0M2.573 9.38c.055-.38-.41.075 0 0M.837 8.218c-.093-.535-.08-1.474.812-1.156-1.191.236.824 1.48.57.498.5.024.98-.296.716.19.987-.11 1.67-.964 2.624-.845.742-.098 1.554-.172 2.354-.471.658-.048 1.29-.756.93-1.175-.896-.076-1.835.036-2.827.233-1.098.228-2.096.662-3.205.849-1.08.145.217.4-.092.456-.564.196.672.328-.073.534-.46-.088-.94-.246-.743-.73-1.035.133-1.945.563-1.127 1.616zm2.494-1.27c.243-.894 1.3.735.398.118-.108-.08-.285-.146-.398-.12zm.047-.434c.35-.26.186.146 0 0m.445.008c.032-.411 1.018.218.163.148zm.608-.245c.222-.26.064.23 0 0m.156-.104c.37-.444 2.095-.283.832-.043-.338-.255-.598.15-.832.043m2.25-.347c-.055-1.214 1.119.432 0 0m.64-.004c.233-.612.906-.245.108-.123.017.065-.024.316-.108.123M2.322 9.067c.697-.427-.741-.37 0 0m.515.144c.245-.26-.531-.106 0 0m-1.52-1.08c.399-.305-.471-.116 0 0m20.602 12.89c.012-.355-.304.16 0 0m-2.093-1.43c.06-.408-.27.037 0 0m2.67 1.568c.557 0 1.688-.173.475-.173-.19.03-1.109.024-.476.173zM3.29 8.959c.45-.03.706-.497-.087-.47-1.23-.127 1.084.42-.158.264-.167.11.236.237.245.207zm.398.202c-.048-.29-.14.154 0 0m.47-1.257c.197-.243-.27-.065 0 0m-1.5-2.508c.806-.274 1.907-.581 2.287.135-.387-.466-.156-.924.21-.243.516.689.775-.313.438-.545.383.476.819.7.257.03.61-.734-1.223.097-1.64.088-.2.09-2.071.477-1.551.535zm.472-.903c.46-.347 1.588.206.864-.345-.07-.062-1.586.418-.864.345m1.674.069c.538.013-.231-.722.409-.39-.105-.343-.746-.407-1.06-.544-.176.314.36.938.65.934zm-1.38-1.52c.186-.252-.326.128 0 0m.684.164c.866-.115-.22-.373-.174-.01zm-1.277-1c-.61-.796 1.146.134.527-.7-.522-.415-1.023.468-.527.7m7.824 4.215c.28-.496-1.155-.668-.188-.175.09.03.07.21.188.175"/></svg></span> Flask</strong></td>
+<td>Framework minimalista em Python para desenvolvimento web</td>
+<td>Backend</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A74 74 0 0 1 11.91 24h.481a29 29 0 0 1 .51-3.07c.417-.296.604-.463.85-.693a11.34 11.34 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218m-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405"/></svg></span> MongoDB</strong></td>
+<td>Banco de dados NoSQL orientado a documentos</td>
+<td>Banco de Dados</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.455 8.369c-.538-.748-1.778-2.285-3.681-4.569a447 447 0 0 0-1.884-2.245l-.488-.576-.207-.245-.113-.133-.022-.032-.01-.005L12.57 0l-.609.488a13.34 13.34 0 0 0-3.681 4.64 11.4 11.4 0 0 0-1.043 3.176 12 12 0 0 0-.121.738 11 11 0 0 0-.632-.033l-.059-.003a7.5 7.5 0 0 0-2.28.274l-.317.089-.163.286a9.6 9.6 0 0 0-1.252 4.416 9.53 9.53 0 0 0 1.583 5.625 9.57 9.57 0 0 0 4.42 3.611l.236.095.071.025.003-.001a9.6 9.6 0 0 0 2.941.568q.171.006.342.006a9.5 9.5 0 0 0 3.69-.742l.008.004.313-.145a9.63 9.63 0 0 0 3.927-3.335 9.6 9.6 0 0 0 1.641-5.042c.075-2.161-.643-4.304-2.133-6.371m-7.083 6.695c.328 1.244.264 2.44-.191 3.558-1.135-1.12-1.967-2.352-2.475-3.665-.543-1.404-.87-2.74-.974-3.975.48.157.922.366 1.315.622 1.132.737 1.914 1.902 2.325 3.461zm.207 6.022c.482.368.99.712 1.513 1.028a7.9 7.9 0 0 1-2.369.273 8 8 0 0 1-.373-.022 9 9 0 0 0 1.228-1.279zm1.347-6.431c-.516-1.957-1.527-3.437-3.002-4.398a7.4 7.4 0 0 0-2.194-.95 9 9 0 0 1 .089-.713 11.6 11.6 0 0 1 .91-2.765l.004-.008c.177-.358.376-.719.61-1.105l.092-.152-.003-.001a11.7 11.7 0 0 1 1.942-2.311l.288.341c.672.796 1.304 1.548 1.878 2.237 1.291 1.549 2.966 3.583 3.612 4.48 1.277 1.771 1.893 3.579 1.83 5.375a7.97 7.97 0 0 1-3.995 6.641 15.5 15.5 0 0 1-2.539-1.599c.79-1.575.952-3.28.479-5.072zm-2.575 5.397a7.9 7.9 0 0 1-2.09 1.856 6 6 0 0 1-.243-.093l-.065-.026a7.97 7.97 0 0 1-3.635-3.01 7.94 7.94 0 0 1-1.298-4.653 7.9 7.9 0 0 1 .882-3.379q.476-.105.96-.131l.084-.002q.245-.005.478 0 .341.017.677.07c.073 1.513.445 3.145 1.105 4.852.637 1.644 1.694 3.162 3.144 4.515z"/></svg></span> Firebase</strong></td>
+<td>Plataforma para autenticação, armazenamento e deploy</td>
+<td>Autenticação, Hospedagem</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg></span> Google Calendar API</strong></td>
+<td>API para integração de agendas</td>
+<td>Integração com Google Calendar</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub</strong></td>
+<td>Repositório para versionamento e colaboração</td>
+<td>Controle de Versão</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.251 11.82a3.12 3.12 0 0 0-2.328-3.01L22.911 0H8.104L11.1 8.838a3.12 3.12 0 0 0-2.244 2.988 3.12 3.12 0 0 0 1.313 2.536 8.3 8.3 0 0 1-1.084 1.244 8.1 8.1 0 0 1-2.55 1.647c-.834-.563-1.195-1.556-.869-2.446a3.11 3.11 0 0 0-.91-6.08 3.117 3.117 0 0 0-3.113 3.113c0 .848.347 1.626.903 2.182q-.072.144-.146.299c-.465.959-.993 2.043-1.195 3.259-.403 2.432.257 4.384 1.849 5.489A5.1 5.1 0 0 0 5.999 24c1.827 0 3.682-.917 5.475-1.807 1.279-.632 2.599-1.292 3.898-1.612.48-.118.98-.187 1.508-.264 1.07-.153 2.175-.312 3.168-.89a4.48 4.48 0 0 0 2.182-3.091c.174-.994 0-1.994-.444-2.87.298-.48.465-1.042.465-1.647zm-1.355 0c0 .965-.785 1.75-1.75 1.75a1.753 1.753 0 0 1-1.085-3.126l.007-.007q.085-.063.18-.125s.008 0 .008-.007c.028-.014.055-.035.083-.05.007 0 .014-.006.021-.006q.044-.021.097-.042.054-.02.098-.041c.007 0 .013-.007.02-.007.028-.007.056-.021.084-.028.007 0 .02-.007.028-.007.034-.007.062-.014.097-.02h.007l.104-.022c.007 0 .02 0 .028-.007.028 0 .055-.007.083-.007h.035c.035 0 .07-.007.111-.007h.09c.028 0 .05 0 .077.007h.014q.083.009.167.028a1.766 1.766 0 0 1 1.396 1.723zM10.043 1.39h10.93l-2.509 7.4c-.104.02-.208.055-.312.09l-2.64-5.385-2.648 5.35c-.104-.034-.216-.055-.327-.076zm4.968 9.825a3.1 3.1 0 0 0-.938-1.668l1.438-2.904 1.452 2.967c-.43.43-.743.98-.868 1.605zm-3.481-1.098c.034-.007.062-.014.097-.02h.02c.029-.008.056-.008.084-.015h.028c.028 0 .049-.007.076-.007h.271c.028 0 .049.007.07.007.014 0 .02 0 .035.007.027.007.048.007.076.014q.009-.002.028.007l.097.02h.007q.042.01.083.029c.007 0 .014.007.028.007.021.007.049.014.07.027.007 0 .014.007.02.007.028.014.056.021.084.035h.007a.4.4 0 0 1 .09.049h.007c.028.014.056.034.084.048.007 0 .007.007.013.007.028.014.05.035.077.049l.007.007c.083.062.16.132.236.201l.007.007a1.75 1.75 0 0 1 .48 1.209 1.752 1.752 0 0 1-3.502 0 1.74 1.74 0 0 1 1.32-1.695m-6.838-.049c.966 0 1.751.786 1.751 1.751s-.785 1.751-1.75 1.751-1.752-.785-1.752-1.75.786-1.752 1.751-1.752m16.163 6.025a3.07 3.07 0 0 1-1.508 2.133c-.758.438-1.689.577-2.669.716a17 17 0 0 0-1.64.291c-1.445.355-2.834 1.05-4.182 1.717-1.724.854-3.35 1.66-4.857 1.66a3.65 3.65 0 0 1-2.154-.688c-1.529-1.056-1.453-3.036-1.272-4.12.167-1.015.632-1.966 1.077-2.877.028-.055.049-.104.077-.16q.228.084.479.126c-.264 1.473.486 2.994 1.946 3.745l.264.139.284-.104c1.216-.431 2.342-1.133 3.336-2.071a9.3 9.3 0 0 0 1.445-1.716c.16.027.32.034.48.034a3.12 3.12 0 0 0 3.008-2.327h1.167a3.11 3.11 0 0 0 3.01 2.327c.576 0 1.11-.16 1.57-.43.18.52.236 1.063.139 1.605"/></svg></span> Jest</strong></td>
+<td>Framework de testes para JavaScript</td>
+<td>Testes</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.615 0v.887h3.84V0zm5.022 0v.887h3.842V0zm4.957 0v.887h3.841V0zm4.935 0v.887h3.842V0zM2.447 1.895a.935.935 0 0 0-.935.935c0 .517.418.938.935.938h19.106c.517 0 .935-.42.935-.938a.935.935 0 0 0-.935-.936zm.168 2.847V24h3.84V4.742zm5.022 0v15.801h3.842v-15.8zm4.957 0v10.549h3.85V4.742zm4.935 0v6.494h3.842V4.742z"/></svg></span> PyTest</strong></td>
+<td>Framework de testes para Python</td>
+<td>Testes</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.19 8.77q-.46 0-.86-.17-.39-.17-.69-.47t-.47-.69q-.17-.4-.17-.86 0-.45.17-.85t.47-.69q.3-.3.69-.47.4-.18.86-.17.45-.01.85.17.4.17.7.47.29.29.47.69.17.4.17.85 0 .46-.17.86-.17.39-.47.69t-.7.47-.85.17m0-3.12q-.39 0-.69.27-.25.27-.25.66t.25.67q.3.25.69.25t.66-.25q.28-.25.28-.67 0-.39-.28-.66-.27-.27-.66-.27M22 10.33V15q0 .63-.24 1.2-.26.57-.67.99-.43.43-1 .67-.59.25-1.21.25-.38 0-.76-.11-.39-.07-.71-.25-.24.79-.71 1.44t-1.1 1.11-1.39.7q-.76.27-1.58.27-.96 0-1.81-.33-.82-.33-1.5-.94-.66-.57-1.09-1.36-.44-.8-.57-1.74H2.83q-.33 0-.59-.25-.24-.24-.24-.58V7.73q0-.34.24-.59.26-.24.59-.24H10q-.29-.6-.29-1.25 0-.61.23-1.15.22-.5.62-.92.4-.39.94-.62.5-.23 1.12-.23.61 0 1.14.23t.93.62q.4.42.62.92.23.54.23 1.15 0 .6-.23 1.14-.22.53-.62.92-.4.4-.93.63t-1.14.23q-.15 0-.31-.02-.15-.02-.31-.05v.9h9.06q.39 0 .67.27.27.27.27.66M12.63 4q-.35 0-.63.11-.33.13-.56.36-.22.23-.35.53-.13.31-.13.65 0 .35.13.65t.35.53q.23.22.56.36.28.13.63.13.34 0 .64-.13.3-.14.53-.36.23-.23.36-.53.14-.3.14-.65 0-.34-.14-.65-.13-.3-.36-.53t-.53-.36q-.3-.11-.64-.11m-4.85 6.18h1.88V8.62H4.34v1.56h1.88v5h1.56m8.6 1.09v-5.62H12v5.42q0 .34-.24.58-.26.25-.59.25H8.92q.13.67.47 1.25.34.57.82.99.48.41 1.1.65.61.21 1.32.21.77 0 1.45-.27.68-.3 1.2-.81.51-.51.8-1.19.3-.68.3-1.46M20.75 15v-4.35h-3.12v5.71q.25.25.57.38.3.12.68.12.39 0 .73-.15t.59-.4q.26-.25.4-.6.15-.34.15-.71"/></svg></span> Microsoft Teams</strong></td>
+<td>Plataforma para comunicação e reuniões internas</td>
+<td>Comunicação</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.53 2.13 0 7.75h5.53zm.398 0v5.62h7.608v3.65l5.47-4.45c-.014-1.22.031-2.25-.025-3.46-.148-1.09-1.287-1.47-2.236-1.36zM23.1 4.32c-.802.295-1.358.995-2.047 1.49-2.506 2.05-4.982 4.12-7.468 6.19 3.025 2.59 6.04 5.18 9.065 7.76 1.218.671 1.428-.814 1.328-1.64v-13a.83.83 0 0 0-.877-.825zM.038 8.15v7.7h5.53v-7.7zm13.577 8.1H6.008v5.62c3.864-.006 7.737.011 11.58-.009 1.02-.07 1.618-1.12 1.468-2.07v-2.51l-5.47-4.68v3.65zm-13.577 0c.02 1.44-.041 2.88.033 4.31.162.948 1.158 1.43 2.047 1.31h3.464v-5.62z"/></svg></span> Google Meet</strong></td>
+<td>Plataforma para reuniões com o cliente</td>
+<td>Comunicação</td>
+</tr>
+<tr>
+<td><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413"/></svg></span> WhatsApp</strong></td>
+<td>Comunicação assíncrona para suporte rápido</td>
+<td>Comunicação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="impacto-da-solucao"><strong>Impacto da Solução</strong><a class="headerlink" href="#impacto-da-solucao" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px; text-align: justify;">
+Com a criação do software PARAIZO, espera-se um impacto significativo no que se refere ao tempo destinado nas atividades referentes às documentações e manejamento de dados, além de possibilitar uma melhora no processo de divulgação dos serviços da clínica. Nesse sentido, conclui-se o produto afetaria a clínica das seguintes formas: </p>
+
+<div class="admonition success">
+<p class="admonition-title">Benefícios</p>
+<ul>
+<li>Redução no tempo destinado às atividades de visualização e edição de dados de clientes, uma vez que não será mais necessário procurar manualmente o papel onde está estes registros;</li>
+<li>Redução no tempo destinado às atividades relacionadas à organização e procura dos arquivos nos espaços físicos da clínica;</li>
+<li>Permitirá que outros funcionários preencham os dados ou confeccionem documentos exigidos, diminuindo a sobrecarga de trabalho que se concentra em uma única funcionária;</li>
+<li>Proporcionar a visualização do histórico de evolução dos pacientes poderá acarretar em uma taxa maior de fidelização de clientes ao estabelecimento;</li>
+<li>Com o desenvolvimento de um site com as informações sobre os serviços prestados, avaliações de seus clientes e quadro de funcionários, ajudará os responsáveis com o trabalho de divulgação e marketing do estabelecimento.</li>
+</ul>
+</div>
+<hr />
+<h2 id="estrategias-de-engenharia-de-software"><strong>Estratégias de Engenharia de Software</strong><a class="headerlink" href="#estrategias-de-engenharia-de-software" title="Permanent link">&para;</a></h2>
+<h3 id="estrategia-priorizada"><strong>Estratégia Priorizada</strong><a class="headerlink" href="#estrategia-priorizada" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Abordagem:</strong> Ágil</p>
+</li>
+<li>
+<p><strong>Ciclo de vida:</strong> Ágil</p>
+</li>
+<li>
+<p><strong>Processo:</strong> RAD</p>
+</li>
+</ul>
+<h3 id="quadro-comparativo"><strong>Quadro Comparativo</strong><a class="headerlink" href="#quadro-comparativo" title="Permanent link">&para;</a></h3>
+<p style="text-indent: 50px; text-align: justify;"> 
+O quadro a seguir compara os processos de desenvolvimento RAD e ScrumXP em diversas características, com o objetivo de auxiliar na justificativa para a escolha do processo mais adequado a este projeto.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Características</th>
+<th>RAD</th>
+<th>ScrumXP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abordagem Geral</td>
+<td>Desenvolvimento rápido e iterativo focado em protótipos e entregas rápidas</td>
+<td>Desenvolvimento incremental e iterativo, com ênfase na agilidade e na qualidade do código.</td>
+</tr>
+<tr>
+<td>Foco em Arquitetura</td>
+<td>Menor foco inicial em arquitetura; ênfase em protótipos</td>
+<td>Alto; arquitetura emergente é planejada e ajustada para garantir flexibilidade e qualidade.</td>
+</tr>
+<tr>
+<td>Estrutura de Processos</td>
+<td>Estrutura flexível, com iterações rápidas e prototipagem</td>
+<td>Bem definida, com sprints baseados em Scrum e práticas de engenharia do XP, como TDD e integração contínua.</td>
+</tr>
+<tr>
+<td>Flexibilidade de Requisitos</td>
+<td>Alta; requisitos podem ser alterados durante o desenvolvimento</td>
+<td>Moderada; mudanças são bem-vindas, mas priorizadas e organizadas no backlog do produto.</td>
+</tr>
+<tr>
+<td>Colaboração com Clientes</td>
+<td>Intensa; cliente envolvido em feedback frequente e revisão de protótipos</td>
+<td>Muito alta; cliente é frequentemente envolvido em testes e feedback contínuos.</td>
+</tr>
+<tr>
+<td>Complexidade do Processo</td>
+<td>Baixa a moderada; processos adaptáveis e menos formais</td>
+<td>Moderada a alta; requer domínio técnico devido às práticas avançadas de desenvolvimento.</td>
+</tr>
+<tr>
+<td>Qualidade Técnica</td>
+<td>Foco em funcionalidade; qualidade técnica pode ser sacrificada pela velocidade</td>
+<td>Alta; qualidade é garantida por práticas como TDD, refatoração contínua e código coletivo.</td>
+</tr>
+<tr>
+<td>Práticas de Desenvolvimento</td>
+<td>Prototipagem rápida, foco em entrega de funcionalidades principais</td>
+<td>Desenvolvimento ágil com práticas técnicas rigorosas (TDD, pair programming, etc.).</td>
+</tr>
+<tr>
+<td>Adaptação ao Projeto</td>
+<td>Ideal para projetos com escopo indefinido ou mudanças constantes</td>
+<td>Adequado para projetos complexos, que exigem alta qualidade e entregas regulares.</td>
+</tr>
+<tr>
+<td>Documentação</td>
+<td>Documentação mínima, foco em protótipos e entregas rápidas</td>
+<td>Mínima, mas suficiente para suportar o desenvolvimento e garantir rastreabilidade.</td>
+</tr>
+<tr>
+<td>Controle de Qualidade</td>
+<td>Controle mais básico, com ênfase em entregas rápidas e testes do usuário final</td>
+<td>Rigoroso; inclui testes automatizados, integração contínua e revisões de código.</td>
+</tr>
+<tr>
+<td>Escalabilidade</td>
+<td>Limitada, mais indicada para projetos pequenos e médios</td>
+<td>Alta, pode ser aplicado a equipes maiores com coordenação eficaz.</td>
+</tr>
+<tr>
+<td>Suporte a Equipes de Desenvolvimento</td>
+<td>Moderado; dependente mais do feedback do cliente e protótipos rápidos</td>
+<td>Alto, suporte técnico e organizacional robusto por meio de papéis claros e práticas ágeis.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bibliografia"><strong>Bibliografia</strong><a class="headerlink" href="#bibliografia" title="Permanent link">&para;</a></h4>
+<blockquote>
+<ol>
+<li>
+<p>BECKER, ALICE: Entenda o que é o Rapid Application Delivery (RAD) e sua Relação com os Métodos Ágeis. Disponível em: <a href="https://voitto.com.br/blog/artigo/rapid-application-delivery-rad" target="_blank">https://voitto.com.br/blog/artigo/rapid-application-delivery-rad</a></p>
+</li>
+<li>
+<p>CASA DO DESENVOLVEDOR: XP e Scrum: qual método utilizar para gerir seus projetos de software? Disponível em: <a href="https://blog.casadodesenvolvedor.com.br/xp-scrum/" target="_blank">https://blog.casadodesenvolvedor.com.br/xp-scrum/</a></p>
+</li>
+</ol>
+</blockquote>
+<h3 id="justificativa"><strong>Justificativa</strong><a class="headerlink" href="#justificativa" title="Permanent link">&para;</a></h3>
+<h4 id="gupta"><strong>GUPTA</strong><a class="headerlink" href="#gupta" title="Permanent link">&para;</a></h4>
+<p style="text-indent: 50px; text-align: justify;">
+Com o intuito de escolher a melhor abordágem de desenvolvimento de software para o desenvolvimento desse projeto, será utilizado o método GUPTA, que estabelece critérios importantes para essa definição. A seguir, serão apresentados as análises feitas pela equipe com relação às Características dos Requisitos, Status da Equipe de Desenvolvimento, Envolvimento do Usuário e Tipo de Projeto e Risco Associado.
+</p>
+
+<div class="admonition note">
+<p class="admonition-title">Vale ressaltar</p>
+<p><p style="text-indent: 50px;text-align: justify;">As perguntas com respostas marcadas com <img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> referen-se a resposta que a equipe julgou mais adequada para o projeto. Por exemplo, em "Os requisitos são fáceis de entender e definir?", a respostas mais adequada é "Não".</p></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Requisitos</th>
+<th>Waterfall</th>
+<th>Protótipo</th>
+<th>Iterativo</th>
+<th>Evolucionário</th>
+<th>Espiral</th>
+<th>RAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Os requisitos são fáceis de entender e definir?</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+</tr>
+<tr>
+<td>Mudamos os requisitos com bastante frequência?</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Podemos definir os requisitos no início do ciclo?</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td>Os requisitos indicam um sistema complexo a ser construído?</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que os requisitos não são todos bem definidos, mas que ainda podem ser totalmente definidos no início do projeto. Isso decorre, sumariamente, em relação aos requisitos relacionado às informações técnicas que devem estar presentes nas fichas dos pacientes.
+</p>
+
+<hr />
+<table>
+<thead>
+<tr>
+<th>Equipe de Desenvolvimento</th>
+<th>Waterfall</th>
+<th>Protótipo</th>
+<th>Iterativo</th>
+<th>Evolucionário</th>
+<th>Espiral</th>
+<th>RAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pouca experiência em projetos similares</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Pouco conhecimento de domínio (novidade na tecnologia)</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Pouca experiência com as ferramentas a serem usadas</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Disponibilidade de treinamento, se necessário</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que a equipe não tem tanta experiência com projetos semelhantes, mas que ainda apresenta conhecimento com as tecnologias e ferramentas usadas. Vale ressaltar que, como descrito em "Análise de Viabilidade", parte da equipe não é tão habilidosa, entretanto estão dispostos a participar de treinamentos caso necessário.
+</p>
+
+<hr />
+<table>
+<thead>
+<tr>
+<th>Envolvimento dos usuários</th>
+<th>Waterfall</th>
+<th>Protótipo</th>
+<th>Iterativo</th>
+<th>Evolucionário</th>
+<th>Espiral</th>
+<th>RAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Envolvimento dos usuários em todas as fases</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td>Participação limitada do usuário</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Usuário sem experiência anterior de participação em projetos similares</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+</tr>
+<tr>
+<td>Usuários são especialistas no domínio do problema</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que o projeto terá muito envolvimento dos usuários, sumariamente a própria cliente, além de ser especialista no assunto, podendo auxiliar a equipe quando necessário. 
+</p>
+
+<hr />
+<table>
+<thead>
+<tr>
+<th>Tipo de Projeto e Risco</th>
+<th>Waterfall</th>
+<th>Protótipo</th>
+<th>Iterativo</th>
+<th>Evolucionário</th>
+<th>Espiral</th>
+<th>RAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O projeto é uma melhoria de um sistema existente</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Sim</td>
+</tr>
+<tr>
+<td>O financiamento é estável para o projeto</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td>Altos requisitos de confiabilidade</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+</tr>
+<tr>
+<td>Cronograma apertado do projeto</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td>Uso de componentes reutilizáveis</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+</tr>
+<tr>
+<td>Os recursos (tempo, dinheiro, pessoas, etc.) são escassos?</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> Sim</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> Não</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p style="text-indent: 50px; text-align: justify;">
+A partir das respostas da tabela acima, abstrai-se que o projeto tem cronograma curto, além da ausência de financiamento. Porém, os requisitos não são de alta confiabilidade e não é uma melhoria de um sistema existente.
+</p>
+
+<hr />
+<table>
+<thead>
+<tr>
+<th>Conclusão</th>
+<th>Waterfall</th>
+<th>Protótipo</th>
+<th>Iterativo</th>
+<th>Evolucionário</th>
+<th>Espiral</th>
+<th>RAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requisitos</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Equipe de Desenvolvimento</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Envolvimento dos usuários</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Tipo de Projeto e Risco</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> 7</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> 11</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> 9</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> 8</td>
+<td><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/274c.svg" title=":x:" /> 6</td>
+<td><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2705.svg" title=":white_check_mark:" /> 14</td>
+</tr>
+</tbody>
+</table>
+<p style="text-indent: 50px; text-align: justify;">
+Por fim, a tabela acima busca evidenciar quais processos mais se alinham com o projeto em pauta, através de uma soma das respostas em cada um dos 4 segmentos.
+</p>
+
+<hr />
+<p style="text-indent: 50px; text-align: justify;">
+Baseado na análise comparativa entre os processos RAD e Scrum, junto com a análise através do método GUPTA, o processo escolhido foi o RAD, pois ele prioriza rapidez e flexibilidade, características essenciais em caso de mudança de requisitos, que pode ser um tópico abordado com a cliente em reuniões futuras. O RAD permite prototipagem rápida e interação contínua com a cliente, garantindo que os feedbacks sejam incorporados de forma ágil ao longo do desenvolvimento. Com uma estrutura mais leve e menos formal do que outros métodos, o RAD será ideal para o projeto, já que ele tem uma menor complexidade, onde a ênfase está em obter resultados práticos e adaptáveis em um curto espaço de tempo.
+</p>
+
+<figure>
+<p><img alt="alt text" src="https://github.com/user-attachments/assets/842f6fcd-271f-4b15-8502-535a2185fccb" /></p>
+<figcaption>
+<p>Representação gráfica ciclo de vida RAD.</p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Características</p>
+<ul>
+<li>É considera uma abordagem ágil, centrada no usuário e design do produto</li>
+<li>Fortemente baseado no feedback do usuário</li>
+<li>Os requisitos do produto são tratados como variáveis</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>

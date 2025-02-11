@@ -1,0 +1,2355 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../estudos-de-caso/uc/">
+      
+      
+        <link rel="next" href="../entregas/">
+      
+      
+      <link rel="icon" href="../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Iterações - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../termynal.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iteracoes" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Iterações
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../visao-produto-projeto/visao-produto/" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../backlog-produto/backlog/funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../estudos-de-caso/pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto-projeto/visao-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto-projeto/visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao-produto-projeto/processo-desenvolvimento-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/backlog/funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/backlog/nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/backlog/historias-de-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/backlog/dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/priorizacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog-produto/entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estudos-de-caso/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estudos-de-caso/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estudos-de-caso/uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#iteracao-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteração 0
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteração 0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principais-decisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Principais Decisões
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregas-realizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Entregas Realizadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteracao-retrospective" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧐 Iteração Retrospective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas-da-iteracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Conquistas da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Próximos Passos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reunioes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Reuniões
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteracao-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteração 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteração 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principais-decisoes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Principais Decisões
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregas-realizadas_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Entregas Realizadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrospectiva-da-iteracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧐 Retrospectiva da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas-da-iteracao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Conquistas da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-passos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Próximos Passos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reunioes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Reuniões
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteracao-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteração 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteração 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodo_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principais-decisoes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Principais Decisões
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregas-realizadas_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Entregas Realizadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrospectiva-da-iteracao_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧐 Retrospectiva da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas-da-iteracao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Conquistas da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-passos_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Próximos Passos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reunioes_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Reuniões
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteracao-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteração 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteração 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodo_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📅 Período
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principais-decisoes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Principais Decisões
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entregas-realizadas_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Entregas Realizadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrospectiva-da-iteracao_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧐 Retrospectiva da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquistas-da-iteracao_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Conquistas da Iteração
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proximos-passos_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Próximos Passos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reunioes_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Reuniões
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="iteracoes"><strong>Iterações</strong><a class="headerlink" href="#iteracoes" title="Permanent link">&para;</a></h1>
+<details class="abstract">
+<summary>Histórico de Revisão</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Data</strong></th>
+<th style="text-align: center;"><strong>Versão</strong></th>
+<th style="text-align: center;"><strong>Descrição</strong></th>
+<th style="text-align: center;"><strong>Autor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">08/11</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">Criação das seção de Processo de desenvolvimento de software</td>
+<td style="text-align: center;">Erick Miranda Santos <br> Maykon Júnio dos Santos Soares <br> Marllon Fausto Cardoso</td>
+</tr>
+<tr>
+<td style="text-align: center;">10/11</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Adicionando informações sobre iteração 01</td>
+<td style="text-align: center;">Erick Miranda Santos</td>
+</tr>
+<tr>
+<td style="text-align: center;">14/11</td>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Adicionando informações sobre iteração 02</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">23/11</td>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">Adicionando informações sobre iteração 02</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">06/12</td>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">Adicionando informações sobre iteração 03</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+<tr>
+<td style="text-align: center;">13/12</td>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">Adicionando informações sobre iteração 03</td>
+<td style="text-align: center;">Maykon Júnio dos Santos Soares</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Iteração 0</label><label for="__tabbed_1_2">Iteração 1</label><label for="__tabbed_1_3">Iteração 2</label><label for="__tabbed_1_4">Iteração 3</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h3 id="iteracao-0"><strong>Iteração 0</strong><a class="headerlink" href="#iteracao-0" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="periodo"><strong>📅 Período</strong><a class="headerlink" href="#periodo" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>data</strong>: 22/10/2023 - 04/11/2023</p>
+</blockquote>
+<hr />
+<h4 id="principais-decisoes"><strong>🔑 Principais Decisões</strong><a class="headerlink" href="#principais-decisoes" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Primeiros passos</p>
+<p>Durante esta Iteração, o grupo tomou decisões cruciais para o início do projeto, estabelecendo as bases para o desenvolvimento e organização.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Decisão</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primeira Reunião</strong></td>
+<td>Realizada para alinhar objetivos e expectativas do time.</td>
+</tr>
+<tr>
+<td><strong>Tecnologias Definidas</strong></td>
+<td>Escolha das tecnologias a serem utilizadas no projeto, levando em conta os requisitos e a escalabilidade.</td>
+</tr>
+<tr>
+<td><strong>Distribuição de Papéis</strong></td>
+<td>Definição de responsabilidades para cada membro do time, promovendo eficiência no desenvolvimento.</td>
+</tr>
+<tr>
+<td><strong>Uso do Miro</strong></td>
+<td>Decisão de utilizar o Miro como ferramenta para organização visual das tarefas e brainstorming colaborativo.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="entregas-realizadas"><strong>🎯 Entregas Realizadas</strong><a class="headerlink" href="#entregas-realizadas" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Boas decisões</p>
+<p>As entregas desta Iteração garantiram o início sólido do projeto, com definições importantes e progresso substancial nas primeiras atividades.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Entrega</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definição do Produto</strong></td>
+<td>Estabelecimento do conceito e do objetivo principal do produto.</td>
+</tr>
+<tr>
+<td><strong>Definição do Problema</strong></td>
+<td>Identificação e definição clara do problema a ser solucionado pelo produto.</td>
+</tr>
+<tr>
+<td><strong>Início do GitPages</strong></td>
+<td>Criação do repositório GitPages para o gerenciamento do projeto e versionamento do conteúdo.</td>
+</tr>
+<tr>
+<td><strong>Conclusão da Ideia do Produto</strong></td>
+<td>A ideia do produto foi discutida e fechada, com um consenso sobre a proposta final.</td>
+</tr>
+<tr>
+<td><strong>Visão de Produto e Projeto</strong></td>
+<td>Documentação da visão do produto e definição do escopo do projeto, com objetivos e metas claros.</td>
+</tr>
+<tr>
+<td><strong>Processo de Desenvolvimento de Software</strong></td>
+<td>Definição do processo e metodologia de desenvolvimento a ser seguido durante o projeto.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="iteracao-retrospective"><strong>🧐 Iteração Retrospective</strong><a class="headerlink" href="#iteracao-retrospective" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Ponto de reflexão</p>
+<p>A retrospectiva foi realizada para refletir sobre os pontos fortes e áreas de melhoria da Iteração, promovendo aprendizado contínuo.</p>
+</div>
+<ul>
+<li><strong>Tópicos discutidos</strong>: Durante a retrospectiva, foram abordados os desafios encontrados e os processos que funcionaram bem.</li>
+<li><strong>Conclusão</strong>: Todas as entregas foram realizadas dentro do prazo, e o time expressou satisfação com o andamento do projeto, com sugestões de melhorias para a próxima Iteração.</li>
+</ul>
+<hr />
+<h4 id="conquistas-da-iteracao"><strong>🏆 Conquistas da Iteração</strong><a class="headerlink" href="#conquistas-da-iteracao" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Vale comemorar</p>
+<ul>
+<li><strong>Entregas dentro do prazo</strong>.</li>
+<li><strong>Ajustes realizados conforme feedback</strong>.</li>
+<li><strong>Equipe alinhada e motivada para as próximas fases</strong>.</li>
+</ul>
+</div>
+<hr />
+<h4 id="proximos-passos"><strong>📌 Próximos Passos</strong><a class="headerlink" href="#proximos-passos" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Foco na execução da próxima Iteração com a continuidade das entregas e integração das tecnologias escolhidas.</p>
+</blockquote>
+<hr />
+<h4 id="reunioes"><strong>🤝 Reuniões</strong><a class="headerlink" href="#reunioes" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">1° Reunião</label><label for="__tabbed_2_2">2° Reunião</label><label for="__tabbed_2_3">3° Reunião</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Conversa Inicial com Cliente</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li>
+<p><strong>Data</strong>: 02/11/2024</p>
+</li>
+<li>
+<p><strong>Horário</strong>: 08:00</p>
+</li>
+<li>
+<p><strong>Modalidade</strong>: Videoconferência (Teams)</p>
+</li>
+<li>
+<p><strong>Participantes</strong>: Equipe e Cliente</p>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>Esta reunião inicial teve como objetivo alinhar expectativas e definir as bases de colaboração para o projeto <strong>Paraizo</strong>. Foram discutidas as principais entregas, o escopo e o papel de cada Integrante, além dos próximos passos para o desenvolvimento do MVP.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p><iframe src="https://drive.google.com/file/d/1Q5gbT6vvaXLLEpAR4xASCX9UY0Eg4GG_/preview"
+                allow="autoplay"
+                style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                    overflow: hidden;">
+</iframe></p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Apresentação dos membros da equipe</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Contextualização da disciplina e entendimento do propósito do projeto</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Definição de ferramenta de comunicação da equipe</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Definição de ferramenta organizacional da equipe</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Definição e esclarecimento sobre o escopo do MVP 1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Definição e esclarecimento sobre o escopo do MVP 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento e a comunicação do projeto:</p>
+<ul>
+<li>Escopo inicial do projeto</li>
+<li>Definido que reuniões com cliente serão a cada 2 semanas sabádo 08 horas</li>
+<li>Definido ferramenta para Reuniões sendo o Temas</li>
+<li>Definido ferramenta organizacional sendo o Figma</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: Nem todos os membros da equipe puderam estar presentes.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Planejamento de Entrega da Unidade</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li>
+<p><strong>Data</strong>: 05/11/2024</p>
+</li>
+<li>
+<p><strong>Horário</strong>: 20:00</p>
+</li>
+<li>
+<p><strong>Modalidade</strong>: Videoconferência (Teams)</p>
+</li>
+<li>
+<p><strong>Participantes</strong>: Equipe</p>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>Essa reunião teve como premissa a divisão de atividades presentes na entrega da Unidade 1, bem como a definição de prazos. Dessa maneira a reunião buscou revisar tudo que já tinha sido até o momento, tópicos 1, 2 e 3. E também estabelecer os prazos para a construção dos tópicos 4 e 5.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p><iframe src="https://drive.google.com/file/d/1ANgseu9PuYpAiV6JJk2LWOtl1kjf_sMI/preview"
+                allow="autoplay"
+                style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                    overflow: hidden;">
+</iframe></p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Revisão de documentação anterior</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Transferência de documentação do google docs para o gitpages</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Definição de Tecnologias a serem utilizadas</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Definição de papeis dentro da equipe</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Definição de prazos para entregas dos tópicos 4 e 5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Bate papo inicial sobre escolha de processo processo de desenvolvimento</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento do projeto:</p>
+<ul>
+<li>Definido o dia 10/11/2024 como dia limite para inclusão dos tópicos 4 e 5</li>
+<li>Definido as tecnologias para desevolvimento e comunicação bem como suas versões</li>
+<li>Definido os papeis dentro da equipe</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: Nem todos os membros da equipe puderam estar presentes.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p><strong>Atualização sobre entrega da Unidade</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li>
+<p><strong>Data</strong>: 10/11/2024</p>
+</li>
+<li>
+<p><strong>Horário</strong>: 14:00</p>
+</li>
+<li>
+<p><strong>Modalidade</strong>: Videoconferência (Teams)</p>
+</li>
+<li>
+<p><strong>Participantes</strong>: Equipe</p>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>A reunião em questão teve o objetivo de listar todos os tópicos desenvolvidos até o momento e checar seus prazos para conclusão. Além disso foi definido o tipo de processo de desenvolvimento de software e a metodologia.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p><iframe src="https://drive.google.com/file/d/1JcR-VWKoZ_iOZRJ-cSMqi0ekv9nbObK3/preview"
+                allow="autoplay"
+                style="width: 100%; height: 520px; border: none; border-radius: 16px;
+                    overflow: hidden;">
+</iframe></p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Revisão de documentação já criada</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Finalização da transferência de documentação do google docs para o gitpages</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Definição de Abordagem, Ciclo de Vida e Processo de Desenvolvimento</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Definição do dia para a gravação do vídeo de entrega da unidade</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, foram tomadas as seguintes decisões que impactam o andamento projeto:</p>
+<ul>
+<li>Definição da abordagem sendo agil, o ciclo de vida sendo RAD e o processo de Desenvolvimento sendo dual</li>
+<li>Definido o dia 11/11 como dia limite para a gravação do vídeo de entrega unidade e a finalização de todas as alterações para a entrega da Unidade 1</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: Sem notas adicionais.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<h3 id="iteracao-1"><strong>Iteração 1</strong><a class="headerlink" href="#iteracao-1" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="periodo_1"><strong>📅 Período</strong><a class="headerlink" href="#periodo_1" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Data</strong>: 05/11/2023 - 18/11/2023</p>
+</blockquote>
+<hr />
+<h4 id="principais-decisoes_1"><strong>🔑 Principais Decisões</strong><a class="headerlink" href="#principais-decisoes_1" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Primeiros passos</p>
+<p>Durante esta Iteração, o grupo buscou estabelecer uma primeira relação com os requisitos e corrigir alguns débitos da iteração anterior, como ajustes na visão do produto, refinamento do projeto e pequenos ajustes operacionais.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Decisão</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Escopo inicial de requisitos</strong></td>
+<td>A equipe se reuniu para identificar, nos documentos disponíveis, oportunidades para definição de requisitos.</td>
+</tr>
+<tr>
+<td><strong>Definição de escopo para MVP1</strong></td>
+<td>Com base na primeira versão dos requisitos, foi determinado o que poderia compor o MVP1.</td>
+</tr>
+<tr>
+<td><strong>Conversa com cliente para alinhar expectativas</strong></td>
+<td>Após a proposta inicial do escopo, a equipe reuniu-se com o cliente para ajustar a lista de requisitos.</td>
+</tr>
+<tr>
+<td><strong>Priorização de MVP1</strong></td>
+<td>Realizada a primeira priorização do escopo definido para o MVP1, considerando os interesses da equipe e do cliente.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="entregas-realizadas_1"><strong>🎯 Entregas Realizadas</strong><a class="headerlink" href="#entregas-realizadas_1" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Boas decisões</p>
+<p>As entregas da Iteração 1 garantiram um bom início para a criação e priorização do backlog, fortalecendo o alinhamento com o cliente.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Entrega</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primeira lista de requisitos</strong></td>
+<td>Estabelecimento de uma lista básica de requisitos.</td>
+</tr>
+<tr>
+<td><strong>Definição inicial de escopo para MVP1</strong></td>
+<td>Identificação do escopo inicial para o MVP1, alinhado com os objetivos da equipe e do cliente.</td>
+</tr>
+<tr>
+<td><strong>Definição inicial de priorização</strong></td>
+<td>Priorização inicial do MVP1 baseada nos interesses do cliente e da equipe.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="retrospectiva-da-iteracao"><strong>🧐 Retrospectiva da Iteração</strong><a class="headerlink" href="#retrospectiva-da-iteracao" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Ponto de reflexão</p>
+<p>A retrospectiva foi realizada para avaliar os pontos fortes e as áreas de melhoria, promovendo aprendizado contínuo.</p>
+</div>
+<ul>
+<li><strong>Tópicos discutidos</strong>: Durante a retrospectiva, foram analisadas oportunidades de melhoria para as próximas entregas.</li>
+<li><strong>Conclusão</strong>: Todas as entregas foram realizadas dentro do prazo, mas foi identificado que uma melhor comunicação interna poderia trazer maior harmonia à equipe.</li>
+</ul>
+<hr />
+<h4 id="conquistas-da-iteracao_1"><strong>🏆 Conquistas da Iteração</strong><a class="headerlink" href="#conquistas-da-iteracao_1" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Vale comemorar</p>
+<ul>
+<li><strong>Entregas realizadas dentro do prazo.</strong></li>
+<li><strong>Ajustes implementados conforme o feedback do cliente.</strong></li>
+</ul>
+</div>
+<hr />
+<h4 id="proximos-passos_1"><strong>📌 Próximos Passos</strong><a class="headerlink" href="#proximos-passos_1" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>O foco será a definição do escopo para o MVP2 e a priorização inicial de suas entregas.</p>
+</blockquote>
+<hr />
+<h4 id="reunioes_1"><strong>🤝 Reuniões</strong><a class="headerlink" href="#reunioes_1" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">1ª Reunião</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><strong>Alinhamento interno da equipe</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li><strong>Data</strong>: 13/11/2024</li>
+<li><strong>Horário</strong>: 08:00</li>
+<li><strong>Modalidade</strong>: Videoconferência (Teams)</li>
+<li><strong>Participantes</strong>: Equipe</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>Esta reunião teve como objetivo elicitar uma primeira versão do backlog.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p>A reunião não foi gravada.</p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Busca de documentos relevantes.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Alinhamento sobre as entregas planejadas.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Divisão de tarefas entre os membros.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, foram tomadas decisões importantes para o andamento e comunicação do projeto:</p>
+<ul>
+<li>Determinação dos documentos que serviriam como base.</li>
+<li>Alinhamento sobre as datas limites das entregas.</li>
+<li>Definição das tarefas para a entrega da lista inicial de requisitos.</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: Nem todos os membros da equipe puderam estar presentes.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<h3 id="iteracao-2"><strong>Iteração 2</strong><a class="headerlink" href="#iteracao-2" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="periodo_2"><strong>📅 Período</strong><a class="headerlink" href="#periodo_2" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Data</strong>: 19/11/2024 - 02/12/2024</p>
+</blockquote>
+<hr />
+<h4 id="principais-decisoes_2"><strong>🔑 Principais Decisões</strong><a class="headerlink" href="#principais-decisoes_2" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Avanço nos requisitos</p>
+<p>Durante esta Iteração, a equipe focou no levantamento inicial e na análise detalhada dos requisitos, além de avançar na priorização e estruturação de um backlog inicial.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Decisão</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Planejamento dos Requisitos</strong></td>
+<td>Foi realizada a análise inicial dos requisitos levantados na Iteração anterior, ajustando e refinando detalhes técnicos e funcionais.</td>
+</tr>
+<tr>
+<td><strong>Priorização inicial de requisitos</strong></td>
+<td>Com base nos requisitos identificados, a equipe definiu prioridades para orientar o planejamento do projeto.</td>
+</tr>
+<tr>
+<td><strong>Levantamento de backlog inicial</strong></td>
+<td>A partir das prioridades estabelecidas, foi estruturado um backlog inicial, alinhado às entregas futuras.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="entregas-realizadas_2"><strong>🎯 Entregas Realizadas</strong><a class="headerlink" href="#entregas-realizadas_2" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Evolução contínua</p>
+<p>As entregas desta Iteração consolidaram a base para um planejamento mais claro e direcionado, garantindo avanços no desenvolvimento do projeto.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Entrega</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Levantamento inicial de requisitos</strong></td>
+<td>Identificação e análise de requisitos detalhados para direcionar as próximas etapas do projeto.</td>
+</tr>
+<tr>
+<td><strong>Priorização inicial de backlog</strong></td>
+<td>Estabelecimento de uma lista de prioridades com base nos objetivos do cliente e da equipe.</td>
+</tr>
+<tr>
+<td><strong>Backlog inicial estruturado</strong></td>
+<td>Criação de um backlog contendo as principais tarefas e entregas para nortear o desenvolvimento.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="retrospectiva-da-iteracao_1"><strong>🧐 Retrospectiva da Iteração</strong><a class="headerlink" href="#retrospectiva-da-iteracao_1" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Ponto de reflexão</p>
+<p>A retrospectiva da Iteração 2 destacou os avanços obtidos e os desafios enfrentados na análise e priorização de requisitos.</p>
+</div>
+<ul>
+<li><strong>Tópicos discutidos</strong>: Melhorias no processo de levantamento e priorização de requisitos, além da necessidade de maior clareza na documentação.</li>
+<li><strong>Conclusão</strong>: Apesar do progresso significativo, foi identificado que uma melhor organização das reuniões e registros poderia acelerar o processo de planejamento.</li>
+</ul>
+<hr />
+<h4 id="conquistas-da-iteracao_2"><strong>🏆 Conquistas da Iteração</strong><a class="headerlink" href="#conquistas-da-iteracao_2" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Vale comemorar</p>
+<ul>
+<li><strong>Backlog inicial estruturado com sucesso.</strong></li>
+<li><strong>Análise inicial de requisitos concluída dentro do prazo.</strong></li>
+<li><strong>Consolidação do escopo para as próximas iterações.</strong></li>
+</ul>
+</div>
+<hr />
+<h4 id="proximos-passos_2"><strong>📌 Próximos Passos</strong><a class="headerlink" href="#proximos-passos_2" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Trabalhar no detalhamento do backlog inicial, refinando os requisitos e começando a planejar a implementação do MVP2.</p>
+</blockquote>
+<hr />
+<h4 id="reunioes_2"><strong>🤝 Reuniões</strong><a class="headerlink" href="#reunioes_2" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">1ª Reunião</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><strong>Planejamento de requisitos e alinhamento inicial</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li><strong>Data</strong>: 23/11/2024</li>
+<li><strong>Horário</strong>: 09:00</li>
+<li><strong>Modalidade</strong>: Videoconferência (Teams)</li>
+<li><strong>Participantes</strong>: Equipe</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>Esta reunião teve como objetivo revisar os requisitos levantados e iniciar a priorização e estruturação do backlog.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p>A reunião não foi gravada.</p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Revisão dos requisitos levantados na Iteração 1.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Priorização inicial de requisitos e tarefas.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Estruturação do backlog inicial.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, foram tomadas decisões importantes para o planejamento do projeto:</p>
+<ul>
+<li>Ajustes nos requisitos levantados anteriormente.</li>
+<li>Priorização de funcionalidades e tarefas.</li>
+<li>Definição das entregas prioritárias para o MVP2.</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: Nem todos os requisitos foram completamente detalhados durante a Iteração, sendo necessário complementar nas próximas reuniões.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<h3 id="iteracao-3"><strong>Iteração 3</strong><a class="headerlink" href="#iteracao-3" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="periodo_3"><strong>📅 Período</strong><a class="headerlink" href="#periodo_3" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><strong>Data</strong>: 03/12/2024 - 16/12/2024</p>
+</blockquote>
+<hr />
+<h4 id="principais-decisoes_3"><strong>🔑 Principais Decisões</strong><a class="headerlink" href="#principais-decisoes_3" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Avanços no planejamento</p>
+<p>Durante esta Iteração, a equipe focou no refinamento do backlog, priorização das tarefas e na definição de critérios essenciais para garantir a entrega de valor contínuo.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Decisão</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Refinamento e priorização de backlog</strong></td>
+<td>A equipe revisou e detalhou o backlog existente, definindo as tarefas e funcionalidades essenciais para os MVPs.</td>
+</tr>
+<tr>
+<td><strong>Definição de DoR (Definition of Ready)</strong></td>
+<td>Estabelecimento de critérios claros para garantir que as tarefas estejam prontas para desenvolvimento.</td>
+</tr>
+<tr>
+<td><strong>Definição de DoD (Definition of Done)</strong></td>
+<td>Definição dos critérios de conclusão das tarefas para garantir entregas de alta qualidade.</td>
+</tr>
+<tr>
+<td><strong>Definição de critérios de aceitação</strong></td>
+<td>A equipe detalhou os critérios específicos de aceitação para cada funcionalidade do backlog.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="entregas-realizadas_3"><strong>🎯 Entregas Realizadas</strong><a class="headerlink" href="#entregas-realizadas_3" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Planejamento consolidado</p>
+<p>As entregas desta Iteração garantiram a preparação detalhada dos MVPs, com uma visão clara das expectativas e dos requisitos para os próximos passos.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Entrega</strong></th>
+<th><strong>Descrição</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Backlog detalhado para MVP1 e MVP2</strong></td>
+<td>O backlog foi refinado e detalhado, com funcionalidades e prioridades bem definidas para os dois MVPs.</td>
+</tr>
+<tr>
+<td><strong>Definição de DoR (Definition of Ready)</strong></td>
+<td>Estabelecimento de critérios claros para garantir que as tarefas estejam prontas para o desenvolvimento.</td>
+</tr>
+<tr>
+<td><strong>Definição de DoD (Definition of Done)</strong></td>
+<td>Definição dos critérios de aceitação e conclusão das tarefas, assegurando a entrega de funcionalidades completas e testadas.</td>
+</tr>
+<tr>
+<td><strong>Critérios de aceitação definidos</strong></td>
+<td>Para cada tarefa do backlog, foram estabelecidos critérios claros de aceitação, garantindo que as funcionalidades atendam aos requisitos do cliente.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="retrospectiva-da-iteracao_2"><strong>🧐 Retrospectiva da Iteração</strong><a class="headerlink" href="#retrospectiva-da-iteracao_2" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Ponto de reflexão</p>
+<p>A retrospectiva da Iteração 3 destacou os avanços na definição dos requisitos, mas também revelou oportunidades de melhorar a comunicação sobre as expectativas de qualidade e aceitação.</p>
+</div>
+<ul>
+<li><strong>Tópicos discutidos</strong>: A necessidade de maior alinhamento entre a equipe sobre a definição dos critérios de aceitação e as expectativas de qualidade.</li>
+<li><strong>Conclusão</strong>: Embora as entregas tenham avançado conforme o planejado, o alinhamento dos critérios de aceitação foi considerado um ponto de melhoria para garantir que todos os membros da equipe compreendam as expectativas de forma clara e consistente.</li>
+</ul>
+<hr />
+<h4 id="conquistas-da-iteracao_3"><strong>🏆 Conquistas da Iteração</strong><a class="headerlink" href="#conquistas-da-iteracao_3" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Conquistas importantes</p>
+<ul>
+<li><strong>Backlog detalhado para MVP1 e MVP2 concluído.</strong></li>
+<li><strong>Definição de critérios claros de DoR e DoD.</strong></li>
+<li><strong>Estabelecimento de critérios de aceitação para funcionalidades.</strong></li>
+</ul>
+</div>
+<hr />
+<h4 id="proximos-passos_3"><strong>📌 Próximos Passos</strong><a class="headerlink" href="#proximos-passos_3" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Refinamento final do backlog, foco na implementação das funcionalidades de maior prioridade para o MVP1 e alinhamento da equipe quanto aos critérios de aceitação.</p>
+</blockquote>
+<hr />
+<h4 id="reunioes_3"><strong>🤝 Reuniões</strong><a class="headerlink" href="#reunioes_3" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">1ª Reunião</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p><strong>Planejamento detalhado e definição de critérios</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Detalhes do Encontro</p>
+<ul>
+<li><strong>Data</strong>: 05/12/2024</li>
+<li><strong>Horário</strong>: 10:00</li>
+<li><strong>Modalidade</strong>: Videoconferência (Teams)</li>
+<li><strong>Participantes</strong>: Equipe</li>
+</ul>
+</div>
+<hr />
+<p><strong>Propósito</strong></p>
+<p>Esta reunião teve como objetivo refinar o backlog e definir claramente os critérios de aceitação, DoR e DoD para garantir a execução eficiente das entregas futuras.</p>
+<details class="tip">
+<summary>Gravação da Reunião</summary>
+<p>A reunião não foi gravada.</p>
+</details>
+<hr />
+<p><strong>Principais Tópicos</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th><strong>Tópico</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Refinamento e priorização do backlog.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Definição dos critérios de DoR e DoD.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Estabelecimento dos critérios de aceitação para as funcionalidades.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Decisões Críticas</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Atenção</p>
+<p>Durante a reunião, as seguintes decisões críticas foram tomadas para garantir o progresso do projeto:</p>
+<ul>
+<li>Refinamento do backlog com base nas prioridades dos MVPs.</li>
+<li>Definição clara dos critérios de DoR e DoD para garantir o alinhamento de qualidade.</li>
+<li>Estabelecimento de critérios de aceitação para todas as tarefas do backlog.</li>
+</ul>
+</div>
+<hr />
+<p><strong>Observações Adicionais</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Atenção</p>
+<p><strong>Nota</strong>: A equipe deve garantir que os critérios de aceitação sejam revisados continuamente para alinhá-los com as expectativas do cliente e com as mudanças no escopo.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/removeCredits.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../termynal.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3566 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Site voltado para a documentação do Software Paraizo">
+      
+      
+      
+      
+        <link rel="prev" href="../backlog/dor-e-dod/">
+      
+      
+        <link rel="next" href="../entregas/">
+      
+      
+      <link rel="icon" href="../../paraizo/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Priorização - Paraizo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/termynal.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../termynal.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#escala-likert-e-pesos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Paraizo" class="md-header__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Paraizo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Priorização
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../visao-produto-projeto/visao-produto/" class="md-tabs__link">
+          
+  
+  Visão Produto e Projeto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../backlog/funcionais/" class="md-tabs__link">
+          
+  
+  Backlog do Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../estudos-de-caso/pbb/" class="md-tabs__link">
+          
+  
+  Estudos de Caso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../iteracoes/" class="md-tabs__link">
+        
+  
+    
+  
+  Iterações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../entregas/" class="md-tabs__link">
+        
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../licoes-aprendidas/" class="md-tabs__link">
+        
+  
+    
+  
+  Lições Aprendidas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/instalando/" class="md-tabs__link">
+          
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Paraizo" class="md-nav__button md-logo" aria-label="Paraizo" data-md-component="logo">
+      
+  <img src="../../paraizo/paraizo.png" alt="logo">
+
+    </a>
+    Paraizo
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mdsreq-fga-unb/2024.2-T03-Paraizo" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.2-T03-Paraizo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visão Produto e Projeto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão Produto e Projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/visao-produto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Produto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/visao-projeto/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visao-produto-projeto/processo-desenvolvimento-software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog do Produto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog do Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Backlog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/nao-funcionais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Não funcionais
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/historias-de-usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/dor-e-dod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition of Ready (DoR) e Definition of Done (DoD)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Priorização
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#escala-likert-e-pesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escala Likert e Pesos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escala-de-valores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escala de Valores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Escala de Valores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legenda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorizacao-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorização (Final)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Estudos de Caso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Estudos de Caso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/pbb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Product Backlog Building
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/usm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Story Mapping
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../estudos-de-caso/uc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../iteracoes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iterações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licoes-aprendidas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lições Aprendidas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/instalando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalando
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Priorização</h1>
+
+<h4 id="escala-likert-e-pesos"><strong>Escala Likert e Pesos</strong><a class="headerlink" href="#escala-likert-e-pesos" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><strong>Critério</strong></th>
+<th><strong>Descrição</strong></th>
+<th><strong>Peso</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Valor de Negócio</strong></td>
+<td>O valor de retorno para o negócio do cliente</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Complexidade Técnica</strong></td>
+<td>Complexidade técnica, ou seja, nível de dificuldade para programar cada requisito</td>
+<td>-1</td>
+</tr>
+<tr>
+<td><strong>Criticidade</strong></td>
+<td>O risco crítico baseado na perda das funções no sistema e quanto isso pode afetar o sistema total</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Independência</strong></td>
+<td>Relação entre cada requisito e sua interdependência</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="escala-de-valores"><strong>Escala de Valores</strong><a class="headerlink" href="#escala-de-valores" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th><strong>Valor</strong></th>
+<th><strong>Valor de Negócio</strong></th>
+<th><strong>Complexidade Técnica</strong></th>
+<th><strong>Criticidade</strong></th>
+<th><strong>Independência</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>🔴 Muito importante</td>
+<td>🔴 Muito complexo</td>
+<td>🔴 Muito crítico</td>
+<td>🔴 Independente</td>
+</tr>
+<tr>
+<td>4</td>
+<td>🟠 Importante</td>
+<td>🟠 Complexo</td>
+<td>🟠 Crítico</td>
+<td>🟠 Pouco independente</td>
+</tr>
+<tr>
+<td>3</td>
+<td>🟡 Moderado</td>
+<td>🟡 Médio</td>
+<td>🟡 Às vezes crítico</td>
+<td>🟡 Às vezes dependente</td>
+</tr>
+<tr>
+<td>2</td>
+<td>🟢 Pouco importante</td>
+<td>🟢 Pouco complexo</td>
+<td>🟢 Pouco crítico</td>
+<td>🟢 Dependente</td>
+</tr>
+<tr>
+<td>1</td>
+<td>🟣 Não é importante</td>
+<td>🟣 Não é complexo</td>
+<td>🟣 Não é crítico</td>
+<td>🟣 Muito dependente</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Fórmula</p>
+<div class="arithmatex">\[
+\frac{(Vn \cdot 4 + Com \cdot (-1) + Crit \cdot 2 + Indep \cdot 3)}{9}
+\]</div>
+<hr />
+<h5 id="legenda"><strong>Legenda</strong><a class="headerlink" href="#legenda" title="Permanent link">&para;</a></h5>
+<ul>
+<li><span class="arithmatex">\( Vn \)</span>: Valor de Negócio</li>
+<li><span class="arithmatex">\( Com \)</span>: Complexidade</li>
+<li><span class="arithmatex">\( Crit \)</span>: Criticidade</li>
+<li><span class="arithmatex">\( Indep \)</span>: Independência</li>
+</ul>
+</div>
+<hr />
+<details class="danger">
+<summary>Priorização de cada membro da equipe</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Maykon</label><label for="__tabbed_1_2">Marllon</label><label for="__tabbed_1_3">Erick</label><label for="__tabbed_1_4">Henrrique</label><label for="__tabbed_1_5">Pedro</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Requisitos Funcionais</label><label for="__tabbed_2_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+<td>4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>3</td>
+<td>4.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.6 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>3.11 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>2.78 🟠</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>2.78 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>2.44 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>2.78 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Requisitos Funcionais</label><label for="__tabbed_3_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1.9 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2.2 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1.8 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>4.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1.2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1.2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1.2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.6 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>1.8 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2.6 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>3.7 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+<td>4.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>3.7 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>3.7 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>1</td>
+<td>3.8 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3.11 🟠</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>2.89 🟠</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2.78 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Requisitos Funcionais</label><label for="__tabbed_4_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1.3 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1.5 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1.3 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1.3 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+<td>3.5 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2.8 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>3.6 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>2.6 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>4</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>2.7 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2 🟡</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2.44 🟡</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2.44 🟡</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Requisitos Funcionais</label><label for="__tabbed_5_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>2.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>1.9 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2.3 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2.3 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>4</td>
+<td>4.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>2.6 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2.4 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>2.4 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>3.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>3.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>4.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+<td>3.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3.7 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3.7 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>3.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>3.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3.2 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>2.5 🟡</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>2.78 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>3.33 🟠</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>2.44 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2.67 🟡</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Requisitos Funcionais</label><label for="__tabbed_6_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1.2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>1.8 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1.2 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>1.6 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2.9 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2.3 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US08]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2.4 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>2.5 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>4</td>
+<td>2</td>
+<td>5</td>
+<td>5</td>
+<td>4.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US11]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3.6 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>3.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US15]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2.7 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>2.6 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td>2.1 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US18]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>3.6 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US19]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2.3 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>4.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>4.1 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>4.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>5</td>
+<td>1</td>
+<td>5</td>
+<td>3</td>
+<td>4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>5</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>4.3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>1.7 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>3 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>5</td>
+<td>2</td>
+<td>3</td>
+<td>2</td>
+<td>3.4 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>2.9 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>4</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>3.11 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>2.67 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>2.89 🟠</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="priorizacao-final"><strong>Priorização (Final)</strong><a class="headerlink" href="#priorizacao-final" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Requisitos Funcionais</label><label for="__tabbed_7_2">Requisitos Não Funcionais</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>Temas</strong></th>
+<th><strong>Épicos</strong></th>
+<th><strong>História de Usuário</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US20]</strong> Eu, como administrador, desejo cadastrar a ficha do paciente para preencher seus dados médicos, consultas e tratamentos</td>
+<td>5</td>
+<td>2.8</td>
+<td>5</td>
+<td>3.8</td>
+<td>4.29 🔴</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US10]</strong> Eu, como administrador, desejo me cadastrar no sistema, para conseguir utilizar as funcionalidades de administrador</td>
+<td>4.6</td>
+<td>2.8</td>
+<td>4.4</td>
+<td>4</td>
+<td>4.04 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US24]</strong> Eu, como administrador, desejo criar um relatório de avaliação de um paciente para documentar o andamento do tratamento do mesmo</td>
+<td>4.6</td>
+<td>3.4</td>
+<td>4.2</td>
+<td>3.6</td>
+<td>3.80 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US21]</strong> Eu, como administrador, desejo editar a ficha do paciente a fim de adicionar ou remover dados médicos, tratamentos e consultas</td>
+<td>4.8</td>
+<td>3</td>
+<td>4.8</td>
+<td>2.4</td>
+<td>3.67 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US14]</strong> Eu, como cliente, desejo me cadastrar no sistema para conseguir utilizar as funcionalidades correspondentes ao nível do cliente.</td>
+<td>4.2</td>
+<td>2.8</td>
+<td>3.4</td>
+<td>3.8</td>
+<td>3.58 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US23]</strong> Eu, como administrador, desejo consultar a ficha do paciente para verificar seus dados cadastrados</td>
+<td>4.6</td>
+<td>3.2</td>
+<td>4.6</td>
+<td>2.6</td>
+<td>3.58 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo autenticar meu perfil para acessar funcionalidades correspondentes ao nível do usuário</td>
+<td>4.4</td>
+<td>3</td>
+<td>4.2</td>
+<td>3</td>
+<td>3.56 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão da Ficha do Cliente</td>
+<td><strong>[US22]</strong> Eu, como administrador, desejo excluir a ficha do paciente para manter somente os pacientes ativos em minha lista</td>
+<td>4.4</td>
+<td>2.8</td>
+<td>4.2</td>
+<td>2.4</td>
+<td>3.38 🟠</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo cadastrar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3.8</td>
+<td>3</td>
+<td>3.6</td>
+<td>2.8</td>
+<td>3.09 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US11]</strong> Eu, como usuário, desejo excluir um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3.6</td>
+<td>2.8</td>
+<td>3.4</td>
+<td>3</td>
+<td>3.04 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US07]</strong> Eu, como usuário, desejo editar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3.4</td>
+<td>3</td>
+<td>3.6</td>
+<td>3</td>
+<td>2.98 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US12]</strong> Eu, como administrador, devo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3.4</td>
+<td>2.6</td>
+<td>3.6</td>
+<td>2.6</td>
+<td>2.89 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM02]</strong> Gestão de Atendimento</td>
+<td><strong>[EP02]</strong> Gestão de Atendimento</td>
+<td><strong>[US09]</strong> Eu, como usuário, desejo consultar um horário de atendimento em qualquer modalidade oferecida</td>
+<td>3.2</td>
+<td>2</td>
+<td>3.6</td>
+<td>2.6</td>
+<td>2.87 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US25]</strong> Eu, como administrador, desejo editar os relatórios de avaliação dos pacientes</td>
+<td>3.6</td>
+<td>3.2</td>
+<td>3.6</td>
+<td>2.2</td>
+<td>2.78 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US27]</strong> Eu, como administrador, desejo visualizar os relatórios de avaliação dos pacientes</td>
+<td>4.2</td>
+<td>2.6</td>
+<td>2.8</td>
+<td>1.6</td>
+<td>2.73 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US13]</strong> Eu, como administrador, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>3.2</td>
+<td>2.8</td>
+<td>3.6</td>
+<td>2.2</td>
+<td>2.64 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP03]</strong> Gestão de Administradores</td>
+<td><strong>[US14]</strong> Eu, como administrador, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>3.2</td>
+<td>2.6</td>
+<td>3.2</td>
+<td>2.2</td>
+<td>2.58 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US16]</strong> Eu, como cliente, desejo editar meu perfil para alterar informações que estejam incorretas.</td>
+<td>3.6</td>
+<td>2.8</td>
+<td>2.8</td>
+<td>2</td>
+<td>2.58 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US17]</strong> Eu, como cliente, desejo consultar meu próprio perfil para verificar minhas informações.</td>
+<td>3.6</td>
+<td>2.6</td>
+<td>3</td>
+<td>1.8</td>
+<td>2.58 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US29]</strong> Eu, como usuário, desejo visualizar meus relatórios de avaliação</td>
+<td>3.2</td>
+<td>2.8</td>
+<td>2.8</td>
+<td>2.4</td>
+<td>2.53 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM03]</strong> Gestão de usuário</td>
+<td><strong>[EP02]</strong> Autenticação do usuário</td>
+<td><strong>[US06]</strong> Eu, como usuário, desejo recuperar minha senha para voltar a acessar meu perfil</td>
+<td>3.6</td>
+<td>3</td>
+<td>3.2</td>
+<td>1.6</td>
+<td>2.51 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US28]</strong> Eu, como usuário, desejo salvar meu relatório de avaliação no formato .pdf</td>
+<td>3.2</td>
+<td>2.4</td>
+<td>2.8</td>
+<td>2</td>
+<td>2.44 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM05]</strong> Gestão de documentos</td>
+<td><strong>[EP05]</strong> Gestão de relatório do Cliente</td>
+<td><strong>[US26]</strong> Eu, como administrador, desejo excluir um relatório de avaliação de um paciente</td>
+<td>3</td>
+<td>2.8</td>
+<td>2.8</td>
+<td>2.2</td>
+<td>2.38 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM04]</strong> Gestão de usuário</td>
+<td><strong>[EP04]</strong> Gestão do Cliente</td>
+<td><strong>[US18]</strong> Eu, como cliente, desejo excluir meu perfil do sistema para remover qualquer vínculo com o site.</td>
+<td>3</td>
+<td>2.2</td>
+<td>2</td>
+<td>2</td>
+<td>2.20 🟡</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US01]</strong> Eu, como administrador, desejo consultar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>2</td>
+<td>1.6</td>
+<td>1.8</td>
+<td>1.62 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US02]</strong> Eu, como administrador, desejo excluir depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>1.8</td>
+<td>1.2</td>
+<td>2</td>
+<td>1.62 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US03]</strong> Eu, como usuário, desejo registrar depoimentos para relatar minha experiência</td>
+<td>2.4</td>
+<td>2.2</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.53 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US04]</strong> Eu, como administrador, desejo aprovar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2</td>
+<td>2.6</td>
+<td>1.2</td>
+<td>2</td>
+<td>1.53 🟢</td>
+</tr>
+<tr>
+<td><strong>[TM01]</strong> Gestão de Depoimentos</td>
+<td><strong>[EP01]</strong> Gestão de Depoimentos</td>
+<td><strong>[US05]</strong> Eu, como administrador, desejo editar depoimentos para manter o controle sobre os relatos apresentados.</td>
+<td>2.2</td>
+<td>2.2</td>
+<td>1.2</td>
+<td>1.6</td>
+<td>1.53 🟢</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th><strong>URPS+</strong></th>
+<th><strong>Requisito</strong></th>
+<th><strong>Valor de Negócio (4)</strong></th>
+<th><strong>Complexidade (-1)</strong></th>
+<th><strong>Criticidade (2)</strong></th>
+<th><strong>Independência (3)</strong></th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Performance</td>
+<td><strong>[RNF05]</strong> Otimizar vídeos e imagens</td>
+<td>4.00</td>
+<td>3.20</td>
+<td>3.00</td>
+<td>3.80</td>
+<td>3.00 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF01]</strong> Oferecer uma interface responsiva</td>
+<td>4.20</td>
+<td>3.00</td>
+<td>3.80</td>
+<td>3.00</td>
+<td>2.98 🟠</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF03]</strong> Implementar SEO</td>
+<td>4.00</td>
+<td>2.80</td>
+<td>3.20</td>
+<td>3.20</td>
+<td>2.98 🟠</td>
+</tr>
+<tr>
+<td>Usabilidade</td>
+<td><strong>[RNF02]</strong> Oferecer nível de acessibilidade AA (WCAG 2.2)</td>
+<td>2.40</td>
+<td>3.00</td>
+<td>3.20</td>
+<td>3.40</td>
+<td>2.61 🟡</td>
+</tr>
+<tr>
+<td>Suportabilidade</td>
+<td><strong>[RNF04]</strong> Implementar protocolo HTTPS</td>
+<td>3.00</td>
+<td>3.00</td>
+<td>3.20</td>
+<td>3.40</td>
+<td>2.71 🟡</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "content.code.annotation", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant.progress", "navigation.path", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "toc.follow", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../../javascripts/removeCredits.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../termynal.js"></script>
+      
+    
+  </body>
+</html>
